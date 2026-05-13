@@ -276,7 +276,7 @@ def build_wechat_message(hn_top, hn_ask, hn_show, gh_trending):
         lines.append(f"{i}. {item['name']} ⭐{item['stars']}")
     lines.append("")
 
-    lines.append(f"👆 完整内容：https://medivh.github.io/trends-daily")
+    lines.append(f"👆 完整内容：http://econow.cn/trends-daily/")
 
     return "\n".join(lines)
 

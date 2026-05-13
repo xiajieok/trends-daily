@@ -11,7 +11,7 @@
 
 ## 预览
 
-https://trends-daily.pages.dev
+https://econow.cn/trends-daily/
 
 ## 技术栈
 
