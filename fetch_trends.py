@@ -7,9 +7,11 @@ Fetch HN trends + GitHub Trending, generate index.html + archive
 import requests
 import os
 import json
+import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from bs4 import BeautifulSoup
+from html import unescape
 
 # Config
 HN_BASE = "https://hacker-news.firebaseio.com/v0"
@@ -36,7 +38,8 @@ def fetch_hn_top(n=20):
                     "score": item.get("score", 0),
                     "by": item.get("by", ""),
                     "comments": item.get("descendants", 0),
-                    "hn_url": f"https://news.ycombinator.com/item?id={i}"
+                    "hn_url": f"https://news.ycombinator.com/item?id={i}",
+                    "text": item.get("text", ""),
                 })
         except Exception as e:
             print(f"Error fetching HN item {i}: {e}")
@@ -57,7 +60,8 @@ def fetch_hn_ask(n=5):
                     "score": item.get("score", 0),
                     "by": item.get("by", ""),
                     "comments": item.get("descendants", 0),
-                    "hn_url": f"https://news.ycombinator.com/item?id={i}"
+                    "hn_url": f"https://news.ycombinator.com/item?id={i}",
+                    "text": item.get("text", ""),
                 })
         except Exception as e:
             print(f"Error fetching HN item {i}: {e}")
@@ -78,11 +82,54 @@ def fetch_hn_show(n=5):
                     "score": item.get("score", 0),
                     "by": item.get("by", ""),
                     "comments": item.get("descendants", 0),
-                    "hn_url": f"https://news.ycombinator.com/item?id={i}"
+                    "hn_url": f"https://news.ycombinator.com/item?id={i}",
+                    "text": item.get("text", ""),
                 })
         except Exception as e:
             print(f"Error fetching HN item {i}: {e}")
     return items
+
+
+def fetch_url_description(url, timeout=5):
+    """抓取目标 URL 的 og:description 或 meta description，取前 150 字"""
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}
+    try:
+        resp = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+        resp.raise_for_status()
+        # 只解析前 10KB，够拿到 head 了
+        text = resp.text[:10240]
+        soup = BeautifulSoup(text, 'html.parser')
+
+        # 优先 og:description
+        og = soup.find('meta', attrs={'property': 'og:description'})
+        if og and og.get('content'):
+            desc = og['content'].strip()
+        else:
+            meta = soup.find('meta', attrs={'name': 'description'})
+            if meta and meta.get('content'):
+                desc = meta['content'].strip()
+            else:
+                return ''
+
+        # 清理 HTML 实体，截断
+        desc = unescape(desc)
+        if len(desc) > 150:
+            desc = desc[:147] + '...'
+        return desc
+    except Exception:
+        return ''
+
+
+def _extract_hn_desc(item):
+    """从 HN item 提取摘要：优先 text 字段，否则为空（后续批量抓 URL）"""
+    text = item.get('text', '')
+    if text:
+        # HN text 是 HTML，去掉标签
+        clean = BeautifulSoup(text, 'html.parser').get_text().strip()
+        if len(clean) > 150:
+            clean = clean[:147] + '...'
+        return clean
+    return ''
 
 
 def fetch_github_trending():
@@ -151,9 +198,13 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
     def render_hn_list(items, title, icon):
         html = f'<section class="section"><h2>{icon} {title}</h2><ul class="list">'
         for i, item in enumerate(items, 1):
+            desc_html = ''
+            if item.get('description'):
+                desc_html = f'<p class="desc">{item["description"]}</p>'
             html += f'''<li class="item">
                 <a href="{item['url']}" target="_blank" class="title">{i}. {item['title']}</a>
                 <span class="meta">⭐ {item['score']} · {item['by']} · <a href="{item['hn_url']}">💬 {item['comments']}</a></span>
+                {desc_html}
             </li>'''
         html += '</ul></section>'
         return html
@@ -310,6 +361,37 @@ def main():
 
     print("Fetching GitHub Trending...")
     gh_trending = fetch_github_trending()
+
+    # 为 HN 条目补充 description
+    print("Enriching HN descriptions...")
+    all_hn = hn_top + hn_ask + hn_show
+    desc_count = 0
+
+    def enrich_item(item):
+        # 先尝试 HN 自带 text（Ask/Show 有）
+        desc = _extract_hn_desc(item)
+        if desc:
+            item['description'] = desc
+            return True
+        # 否则抓目标 URL 的 meta description
+        url = item.get('url', '')
+        if url and not url.startswith('https://news.ycombinator.com'):
+            desc = fetch_url_description(url)
+            item['description'] = desc
+            return bool(desc)
+        item['description'] = ''
+        return False
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(enrich_item, item): i for i, item in enumerate(all_hn)}
+        for future in as_completed(futures):
+            try:
+                if future.result():
+                    desc_count += 1
+            except Exception:
+                pass
+    print(f"  {desc_count}/{len(all_hn)} items got descriptions")
 
     # Generate index.html
     print("Generating index.html...")
