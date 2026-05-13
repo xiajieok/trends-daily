@@ -113,8 +113,8 @@ def fetch_url_description(url, timeout=5):
 
         # 清理 HTML 实体，截断
         desc = unescape(desc)
-        if len(desc) > 150:
-            desc = desc[:147] + '...'
+        if len(desc) > 500:
+            desc = desc[:497] + '...'
         return desc
     except Exception:
         return ''
@@ -126,8 +126,8 @@ def _extract_hn_desc(item):
     if text:
         # HN text 是 HTML，去掉标签
         clean = BeautifulSoup(text, 'html.parser').get_text().strip()
-        if len(clean) > 150:
-            clean = clean[:147] + '...'
+        if len(clean) > 500:
+            clean = clean[:497] + '...'
         return clean
     return ''
 
