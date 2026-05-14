@@ -193,39 +193,54 @@ def fetch_github_trending():
 def generate_html(hn_top, hn_ask, hn_show, gh_trending):
     """Generate index.html"""
 
-    def render_hn_list(items, title, icon):
-        html = f'<section class="section"><h2>{icon} {title}</h2><ul class="list">'
-        for i, item in enumerate(items, 1):
-            desc_html = ''
-            if item.get('description'):
-                desc_html = f'<p class="desc">{item["description"]}</p>'
-            html += f'''<li class="item">
-                <a href="{item['url']}" target="_blank" class="title">{i}. {item['title']}</a>
-                <span class="meta">⭐ {item['score']} · {item['by']} · <a href="{item['hn_url']}">💬 {item['comments']}</a></span>
+    def render_hn_item(item, i):
+        desc = item.get('description', '')
+        desc_html = f'<p class="desc">{desc}</p>' if desc else ''
+        return f'''<li class="item">
+            <span class="num">{i}</span>
+            <div class="content">
+                <a href="{item['url']}" target="_blank" class="title">{item['title']}</a>
+                <div class="meta">
+                    <span class="score">⭐ {item['score']}</span>
+                    <span class="by">by {item['by']}</span>
+                    <a href="{item['hn_url']}" target="_blank" class="comments">💬 {item['comments']}</a>
+                </div>
                 {desc_html}
-            </li>'''
-        html += '</ul></section>'
-        return html
+            </div>
+        </li>'''
+
+    def render_hn_list(items, title, icon):
+        items_html = '\n'.join(render_hn_item(item, i) for i, item in enumerate(items, 1))
+        return f'''<section class="section hn-section">
+    <h2>{icon} <span>{title}</span></h2>
+    <ul class="list hn-list">{items_html}</ul>
+</section>'''
+
+    def render_gh_item(item, i):
+        return f'''<li class="item">
+            <span class="num">{i}</span>
+            <div class="content">
+                <a href="{item['url']}" target="_blank" class="title">{item['name']}</a>
+                <div class="meta">
+                    <span class="score">⭐ {item['stars']}</span>
+                    <span class="today">+{item['today_stars']} today</span>
+                    <span class="lang">{item['language']}</span>
+                </div>
+                <p class="desc">{item['description']}</p>
+            </div>
+        </li>'''
 
     def render_gh_list(items):
-        html = '<section class="section"><h2>📦 GitHub 热门</h2><ul class="list">'
-        for i, item in enumerate(items, 1):
-            html += f'''<li class="item">
-                <a href="{item['url']}" target="_blank" class="title">{i}. {item['name']}</a>
-                <span class="meta">⭐ {item['stars']} (今日+{item['today_stars']}) · {item['language']}</span>
-                <p class="desc">{item['description']}</p>
-            </li>'''
-        html += '</ul></section>'
-        return html
+        items_html = '\n'.join(render_gh_item(item, i) for i, item in enumerate(items, 1))
+        return f'''<section class="section gh-section">
+    <h2>📦 <span>GitHub Trending</span></h2>
+    <ul class="list gh-list">{items_html}</ul>
+</section>'''
 
-    hn_top_html = render_hn_list(hn_top, 'HN 热门 Top 20', '🔥')
-    # HN Top 占满整行
-    hn_top_html = hn_top_html.replace('<section class="section">', '<section class="section full">')
-    hn_ask_html = render_hn_list(hn_ask, 'Ask HN — 大家在问', '💬')
-    hn_show_html = render_hn_list(hn_show, 'Show HN — 大家在秀', '🎨')
+    hn_top_html = render_hn_list(hn_top, 'Hacker News Top', '🔥')
+    hn_ask_html = render_hn_list(hn_ask, 'Ask HN', '💬')
+    hn_show_html = render_hn_list(hn_show, 'Show HN', '🎨')
     gh_html = render_gh_list(gh_trending)
-    # GitHub 也占满整行
-    gh_html = gh_html.replace('<section class="section">', '<section class="section full">')
 
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
@@ -234,51 +249,297 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>趋势日报 {today_str}</title>
     <style>
+        :root {{
+            --bg: #0a0a0f;
+            --card: #111118;
+            --border: #1e1e2e;
+            --text: #e4e4e7;
+            --muted: #71717a;
+            --accent: #f97316;
+            --hn: #ff6600;
+            --gh: #238636;
+        }}
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; padding: 20px; line-height: 1.6; }}
-        .container {{ max-width: 1400px; margin: 0 auto; }}
-        header {{ text-align: center; margin-bottom: 24px; padding: 16px 20px; background: #161b22; border-radius: 12px; }}
-        header h1 {{ font-size: 1.6em; margin-bottom: 6px; }}
-        header .date {{ color: #8b949e; font-size: 0.9em; }}
-        .grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }}
-        .section {{ background: #161b22; border-radius: 10px; padding: 16px; }}
+        html {{ scroll-behavior: smooth; }}
+        body {{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }}
+        a {{ color: inherit; text-decoration: none; }}
+        .container {{ max-width: 1200px; margin: 0 auto; padding: 32px 20px; }}
+
+        /* Header */
+        header {{
+            text-align: center;
+            margin-bottom: 40px;
+        }}
+        header h1 {{
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }}
+        header h1 span {{ color: var(--accent); }}
+        header .date {{
+            color: var(--muted);
+            font-size: 0.9rem;
+        }}
+
+        /* Grid */
+        .grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }}
         .section.full {{ grid-column: 1 / -1; }}
-        .section h2 {{ font-size: 1.1em; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #30363d; }}
+
+        /* Section */
+        .section {{
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }}
+        .section h2 {{
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }}
+        .section h2 span {{ color: var(--muted); }}
+        .hn-section h2 {{ color: var(--hn); }}
+        .gh-section h2 {{ color: var(--gh); }}
+
+        /* List */
         .list {{ list-style: none; }}
-        .item {{ padding: 10px 0; border-bottom: 1px solid #21262d; }}
+        .item {{
+            display: flex;
+            gap: 12px;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.15s;
+        }}
         .item:last-child {{ border-bottom: none; }}
-        .title {{ color: #58a6ff; text-decoration: none; font-size: 0.95em; }}
-        .title:hover {{ text-decoration: underline; }}
-        .meta {{ display: block; color: #8b949e; font-size: 0.82em; margin-top: 3px; }}
-        .meta a {{ color: #8b949e; text-decoration: none; }}
-        .meta a:hover {{ text-decoration: underline; }}
-        .desc {{ color: #8b949e; font-size: 0.85em; margin-top: 5px; line-height: 1.5; }}
-        .footer {{ text-align: center; color: #8b949e; font-size: 0.82em; margin-top: 20px; }}
-        .footer a {{ color: #58a6ff; text-decoration: none; }}
-        @media (max-width: 900px) {{ .grid {{ grid-template-columns: 1fr; }} }}
-        @media (max-width: 600px) {{ body {{ padding: 10px; }} .section {{ padding: 12px; }} }}
+        .item:hover {{ background: rgba(255,255,255,0.02); }}
+        .num {{
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: var(--border);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--muted);
+        }}
+        .content {{ flex: 1; min-width: 0; }}
+        .title {{
+            color: var(--text);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }}
+        .title:hover {{ color: var(--accent); }}
+        .meta {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.78rem;
+            color: var(--muted);
+        }}
+        .meta .score {{ color: #fbbf24; }}
+        .meta a.comments {{ color: var(--muted); }}
+        .meta a.comments:hover {{ color: var(--text); }}
+        .desc {{
+            color: var(--muted);
+            font-size: 0.82rem;
+            margin-top: 6px;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }}
+
+        /* Footer */
+        footer {{
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }}
+        footer a {{ color: var(--accent); }}
+        footer a:hover {{ text-decoration: underline; }}
+        footer .sources {{ margin-bottom: 8px; }}
+
+        /* Archive link */
+        .archive-link {{
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 16px;
+            transition: all 0.15s;
+        }}
+        .archive-link:hover {{
+            border-color: var(--accent);
+            color: var(--accent);
+        }}
+
+        /* Responsive */
+        @media (max-width: 900px) {{
+            .grid {{ grid-template-columns: 1fr; }}
+            .section.full {{ grid-column: 1; }}
+        }}
+        @media (max-width: 600px) {{
+            .container {{ padding: 20px 12px; }}
+            header h1 {{ font-size: 1.5rem; }}
+            .item {{ padding: 12px 14px; }}
+            .section h2 {{ padding: 12px 14px; }}
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 趋势日报</h1>
-            <p class="date">{today_str} · HN Top + Ask/Show + GitHub Trending</p>
+            <h1>📊 趋势<span>日报</span></h1>
+            <p class="date">{today_str} · Hacker News + GitHub Trending</p>
         </header>
+
         <div class="grid">
             {hn_top_html}
             {hn_ask_html}
             {hn_show_html}
             {gh_html}
         </div>
-        <footer class="footer">
-            <p>📦 数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> · <a href="https://news.ycombinator.com" target="_blank">Hacker News</a></p>
-            <p>📅 历史存档: <a href="./archive/" target="_blank">archive/</a></p>
+
+        <footer>
+            <p class="sources">
+                数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> ·
+                <a href="https://news.ycombinator.com" target="_blank">Hacker News</a>
+            </p>
+            <a href="./archive.html" class="archive-link">📁 历史存档</a>
         </footer>
     </div>
 </body>
 </html>'''
     return html
+
+
+def generate_archive_index():
+    """Generate archive/index.html listing all archived days"""
+    ARCHIVE_INDEX = ARCHIVE_DIR / "index.html"
+
+    # 读取所有归档，按日期倒序
+    archives = sorted(ARCHIVE_DIR.glob("*.md"), reverse=True)
+
+    def render_archive_item(path):
+        date_str = path.stem  # e.g. "2026-05-14"
+        # 从 md 文件中提取第一条 HN title 作为预览
+        try:
+            content = path.read_text(encoding='utf-8')
+            first_line = content.split('\n')[2]  # 第三行是第一个 HN 条目
+            # 提取标题
+            import re
+            match = re.search(r'1\.\s+\[(.+?)\]', first_line)
+            preview = match.group(1)[:50] + '...' if match and len(match.group(1)) > 50 else (match.group(1) if match else '')
+        except Exception:
+            preview = ''
+
+        return f'''<a href="{date_str}.md" class="card">
+            <span class="date">{date_str}</span>
+            <span class="preview">{preview}</span>
+        </a>'''
+
+    cards_html = '\n'.join(render_archive_item(p) for p in archives)
+
+    html = f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史存档 — 趋势日报</title>
+    <style>
+        :root {{
+            --bg: #0a0a0f;
+            --card: #111118;
+            --border: #1e1e2e;
+            --text: #e4e4e7;
+            --muted: #71717a;
+            --accent: #f97316;
+        }}
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }}
+        a {{ color: inherit; text-decoration: none; }}
+        .container {{ max-width: 900px; margin: 0 auto; padding: 40px 20px; }}
+        header {{ margin-bottom: 32px; }}
+        header h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }}
+        header h1 span {{ color: var(--accent); }}
+        header .sub {{ color: var(--muted); font-size: 0.9rem; }}
+        .back {{ display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }}
+        .back:hover {{ color: var(--accent); }}
+        .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }}
+        .card {{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px 18px;
+            transition: all 0.15s;
+        }}
+        .card:hover {{ border-color: var(--accent); transform: translateY(-2px); }}
+        .card .date {{ font-weight: 600; font-size: 0.95rem; }}
+        .card .preview {{ color: var(--muted); font-size: 0.82rem; line-height: 1.4; }}
+        .empty {{ color: var(--muted); text-align: center; padding: 60px 0; }}
+        footer {{ text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.82rem; }}
+        footer a {{ color: var(--accent); }}
+        @media (max-width: 600px) {{
+            .container {{ padding: 20px 12px; }}
+            .grid {{ grid-template-columns: 1fr; }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back">← 回到今日</a>
+        <header>
+            <h1>📁 历史<span>存档</span></h1>
+            <p class="sub">共 {len(archives)} 期</p>
+        </header>
+        <div class="grid">
+            {cards_html if cards_html else '<p class="empty">暂无存档</p>'}
+        </div>
+        <footer>
+            <p>数据来源: <a href="https://news.ycombinator.com" target="_blank">Hacker News</a> · <a href="https://github.com/trending" target="_blank">GitHub Trending</a></p>
+        </footer>
+    </div>
+</body>
+</html>'''
+    ARCHIVE_INDEX.write_text(html, encoding='utf-8')
 
 
 def generate_archive_md(hn_top, hn_ask, hn_show, gh_trending):
@@ -412,6 +673,10 @@ def main():
     md = generate_archive_md(hn_top, hn_ask, hn_show, gh_trending)
     archive_path = ARCHIVE_DIR / f"{today_str}.md"
     archive_path.write_text(md, encoding='utf-8')
+
+    # Generate archive index page
+    print("Generating archive index...")
+    generate_archive_index()
 
     # Build WeChat message
     wechat_msg = build_wechat_message(hn_top, hn_ask, hn_show, gh_trending)

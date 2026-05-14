@@ -5,243 +5,789 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>趋势日报 2026-05-14</title>
     <style>
+        :root {
+            --bg: #0a0a0f;
+            --card: #111118;
+            --border: #1e1e2e;
+            --text: #e4e4e7;
+            --muted: #71717a;
+            --accent: #f97316;
+            --hn: #ff6600;
+            --gh: #238636;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; padding: 20px; line-height: 1.6; }
-        .container { max-width: 1400px; margin: 0 auto; }
-        header { text-align: center; margin-bottom: 24px; padding: 16px 20px; background: #161b22; border-radius: 12px; }
-        header h1 { font-size: 1.6em; margin-bottom: 6px; }
-        header .date { color: #8b949e; font-size: 0.9em; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        .section { background: #161b22; border-radius: 10px; padding: 16px; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 32px 20px; }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        header h1 span { color: var(--accent); }
+        header .date {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
         .section.full { grid-column: 1 / -1; }
-        .section h2 { font-size: 1.1em; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #30363d; }
+
+        /* Section */
+        .section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .section h2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section h2 span { color: var(--muted); }
+        .hn-section h2 { color: var(--hn); }
+        .gh-section h2 { color: var(--gh); }
+
+        /* List */
         .list { list-style: none; }
-        .item { padding: 10px 0; border-bottom: 1px solid #21262d; }
+        .item {
+            display: flex;
+            gap: 12px;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.15s;
+        }
         .item:last-child { border-bottom: none; }
-        .title { color: #58a6ff; text-decoration: none; font-size: 0.95em; }
-        .title:hover { text-decoration: underline; }
-        .meta { display: block; color: #8b949e; font-size: 0.82em; margin-top: 3px; }
-        .meta a { color: #8b949e; text-decoration: none; }
-        .meta a:hover { text-decoration: underline; }
-        .desc { color: #8b949e; font-size: 0.85em; margin-top: 5px; line-height: 1.5; }
-        .footer { text-align: center; color: #8b949e; font-size: 0.82em; margin-top: 20px; }
-        .footer a { color: #58a6ff; text-decoration: none; }
-        @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
-        @media (max-width: 600px) { body { padding: 10px; } .section { padding: 12px; } }
+        .item:hover { background: rgba(255,255,255,0.02); }
+        .num {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: var(--border);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+        .content { flex: 1; min-width: 0; }
+        .title {
+            color: var(--text);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        .title:hover { color: var(--accent); }
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.78rem;
+            color: var(--muted);
+        }
+        .meta .score { color: #fbbf24; }
+        .meta a.comments { color: var(--muted); }
+        .meta a.comments:hover { color: var(--text); }
+        .desc {
+            color: var(--muted);
+            font-size: 0.82rem;
+            margin-top: 6px;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+        footer a { color: var(--accent); }
+        footer a:hover { text-decoration: underline; }
+        footer .sources { margin-bottom: 8px; }
+
+        /* Archive link */
+        .archive-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 16px;
+            transition: all 0.15s;
+        }
+        .archive-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .grid { grid-template-columns: 1fr; }
+            .section.full { grid-column: 1; }
+        }
+        @media (max-width: 600px) {
+            .container { padding: 20px 12px; }
+            header h1 { font-size: 1.5rem; }
+            .item { padding: 12px 14px; }
+            .section h2 { padding: 12px 14px; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 趋势日报</h1>
-            <p class="date">2026-05-14 · HN Top + Ask/Show + GitHub Trending</p>
+            <h1>📊 趋势<span>日报</span></h1>
+            <p class="date">2026-05-14 · Hacker News + GitHub Trending</p>
         </header>
+
         <div class="grid">
-            <section class="section full"><h2>🔥 HN 热门 Top 20</h2><ul class="list"><li class="item">
-                <a href="https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/" target="_blank" class="title">1. Linux gaming is faster because Windows APIs are becoming Linux kernel features</a>
-                <span class="meta">⭐ 497 · haunter · <a href="https://news.ycombinator.com/item?id=48087887">💬 326</a></span>
+            <section class="section hn-section">
+    <h2>🔥 <span>Hacker News Top</span></h2>
+    <ul class="list hn-list"><li class="item">
+            <span class="num">1</span>
+            <div class="content">
+                <a href="https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/" target="_blank" class="title">Linux gaming is faster because Windows APIs are becoming Linux kernel features</a>
+                <div class="meta">
+                    <span class="score">⭐ 497</span>
+                    <span class="by">by haunter</span>
+                    <a href="https://news.ycombinator.com/item?id=48087887" target="_blank" class="comments">💬 326</a>
+                </div>
                 <p class="desc">As time goes on, fewer games than ever are unplayable on Linux</p>
-            </li><li class="item">
-                <a href="https://personalaisafety.com/p/the-other-half-of-ai-safety" target="_blank" class="title">2. The Other Half of AI Safety</a>
-                <span class="meta">⭐ 11 · sofiaqt · <a href="https://news.ycombinator.com/item?id=48129561">💬 5</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">2</span>
+            <div class="content">
+                <a href="https://personalaisafety.com/p/the-other-half-of-ai-safety" target="_blank" class="title">The Other Half of AI Safety</a>
+                <div class="meta">
+                    <span class="score">⭐ 11</span>
+                    <span class="by">by sofiaqt</span>
+                    <a href="https://news.ycombinator.com/item?id=48129561" target="_blank" class="comments">💬 5</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://fredchan.org/blog/locality-domains-guide/" target="_blank" class="title">3. Setting up a free *.city.state.us locality domain (2025)</a>
-                <span class="meta">⭐ 474 · speckx · <a href="https://news.ycombinator.com/item?id=48122635">💬 153</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">3</span>
+            <div class="content">
+                <a href="https://fredchan.org/blog/locality-domains-guide/" target="_blank" class="title">Setting up a free *.city.state.us locality domain (2025)</a>
+                <div class="meta">
+                    <span class="score">⭐ 474</span>
+                    <span class="by">by speckx</span>
+                    <a href="https://news.ycombinator.com/item?id=48122635" target="_blank" class="comments">💬 153</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://laurent.le-brun.eu/blog/a-history-of-ides-at-google" target="_blank" class="title">4. A History of IDEs at Google</a>
-                <span class="meta">⭐ 260 · laurentlb · <a href="https://news.ycombinator.com/item?id=48073979">💬 191</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">4</span>
+            <div class="content">
+                <a href="https://laurent.le-brun.eu/blog/a-history-of-ides-at-google" target="_blank" class="title">A History of IDEs at Google</a>
+                <div class="meta">
+                    <span class="score">⭐ 260</span>
+                    <span class="by">by laurentlb</span>
+                    <a href="https://news.ycombinator.com/item?id=48073979" target="_blank" class="comments">💬 191</a>
+                </div>
                 <p class="desc">Laurent Le Brun's blog</p>
-            </li><li class="item">
-                <a href="https://www.jackhogan.me/blog/marco-polo" target="_blank" class="title">5. Marco Polo: Finding a friend with only distance and motion</a>
-                <span class="meta">⭐ 28 · jackhogan11 · <a href="https://news.ycombinator.com/item?id=48095782">💬 3</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">5</span>
+            <div class="content">
+                <a href="https://www.jackhogan.me/blog/marco-polo" target="_blank" class="title">Marco Polo: Finding a friend with only distance and motion</a>
+                <div class="meta">
+                    <span class="score">⭐ 28</span>
+                    <span class="by">by jackhogan11</span>
+                    <a href="https://news.ycombinator.com/item?id=48095782" target="_blank" class="comments">💬 3</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://ardoedo.it/kempelen/" target="_blank" class="title">6. Chess puzzle I found in my dad's old book</a>
-                <span class="meta">⭐ 70 · Eswo · <a href="https://news.ycombinator.com/item?id=48096760">💬 25</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">6</span>
+            <div class="content">
+                <a href="https://ardoedo.it/kempelen/" target="_blank" class="title">Chess puzzle I found in my dad's old book</a>
+                <div class="meta">
+                    <span class="score">⭐ 70</span>
+                    <span class="by">by Eswo</span>
+                    <a href="https://news.ycombinator.com/item?id=48096760" target="_blank" class="comments">💬 25</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://sockpuppet.org/blog/2026/05/12/emacsification/" target="_blank" class="title">7. The Emacsification of Software</a>
-                <span class="meta">⭐ 184 · rdslw · <a href="https://news.ycombinator.com/item?id=48118727">💬 116</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">7</span>
+            <div class="content">
+                <a href="https://sockpuppet.org/blog/2026/05/12/emacsification/" target="_blank" class="title">The Emacsification of Software</a>
+                <div class="meta">
+                    <span class="score">⭐ 184</span>
+                    <span class="by">by rdslw</span>
+                    <a href="https://news.ycombinator.com/item?id=48118727" target="_blank" class="comments">💬 116</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent" target="_blank" class="title">8. Princeton mandates proctoring for in-person exams, upending 133 year precedent</a>
-                <span class="meta">⭐ 228 · bookofjoe · <a href="https://news.ycombinator.com/item?id=48126848">💬 316</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">8</span>
+            <div class="content">
+                <a href="https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent" target="_blank" class="title">Princeton mandates proctoring for in-person exams, upending 133 year precedent</a>
+                <div class="meta">
+                    <span class="score">⭐ 228</span>
+                    <span class="by">by bookofjoe</span>
+                    <a href="https://news.ycombinator.com/item?id=48126848" target="_blank" class="comments">💬 316</a>
+                </div>
                 <p class="desc">The faculty voted Monday to require universal proctoring for all in-person examinations in response to mounting concerns over AI-assisted cheating and declining student reporting of Honor Code violations. The policy, which takes effect July 1, preserves the student-run Honor Committee system while requiring instructors to serve as witnesses.</p>
-            </li><li class="item">
-                <a href="https://github.com/nooga/xsofy" target="_blank" class="title">9. Xs of Y – roguelike that names itself every run. Written in 4kLoC</a>
-                <span class="meta">⭐ 152 · andsoitis · <a href="https://news.ycombinator.com/item?id=48080755">💬 66</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">9</span>
+            <div class="content">
+                <a href="https://github.com/nooga/xsofy" target="_blank" class="title">Xs of Y – roguelike that names itself every run. Written in 4kLoC</a>
+                <div class="meta">
+                    <span class="score">⭐ 152</span>
+                    <span class="by">by andsoitis</span>
+                    <a href="https://news.ycombinator.com/item?id=48080755" target="_blank" class="comments">💬 66</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://www.tryardent.com/" target="_blank" class="title">10. Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration</a>
-                <span class="meta">⭐ 63 · vc289 · <a href="https://news.ycombinator.com/item?id=48124436">💬 26</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">10</span>
+            <div class="content">
+                <a href="https://www.tryardent.com/" target="_blank" class="title">Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration</a>
+                <div class="meta">
+                    <span class="score">⭐ 63</span>
+                    <span class="by">by vc289</span>
+                    <a href="https://news.ycombinator.com/item?id=48124436" target="_blank" class="comments">💬 26</a>
+                </div>
                 <p class="desc">Hey HN! We’re Vikram and Evan from Ardent (https://tryardent.com). We're building database sandboxes for you and your coding agents.In the last two years coding agents have gotten dramatically more capable at handling complex engineering tasks. But without access to a realistic sandbox at the DB layer for testing, they ship garbage that can take down production databases. I spent over a year building an AI Data Engineer that failed for this exact reason. Evan spent the last 12 years in data e...</p>
-            </li><li class="item">
-                <a href="https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/" target="_blank" class="title">11. Twin brothers wipe 96 government databases minutes after being fired</a>
-                <span class="meta">⭐ 286 · jnord · <a href="https://news.ycombinator.com/item?id=48115438">💬 217</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">11</span>
+            <div class="content">
+                <a href="https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/" target="_blank" class="title">Twin brothers wipe 96 government databases minutes after being fired</a>
+                <div class="meta">
+                    <span class="score">⭐ 286</span>
+                    <span class="by">by jnord</span>
+                    <a href="https://news.ycombinator.com/item?id=48115438" target="_blank" class="comments">💬 217</a>
+                </div>
                 <p class="desc">A case study in why credentials are revoked before firings.</p>
-            </li><li class="item">
-                <a href="https://grantmestrength.github.io/S100/" target="_blank" class="title">12. S-100 Virtual Workbench</a>
-                <span class="meta">⭐ 96 · rbanffy · <a href="https://news.ycombinator.com/item?id=48123546">💬 20</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">12</span>
+            <div class="content">
+                <a href="https://grantmestrength.github.io/S100/" target="_blank" class="title">S-100 Virtual Workbench</a>
+                <div class="meta">
+                    <span class="score">⭐ 96</span>
+                    <span class="by">by rbanffy</span>
+                    <a href="https://news.ycombinator.com/item?id=48123546" target="_blank" class="comments">💬 20</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://avkcode.github.io/blog/us-winning-ai-race.html" target="_blank" class="title">13. The US is winning the AI race where it matters most: commercialization</a>
-                <span class="meta">⭐ 160 · akrylov · <a href="https://news.ycombinator.com/item?id=48121929">💬 443</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">13</span>
+            <div class="content">
+                <a href="https://avkcode.github.io/blog/us-winning-ai-race.html" target="_blank" class="title">The US is winning the AI race where it matters most: commercialization</a>
+                <div class="meta">
+                    <span class="score">⭐ 160</span>
+                    <span class="by">by akrylov</span>
+                    <a href="https://news.ycombinator.com/item?id=48121929" target="_blank" class="comments">💬 443</a>
+                </div>
                 <p class="desc">Energy matters for AI, but the decisive layers are cloud infrastructure, data, and commercialization. On those layers the United States is ahead by a wide margin.</p>
-            </li><li class="item">
-                <a href="https://discuss.python.org/t/reverting-the-incremental-gc-in-python-3-14-and-3-15/107014" target="_blank" class="title">14. Reverting the incremental GC in Python 3.14 and 3.15</a>
-                <span class="meta">⭐ 194 · curiousgal · <a href="https://news.ycombinator.com/item?id=48077924">💬 75</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">14</span>
+            <div class="content">
+                <a href="https://discuss.python.org/t/reverting-the-incremental-gc-in-python-3-14-and-3-15/107014" target="_blank" class="title">Reverting the incremental GC in Python 3.14 and 3.15</a>
+                <div class="meta">
+                    <span class="score">⭐ 194</span>
+                    <span class="by">by curiousgal</span>
+                    <a href="https://news.ycombinator.com/item?id=48077924" target="_blank" class="comments">💬 75</a>
+                </div>
                 <p class="desc">Python 3.14 shipped with a new incremental garbage collector. However, we’ve had a number of reports of significant memory pressure in production environments.  We’ve decided to revert it in both 3.14 and 3.15, and go back to the generational GC from 3.13.  3.15 is still in alpha, so such changes are fine. For 3.14, it is unusual for a patch release, but the old GC is a known quantity, the new incremental GC didn’t go through the PEP process, and was rolled back just before the final release of ...</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="title">15. Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing</a>
-                <span class="meta">⭐ 139 · pycassa · <a href="https://news.ycombinator.com/item?id=48128003">💬 58</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">15</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="title">Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing</a>
+                <div class="meta">
+                    <span class="score">⭐ 139</span>
+                    <span class="by">by pycassa</span>
+                    <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="comments">💬 58</a>
+                </div>
                 <p class="desc">I wanted to try codex after 5 months of claude code max subscription. And then I went back to my previous projects on claude design only to realize I don't have access to them anymore.This is a first. I never lost access to any of my past sessions because I unsubscribed in any of the LLM apps.I actually wanted to try out codex previously, but had similar experience with my credits. They gave extra credits equivalent to my montly subscription price, with some time limit because claude has so m...</p>
-            </li><li class="item">
-                <a href="https://andreafortuna.org/2026/05/13/amarcord/" target="_blank" class="title">16. A sentimental tour of late 1990s and early 2000s hacking tools</a>
-                <span class="meta">⭐ 43 · speckx · <a href="https://news.ycombinator.com/item?id=48125557">💬 14</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">16</span>
+            <div class="content">
+                <a href="https://andreafortuna.org/2026/05/13/amarcord/" target="_blank" class="title">A sentimental tour of late 1990s and early 2000s hacking tools</a>
+                <div class="meta">
+                    <span class="score">⭐ 43</span>
+                    <span class="by">by speckx</span>
+                    <a href="https://news.ycombinator.com/item?id=48125557" target="_blank" class="comments">💬 14</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://www.sciencedaily.com/releases/2026/05/260510030950.htm" target="_blank" class="title">17. New stainless steel can survive conditions for hydrogen production in seawater</a>
-                <span class="meta">⭐ 294 · HardwareLust · <a href="https://news.ycombinator.com/item?id=48089921">💬 137</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">17</span>
+            <div class="content">
+                <a href="https://www.sciencedaily.com/releases/2026/05/260510030950.htm" target="_blank" class="title">New stainless steel can survive conditions for hydrogen production in seawater</a>
+                <div class="meta">
+                    <span class="score">⭐ 294</span>
+                    <span class="by">by HardwareLust</span>
+                    <a href="https://news.ycombinator.com/item?id=48089921" target="_blank" class="comments">💬 137</a>
+                </div>
                 <p class="desc">https://www.sciencedirect.com/science/article/abs/pii/S13697...</p>
-            </li><li class="item">
-                <a href="https://github.com/monkeysee-ai/rotunda" target="_blank" class="title">18. Show HN: Rotunda - A browser built for agents with simulated typing</a>
-                <span class="meta">⭐ 10 · icyfox · <a href="https://news.ycombinator.com/item?id=48121824">💬 0</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">18</span>
+            <div class="content">
+                <a href="https://github.com/monkeysee-ai/rotunda" target="_blank" class="title">Show HN: Rotunda - A browser built for agents with simulated typing</a>
+                <div class="meta">
+                    <span class="score">⭐ 10</span>
+                    <span class="by">by icyfox</span>
+                    <a href="https://news.ycombinator.com/item?id=48121824" target="_blank" class="comments">💬 0</a>
+                </div>
                 <p class="desc">Hi HN! Pierce here.Rotunda is a firefox fork primarily intended for agent use, which I’ve been hacking on nights/weekends.There was a [lengthy](https://news.ycombinator.com/item?id=48024859) discussion last week on how expensive computer use models are. The cost is going to drop eventually, but I think on some level it's still usually the wrong primitive. The web gives us access to beautiful structured formats, plaintext, etc... why throw that away if we don't have to?I realized at some point...</p>
-            </li><li class="item">
-                <a href="https://www.adn.com/alaska-news/science/2026/05/08/after-3-decades-of-splendid-scientific-communication-this-ones-for-you-ned/" target="_blank" class="title">19. After 3 decades of splendid scientific communication, this one's for you, Ned</a>
-                <span class="meta">⭐ 9 · rolph · <a href="https://news.ycombinator.com/item?id=48085423">💬 0</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">19</span>
+            <div class="content">
+                <a href="https://www.adn.com/alaska-news/science/2026/05/08/after-3-decades-of-splendid-scientific-communication-this-ones-for-you-ned/" target="_blank" class="title">After 3 decades of splendid scientific communication, this one's for you, Ned</a>
+                <div class="meta">
+                    <span class="score">⭐ 9</span>
+                    <span class="by">by rolph</span>
+                    <a href="https://news.ycombinator.com/item?id=48085423" target="_blank" class="comments">💬 0</a>
+                </div>
                 
-            </li><li class="item">
-                <a href="https://www.theverge.com/tech/929091/meta-ai-threads-account-block" target="_blank" class="title">20. Meta won't let you block its AI account on Threads</a>
-                <span class="meta">⭐ 103 · logickkk1 · <a href="https://news.ycombinator.com/item?id=48126981">💬 33</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">20</span>
+            <div class="content">
+                <a href="https://www.theverge.com/tech/929091/meta-ai-threads-account-block" target="_blank" class="title">Meta won't let you block its AI account on Threads</a>
+                <div class="meta">
+                    <span class="score">⭐ 103</span>
+                    <span class="by">by logickkk1</span>
+                    <a href="https://news.ycombinator.com/item?id=48126981" target="_blank" class="comments">💬 33</a>
+                </div>
                 <p class="desc">Hey Meta, why are Threads users angry?</p>
-            </li></ul></section>
-            <section class="section"><h2>💬 Ask HN — 大家在问</h2><ul class="list"><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="title">1. Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing</a>
-                <span class="meta">⭐ 139 · pycassa · <a href="https://news.ycombinator.com/item?id=48128003">💬 58</a></span>
+            </div>
+        </li></ul>
+</section>
+            <section class="section hn-section">
+    <h2>💬 <span>Ask HN</span></h2>
+    <ul class="list hn-list"><li class="item">
+            <span class="num">1</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="title">Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing</a>
+                <div class="meta">
+                    <span class="score">⭐ 139</span>
+                    <span class="by">by pycassa</span>
+                    <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="comments">💬 58</a>
+                </div>
                 <p class="desc">I wanted to try codex after 5 months of claude code max subscription. And then I went back to my previous projects on claude design only to realize I don't have access to them anymore.This is a first. I never lost access to any of my past sessions because I unsubscribed in any of the LLM apps.I actually wanted to try out codex previously, but had similar experience with my credits. They gave extra credits equivalent to my montly subscription price, with some time limit because claude has so m...</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48122103" target="_blank" class="title">2. Ask HN: What are you working on (non-AI)?</a>
-                <span class="meta">⭐ 28 · BrunoBernardino · <a href="https://news.ycombinator.com/item?id=48122103">💬 35</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">2</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48122103" target="_blank" class="title">Ask HN: What are you working on (non-AI)?</a>
+                <div class="meta">
+                    <span class="score">⭐ 28</span>
+                    <span class="by">by BrunoBernardino</span>
+                    <a href="https://news.ycombinator.com/item?id=48122103" target="_blank" class="comments">💬 35</a>
+                </div>
                 <p class="desc">Please don't turn this into an inflammatory post.Regardless of "AI" being good or bad (it's not even just one thing as many of you know), I feel like the "What are you working on?" posts are drowning in things that use AI for something and/or are clearly "AI slop".I'd like to look at things other humans have been doing (even if they used a bit of some kind of AI for assistance), that aren't a product or tool that uses AI for something.I know it exists (and I use and build some), but it's incr...</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48126435" target="_blank" class="title">3. Ask HN: Is Anthropic doing too much vibe coding?</a>
-                <span class="meta">⭐ 4 · terabytest · <a href="https://news.ycombinator.com/item?id=48126435">💬 3</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">3</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48126435" target="_blank" class="title">Ask HN: Is Anthropic doing too much vibe coding?</a>
+                <div class="meta">
+                    <span class="score">⭐ 4</span>
+                    <span class="by">by terabytest</span>
+                    <a href="https://news.ycombinator.com/item?id=48126435" target="_blank" class="comments">💬 3</a>
+                </div>
                 <p class="desc">The Claude app and Claude Code have been an unusable and buggy mess for me lately, has anyone else been experiencing this? Most of my messages get swallowed after sending them or the responses get interrupted or dropped. Sometimes entire conversations disappear from the sidebar only to reappear later. I’ve learnt that when a message appears not to have gone through or have errored midway, it often comes back with a valid response if I wait a bit and then restart the app.I wonder if it has any...</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48085993" target="_blank" class="title">4. Ask HN: What are you working on? (May 2026)</a>
-                <span class="meta">⭐ 279 · david927 · <a href="https://news.ycombinator.com/item?id=48085993">💬 1069</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">4</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48085993" target="_blank" class="title">Ask HN: What are you working on? (May 2026)</a>
+                <div class="meta">
+                    <span class="score">⭐ 279</span>
+                    <span class="by">by david927</span>
+                    <a href="https://news.ycombinator.com/item?id=48085993" target="_blank" class="comments">💬 1069</a>
+                </div>
                 <p class="desc">What are you working on?  Any new ideas that you're thinking about?</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48060054" target="_blank" class="title">5. Ask HN: We just had an actual UUID v4 collision...</a>
-                <span class="meta">⭐ 470 · mittermayr · <a href="https://news.ycombinator.com/item?id=48060054">💬 335</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">5</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48060054" target="_blank" class="title">Ask HN: We just had an actual UUID v4 collision...</a>
+                <div class="meta">
+                    <span class="score">⭐ 470</span>
+                    <span class="by">by mittermayr</span>
+                    <a href="https://news.ycombinator.com/item?id=48060054" target="_blank" class="comments">💬 335</a>
+                </div>
                 <p class="desc">I know what you're thinking... and I still can't believe it, but...This morning, our database flagged a duplicate UUID (v4). I checked, thinking it may have been a double-insert bug or something, but no.The original UUID was from a record added in 2025 (about a year ago), and today the system inserted a new document with a fresh UUIDv4 and it came up with the exact same one:b6133fd6-70fe-4fe3-bed6-8ca8fc9386cdWe're using this:
 https://www.npmjs.com/package/uuidI thought this is technically im...</p>
-            </li></ul></section>
-            <section class="section"><h2>🎨 Show HN — 大家在秀</h2><ul class="list"><li class="item">
-                <a href="https://github.com/monkeysee-ai/rotunda" target="_blank" class="title">1. Show HN: Rotunda - A browser built for agents with simulated typing</a>
-                <span class="meta">⭐ 10 · icyfox · <a href="https://news.ycombinator.com/item?id=48121824">💬 0</a></span>
+            </div>
+        </li></ul>
+</section>
+            <section class="section hn-section">
+    <h2>🎨 <span>Show HN</span></h2>
+    <ul class="list hn-list"><li class="item">
+            <span class="num">1</span>
+            <div class="content">
+                <a href="https://github.com/monkeysee-ai/rotunda" target="_blank" class="title">Show HN: Rotunda - A browser built for agents with simulated typing</a>
+                <div class="meta">
+                    <span class="score">⭐ 10</span>
+                    <span class="by">by icyfox</span>
+                    <a href="https://news.ycombinator.com/item?id=48121824" target="_blank" class="comments">💬 0</a>
+                </div>
                 <p class="desc">Hi HN! Pierce here.Rotunda is a firefox fork primarily intended for agent use, which I’ve been hacking on nights/weekends.There was a [lengthy](https://news.ycombinator.com/item?id=48024859) discussion last week on how expensive computer use models are. The cost is going to drop eventually, but I think on some level it's still usually the wrong primitive. The web gives us access to beautiful structured formats, plaintext, etc... why throw that away if we don't have to?I realized at some point...</p>
-            </li><li class="item">
-                <a href="https://github.com/cactus-compute/needle" target="_blank" class="title">2. Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a>
-                <span class="meta">⭐ 637 · HenryNdubuaku · <a href="https://news.ycombinator.com/item?id=48111896">💬 182</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">2</span>
+            <div class="content">
+                <a href="https://github.com/cactus-compute/needle" target="_blank" class="title">Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a>
+                <div class="meta">
+                    <span class="score">⭐ 637</span>
+                    <span class="by">by HenryNdubuaku</span>
+                    <a href="https://news.ycombinator.com/item?id=48111896" target="_blank" class="comments">💬 182</a>
+                </div>
                 <p class="desc">Hey HN, Henry here from Cactus. We open-sourced Needle, a 26M parameter function-calling (tool use) model. It runs at 6000 tok/s prefill and 1200 tok/s decode on consumer devices.We were always frustrated by the little effort made towards building agentic models that run on budget phones, so we conducted investigations that led to an observation: agentic experiences are built upon tool calling, and massive models are overkill for it. Tool calling is fundamentally retrieval-and-assembly (match...</p>
-            </li><li class="item">
-                <a href="https://github.com/taktekhq/petri" target="_blank" class="title">3. Show HN: Petri – Drop-in Postgres image that forks a DB per test</a>
-                <span class="meta">⭐ 3 · nizarmah · <a href="https://news.ycombinator.com/item?id=48129073">💬 0</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">3</span>
+            <div class="content">
+                <a href="https://github.com/taktekhq/petri" target="_blank" class="title">Show HN: Petri – Drop-in Postgres image that forks a DB per test</a>
+                <div class="meta">
+                    <span class="score">⭐ 3</span>
+                    <span class="by">by nizarmah</span>
+                    <a href="https://news.ycombinator.com/item?id=48129073" target="_blank" class="comments">💬 0</a>
+                </div>
                 <p class="desc">Rolling it out at work to parallelize 4,257 tests across 5 services. It fixes our tests running in band and DB mocking in API tests.It's a drop-in Postgres image, with a Golang proxy. :5432 is passthrough, :5433 forks the DB per conn (CREATE DATABASE … TEMPLATE …, dropped on disconnect).If you use it, let me know what you like or don't like, so I can make it better. Cheers!</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48110593" target="_blank" class="title">4. Show HN: Gigacatalyst – Extend your SaaS with an embedded AI builder</a>
-                <span class="meta">⭐ 55 · namanyayg · <a href="https://news.ycombinator.com/item?id=48110593">💬 24</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">4</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48110593" target="_blank" class="title">Show HN: Gigacatalyst – Extend your SaaS with an embedded AI builder</a>
+                <div class="meta">
+                    <span class="score">⭐ 55</span>
+                    <span class="by">by namanyayg</span>
+                    <a href="https://news.ycombinator.com/item?id=48110593" target="_blank" class="comments">💬 24</a>
+                </div>
                 <p class="desc">Hi HN, I’m Namanyay from Gigacatalyst (link: https://gigacatalyst.com/). Gigacatalyst allows sales, CS, and users to build one-off features, so your SaaS can support long-tail customer workflows and engineers aren’t pulled away from the roadmap.When you sell software to large businesses, you realize that each customer needs their own workflow and features. Traditionally, this either means long engineering roadmaps or the customers end up using workarounds.But what if everyone could build thei...</p>
-            </li><li class="item">
-                <a href="https://www.hypercubic.ai/hopper" target="_blank" class="title">5. Show HN: Agentic interface for mainframes and COBOL</a>
-                <span class="meta">⭐ 89 · sai18 · <a href="https://news.ycombinator.com/item?id=48111143">💬 45</a></span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">5</span>
+            <div class="content">
+                <a href="https://www.hypercubic.ai/hopper" target="_blank" class="title">Show HN: Agentic interface for mainframes and COBOL</a>
+                <div class="meta">
+                    <span class="score">⭐ 89</span>
+                    <span class="by">by sai18</span>
+                    <a href="https://news.ycombinator.com/item?id=48111143" target="_blank" class="comments">💬 45</a>
+                </div>
                 <p class="desc">Hi HN, we’re Sai and Aayush, and we’re building Hypercubic (https://www.hypercubic.ai/), bringing AI tools to the mainframe and COBOL world. (We did a Launch HN last year: https://news.ycombinator.com/item?id=45877517.) Today we’re launching Hopper, an agentic development environment for mainframes.You can download it here: https://www.hypercubic.ai/hopper, and you can also request access and immediately get a mainframe user account to play with.There's also a video runthrough at https://www....</p>
-            </li></ul></section>
-            <section class="section full"><h2>📦 GitHub 热门</h2><ul class="list"><li class="item">
-                <a href="https://github.com/tinyhumansai/openhuman" target="_blank" class="title">1. tinyhumansai/openhuman</a>
-                <span class="meta">⭐ 5,520 (今日+1,696) · Rust</span>
+            </div>
+        </li></ul>
+</section>
+            <section class="section gh-section">
+    <h2>📦 <span>GitHub Trending</span></h2>
+    <ul class="list gh-list"><li class="item">
+            <span class="num">1</span>
+            <div class="content">
+                <a href="https://github.com/tinyhumansai/openhuman" target="_blank" class="title">tinyhumansai/openhuman</a>
+                <div class="meta">
+                    <span class="score">⭐ 5,520</span>
+                    <span class="today">+1,696 today</span>
+                    <span class="lang">Rust</span>
+                </div>
                 <p class="desc">Your Personal AI super intelligence. Private, Simple and extremely powerful.</p>
-            </li><li class="item">
-                <a href="https://github.com/rohitg00/agentmemory" target="_blank" class="title">2. rohitg00/agentmemory</a>
-                <span class="meta">⭐ 7,649 (今日+1,379) · TypeScript</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">2</span>
+            <div class="content">
+                <a href="https://github.com/rohitg00/agentmemory" target="_blank" class="title">rohitg00/agentmemory</a>
+                <div class="meta">
+                    <span class="score">⭐ 7,649</span>
+                    <span class="today">+1,379 today</span>
+                    <span class="lang">TypeScript</span>
+                </div>
                 <p class="desc">#1 Persistent memory for AI coding agents based on real-world benchmarks</p>
-            </li><li class="item">
-                <a href="https://github.com/obra/superpowers" target="_blank" class="title">3. obra/superpowers</a>
-                <span class="meta">⭐ 189,523 (今日+1,401) · Shell</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">3</span>
+            <div class="content">
+                <a href="https://github.com/obra/superpowers" target="_blank" class="title">obra/superpowers</a>
+                <div class="meta">
+                    <span class="score">⭐ 189,523</span>
+                    <span class="today">+1,401 today</span>
+                    <span class="lang">Shell</span>
+                </div>
                 <p class="desc">An agentic skills framework & software development methodology that works.</p>
-            </li><li class="item">
-                <a href="https://github.com/yikart/AiToEarn" target="_blank" class="title">4. yikart/AiToEarn</a>
-                <span class="meta">⭐ 12,920 (今日+981) · TypeScript</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">4</span>
+            <div class="content">
+                <a href="https://github.com/yikart/AiToEarn" target="_blank" class="title">yikart/AiToEarn</a>
+                <div class="meta">
+                    <span class="score">⭐ 12,920</span>
+                    <span class="today">+981 today</span>
+                    <span class="lang">TypeScript</span>
+                </div>
                 <p class="desc">Let's use AI to Earn!</p>
-            </li><li class="item">
-                <a href="https://github.com/influxdata/telegraf" target="_blank" class="title">5. influxdata/telegraf</a>
-                <span class="meta">⭐ 17,000 (今日+13) · Go</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">5</span>
+            <div class="content">
+                <a href="https://github.com/influxdata/telegraf" target="_blank" class="title">influxdata/telegraf</a>
+                <div class="meta">
+                    <span class="score">⭐ 17,000</span>
+                    <span class="today">+13 today</span>
+                    <span class="lang">Go</span>
+                </div>
                 <p class="desc">Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.</p>
-            </li><li class="item">
-                <a href="https://github.com/millionco/react-doctor" target="_blank" class="title">6. millionco/react-doctor</a>
-                <span class="meta">⭐ 9,280 (今日+604) · TypeScript</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">6</span>
+            <div class="content">
+                <a href="https://github.com/millionco/react-doctor" target="_blank" class="title">millionco/react-doctor</a>
+                <div class="meta">
+                    <span class="score">⭐ 9,280</span>
+                    <span class="today">+604 today</span>
+                    <span class="lang">TypeScript</span>
+                </div>
                 <p class="desc">Your agent writes bad React. This catches it</p>
-            </li><li class="item">
-                <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" class="title">7. K-Dense-AI/scientific-agent-skills</a>
-                <span class="meta">⭐ 21,122 (今日+99) · Python</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">7</span>
+            <div class="content">
+                <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" class="title">K-Dense-AI/scientific-agent-skills</a>
+                <div class="meta">
+                    <span class="score">⭐ 21,122</span>
+                    <span class="today">+99 today</span>
+                    <span class="lang">Python</span>
+                </div>
                 <p class="desc">A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.</p>
-            </li><li class="item">
-                <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" target="_blank" class="title">8. danielmiessler/Personal_AI_Infrastructure</a>
-                <span class="meta">⭐ 13,368 (今日+435) · TypeScript</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">8</span>
+            <div class="content">
+                <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" target="_blank" class="title">danielmiessler/Personal_AI_Infrastructure</a>
+                <div class="meta">
+                    <span class="score">⭐ 13,368</span>
+                    <span class="today">+435 today</span>
+                    <span class="lang">TypeScript</span>
+                </div>
                 <p class="desc">Agentic AI Infrastructure for magnifying HUMAN capabilities.</p>
-            </li><li class="item">
-                <a href="https://github.com/supertone-inc/supertonic" target="_blank" class="title">9. supertone-inc/supertonic</a>
-                <span class="meta">⭐ 4,354 (今日+859) · Swift</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">9</span>
+            <div class="content">
+                <a href="https://github.com/supertone-inc/supertonic" target="_blank" class="title">supertone-inc/supertonic</a>
+                <div class="meta">
+                    <span class="score">⭐ 4,354</span>
+                    <span class="today">+859 today</span>
+                    <span class="lang">Swift</span>
+                </div>
                 <p class="desc">Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.</p>
-            </li><li class="item">
-                <a href="https://github.com/CloakHQ/CloakBrowser" target="_blank" class="title">10. CloakHQ/CloakBrowser</a>
-                <span class="meta">⭐ 9,510 (今日+1,835) · Python</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">10</span>
+            <div class="content">
+                <a href="https://github.com/CloakHQ/CloakBrowser" target="_blank" class="title">CloakHQ/CloakBrowser</a>
+                <div class="meta">
+                    <span class="score">⭐ 9,510</span>
+                    <span class="today">+1,835 today</span>
+                    <span class="lang">Python</span>
+                </div>
                 <p class="desc">Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.</p>
-            </li><li class="item">
-                <a href="https://github.com/Greedeks/GTweak" target="_blank" class="title">11. Greedeks/GTweak</a>
-                <span class="meta">⭐ 925 (今日+75) · C#</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">11</span>
+            <div class="content">
+                <a href="https://github.com/Greedeks/GTweak" target="_blank" class="title">Greedeks/GTweak</a>
+                <div class="meta">
+                    <span class="score">⭐ 925</span>
+                    <span class="today">+75 today</span>
+                    <span class="lang">C#</span>
+                </div>
                 <p class="desc">Portable Tool for an Ideal Windows Setup</p>
-            </li><li class="item">
-                <a href="https://github.com/mattpocock/skills" target="_blank" class="title">12. mattpocock/skills</a>
-                <span class="meta">⭐ 78,998 (今日+3,392) · Shell</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">12</span>
+            <div class="content">
+                <a href="https://github.com/mattpocock/skills" target="_blank" class="title">mattpocock/skills</a>
+                <div class="meta">
+                    <span class="score">⭐ 78,998</span>
+                    <span class="today">+3,392 today</span>
+                    <span class="lang">Shell</span>
+                </div>
                 <p class="desc">Skills for Real Engineers. Straight from my .claude directory.</p>
-            </li><li class="item">
-                <a href="https://github.com/ArthurBrussee/brush" target="_blank" class="title">13. ArthurBrussee/brush</a>
-                <span class="meta">⭐ 4,364 (今日+81) · Rust</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">13</span>
+            <div class="content">
+                <a href="https://github.com/ArthurBrussee/brush" target="_blank" class="title">ArthurBrussee/brush</a>
+                <div class="meta">
+                    <span class="score">⭐ 4,364</span>
+                    <span class="today">+81 today</span>
+                    <span class="lang">Rust</span>
+                </div>
                 <p class="desc">3D Reconstruction for all</p>
-            </li><li class="item">
-                <a href="https://github.com/imthenachoman/How-To-Secure-A-Linux-Server" target="_blank" class="title">14. imthenachoman/How-To-Secure-A-Linux-Server</a>
-                <span class="meta">⭐ 27,090 (今日+234) · </span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">14</span>
+            <div class="content">
+                <a href="https://github.com/imthenachoman/How-To-Secure-A-Linux-Server" target="_blank" class="title">imthenachoman/How-To-Secure-A-Linux-Server</a>
+                <div class="meta">
+                    <span class="score">⭐ 27,090</span>
+                    <span class="today">+234 today</span>
+                    <span class="lang"></span>
+                </div>
                 <p class="desc">An evolving how-to guide for securing a Linux server.</p>
-            </li><li class="item">
-                <a href="https://github.com/apernet/hysteria" target="_blank" class="title">15. apernet/hysteria</a>
-                <span class="meta">⭐ 20,617 (今日+485) · Go</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">15</span>
+            <div class="content">
+                <a href="https://github.com/apernet/hysteria" target="_blank" class="title">apernet/hysteria</a>
+                <div class="meta">
+                    <span class="score">⭐ 20,617</span>
+                    <span class="today">+485 today</span>
+                    <span class="lang">Go</span>
+                </div>
                 <p class="desc">Hysteria is a powerful, lightning fast and censorship resistant proxy.</p>
-            </li><li class="item">
-                <a href="https://github.com/rasbt/LLMs-from-scratch" target="_blank" class="title">16. rasbt/LLMs-from-scratch</a>
-                <span class="meta">⭐ 94,462 (今日+821) · Jupyter Notebook</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">16</span>
+            <div class="content">
+                <a href="https://github.com/rasbt/LLMs-from-scratch" target="_blank" class="title">rasbt/LLMs-from-scratch</a>
+                <div class="meta">
+                    <span class="score">⭐ 94,462</span>
+                    <span class="today">+821 today</span>
+                    <span class="lang">Jupyter Notebook</span>
+                </div>
                 <p class="desc">Implement a ChatGPT-like LLM in PyTorch from scratch, step by step</p>
-            </li><li class="item">
-                <a href="https://github.com/ton-blockchain/acton" target="_blank" class="title">17. ton-blockchain/acton</a>
-                <span class="meta">⭐ 206 (今日+18) · Rust</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">17</span>
+            <div class="content">
+                <a href="https://github.com/ton-blockchain/acton" target="_blank" class="title">ton-blockchain/acton</a>
+                <div class="meta">
+                    <span class="score">⭐ 206</span>
+                    <span class="today">+18 today</span>
+                    <span class="lang">Rust</span>
+                </div>
                 <p class="desc">Toolchain for TON smart contract development and beyond</p>
-            </li><li class="item">
-                <a href="https://github.com/trycua/cua" target="_blank" class="title">18. trycua/cua</a>
-                <span class="meta">⭐ 16,542 (今日+245) · HTML</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">18</span>
+            <div class="content">
+                <a href="https://github.com/trycua/cua" target="_blank" class="title">trycua/cua</a>
+                <div class="meta">
+                    <span class="score">⭐ 16,542</span>
+                    <span class="today">+245 today</span>
+                    <span class="lang">HTML</span>
+                </div>
                 <p class="desc">Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).</p>
-            </li><li class="item">
-                <a href="https://github.com/github/spec-kit" target="_blank" class="title">19. github/spec-kit</a>
-                <span class="meta">⭐ 98,382 (今日+1,120) · Python</span>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">19</span>
+            <div class="content">
+                <a href="https://github.com/github/spec-kit" target="_blank" class="title">github/spec-kit</a>
+                <div class="meta">
+                    <span class="score">⭐ 98,382</span>
+                    <span class="today">+1,120 today</span>
+                    <span class="lang">Python</span>
+                </div>
                 <p class="desc">💫 Toolkit to help you get started with Spec-Driven Development</p>
-            </li></ul></section>
+            </div>
+        </li></ul>
+</section>
         </div>
-        <footer class="footer">
-            <p>📦 数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> · <a href="https://news.ycombinator.com" target="_blank">Hacker News</a></p>
-            <p>📅 历史存档: <a href="./archive/" target="_blank">archive/</a></p>
+
+        <footer>
+            <p class="sources">
+                数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> ·
+                <a href="https://news.ycombinator.com" target="_blank">Hacker News</a>
+            </p>
+            <a href="./archive.html" class="archive-link">📁 历史存档</a>
         </footer>
     </div>
 </body>
