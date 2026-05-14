@@ -278,9 +278,8 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
-                "hn-top hn-top"
-                "ask show"
-                "gh gh";
+                "gh hn-top"
+                "ask show";
             gap: 20px;
         }
         .hn-top { grid-area: hn-top; }
@@ -388,7 +387,7 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
         /* Responsive */
         @media (max-width: 900px) {
             .grid { grid-template-columns: 1fr; }
-            .hn-top, .ask, .show, .gh { grid-area: auto; }
+            .gh, .hn-top, .ask, .show { grid-area: auto; }
         }
         @media (max-width: 600px) {
             .container { padding: 20px 12px; }
@@ -596,10 +595,10 @@ def main():
     hn_top = fetch_hn_top(20)
 
     print("Fetching Ask HN...")
-    hn_ask = fetch_hn_ask(5)
+    hn_ask = fetch_hn_ask(20)
 
     print("Fetching Show HN...")
-    hn_show = fetch_hn_show(5)
+    hn_show = fetch_hn_show(20)
 
     print("Fetching GitHub Trending...")
     gh_trending = fetch_github_trending()
