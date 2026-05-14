@@ -416,7 +416,7 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
                 数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> ·
                 <a href="https://news.ycombinator.com" target="_blank">Hacker News</a>
             </p>
-            <a href="./archive.html" class="archive-link">历史存档</a>
+            <a href="./archive/" class="archive-link">历史存档</a>
         </footer>
     </div>
 </body>
