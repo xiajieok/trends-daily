@@ -96,11 +96,8 @@ def fetch_url_description(url, timeout=5):
     try:
         resp = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
         resp.raise_for_status()
-        # 只解析前 10KB，够拿到 head 了
         text = resp.text[:10240]
         soup = BeautifulSoup(text, 'html.parser')
-
-        # 优先 og:description
         og = soup.find('meta', attrs={'property': 'og:description'})
         if og and og.get('content'):
             desc = og['content'].strip()
@@ -110,8 +107,6 @@ def fetch_url_description(url, timeout=5):
                 desc = meta['content'].strip()
             else:
                 return ''
-
-        # 清理 HTML 实体
         desc = unescape(desc)
         return desc
     except Exception:
@@ -119,10 +114,9 @@ def fetch_url_description(url, timeout=5):
 
 
 def _extract_hn_desc(item):
-    """从 HN item 提取摘要：优先 text 字段，否则为空（后续批量抓 URL）"""
+    """从 HN item 提取摘要：优先 text 字段，否则为空"""
     text = item.get('text', '')
     if text:
-        # HN text 是 HTML，去掉标签
         clean = BeautifulSoup(text, 'html.parser').get_text().strip()
         if len(clean) > 500:
             clean = clean[:497] + '...'
@@ -195,61 +189,63 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
 
     def render_hn_item(item, i):
         desc = item.get('description', '')
-        desc_html = f'<p class="desc">{desc}</p>' if desc else ''
-        return f'''<li class="item">
-            <span class="num">{i}</span>
+        desc_html = '<p class="desc">' + desc + '</p>' if desc else ''
+        return '''<li class="item">
+            <span class="num">''' + str(i) + '''</span>
             <div class="content">
-                <a href="{item['url']}" target="_blank" class="title">{item['title']}</a>
+                <a href="''' + item['url'] + '''" target="_blank" class="title">''' + item['title'] + '''</a>
                 <div class="meta">
-                    <span class="score">⭐ {item['score']}</span>
-                    <span class="by">by {item['by']}</span>
-                    <a href="{item['hn_url']}" target="_blank" class="comments">💬 {item['comments']}</a>
+                    <span class="score">''' + str(item['score']) + ''' pts</span>
+                    <span class="by">by ''' + item['by'] + '''</span>
+                    <a href="''' + item['hn_url'] + '''" target="_blank" class="comments">''' + str(item['comments']) + ''' comments</a>
                 </div>
-                {desc_html}
+                ''' + desc_html + '''
             </div>
         </li>'''
-
-    def render_hn_list(items, title, icon):
-        items_html = '\n'.join(render_hn_item(item, i) for i, item in enumerate(items, 1))
-        return f'''<section class="section hn-section">
-    <h2>{icon} <span>{title}</span></h2>
-    <ul class="list hn-list">{items_html}</ul>
-</section>'''
 
     def render_gh_item(item, i):
-        return f'''<li class="item">
-            <span class="num">{i}</span>
+        return '''<li class="item">
+            <span class="num">''' + str(i) + '''</span>
             <div class="content">
-                <a href="{item['url']}" target="_blank" class="title">{item['name']}</a>
+                <a href="''' + item['url'] + '''" target="_blank" class="title">''' + item['name'] + '''</a>
                 <div class="meta">
-                    <span class="score">⭐ {item['stars']}</span>
-                    <span class="today">+{item['today_stars']} today</span>
-                    <span class="lang">{item['language']}</span>
+                    <span class="score">''' + item['stars'] + '''</span>
+                    <span class="today">+''' + item['today_stars'] + ''' today</span>
+                    <span class="lang">''' + item['language'] + '''</span>
                 </div>
-                <p class="desc">{item['description']}</p>
+                <p class="desc">''' + item['description'] + '''</p>
             </div>
         </li>'''
 
-    def render_gh_list(items):
-        items_html = '\n'.join(render_gh_item(item, i) for i, item in enumerate(items, 1))
-        return f'''<section class="section gh-section">
-    <h2>📦 <span>GitHub Trending</span></h2>
-    <ul class="list gh-list">{items_html}</ul>
+    def render_hn_list(items, title, extra_class=''):
+        items_html = '\n'.join(render_hn_item(item, i) for i, item in enumerate(items, 1))
+        cls = 'hn-section ' + extra_class if extra_class else 'hn-section'
+        return '''<section class="section ''' + cls + '''">
+    <h2>''' + title + '''</h2>
+    <ul class="list hn-list">''' + items_html + '''</ul>
 </section>'''
 
-    hn_top_html = render_hn_list(hn_top, 'Hacker News Top', '🔥')
-    hn_ask_html = render_hn_list(hn_ask, 'Ask HN', '💬')
-    hn_show_html = render_hn_list(hn_show, 'Show HN', '🎨')
-    gh_html = render_gh_list(gh_trending)
+    def render_gh_list(items, extra_class=''):
+        items_html = '\n'.join(render_gh_item(item, i) for i, item in enumerate(items, 1))
+        cls = 'gh-section ' + extra_class if extra_class else 'gh-section'
+        return '''<section class="section ''' + cls + '''">
+    <h2>GitHub Trending</h2>
+    <ul class="list gh-list">''' + items_html + '''</ul>
+</section>'''
 
-    html = f'''<!DOCTYPE html>
+    hn_top_html = render_hn_list(hn_top, 'Hacker News Top', 'hn-top')
+    hn_ask_html = render_hn_list(hn_ask, 'Ask HN', 'ask')
+    hn_show_html = render_hn_list(hn_show, 'Show HN', 'show')
+    gh_html = render_gh_list(gh_trending, 'gh')
+
+    html = '''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>趋势日报 {today_str}</title>
+    <title>趋势日报 ''' + today_str + '''</title>
     <style>
-        :root {{
+        :root {
             --bg: #0a0a0f;
             --card: #111118;
             --border: #1e1e2e;
@@ -258,79 +254,72 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
             --accent: #f97316;
             --hn: #ff6600;
             --gh: #238636;
-        }}
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        html {{ scroll-behavior: smooth; }}
-        body {{
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
-        }}
-        a {{ color: inherit; text-decoration: none; }}
-        .container {{ max-width: 1200px; margin: 0 auto; padding: 32px 20px; }}
+        }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: 1600px; margin: 0 auto; padding: 40px 32px; }
 
         /* Header */
-        header {{
-            text-align: center;
-            margin-bottom: 40px;
-        }}
-        header h1 {{
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 8px;
-        }}
-        header h1 span {{ color: var(--accent); }}
-        header .date {{
-            color: var(--muted);
-            font-size: 0.9rem;
-        }}
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+        header h1 span { color: var(--accent); }
+        header .date { color: var(--muted); font-size: 0.9rem; }
 
         /* Grid */
-        .grid {{
+        .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "hn-top hn-top"
+                "ask show"
+                "gh gh";
             gap: 20px;
-            margin-bottom: 20px;
-        }}
-        .section.full {{ grid-column: 1 / -1; }}
+        }
+        .hn-top { grid-area: hn-top; }
+        .ask { grid-area: ask; }
+        .show { grid-area: show; }
+        .gh { grid-area: gh; }
 
         /* Section */
-        .section {{
+        .section {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
             overflow: hidden;
-        }}
-        .section h2 {{
+        }
+        .section h2 {
             font-size: 0.85rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             padding: 14px 18px;
             border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }}
-        .section h2 span {{ color: var(--muted); }}
-        .hn-section h2 {{ color: var(--hn); }}
-        .gh-section h2 {{ color: var(--gh); }}
+            color: var(--hn);
+        }
+        .gh-section h2 { color: var(--gh); }
+        .ask h2 { color: var(--accent); }
+        .show h2 { color: #a855f7; }
 
         /* List */
-        .list {{ list-style: none; }}
-        .item {{
+        .list { list-style: none; }
+        .item {
             display: flex;
             gap: 12px;
             padding: 14px 18px;
             border-bottom: 1px solid var(--border);
             transition: background 0.15s;
-        }}
-        .item:last-child {{ border-bottom: none; }}
-        .item:hover {{ background: rgba(255,255,255,0.02); }}
-        .num {{
+        }
+        .item:last-child { border-bottom: none; }
+        .item:hover { background: rgba(255,255,255,0.02); }
+        .num {
             flex-shrink: 0;
             width: 24px;
             height: 24px;
@@ -342,51 +331,45 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
             font-size: 0.75rem;
             font-weight: 600;
             color: var(--muted);
-        }}
-        .content {{ flex: 1; min-width: 0; }}
-        .title {{
+        }
+        .content { flex: 1; min-width: 0; }
+        .title {
             color: var(--text);
             font-size: 0.9rem;
             font-weight: 500;
             display: block;
             margin-bottom: 6px;
             line-height: 1.4;
-        }}
-        .title:hover {{ color: var(--accent); }}
-        .meta {{
+        }
+        .title:hover { color: var(--accent); }
+        .meta {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
             font-size: 0.78rem;
             color: var(--muted);
-        }}
-        .meta .score {{ color: #fbbf24; }}
-        .meta a.comments {{ color: var(--muted); }}
-        .meta a.comments:hover {{ color: var(--text); }}
-        .desc {{
+        }
+        .meta .score { color: #fbbf24; }
+        .meta a.comments { color: var(--muted); }
+        .meta a.comments:hover { color: var(--text); }
+        .desc {
             color: var(--muted);
             font-size: 0.82rem;
             margin-top: 6px;
             line-height: 1.5;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }}
+        }
 
         /* Footer */
-        footer {{
+        footer {
             text-align: center;
             padding: 32px 20px;
             color: var(--muted);
             font-size: 0.82rem;
-        }}
-        footer a {{ color: var(--accent); }}
-        footer a:hover {{ text-decoration: underline; }}
-        footer .sources {{ margin-bottom: 8px; }}
-
-        /* Archive link */
-        .archive-link {{
+        }
+        footer a { color: var(--accent); }
+        footer a:hover { text-decoration: underline; }
+        footer .sources { margin-bottom: 8px; }
+        .archive-link {
             display: inline-flex;
             align-items: center;
             gap: 6px;
@@ -396,37 +379,37 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
             border-radius: 8px;
             margin-top: 16px;
             transition: all 0.15s;
-        }}
-        .archive-link:hover {{
+        }
+        .archive-link:hover {
             border-color: var(--accent);
             color: var(--accent);
-        }}
+        }
 
         /* Responsive */
-        @media (max-width: 900px) {{
-            .grid {{ grid-template-columns: 1fr; }}
-            .section.full {{ grid-column: 1; }}
-        }}
-        @media (max-width: 600px) {{
-            .container {{ padding: 20px 12px; }}
-            header h1 {{ font-size: 1.5rem; }}
-            .item {{ padding: 12px 14px; }}
-            .section h2 {{ padding: 12px 14px; }}
-        }}
+        @media (max-width: 900px) {
+            .grid { grid-template-columns: 1fr; }
+            .hn-top, .ask, .show, .gh { grid-area: auto; }
+        }
+        @media (max-width: 600px) {
+            .container { padding: 20px 12px; }
+            header h1 { font-size: 1.5rem; }
+            .item { padding: 12px 14px; }
+            .section h2 { padding: 12px 14px; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 趋势<span>日报</span></h1>
-            <p class="date">{today_str} · Hacker News + GitHub Trending</p>
+            <h1>趋势日报</h1>
+            <p class="date">''' + today_str + ''' · Hacker News + GitHub Trending</p>
         </header>
 
         <div class="grid">
-            {hn_top_html}
-            {hn_ask_html}
-            {hn_show_html}
-            {gh_html}
+            ''' + hn_top_html + '''
+            ''' + hn_ask_html + '''
+            ''' + hn_show_html + '''
+            ''' + gh_html + '''
         </div>
 
         <footer>
@@ -434,7 +417,7 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
                 数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> ·
                 <a href="https://news.ycombinator.com" target="_blank">Hacker News</a>
             </p>
-            <a href="./archive.html" class="archive-link">📁 历史存档</a>
+            <a href="./archive.html" class="archive-link">历史存档</a>
         </footer>
     </div>
 </body>
@@ -450,58 +433,56 @@ def generate_archive_index():
     archives = sorted(ARCHIVE_DIR.glob("*.md"), reverse=True)
 
     def render_archive_item(path):
-        date_str = path.stem  # e.g. "2026-05-14"
-        # 从 md 文件中提取第一条 HN title 作为预览
+        date_str = path.stem
         try:
             content = path.read_text(encoding='utf-8')
-            first_line = content.split('\n')[2]  # 第三行是第一个 HN 条目
-            # 提取标题
+            first_line = content.split('\n')[2]
             import re
             match = re.search(r'1\.\s+\[(.+?)\]', first_line)
             preview = match.group(1)[:50] + '...' if match and len(match.group(1)) > 50 else (match.group(1) if match else '')
         except Exception:
             preview = ''
 
-        return f'''<a href="{date_str}.md" class="card">
-            <span class="date">{date_str}</span>
-            <span class="preview">{preview}</span>
+        return '''<a href="''' + date_str + '''.md" class="card">
+            <span class="date">''' + date_str + '''</span>
+            <span class="preview">''' + preview + '''</span>
         </a>'''
 
     cards_html = '\n'.join(render_archive_item(p) for p in archives)
 
-    html = f'''<!DOCTYPE html>
+    html = '''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>历史存档 — 趋势日报</title>
     <style>
-        :root {{
+        :root {
             --bg: #0a0a0f;
             --card: #111118;
             --border: #1e1e2e;
             --text: #e4e4e7;
             --muted: #71717a;
             --accent: #f97316;
-        }}
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
-        }}
-        a {{ color: inherit; text-decoration: none; }}
-        .container {{ max-width: 900px; margin: 0 auto; padding: 40px 20px; }}
-        header {{ margin-bottom: 32px; }}
-        header h1 {{ font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }}
-        header h1 span {{ color: var(--accent); }}
-        header .sub {{ color: var(--muted); font-size: 0.9rem; }}
-        .back {{ display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }}
-        .back:hover {{ color: var(--accent); }}
-        .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }}
-        .card {{
+        }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        header { margin-bottom: 32px; }
+        header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
+        header h1 span { color: var(--accent); }
+        header .sub { color: var(--muted); font-size: 0.9rem; }
+        .back { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+        .back:hover { color: var(--accent); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+        .card {
             display: flex;
             flex-direction: column;
             gap: 6px;
@@ -510,28 +491,28 @@ def generate_archive_index():
             border-radius: 10px;
             padding: 16px 18px;
             transition: all 0.15s;
-        }}
-        .card:hover {{ border-color: var(--accent); transform: translateY(-2px); }}
-        .card .date {{ font-weight: 600; font-size: 0.95rem; }}
-        .card .preview {{ color: var(--muted); font-size: 0.82rem; line-height: 1.4; }}
-        .empty {{ color: var(--muted); text-align: center; padding: 60px 0; }}
-        footer {{ text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.82rem; }}
-        footer a {{ color: var(--accent); }}
-        @media (max-width: 600px) {{
-            .container {{ padding: 20px 12px; }}
-            .grid {{ grid-template-columns: 1fr; }}
-        }}
+        }
+        .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .card .date { font-weight: 600; font-size: 0.95rem; }
+        .card .preview { color: var(--muted); font-size: 0.82rem; line-height: 1.4; }
+        .empty { color: var(--muted); text-align: center; padding: 60px 0; }
+        footer { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.82rem; }
+        footer a { color: var(--accent); }
+        @media (max-width: 600px) {
+            .container { padding: 20px 12px; }
+            .grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="../index.html" class="back">← 回到今日</a>
+        <a href="../index.html" class="back">回到今日</a>
         <header>
-            <h1>📁 历史<span>存档</span></h1>
-            <p class="sub">共 {len(archives)} 期</p>
+            <h1>历史存档</h1>
+            <p class="sub">共 ''' + str(len(archives)) + ''' 期</p>
         </header>
         <div class="grid">
-            {cards_html if cards_html else '<p class="empty">暂无存档</p>'}
+            ''' + (cards_html if cards_html else '<p class="empty">暂无存档</p>') + '''
         </div>
         <footer>
             <p>数据来源: <a href="https://news.ycombinator.com" target="_blank">Hacker News</a> · <a href="https://github.com/trending" target="_blank">GitHub Trending</a></p>
@@ -546,27 +527,27 @@ def generate_archive_md(hn_top, hn_ask, hn_show, gh_trending):
     """Generate archive markdown"""
 
     def format_hn_list(items, title):
-        md = f'## {title}\n\n'
+        md = '## ' + title + '\n\n'
         for i, item in enumerate(items, 1):
-            md += f'{i}. [{item["title"]}]({item["url"]}) — ⭐{item["score"]}\n'
+            md += str(i) + '. [' + item['title'] + '](' + item['url'] + ') — ' + str(item['score']) + ' pts\n'
         return md
 
     def format_gh_list(items):
         md = '## GitHub Trending\n\n'
         for i, item in enumerate(items, 1):
-            md += f'{i}. [{item["name"]}]({item["url"]}) — ⭐{item["stars"]} (今日+{item["today_stars"]}) — {item["description"]}\n'
+            md += str(i) + '. [' + item['name'] + '](' + item['url'] + ') — ' + item['stars'] + ' (今日+' + item['today_stars'] + ') — ' + item['description'] + '\n'
         return md
 
-    md = f'''# 趋势日报 — {today_str}
+    md = '''# 趋势日报 — ''' + today_str + '''
 
 > 自动生成 · 数据来源: Hacker News + GitHub Trending
 
 ---
 
-{format_hn_list(hn_top, "HN Top 20")}
-{format_hn_list(hn_ask, "Ask HN")}
-{format_hn_list(hn_show, "Show HN")}
-{format_gh_list(gh_trending)}
+''' + format_hn_list(hn_top, "HN Top 20") + '''
+''' + format_hn_list(hn_ask, "Ask HN") + '''
+''' + format_hn_list(hn_show, "Show HN") + '''
+''' + format_gh_list(gh_trending) + '''
 
 ---
 
@@ -577,26 +558,20 @@ def generate_archive_md(hn_top, hn_ask, hn_show, gh_trending):
 
 def build_wechat_message(hn_top, hn_ask, hn_show, gh_trending):
     """Build WeChat notification message"""
-
-    lines = [f"📊 趋势日报 {today_str}\n"]
-
-    lines.append("🔥 HN热门")
+    lines = ["趋势日报 " + today_str + "\n"]
+    lines.append("HN热门")
     for i, item in enumerate(hn_top[:5], 1):
-        lines.append(f"{i}. {item['title'][:40]}")
+        lines.append(str(i) + ". " + item['title'][:40])
     lines.append("")
-
-    lines.append("💬 Ask HN")
+    lines.append("Ask HN")
     for i, item in enumerate(hn_ask[:3], 1):
-        lines.append(f"{i}. {item['title'][:40]}")
+        lines.append(str(i) + ". " + item['title'][:40])
     lines.append("")
-
-    lines.append("📦 GitHub 🔥")
+    lines.append("GitHub Trending")
     for i, item in enumerate(gh_trending[:3], 1):
-        lines.append(f"{i}. {item['name']} ⭐{item['stars']}")
+        lines.append(str(i) + ". " + item['name'] + " " + item['stars'])
     lines.append("")
-
-    lines.append(f"👆 完整内容：http://econow.cn/trends-daily/")
-
+    lines.append("完整内容：http://econow.cn/trends-daily/")
     return "\n".join(lines)
 
 
@@ -605,7 +580,7 @@ def git_push():
     import subprocess
     try:
         subprocess.run(["git", "add", "-A"], cwd=REPO_DIR, check=True)
-        subprocess.run(["git", "commit", "-m", f"Auto update {today_str}"], cwd=REPO_DIR, check=True)
+        subprocess.run(["git", "commit", "-m", "Auto update " + today_str], cwd=REPO_DIR, check=True)
         subprocess.run(["git", "push"], cwd=REPO_DIR, check=True)
         print("Git push done")
         return True
@@ -615,9 +590,8 @@ def git_push():
 
 
 def main():
-    print(f"Fetching trends for {today_str}...")
+    print("Fetching trends for " + today_str + "...")
 
-    # Fetch all data
     print("Fetching HN Top 20...")
     hn_top = fetch_hn_top(20)
 
@@ -636,12 +610,10 @@ def main():
     desc_count = 0
 
     def enrich_item(item):
-        # 先尝试 HN 自带 text（Ask/Show 有）
         desc = _extract_hn_desc(item)
         if desc:
             item['description'] = desc
             return True
-        # 否则抓目标 URL 的 meta description
         url = item.get('url', '')
         if url and not url.startswith('https://news.ycombinator.com'):
             desc = fetch_url_description(url)
@@ -659,7 +631,7 @@ def main():
                     desc_count += 1
             except Exception:
                 pass
-    print(f"  {desc_count}/{len(all_hn)} items got descriptions")
+    print("  " + str(desc_count) + "/" + str(len(all_hn)) + " items got descriptions")
 
     # Generate index.html
     print("Generating index.html...")
@@ -671,7 +643,7 @@ def main():
     print("Generating archive...")
     ARCHIVE_DIR.mkdir(exist_ok=True)
     md = generate_archive_md(hn_top, hn_ask, hn_show, gh_trending)
-    archive_path = ARCHIVE_DIR / f"{today_str}.md"
+    archive_path = ARCHIVE_DIR / (today_str + ".md")
     archive_path.write_text(md, encoding='utf-8')
 
     # Generate archive index page
@@ -682,7 +654,7 @@ def main():
     wechat_msg = build_wechat_message(hn_top, hn_ask, hn_show, gh_trending)
     msg_path = REPO_DIR / "wechat_message.txt"
     msg_path.write_text(wechat_msg, encoding='utf-8')
-    print(f"WeChat message saved to {msg_path}")
+    print("WeChat message saved to " + str(msg_path))
 
     # Save data for later use
     data = {
@@ -694,13 +666,13 @@ def main():
     }
     data_path = REPO_DIR / "data.json"
     data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
-    print(f"Data saved to {data_path}")
+    print("Data saved to " + str(data_path))
 
     # Git push (if repo exists)
     git_push()
 
-    print(f"\nDone! {today_str}")
-    print(f"HN Top: {len(hn_top)}, Ask: {len(hn_ask)}, Show: {len(hn_show)}, GitHub: {len(gh_trending)}")
+    print("\nDone! " + today_str)
+    print("HN Top: " + str(len(hn_top)) + ", Ask: " + str(len(hn_ask)) + ", Show: " + str(len(hn_show)) + ", GitHub: " + str(len(gh_trending)))
 
     return data
 
