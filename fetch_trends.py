@@ -429,23 +429,19 @@ def generate_archive_index():
     ARCHIVE_INDEX = ARCHIVE_DIR / "index.html"
 
     # 读取所有归档，按日期倒序
-    archives = sorted(ARCHIVE_DIR.glob("*.md"), reverse=True)
+    archives = sorted(ARCHIVE_DIR.glob("*.html"), reverse=True)
 
     def render_archive_item(path):
         date_str = path.stem
         try:
             content = path.read_text(encoding='utf-8')
-            first_line = content.split('\n')[2]
             import re
-            match = re.search(r'1\.\s+\[(.+?)\]', first_line)
-            preview = match.group(1)[:50] + '...' if match and len(match.group(1)) > 50 else (match.group(1) if match else '')
+            match = re.search(r'<h1>.*?<span>(.*?)</span>', content)
+            preview = match.group(1)[:50] if match else ''
         except Exception:
             preview = ''
 
-        return '''<a href="''' + date_str + '''.md" class="card">
-            <span class="date">''' + date_str + '''</span>
-            <span class="preview">''' + preview + '''</span>
-        </a>'''
+        return '<a href="' + date_str + '.html" class="card">\n            <span class="date">' + date_str + '</span>\n            <span class="preview">' + preview + '</span>\n        </a>'
 
     cards_html = '\n'.join(render_archive_item(p) for p in archives)
 
@@ -522,37 +518,68 @@ def generate_archive_index():
     ARCHIVE_INDEX.write_text(html, encoding='utf-8')
 
 
-def generate_archive_md(hn_top, hn_ask, hn_show, gh_trending):
-    """Generate archive markdown"""
+def generate_archive_html(hn_top, hn_ask, hn_show, gh_trending):
+    """Generate archive HTML page"""
 
     def format_hn_list(items, title):
-        md = '## ' + title + '\n\n'
+        items_html = ''
         for i, item in enumerate(items, 1):
-            md += str(i) + '. [' + item['title'] + '](' + item['url'] + ') — ' + str(item['score']) + ' pts\n'
-        return md
+            items_html += '<li><a href="' + item['url'] + '" target="_blank">' + item['title'] + '</a> — ' + str(item['score']) + ' pts</li>\n'
+        return '<section class="section"><h2>' + title + '</h2><ul>' + items_html + '</ul></section>'
 
     def format_gh_list(items):
-        md = '## GitHub Trending\n\n'
+        items_html = ''
         for i, item in enumerate(items, 1):
-            md += str(i) + '. [' + item['name'] + '](' + item['url'] + ') — ' + item['stars'] + ' (今日+' + item['today_stars'] + ') — ' + item['description'] + '\n'
-        return md
+            items_html += '<li><a href="' + item['url'] + '" target="_blank">' + item['name'] + '</a> — ' + item['stars'] + ' (今日+' + item['today_stars'] + ') — ' + item['description'] + '</li>\n'
+        return '<section class="section"><h2>GitHub Trending</h2><ul>' + items_html + '</ul></section>'
 
-    md = '''# 趋势日报 — ''' + today_str + '''
-
-> 自动生成 · 数据来源: Hacker News + GitHub Trending
-
----
-
-''' + format_hn_list(hn_top, "HN Top 20") + '''
-''' + format_hn_list(hn_ask, "Ask HN") + '''
-''' + format_hn_list(hn_show, "Show HN") + '''
-''' + format_gh_list(gh_trending) + '''
-
----
-
-*此文件由 trends-daily 自动生成*
-'''
-    return md
+    html = '''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趋势日报 ''' + today_str + '''</title>
+    <style>
+        :root { --bg: #0a0a0f; --card: #111118; --border: #1e1e2e; --text: #e4e4e7; --muted: #71717a; --accent: #f97316; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+        header { margin-bottom: 32px; }
+        header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
+        header h1 span { color: var(--accent); }
+        header .date { color: var(--muted); font-size: 0.9rem; }
+        .back { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+        .back:hover { color: var(--accent); }
+        .section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+        .section h2 { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+        .section ul { list-style: none; }
+        .section li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        .section li:last-child { border-bottom: none; }
+        .section li a:hover { color: var(--accent); }
+        footer { text-align: center; padding: 32px 20px; color: var(--muted); font-size: 0.82rem; }
+        footer a { color: var(--accent); }
+        @media (max-width: 600px) { .container { padding: 20px 12px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back">← 回到今日</a>
+        <header>
+            <h1>趋势日报 <span>''' + today_str + '''</span></h1>
+            <p class="date">Hacker News + GitHub Trending</p>
+        </header>
+        ''' + format_hn_list(hn_top, 'HN Top 20') + '''
+        ''' + format_hn_list(hn_ask, 'Ask HN') + '''
+        ''' + format_hn_list(hn_show, 'Show HN') + '''
+        ''' + format_gh_list(gh_trending) + '''
+        <footer>
+            <p>数据来源: <a href="https://news.ycombinator.com" target="_blank">Hacker News</a> · <a href="https://github.com/trending" target="_blank">GitHub Trending</a></p>
+        </footer>
+    </div>
+</body>
+</html>'''
+    return html
 
 
 def build_wechat_message(hn_top, hn_ask, hn_show, gh_trending):
@@ -641,9 +668,9 @@ def main():
     # Generate archive
     print("Generating archive...")
     ARCHIVE_DIR.mkdir(exist_ok=True)
-    md = generate_archive_md(hn_top, hn_ask, hn_show, gh_trending)
-    archive_path = ARCHIVE_DIR / (today_str + ".md")
-    archive_path.write_text(md, encoding='utf-8')
+    html = generate_archive_html(hn_top, hn_ask, hn_show, gh_trending)
+    archive_path = ARCHIVE_DIR / (today_str + ".html")
+    archive_path.write_text(html, encoding='utf-8')
 
     # Generate archive index page
     print("Generating archive index...")
