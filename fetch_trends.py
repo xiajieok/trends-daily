@@ -111,10 +111,8 @@ def fetch_url_description(url, timeout=5):
             else:
                 return ''
 
-        # 清理 HTML 实体，截断
+        # 清理 HTML 实体
         desc = unescape(desc)
-        if len(desc) > 500:
-            desc = desc[:497] + '...'
         return desc
     except Exception:
         return ''
@@ -221,9 +219,13 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
         return html
 
     hn_top_html = render_hn_list(hn_top, 'HN 热门 Top 20', '🔥')
+    # HN Top 占满整行
+    hn_top_html = hn_top_html.replace('<section class="section">', '<section class="section full">')
     hn_ask_html = render_hn_list(hn_ask, 'Ask HN — 大家在问', '💬')
     hn_show_html = render_hn_list(hn_show, 'Show HN — 大家在秀', '🎨')
     gh_html = render_gh_list(gh_trending)
+    # GitHub 也占满整行
+    gh_html = gh_html.replace('<section class="section">', '<section class="section full">')
 
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
@@ -234,24 +236,27 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; padding: 20px; line-height: 1.6; }}
-        .container {{ max-width: 800px; margin: 0 auto; }}
-        header {{ text-align: center; margin-bottom: 30px; padding: 20px; background: #161b22; border-radius: 12px; }}
-        header h1 {{ font-size: 1.8em; margin-bottom: 8px; }}
-        header .date {{ color: #8b949e; font-size: 0.95em; }}
-        .section {{ background: #161b22; border-radius: 12px; padding: 20px; margin-bottom: 20px; }}
-        .section h2 {{ font-size: 1.2em; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #30363d; }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
+        header {{ text-align: center; margin-bottom: 24px; padding: 16px 20px; background: #161b22; border-radius: 12px; }}
+        header h1 {{ font-size: 1.6em; margin-bottom: 6px; }}
+        header .date {{ color: #8b949e; font-size: 0.9em; }}
+        .grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }}
+        .section {{ background: #161b22; border-radius: 10px; padding: 16px; }}
+        .section.full {{ grid-column: 1 / -1; }}
+        .section h2 {{ font-size: 1.1em; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #30363d; }}
         .list {{ list-style: none; }}
-        .item {{ padding: 12px 0; border-bottom: 1px solid #21262d; }}
+        .item {{ padding: 10px 0; border-bottom: 1px solid #21262d; }}
         .item:last-child {{ border-bottom: none; }}
-        .title {{ color: #58a6ff; text-decoration: none; font-size: 1em; }}
+        .title {{ color: #58a6ff; text-decoration: none; font-size: 0.95em; }}
         .title:hover {{ text-decoration: underline; }}
-        .meta {{ display: block; color: #8b949e; font-size: 0.85em; margin-top: 4px; }}
+        .meta {{ display: block; color: #8b949e; font-size: 0.82em; margin-top: 3px; }}
         .meta a {{ color: #8b949e; text-decoration: none; }}
         .meta a:hover {{ text-decoration: underline; }}
-        .desc {{ color: #8b949e; font-size: 0.9em; margin-top: 6px; }}
-        .footer {{ text-align: center; color: #8b949e; font-size: 0.85em; margin-top: 30px; }}
+        .desc {{ color: #8b949e; font-size: 0.85em; margin-top: 5px; line-height: 1.5; }}
+        .footer {{ text-align: center; color: #8b949e; font-size: 0.82em; margin-top: 20px; }}
         .footer a {{ color: #58a6ff; text-decoration: none; }}
-        @media (max-width: 600px) {{ body {{ padding: 10px; }} .section {{ padding: 15px; }} }}
+        @media (max-width: 900px) {{ .grid {{ grid-template-columns: 1fr; }} }}
+        @media (max-width: 600px) {{ body {{ padding: 10px; }} .section {{ padding: 12px; }} }}
     </style>
 </head>
 <body>
@@ -260,10 +265,12 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
             <h1>📊 趋势日报</h1>
             <p class="date">{today_str} · HN Top + Ask/Show + GitHub Trending</p>
         </header>
-        {hn_top_html}
-        {hn_ask_html}
-        {hn_show_html}
-        {gh_html}
+        <div class="grid">
+            {hn_top_html}
+            {hn_ask_html}
+            {hn_show_html}
+            {gh_html}
+        </div>
         <footer class="footer">
             <p>📦 数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> · <a href="https://news.ycombinator.com" target="_blank">Hacker News</a></p>
             <p>📅 历史存档: <a href="./archive/" target="_blank">archive/</a></p>

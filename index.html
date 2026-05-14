@@ -3,207 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>趋势日报 2026-05-13</title>
+    <title>趋势日报 2026-05-14</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #e6edf3; padding: 20px; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; }
-        header { text-align: center; margin-bottom: 30px; padding: 20px; background: #161b22; border-radius: 12px; }
-        header h1 { font-size: 1.8em; margin-bottom: 8px; }
-        header .date { color: #8b949e; font-size: 0.95em; }
-        .section { background: #161b22; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
-        .section h2 { font-size: 1.2em; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #30363d; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 24px; padding: 16px 20px; background: #161b22; border-radius: 12px; }
+        header h1 { font-size: 1.6em; margin-bottom: 6px; }
+        header .date { color: #8b949e; font-size: 0.9em; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .section { background: #161b22; border-radius: 10px; padding: 16px; }
+        .section.full { grid-column: 1 / -1; }
+        .section h2 { font-size: 1.1em; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #30363d; }
         .list { list-style: none; }
-        .item { padding: 12px 0; border-bottom: 1px solid #21262d; }
+        .item { padding: 10px 0; border-bottom: 1px solid #21262d; }
         .item:last-child { border-bottom: none; }
-        .title { color: #58a6ff; text-decoration: none; font-size: 1em; }
+        .title { color: #58a6ff; text-decoration: none; font-size: 0.95em; }
         .title:hover { text-decoration: underline; }
-        .meta { display: block; color: #8b949e; font-size: 0.85em; margin-top: 4px; }
+        .meta { display: block; color: #8b949e; font-size: 0.82em; margin-top: 3px; }
         .meta a { color: #8b949e; text-decoration: none; }
         .meta a:hover { text-decoration: underline; }
-        .desc { color: #8b949e; font-size: 0.9em; margin-top: 6px; }
-        .footer { text-align: center; color: #8b949e; font-size: 0.85em; margin-top: 30px; }
+        .desc { color: #8b949e; font-size: 0.85em; margin-top: 5px; line-height: 1.5; }
+        .footer { text-align: center; color: #8b949e; font-size: 0.82em; margin-top: 20px; }
         .footer a { color: #58a6ff; text-decoration: none; }
-        @media (max-width: 600px) { body { padding: 10px; } .section { padding: 15px; } }
+        @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+        @media (max-width: 600px) { body { padding: 10px; } .section { padding: 12px; } }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>📊 趋势日报</h1>
-            <p class="date">2026-05-13 · HN Top + Ask/Show + GitHub Trending</p>
+            <p class="date">2026-05-14 · HN Top + Ask/Show + GitHub Trending</p>
         </header>
-        <section class="section"><h2>🔥 HN 热门 Top 20</h2><ul class="list"><li class="item">
-                <a href="https://arxiv.org/abs/2605.08419" target="_blank" class="title">1. Deterministic Fully-Static Whole-Binary Translation Without Heuristics</a>
-                <span class="meta">⭐ 158 · matt_d · <a href="https://news.ycombinator.com/item?id=48117810">💬 34</a></span>
-                <p class="desc">We present Elevator, the first binary translator that statically translates entire x86-64 executables to AArch64 without debug information, source code, or assumptions about code layout. Unlike existing systems, which rely on heuristics or runtime fallbacks to handle code-versus-data decoding errors, Elevator considers all possible interpretations of every byte and produces a separate translation for each feasible one ahead of time. Any byte may be interpreted as data, an opcode, or an opcode...</p>
+        <div class="grid">
+            <section class="section full"><h2>🔥 HN 热门 Top 20</h2><ul class="list"><li class="item">
+                <a href="https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/" target="_blank" class="title">1. Linux gaming is faster because Windows APIs are becoming Linux kernel features</a>
+                <span class="meta">⭐ 497 · haunter · <a href="https://news.ycombinator.com/item?id=48087887">💬 326</a></span>
+                <p class="desc">As time goes on, fewer games than ever are unplayable on Linux</p>
             </li><li class="item">
-                <a href="https://github.com/FULU-Foundation/OrcaSlicer-bambulab" target="_blank" class="title">2. Restore full BambuNetwork support for Bambu Lab printers</a>
-                <span class="meta">⭐ 416 · Murfalo · <a href="https://news.ycombinator.com/item?id=48115127">💬 177</a></span>
+                <a href="https://personalaisafety.com/p/the-other-half-of-ai-safety" target="_blank" class="title">2. The Other Half of AI Safety</a>
+                <span class="meta">⭐ 11 · sofiaqt · <a href="https://news.ycombinator.com/item?id=48129561">💬 5</a></span>
                 
             </li><li class="item">
-                <a href="https://lpar.ATH0.com/posts/2026/05/the-vi-family/" target="_blank" class="title">3. The vi family</a>
-                <span class="meta">⭐ 155 · hggh · <a href="https://news.ycombinator.com/item?id=48033483">💬 83</a></span>
+                <a href="https://fredchan.org/blog/locality-domains-guide/" target="_blank" class="title">3. Setting up a free *.city.state.us locality domain (2025)</a>
+                <span class="meta">⭐ 474 · speckx · <a href="https://news.ycombinator.com/item?id=48122635">💬 153</a></span>
                 
             </li><li class="item">
-                <a href="https://googlebook.google/" target="_blank" class="title">4. Googlebook</a>
-                <span class="meta">⭐ 769 · tambourine_man · <a href="https://news.ycombinator.com/item?id=48111545">💬 1283</a></span>
-                <p class="desc">https://www.reddit.com/r/Android/comments/1tb8xls/introducin...</p>
+                <a href="https://laurent.le-brun.eu/blog/a-history-of-ides-at-google" target="_blank" class="title">4. A History of IDEs at Google</a>
+                <span class="meta">⭐ 260 · laurentlb · <a href="https://news.ycombinator.com/item?id=48073979">💬 191</a></span>
+                <p class="desc">Laurent Le Brun's blog</p>
             </li><li class="item">
-                <a href="https://internetcleanup.foundation/2026/05/european-governments-3000-tracking-sites-1000-phpmyadmins-and-99pct-poorly-encrypted-email-introducing-securitybaseline-eu/" target="_blank" class="title">5. SecurityBaseline.eu</a>
-                <span class="meta">⭐ 135 · aequitas · <a href="https://news.ycombinator.com/item?id=48118763">💬 53</a></span>
-                <p class="desc">On May 13, 2026, the website SecurityBaseline.eu was launched. It is a spin-off from the Dutch “Basisbeveiliging”, which has monitored baseline security for over a decade and is part of governmental policy. Three months ago we sent tens of thousands of e-mails to European governments indicating the new site would launch, giving them time to […]</p>
-            </li><li class="item">
-                <a href="https://github.com/cactus-compute/needle" target="_blank" class="title">6. Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a>
-                <span class="meta">⭐ 449 · HenryNdubuaku · <a href="https://news.ycombinator.com/item?id=48111896">💬 151</a></span>
-                <p class="desc">Hey HN, Henry here from Cactus. We open-sourced Needle, a 26M parameter function-calling (tool use) model. It runs at 6000 tok/s prefill and 1200 tok/s decode on consumer devices.We were always frustrated by the little effort made towards building agentic models that run on budget phones, so we conducted investigations that led to an observation: agentic experiences are built upon tool calling, and massive models are overkill for it. Tool calling is fundamentally retrieval-and-assembly (match...</p>
-            </li><li class="item">
-                <a href="https://www.thestandard.com.hk/world/article/331886/I-applied-to-be-pope-Losing-grip-on-reality-while-using-ChatGPT" target="_blank" class="title">7. "I applied to be pope"</a>
-                <span class="meta">⭐ 27 · hansmayer · <a href="https://news.ycombinator.com/item?id=48118672">💬 20</a></span>
-                <p class="desc">Tom Millar thought he had unlocked the secrets of the universe.</p>
-            </li><li class="item">
-                <a href="https://www.sciencedaily.com/releases/2026/05/260510030950.htm" target="_blank" class="title">8. "Cannot be explained" – New ultra stainless steel stuns researchers</a>
-                <span class="meta">⭐ 21 · HardwareLust · <a href="https://news.ycombinator.com/item?id=48089921">💬 0</a></span>
-                <p class="desc">A team at the University of Hong Kong has developed a new âsuper steelâ that can survive the harsh conditions needed to make green hydrogen from seawater. The material uses an unexpected double-protection mechanism that resists corrosion far better than conventional stainless steel. Even more impressive, it could replace costly titanium parts used in todayâs hydrogen systems.</p>
-            </li><li class="item">
-                <a href="https://typesetinthefuture.com/2016/02/18/futuristic/" target="_blank" class="title">9. How to make your text look futuristic (2016)</a>
-                <span class="meta">⭐ 334 · _vaporwave_ · <a href="https://news.ycombinator.com/item?id=48113895">💬 43</a></span>
+                <a href="https://www.jackhogan.me/blog/marco-polo" target="_blank" class="title">5. Marco Polo: Finding a friend with only distance and motion</a>
+                <span class="meta">⭐ 28 · jackhogan11 · <a href="https://news.ycombinator.com/item?id=48095782">💬 3</a></span>
                 
             </li><li class="item">
-                <a href="https://www.bbc.com/culture/article/20260511-kraftwerks-radical-1976-track-radioactivity-became-an-anti-nuclear-anthem" target="_blank" class="title">10. Kraftwerk's radical 1976 track</a>
-                <span class="meta">⭐ 152 · tcp_handshaker · <a href="https://news.ycombinator.com/item?id=48115823">💬 101</a></span>
-                <p class="desc">Fifty years old this month, Kraftwerk's single Radioactivity was a groundbreaking track that morphed into the German electronic pioneers' most political protest song.</p>
-            </li><li class="item">
-                <a href="https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise" target="_blank" class="title">11. Why senior developers fail to communicate their expertise</a>
-                <span class="meta">⭐ 555 · nilirl · <a href="https://news.ycombinator.com/item?id=48109460">💬 244</a></span>
+                <a href="https://ardoedo.it/kempelen/" target="_blank" class="title">6. Chess puzzle I found in my dad's old book</a>
+                <span class="meta">⭐ 70 · Eswo · <a href="https://news.ycombinator.com/item?id=48096760">💬 25</a></span>
                 
             </li><li class="item">
-                <a href="https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html" target="_blank" class="title">12. CERT is releasing six CVEs for serious security vulnerabilities in dnsmasq</a>
-                <span class="meta">⭐ 311 · chizhik-pyzhik · <a href="https://news.ycombinator.com/item?id=48112042">💬 145</a></span>
+                <a href="https://sockpuppet.org/blog/2026/05/12/emacsification/" target="_blank" class="title">7. The Emacsification of Software</a>
+                <span class="meta">⭐ 184 · rdslw · <a href="https://news.ycombinator.com/item?id=48118727">💬 116</a></span>
                 
             </li><li class="item">
-                <a href="https://github.com/tracewayapp/traceway" target="_blank" class="title">13. Traceway: MIT-licensed observability stack you can self-host in ~90s</a>
-                <span class="meta">⭐ 98 · sebakubisz · <a href="https://news.ycombinator.com/item?id=48091898">💬 6</a></span>
+                <a href="https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent" target="_blank" class="title">8. Princeton mandates proctoring for in-person exams, upending 133 year precedent</a>
+                <span class="meta">⭐ 228 · bookofjoe · <a href="https://news.ycombinator.com/item?id=48126848">💬 316</a></span>
+                <p class="desc">The faculty voted Monday to require universal proctoring for all in-person examinations in response to mounting concerns over AI-assisted cheating and declining student reporting of Honor Code violations. The policy, which takes effect July 1, preserves the student-run Honor Committee system while requiring instructors to serve as witnesses.</p>
+            </li><li class="item">
+                <a href="https://github.com/nooga/xsofy" target="_blank" class="title">9. Xs of Y – roguelike that names itself every run. Written in 4kLoC</a>
+                <span class="meta">⭐ 152 · andsoitis · <a href="https://news.ycombinator.com/item?id=48080755">💬 66</a></span>
                 
             </li><li class="item">
-                <a href="https://blogsystem5.substack.com/p/no-basic-in-endbasic" target="_blank" class="title">14. What if there was no BASIC in EndBASIC? – by Julio Merino</a>
-                <span class="meta">⭐ 20 · rbanffy · <a href="https://news.ycombinator.com/item?id=48074226">💬 1</a></span>
-                <p class="desc">An overview of the cool technical building blocks behind EndBASIC and what they could turn into if they evolved on their own</p>
+                <a href="https://www.tryardent.com/" target="_blank" class="title">10. Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration</a>
+                <span class="meta">⭐ 63 · vc289 · <a href="https://news.ycombinator.com/item?id=48124436">💬 26</a></span>
+                <p class="desc">Hey HN! We’re Vikram and Evan from Ardent (https://tryardent.com). We're building database sandboxes for you and your coding agents.In the last two years coding agents have gotten dramatically more capable at handling complex engineering tasks. But without access to a realistic sandbox at the DB layer for testing, they ship garbage that can take down production databases. I spent over a year building an AI Data Engineer that failed for this exact reason. Evan spent the last 12 years in data e...</p>
             </li><li class="item">
-                <a href="https://ericswpark.com/blog/2026/2026-05-12-my-graduation-cap-runs-rust/" target="_blank" class="title">15. My graduation cap runs Rust</a>
-                <span class="meta">⭐ 150 · ericswpark · <a href="https://news.ycombinator.com/item?id=48116207">💬 47</a></span>
-                <p class="desc">Eric Park's website</p>
+                <a href="https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/" target="_blank" class="title">11. Twin brothers wipe 96 government databases minutes after being fired</a>
+                <span class="meta">⭐ 286 · jnord · <a href="https://news.ycombinator.com/item?id=48115438">💬 217</a></span>
+                <p class="desc">A case study in why credentials are revoked before firings.</p>
             </li><li class="item">
-                <a href="https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/" target="_blank" class="title">16. Rendering the Sky, Sunsets, and Planets</a>
-                <span class="meta">⭐ 472 · ibobev · <a href="https://news.ycombinator.com/item?id=48107997">💬 38</a></span>
-                <p class="desc">This article explores how to render realistic skies and atmospheres in real time in the browser with shaders, from simple sky domes, to entire planets using shaders, raymarching, Rayleigh and Mie scattering, and ozone absorption.</p>
-            </li><li class="item">
-                <a href="https://github.com/Genymobile/scrcpy/releases/tag/v4.0" target="_blank" class="title">17. Scrcpy v4.0</a>
-                <span class="meta">⭐ 172 · xnx · <a href="https://news.ycombinator.com/item?id=48114356">💬 27</a></span>
+                <a href="https://grantmestrength.github.io/S100/" target="_blank" class="title">12. S-100 Virtual Workbench</a>
+                <span class="meta">⭐ 96 · rbanffy · <a href="https://news.ycombinator.com/item?id=48123546">💬 20</a></span>
                 
             </li><li class="item">
-                <a href="https://duckdb.org/2026/05/12/quack-remote-protocol" target="_blank" class="title">18. Quack: The DuckDB Client-Server Protocol</a>
-                <span class="meta">⭐ 279 · aduffy · <a href="https://news.ycombinator.com/item?id=48111765">💬 56</a></span>
-                <p class="desc">DuckDB instances can now talk to each other using the Quack remote protocol. This lets you run DuckDB in a client-server setup with multiple concurrent writers. In DuckDB's spirit, Quack is simple to set up and builds on proven technologies such as HTTP. It's also fast, which allows it to support workloads ranging from bulk operations to small transactions.</p>
+                <a href="https://avkcode.github.io/blog/us-winning-ai-race.html" target="_blank" class="title">13. The US is winning the AI race where it matters most: commercialization</a>
+                <span class="meta">⭐ 160 · akrylov · <a href="https://news.ycombinator.com/item?id=48121929">💬 443</a></span>
+                <p class="desc">Energy matters for AI, but the decisive layers are cloud infrastructure, data, and commercialization. On those layers the United States is ahead by a wide margin.</p>
             </li><li class="item">
-                <a href="https://blog.cloudflare.com/quic-death-spiral-fix/" target="_blank" class="title">19. When "idle" isn't idle: how a Linux kernel optimization became a QUIC bug</a>
-                <span class="meta">⭐ 85 · sbulaev · <a href="https://news.ycombinator.com/item?id=48116064">💬 6</a></span>
-                <p class="desc">We investigated a bug where CUBIC's congestion window became pinned at its minimum floor, causing a performance to plummet. The fix involved correctly measuring idle periods to distinguish RTT wait times from actual application idleness.</p>
+                <a href="https://discuss.python.org/t/reverting-the-incremental-gc-in-python-3-14-and-3-15/107014" target="_blank" class="title">14. Reverting the incremental GC in Python 3.14 and 3.15</a>
+                <span class="meta">⭐ 194 · curiousgal · <a href="https://news.ycombinator.com/item?id=48077924">💬 75</a></span>
+                <p class="desc">Python 3.14 shipped with a new incremental garbage collector. However, we’ve had a number of reports of significant memory pressure in production environments.  We’ve decided to revert it in both 3.14 and 3.15, and go back to the generational GC from 3.13.  3.15 is still in alpha, so such changes are fine. For 3.14, it is unusual for a patch release, but the old GC is a known quantity, the new incremental GC didn’t go through the PEP process, and was rolled back just before the final release of ...</p>
             </li><li class="item">
-                <a href="https://thebaffler.com/odds-and-ends/the-profession-that-does-not-exist-symposium" target="_blank" class="title">20. Up in Smoke</a>
-                <span class="meta">⭐ 20 · NaOH · <a href="https://news.ycombinator.com/item?id=48090321">💬 1</a></span>
-                <p class="desc">A partial history of the hidden labor that makes possible the poems, stories, essays, and books you read.</p>
+                <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="title">15. Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing</a>
+                <span class="meta">⭐ 139 · pycassa · <a href="https://news.ycombinator.com/item?id=48128003">💬 58</a></span>
+                <p class="desc">I wanted to try codex after 5 months of claude code max subscription. And then I went back to my previous projects on claude design only to realize I don't have access to them anymore.This is a first. I never lost access to any of my past sessions because I unsubscribed in any of the LLM apps.I actually wanted to try out codex previously, but had similar experience with my credits. They gave extra credits equivalent to my montly subscription price, with some time limit because claude has so m...</p>
+            </li><li class="item">
+                <a href="https://andreafortuna.org/2026/05/13/amarcord/" target="_blank" class="title">16. A sentimental tour of late 1990s and early 2000s hacking tools</a>
+                <span class="meta">⭐ 43 · speckx · <a href="https://news.ycombinator.com/item?id=48125557">💬 14</a></span>
+                
+            </li><li class="item">
+                <a href="https://www.sciencedaily.com/releases/2026/05/260510030950.htm" target="_blank" class="title">17. New stainless steel can survive conditions for hydrogen production in seawater</a>
+                <span class="meta">⭐ 294 · HardwareLust · <a href="https://news.ycombinator.com/item?id=48089921">💬 137</a></span>
+                <p class="desc">https://www.sciencedirect.com/science/article/abs/pii/S13697...</p>
+            </li><li class="item">
+                <a href="https://github.com/monkeysee-ai/rotunda" target="_blank" class="title">18. Show HN: Rotunda - A browser built for agents with simulated typing</a>
+                <span class="meta">⭐ 10 · icyfox · <a href="https://news.ycombinator.com/item?id=48121824">💬 0</a></span>
+                <p class="desc">Hi HN! Pierce here.Rotunda is a firefox fork primarily intended for agent use, which I’ve been hacking on nights/weekends.There was a [lengthy](https://news.ycombinator.com/item?id=48024859) discussion last week on how expensive computer use models are. The cost is going to drop eventually, but I think on some level it's still usually the wrong primitive. The web gives us access to beautiful structured formats, plaintext, etc... why throw that away if we don't have to?I realized at some point...</p>
+            </li><li class="item">
+                <a href="https://www.adn.com/alaska-news/science/2026/05/08/after-3-decades-of-splendid-scientific-communication-this-ones-for-you-ned/" target="_blank" class="title">19. After 3 decades of splendid scientific communication, this one's for you, Ned</a>
+                <span class="meta">⭐ 9 · rolph · <a href="https://news.ycombinator.com/item?id=48085423">💬 0</a></span>
+                
+            </li><li class="item">
+                <a href="https://www.theverge.com/tech/929091/meta-ai-threads-account-block" target="_blank" class="title">20. Meta won't let you block its AI account on Threads</a>
+                <span class="meta">⭐ 103 · logickkk1 · <a href="https://news.ycombinator.com/item?id=48126981">💬 33</a></span>
+                <p class="desc">Hey Meta, why are Threads users angry?</p>
             </li></ul></section>
-        <section class="section"><h2>💬 Ask HN — 大家在问</h2><ul class="list"><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48117941" target="_blank" class="title">1. Ask HN: If HTML supersedes Markdown fr AI, Will it be versatile enough for devs?</a>
-                <span class="meta">⭐ 3 · zameermfm · <a href="https://news.ycombinator.com/item?id=48117941">💬 9</a></span>
-                <p class="desc">Isn't Markdown's hallmark its versatility while performant? 
-I see there is an increasing call from tech community towards HTML to be adopted instead of Markdown due to its richness in the agentic communication layer. But is it versatile across any kind of interfaces? versatile with different format conversions? and performant (as the md is lightweight)?</p>
+            <section class="section"><h2>💬 Ask HN — 大家在问</h2><ul class="list"><li class="item">
+                <a href="https://news.ycombinator.com/item?id=48128003" target="_blank" class="title">1. Tell HN: Dont use Claude Design, lost access to my projects after unsubscribing</a>
+                <span class="meta">⭐ 139 · pycassa · <a href="https://news.ycombinator.com/item?id=48128003">💬 58</a></span>
+                <p class="desc">I wanted to try codex after 5 months of claude code max subscription. And then I went back to my previous projects on claude design only to realize I don't have access to them anymore.This is a first. I never lost access to any of my past sessions because I unsubscribed in any of the LLM apps.I actually wanted to try out codex previously, but had similar experience with my credits. They gave extra credits equivalent to my montly subscription price, with some time limit because claude has so m...</p>
             </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48085993" target="_blank" class="title">2. Ask HN: What are you working on? (May 2026)</a>
-                <span class="meta">⭐ 278 · david927 · <a href="https://news.ycombinator.com/item?id=48085993">💬 1058</a></span>
+                <a href="https://news.ycombinator.com/item?id=48122103" target="_blank" class="title">2. Ask HN: What are you working on (non-AI)?</a>
+                <span class="meta">⭐ 28 · BrunoBernardino · <a href="https://news.ycombinator.com/item?id=48122103">💬 35</a></span>
+                <p class="desc">Please don't turn this into an inflammatory post.Regardless of "AI" being good or bad (it's not even just one thing as many of you know), I feel like the "What are you working on?" posts are drowning in things that use AI for something and/or are clearly "AI slop".I'd like to look at things other humans have been doing (even if they used a bit of some kind of AI for assistance), that aren't a product or tool that uses AI for something.I know it exists (and I use and build some), but it's incr...</p>
+            </li><li class="item">
+                <a href="https://news.ycombinator.com/item?id=48126435" target="_blank" class="title">3. Ask HN: Is Anthropic doing too much vibe coding?</a>
+                <span class="meta">⭐ 4 · terabytest · <a href="https://news.ycombinator.com/item?id=48126435">💬 3</a></span>
+                <p class="desc">The Claude app and Claude Code have been an unusable and buggy mess for me lately, has anyone else been experiencing this? Most of my messages get swallowed after sending them or the responses get interrupted or dropped. Sometimes entire conversations disappear from the sidebar only to reappear later. I’ve learnt that when a message appears not to have gone through or have errored midway, it often comes back with a valid response if I wait a bit and then restart the app.I wonder if it has any...</p>
+            </li><li class="item">
+                <a href="https://news.ycombinator.com/item?id=48085993" target="_blank" class="title">4. Ask HN: What are you working on? (May 2026)</a>
+                <span class="meta">⭐ 279 · david927 · <a href="https://news.ycombinator.com/item?id=48085993">💬 1069</a></span>
                 <p class="desc">What are you working on?  Any new ideas that you're thinking about?</p>
             </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48060054" target="_blank" class="title">3. Ask HN: We just had an actual UUID v4 collision...</a>
-                <span class="meta">⭐ 468 · mittermayr · <a href="https://news.ycombinator.com/item?id=48060054">💬 335</a></span>
+                <a href="https://news.ycombinator.com/item?id=48060054" target="_blank" class="title">5. Ask HN: We just had an actual UUID v4 collision...</a>
+                <span class="meta">⭐ 470 · mittermayr · <a href="https://news.ycombinator.com/item?id=48060054">💬 335</a></span>
                 <p class="desc">I know what you're thinking... and I still can't believe it, but...This morning, our database flagged a duplicate UUID (v4). I checked, thinking it may have been a double-insert bug or something, but no.The original UUID was from a record added in 2025 (about a year ago), and today the system inserted a new document with a fresh UUIDv4 and it came up with the exact same one:b6133fd6-70fe-4fe3-bed6-8ca8fc9386cdWe're using this:
 https://www.npmjs.com/package/uuidI thought this is technically im...</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48037336" target="_blank" class="title">4. Rumors of my death are slightly exaggerated</a>
-                <span class="meta">⭐ 1663 · CliffStoll · <a href="https://news.ycombinator.com/item?id=48037336">💬 256</a></span>
-                <p class="desc">AI hallucinations are getting ambitious.A couple people recently emailed, asking whether the Klein bottle business was still operating after my death.“Huh?” I thought. “I ain’t dead yet.”After some digging, I discovered the source: an AI-generated review of The Cuckoo’s Egg circulating on Facebook. Alongside the usual synthetic praise and fabricated details, it confidently announced that I had died in May 2024.Apparently AI has now advanced to the point where it can kill people off before the...</p>
-            </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48113611" target="_blank" class="title">5. Ask HN: Is Spam getting worse or is Gmail getting worse?</a>
-                <span class="meta">⭐ 6 · adamtaylor_13 · <a href="https://news.ycombinator.com/item?id=48113611">💬 4</a></span>
-                <p class="desc">Over the past couple of months I've noticed that number of spam emails landing in my inbox has increased by quite a bit. I keep a very tidy inbox, so it's pretty easy for me to notice them and mark them as spam. But I'm curious: is Google just getting worse at detecting spam, or is the spam somehow evolving?For example, I just got this email:Sender: william_brown_318@rofopifj.dravixa.space
-Subject: the wagon is inThe body contains tons of literal HTML tags that weren't parsed into actual HTML...</p>
             </li></ul></section>
-        <section class="section"><h2>🎨 Show HN — 大家在秀</h2><ul class="list"><li class="item">
-                <a href="https://github.com/cactus-compute/needle" target="_blank" class="title">1. Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a>
-                <span class="meta">⭐ 450 · HenryNdubuaku · <a href="https://news.ycombinator.com/item?id=48111896">💬 151</a></span>
+            <section class="section"><h2>🎨 Show HN — 大家在秀</h2><ul class="list"><li class="item">
+                <a href="https://github.com/monkeysee-ai/rotunda" target="_blank" class="title">1. Show HN: Rotunda - A browser built for agents with simulated typing</a>
+                <span class="meta">⭐ 10 · icyfox · <a href="https://news.ycombinator.com/item?id=48121824">💬 0</a></span>
+                <p class="desc">Hi HN! Pierce here.Rotunda is a firefox fork primarily intended for agent use, which I’ve been hacking on nights/weekends.There was a [lengthy](https://news.ycombinator.com/item?id=48024859) discussion last week on how expensive computer use models are. The cost is going to drop eventually, but I think on some level it's still usually the wrong primitive. The web gives us access to beautiful structured formats, plaintext, etc... why throw that away if we don't have to?I realized at some point...</p>
+            </li><li class="item">
+                <a href="https://github.com/cactus-compute/needle" target="_blank" class="title">2. Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a>
+                <span class="meta">⭐ 637 · HenryNdubuaku · <a href="https://news.ycombinator.com/item?id=48111896">💬 182</a></span>
                 <p class="desc">Hey HN, Henry here from Cactus. We open-sourced Needle, a 26M parameter function-calling (tool use) model. It runs at 6000 tok/s prefill and 1200 tok/s decode on consumer devices.We were always frustrated by the little effort made towards building agentic models that run on budget phones, so we conducted investigations that led to an observation: agentic experiences are built upon tool calling, and massive models are overkill for it. Tool calling is fundamentally retrieval-and-assembly (match...</p>
             </li><li class="item">
-                <a href="https://www.hypercubic.ai/hopper" target="_blank" class="title">2. Show HN: Agentic interface for mainframes and COBOL</a>
-                <span class="meta">⭐ 72 · sai18 · <a href="https://news.ycombinator.com/item?id=48111143">💬 41</a></span>
-                <p class="desc">Hi HN, we’re Sai and Aayush, and we’re building Hypercubic (https://www.hypercubic.ai/), bringing AI tools to the mainframe and COBOL world. (We did a Launch HN last year: https://news.ycombinator.com/item?id=45877517.) Today we’re launching Hopper, an agentic development environment for mainframes.You can download it here: https://www.hypercubic.ai/hopper, and you can also request access and immediately get a mainframe user account to play with.There's also a video runthrough at https://www....</p>
+                <a href="https://github.com/taktekhq/petri" target="_blank" class="title">3. Show HN: Petri – Drop-in Postgres image that forks a DB per test</a>
+                <span class="meta">⭐ 3 · nizarmah · <a href="https://news.ycombinator.com/item?id=48129073">💬 0</a></span>
+                <p class="desc">Rolling it out at work to parallelize 4,257 tests across 5 services. It fixes our tests running in band and DB mocking in API tests.It's a drop-in Postgres image, with a Golang proxy. :5432 is passthrough, :5433 forks the DB per conn (CREATE DATABASE … TEMPLATE …, dropped on disconnect).If you use it, let me know what you like or don't like, so I can make it better. Cheers!</p>
             </li><li class="item">
-                <a href="https://news.ycombinator.com/item?id=48110593" target="_blank" class="title">3. Show HN: Gigacatalyst – Extend your SaaS with an embedded AI builder</a>
-                <span class="meta">⭐ 49 · namanyayg · <a href="https://news.ycombinator.com/item?id=48110593">💬 20</a></span>
+                <a href="https://news.ycombinator.com/item?id=48110593" target="_blank" class="title">4. Show HN: Gigacatalyst – Extend your SaaS with an embedded AI builder</a>
+                <span class="meta">⭐ 55 · namanyayg · <a href="https://news.ycombinator.com/item?id=48110593">💬 24</a></span>
                 <p class="desc">Hi HN, I’m Namanyay from Gigacatalyst (link: https://gigacatalyst.com/). Gigacatalyst allows sales, CS, and users to build one-off features, so your SaaS can support long-tail customer workflows and engineers aren’t pulled away from the roadmap.When you sell software to large businesses, you realize that each customer needs their own workflow and features. Traditionally, this either means long engineering roadmaps or the customers end up using workarounds.But what if everyone could build thei...</p>
             </li><li class="item">
-                <a href="https://github.com/statewright/statewright" target="_blank" class="title">4. Show HN: Statewright – Visual state machines that make AI agents reliable</a>
-                <span class="meta">⭐ 91 · azurewraith · <a href="https://news.ycombinator.com/item?id=48108778">💬 33</a></span>
-                <p class="desc">Agentic problem solving in its current state is very brittle.  I fell in love with it, but it creates as many problems as it solves.I'm Ben Cochran, I spent 20+ years in the trenches with full-stack Engineering, DevOps, high performance computing & ML with stints at NVIDIA, AMD and various other organizations most recently as a Distinguished Engineer.For agents to work reliably you either need massive parameter counts or massive context windows to keep the solution spaces workable. Most peopl...</p>
-            </li><li class="item">
-                <a href="https://andreaturchet.github.io/website/index.html" target="_blank" class="title">5. Show HN: TikTok but for scientific papers</a>
-                <span class="meta">⭐ 179 · ciwrl · <a href="https://news.ycombinator.com/item?id=48096842">💬 69</a></span>
-                <p class="desc">Discover, read, and engage with academic papers. AI-powered summaries, quizzes, and a community of researchers — all in one beautiful app.</p>
+                <a href="https://www.hypercubic.ai/hopper" target="_blank" class="title">5. Show HN: Agentic interface for mainframes and COBOL</a>
+                <span class="meta">⭐ 89 · sai18 · <a href="https://news.ycombinator.com/item?id=48111143">💬 45</a></span>
+                <p class="desc">Hi HN, we’re Sai and Aayush, and we’re building Hypercubic (https://www.hypercubic.ai/), bringing AI tools to the mainframe and COBOL world. (We did a Launch HN last year: https://news.ycombinator.com/item?id=45877517.) Today we’re launching Hopper, an agentic development environment for mainframes.You can download it here: https://www.hypercubic.ai/hopper, and you can also request access and immediately get a mainframe user account to play with.There's also a video runthrough at https://www....</p>
             </li></ul></section>
-        <section class="section"><h2>📦 GitHub 热门</h2><ul class="list"><li class="item">
+            <section class="section full"><h2>📦 GitHub 热门</h2><ul class="list"><li class="item">
                 <a href="https://github.com/tinyhumansai/openhuman" target="_blank" class="title">1. tinyhumansai/openhuman</a>
-                <span class="meta">⭐ 3,412 (今日+1,014) · Rust</span>
+                <span class="meta">⭐ 5,520 (今日+1,696) · Rust</span>
                 <p class="desc">Your Personal AI super intelligence. Private, Simple and extremely powerful.</p>
             </li><li class="item">
                 <a href="https://github.com/rohitg00/agentmemory" target="_blank" class="title">2. rohitg00/agentmemory</a>
-                <span class="meta">⭐ 6,436 (今日+1,048) · TypeScript</span>
+                <span class="meta">⭐ 7,649 (今日+1,379) · TypeScript</span>
                 <p class="desc">#1 Persistent memory for AI coding agents based on real-world benchmarks</p>
             </li><li class="item">
-                <a href="https://github.com/CloakHQ/CloakBrowser" target="_blank" class="title">3. CloakHQ/CloakBrowser</a>
-                <span class="meta">⭐ 8,661 (今日+1,606) · Python</span>
-                <p class="desc">Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.</p>
+                <a href="https://github.com/obra/superpowers" target="_blank" class="title">3. obra/superpowers</a>
+                <span class="meta">⭐ 189,523 (今日+1,401) · Shell</span>
+                <p class="desc">An agentic skills framework & software development methodology that works.</p>
             </li><li class="item">
-                <a href="https://github.com/apernet/hysteria" target="_blank" class="title">4. apernet/hysteria</a>
-                <span class="meta">⭐ 20,432 (今日+51) · Go</span>
-                <p class="desc">Hysteria is a powerful, lightning fast and censorship resistant proxy.</p>
-            </li><li class="item">
-                <a href="https://github.com/mattpocock/skills" target="_blank" class="title">5. mattpocock/skills</a>
-                <span class="meta">⭐ 77,420 (今日+3,867) · Shell</span>
-                <p class="desc">Skills for Real Engineers. Straight from my .claude directory.</p>
-            </li><li class="item">
-                <a href="https://github.com/anonfaded/FadCam" target="_blank" class="title">6. anonfaded/FadCam</a>
-                <span class="meta">⭐ 2,338 (今日+116) · Java</span>
-                <p class="desc">Open-source, ad-free Android multimedia recorder with background video recording, screen recording, live streaming, and remote camera control</p>
-            </li><li class="item">
-                <a href="https://github.com/millionco/react-doctor" target="_blank" class="title">7. millionco/react-doctor</a>
-                <span class="meta">⭐ 8,977 (今日+788) · TypeScript</span>
-                <p class="desc">Your agent writes bad React. This catches it</p>
-            </li><li class="item">
-                <a href="https://github.com/rasbt/LLMs-from-scratch" target="_blank" class="title">8. rasbt/LLMs-from-scratch</a>
-                <span class="meta">⭐ 94,109 (今日+772) · Jupyter Notebook</span>
-                <p class="desc">Implement a ChatGPT-like LLM in PyTorch from scratch, step by step</p>
-            </li><li class="item">
-                <a href="https://github.com/datawhalechina/hello-agents" target="_blank" class="title">9. datawhalechina/hello-agents</a>
-                <span class="meta">⭐ 48,759 (今日+599) · Python</span>
-                <p class="desc">📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程</p>
-            </li><li class="item">
-                <a href="https://github.com/yikart/AiToEarn" target="_blank" class="title">10. yikart/AiToEarn</a>
-                <span class="meta">⭐ 12,350 (今日+1,282) · TypeScript</span>
+                <a href="https://github.com/yikart/AiToEarn" target="_blank" class="title">4. yikart/AiToEarn</a>
+                <span class="meta">⭐ 12,920 (今日+981) · TypeScript</span>
                 <p class="desc">Let's use AI to Earn!</p>
             </li><li class="item">
-                <a href="https://github.com/HKUDS/AI-Trader" target="_blank" class="title">11. HKUDS/AI-Trader</a>
-                <span class="meta">⭐ 16,899 (今日+229) · Python</span>
-                <p class="desc">"AI-Trader: 100% Fully-Automated Agent-Native Trading"</p>
+                <a href="https://github.com/influxdata/telegraf" target="_blank" class="title">5. influxdata/telegraf</a>
+                <span class="meta">⭐ 17,000 (今日+13) · Go</span>
+                <p class="desc">Agent for collecting, processing, aggregating, and writing metrics, logs, and other arbitrary data.</p>
+            </li><li class="item">
+                <a href="https://github.com/millionco/react-doctor" target="_blank" class="title">6. millionco/react-doctor</a>
+                <span class="meta">⭐ 9,280 (今日+604) · TypeScript</span>
+                <p class="desc">Your agent writes bad React. This catches it</p>
+            </li><li class="item">
+                <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" class="title">7. K-Dense-AI/scientific-agent-skills</a>
+                <span class="meta">⭐ 21,122 (今日+99) · Python</span>
+                <p class="desc">A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.</p>
+            </li><li class="item">
+                <a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" target="_blank" class="title">8. danielmiessler/Personal_AI_Infrastructure</a>
+                <span class="meta">⭐ 13,368 (今日+435) · TypeScript</span>
+                <p class="desc">Agentic AI Infrastructure for magnifying HUMAN capabilities.</p>
+            </li><li class="item">
+                <a href="https://github.com/supertone-inc/supertonic" target="_blank" class="title">9. supertone-inc/supertonic</a>
+                <span class="meta">⭐ 4,354 (今日+859) · Swift</span>
+                <p class="desc">Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.</p>
+            </li><li class="item">
+                <a href="https://github.com/CloakHQ/CloakBrowser" target="_blank" class="title">10. CloakHQ/CloakBrowser</a>
+                <span class="meta">⭐ 9,510 (今日+1,835) · Python</span>
+                <p class="desc">Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.</p>
+            </li><li class="item">
+                <a href="https://github.com/Greedeks/GTweak" target="_blank" class="title">11. Greedeks/GTweak</a>
+                <span class="meta">⭐ 925 (今日+75) · C#</span>
+                <p class="desc">Portable Tool for an Ideal Windows Setup</p>
+            </li><li class="item">
+                <a href="https://github.com/mattpocock/skills" target="_blank" class="title">12. mattpocock/skills</a>
+                <span class="meta">⭐ 78,998 (今日+3,392) · Shell</span>
+                <p class="desc">Skills for Real Engineers. Straight from my .claude directory.</p>
+            </li><li class="item">
+                <a href="https://github.com/ArthurBrussee/brush" target="_blank" class="title">13. ArthurBrussee/brush</a>
+                <span class="meta">⭐ 4,364 (今日+81) · Rust</span>
+                <p class="desc">3D Reconstruction for all</p>
+            </li><li class="item">
+                <a href="https://github.com/imthenachoman/How-To-Secure-A-Linux-Server" target="_blank" class="title">14. imthenachoman/How-To-Secure-A-Linux-Server</a>
+                <span class="meta">⭐ 27,090 (今日+234) · </span>
+                <p class="desc">An evolving how-to guide for securing a Linux server.</p>
+            </li><li class="item">
+                <a href="https://github.com/apernet/hysteria" target="_blank" class="title">15. apernet/hysteria</a>
+                <span class="meta">⭐ 20,617 (今日+485) · Go</span>
+                <p class="desc">Hysteria is a powerful, lightning fast and censorship resistant proxy.</p>
+            </li><li class="item">
+                <a href="https://github.com/rasbt/LLMs-from-scratch" target="_blank" class="title">16. rasbt/LLMs-from-scratch</a>
+                <span class="meta">⭐ 94,462 (今日+821) · Jupyter Notebook</span>
+                <p class="desc">Implement a ChatGPT-like LLM in PyTorch from scratch, step by step</p>
+            </li><li class="item">
+                <a href="https://github.com/ton-blockchain/acton" target="_blank" class="title">17. ton-blockchain/acton</a>
+                <span class="meta">⭐ 206 (今日+18) · Rust</span>
+                <p class="desc">Toolchain for TON smart contract development and beyond</p>
+            </li><li class="item">
+                <a href="https://github.com/trycua/cua" target="_blank" class="title">18. trycua/cua</a>
+                <span class="meta">⭐ 16,542 (今日+245) · HTML</span>
+                <p class="desc">Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).</p>
+            </li><li class="item">
+                <a href="https://github.com/github/spec-kit" target="_blank" class="title">19. github/spec-kit</a>
+                <span class="meta">⭐ 98,382 (今日+1,120) · Python</span>
+                <p class="desc">💫 Toolkit to help you get started with Spec-Driven Development</p>
             </li></ul></section>
+        </div>
         <footer class="footer">
             <p>📦 数据来源: <a href="https://github.com/trending" target="_blank">GitHub Trending</a> · <a href="https://news.ycombinator.com" target="_blank">Hacker News</a></p>
             <p>📅 历史存档: <a href="./archive/" target="_blank">archive/</a></p>
