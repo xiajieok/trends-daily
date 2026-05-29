@@ -386,8 +386,13 @@ def generate_html(hn_top, hn_ask, hn_show, gh_trending):
 
         /* Responsive */
         @media (max-width: 900px) {
-            .grid { grid-template-columns: 1fr; }
-            .gh, .hn-top, .ask, .show { grid-area: auto; }
+            .grid {
+                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .gh, .hn-top, .ask, .show { grid-area: unset; }
         }
         @media (max-width: 600px) {
             .container { padding: 20px 12px; }

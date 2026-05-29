@@ -146,8 +146,13 @@
 
         /* Responsive */
         @media (max-width: 900px) {
-            .grid { grid-template-columns: 1fr; }
-            .gh, .hn-top, .ask, .show { grid-area: auto; }
+            .grid {
+                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .gh, .hn-top, .ask, .show { grid-area: unset; }
         }
         @media (max-width: 600px) {
             .container { padding: 20px 12px; }
@@ -170,83 +175,83 @@
     <ul class="list hn-list"><li class="item">
             <span class="num">1</span>
             <div class="content">
-                <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" class="title">Claude Opus 4.8</a>
+                <a href="https://www.bbc.com/future/article/20260513-your-car-is-spying-on-you-its-about-to-get-worse" target="_blank" class="title">Cars are trying to spy on you, and it's only just the beginning</a>
                 <div class="meta">
-                    <span class="score">1097 pts</span>
-                    <span class="by">by craigmart</span>
-                    <a href="https://news.ycombinator.com/item?id=48311647" target="_blank" class="comments">873 comments</a>
+                    <span class="score">165 pts</span>
+                    <span class="by">by 1vuio0pswjnm7</span>
+                    <a href="https://news.ycombinator.com/item?id=48318481" target="_blank" class="comments">75 comments</a>
                 </div>
-                
+                <p class="desc">From your weight and facial expressions to your destination, cars collect a startling amount of data about you. Some of it may even raise your insurance costs.</p>
             </div>
         </li>
 <li class="item">
             <span class="num">2</span>
             <div class="content">
-                <a href="https://mybricklog.com/blog/bricks-minifigs-corporate-stole-old-mans-200000-lego-collection" target="_blank" class="title">Bricks and Minifigs Stole a Man's $200k Lego Collection</a>
+                <a href="https://arstechnica.com/space/2026/05/blue-origins-new-glenn-rocket-just-exploded-during-a-static-fire-test/" target="_blank" class="title">The most spectacular rocket explosion since N1 just happened in Florida</a>
                 <div class="meta">
-                    <span class="score">420 pts</span>
-                    <span class="by">by philips</span>
-                    <a href="https://news.ycombinator.com/item?id=48314136" target="_blank" class="comments">232 comments</a>
+                    <span class="score">102 pts</span>
+                    <span class="by">by benbreen</span>
+                    <a href="https://news.ycombinator.com/item?id=48318678" target="_blank" class="comments">36 comments</a>
                 </div>
-                <p class="desc">Track, organize, and value your entire LEGOÂ® collection for free. Browse 20,000+ sets, check prices for retired sets, manage wishlists, and track minifigures.</p>
+                <p class="desc">New Glenn was due to play a starring role in NASA's Artemis Program.</p>
             </div>
         </li>
 <li class="item">
             <span class="num">3</span>
             <div class="content">
-                <a href="https://www.dbos.dev/blog/postgres-is-all-you-need-for-durable-execution" target="_blank" class="title">Just Use Postgres for Durable Workflows</a>
+                <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" class="title">Claude Opus 4.8</a>
                 <div class="meta">
-                    <span class="score">228 pts</span>
-                    <span class="by">by KraftyOne</span>
-                    <a href="https://news.ycombinator.com/item?id=48313530" target="_blank" class="comments">92 comments</a>
-                </div>
-                <p class="desc">Explaining the concept of a Postgres-backed durable execution system like DBOS and comparing it to external workflow orchestration systems like Temporal.</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">4</span>
-            <div class="content">
-                <a href="https://nick.winans.io/blog/nice-nano/" target="_blank" class="title">I Made a Million Dollar Product from My Dorm Room (2025)</a>
-                <div class="meta">
-                    <span class="score">79 pts</span>
-                    <span class="by">by mattrighetti</span>
-                    <a href="https://news.ycombinator.com/item?id=48314951" target="_blank" class="comments">4 comments</a>
-                </div>
-                <p class="desc">The story of the nice!nano; a wireless Pro Micro-compatible microcontroller board I made in my freshman year of college.</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">5</span>
-            <div class="content">
-                <a href="https://shvbsle.in/various-llm-smells/" target="_blank" class="title">Various LLM Smells</a>
-                <div class="meta">
-                    <span class="score">134 pts</span>
-                    <span class="by">by speckx</span>
-                    <a href="https://news.ycombinator.com/item?id=48313810" target="_blank" class="comments">98 comments</a>
-                </div>
-                <p class="desc">Late last year I started writing a math blog and decided to use LLMs to polish/enhance my writing. The LLM generated writing obviously felt significantly bet...</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">6</span>
-            <div class="content">
-                <a href="https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/tron-legacy/" target="_blank" class="title">Nitpicking the shell history scene in 'Tron: Legacy'</a>
-                <div class="meta">
-                    <span class="score">97 pts</span>
-                    <span class="by">by speckx</span>
-                    <a href="https://news.ycombinator.com/item?id=48314002" target="_blank" class="comments">35 comments</a>
+                    <span class="score">1349 pts</span>
+                    <span class="by">by craigmart</span>
+                    <a href="https://news.ycombinator.com/item?id=48311647" target="_blank" class="comments">1084 comments</a>
                 </div>
                 
             </div>
         </li>
 <li class="item">
+            <span class="num">4</span>
+            <div class="content">
+                <a href="https://mybricklog.com/blog/bricks-minifigs-corporate-stole-old-mans-200000-lego-collection" target="_blank" class="title">Bricks and Minifigs Stole a Man's $200k Lego Collection</a>
+                <div class="meta">
+                    <span class="score">753 pts</span>
+                    <span class="by">by philips</span>
+                    <a href="https://news.ycombinator.com/item?id=48314136" target="_blank" class="comments">384 comments</a>
+                </div>
+                <p class="desc">Track, organize, and value your entire LEGOÂ® collection for free. Browse 20,000+ sets, check prices for retired sets, manage wishlists, and track minifigures.</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">5</span>
+            <div class="content">
+                <a href="https://nick.winans.io/blog/nice-nano/" target="_blank" class="title">I made a million dollar product from my dorm room (2025)</a>
+                <div class="meta">
+                    <span class="score">272 pts</span>
+                    <span class="by">by mattrighetti</span>
+                    <a href="https://news.ycombinator.com/item?id=48314951" target="_blank" class="comments">40 comments</a>
+                </div>
+                <p class="desc">The story of the nice!nano; a wireless Pro Micro-compatible microcontroller board I made in my freshman year of college.</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">6</span>
+            <div class="content">
+                <a href="https://www.noaa.gov/jetstream/clouds/ten-basic-clouds" target="_blank" class="title">Ten Basic Clouds</a>
+                <div class="meta">
+                    <span class="score">77 pts</span>
+                    <span class="by">by nopg</span>
+                    <a href="https://news.ycombinator.com/item?id=48261377" target="_blank" class="comments">21 comments</a>
+                </div>
+                <p class="desc">https://thebrowser.com/r/9bf16d80?m=c6bf87ab-387d-49ae-9584-...</p>
+            </div>
+        </li>
+<li class="item">
             <span class="num">7</span>
             <div class="content">
-                <a href="https://www.science.org/content/article/i-hated-writing-until-i-learned-there-s-science-it" target="_blank" class="title">I hated writing until I learned there’s a science to it (2024)</a>
+                <a href="https://twitter.com/nasaspaceflight/status/2060164928472854821" target="_blank" class="title">Blue Origin's New Glenn blows up during static fire test</a>
                 <div class="meta">
-                    <span class="score">100 pts</span>
-                    <span class="by">by o4c</span>
-                    <a href="https://news.ycombinator.com/item?id=48312528" target="_blank" class="comments">44 comments</a>
+                    <span class="score">199 pts</span>
+                    <span class="by">by enraged_camel</span>
+                    <a href="https://news.ycombinator.com/item?id=48317774" target="_blank" class="comments">97 comments</a>
                 </div>
                 
             </div>
@@ -254,11 +259,83 @@
 <li class="item">
             <span class="num">8</span>
             <div class="content">
+                <a href="https://github.com/RasmusGodske/claude-hook-utils" target="_blank" class="title">Python utility package for building Claude Code hooks</a>
+                <div class="meta">
+                    <span class="score">9 pts</span>
+                    <span class="by">by ankitg12</span>
+                    <a href="https://news.ycombinator.com/item?id=48318978" target="_blank" class="comments">0 comments</a>
+                </div>
+                
+            </div>
+        </li>
+<li class="item">
+            <span class="num">9</span>
+            <div class="content">
+                <a href="https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/tron-legacy/" target="_blank" class="title">Nitpicking the shell history scene in 'Tron: Legacy'</a>
+                <div class="meta">
+                    <span class="score">204 pts</span>
+                    <span class="by">by speckx</span>
+                    <a href="https://news.ycombinator.com/item?id=48314002" target="_blank" class="comments">71 comments</a>
+                </div>
+                
+            </div>
+        </li>
+<li class="item">
+            <span class="num">10</span>
+            <div class="content">
+                <a href="https://www.mpi.nl/news/italians-and-dutch-share-same-gestural-instinct-teaching" target="_blank" class="title">Italians and Dutch share the same gestural instinct for teaching</a>
+                <div class="meta">
+                    <span class="score">15 pts</span>
+                    <span class="by">by vi_sextus_vi</span>
+                    <a href="https://news.ycombinator.com/item?id=48318313" target="_blank" class="comments">1 comments</a>
+                </div>
+                
+            </div>
+        </li>
+<li class="item">
+            <span class="num">11</span>
+            <div class="content">
+                <a href="https://minimaxir.com/2026/05/openrouter-hy3/" target="_blank" class="title">The mysterious Hy3 LLM is topping OpenRouter Model Rankings by a large margin</a>
+                <div class="meta">
+                    <span class="score">42 pts</span>
+                    <span class="by">by freediver</span>
+                    <a href="https://news.ycombinator.com/item?id=48317294" target="_blank" class="comments">19 comments</a>
+                </div>
+                <p class="desc">Why Hy3?</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">12</span>
+            <div class="content">
+                <a href="https://www.science.org/content/article/i-hated-writing-until-i-learned-there-s-science-it" target="_blank" class="title">I hated writing until I learned there’s a science to it (2024)</a>
+                <div class="meta">
+                    <span class="score">185 pts</span>
+                    <span class="by">by o4c</span>
+                    <a href="https://news.ycombinator.com/item?id=48312528" target="_blank" class="comments">75 comments</a>
+                </div>
+                
+            </div>
+        </li>
+<li class="item">
+            <span class="num">13</span>
+            <div class="content">
+                <a href="https://llmgame.scalex.dev" target="_blank" class="title">Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue</a>
+                <div class="meta">
+                    <span class="score">280 pts</span>
+                    <span class="by">by Wirbelwind</span>
+                    <a href="https://news.ycombinator.com/item?id=48308376" target="_blank" class="comments">117 comments</a>
+                </div>
+                <p class="desc">A 30-second game about LLM permission fatigue. How carefully do you really read AI commands?</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">14</span>
+            <div class="content">
                 <a href="https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/" target="_blank" class="title">News about Raspberry Pi 6 and Microcontroller Development</a>
                 <div class="meta">
-                    <span class="score">124 pts</span>
+                    <span class="score">173 pts</span>
                     <span class="by">by rbanffy</span>
-                    <a href="https://news.ycombinator.com/item?id=48276598" target="_blank" class="comments">90 comments</a>
+                    <a href="https://news.ycombinator.com/item?id=48276598" target="_blank" class="comments">138 comments</a>
                 </div>
                 <p class="desc">On Thursday, three of the lead Raspberry Pi engineers hosted an AMA on the r/engineering subreddit.
 Raspberry Pi 6 One of the most interesting tidbits was on the Pi 6.
@@ -267,25 +344,25 @@ Looking back at previous launches:
             </div>
         </li>
 <li class="item">
-            <span class="num">9</span>
+            <span class="num">15</span>
             <div class="content">
-                <a href="https://permanent-upper-crow.jasonwu.ink/" target="_blank" class="title">The Permanent Upper Crow</a>
+                <a href="https://discourse.nixos.org/t/garnix-is-shutting-down-not-oc/77895" target="_blank" class="title">Garnix (A Nix CI) is shutting down</a>
                 <div class="meta">
-                    <span class="score">140 pts</span>
-                    <span class="by">by whiteblossom</span>
-                    <a href="https://news.ycombinator.com/item?id=48310280" target="_blank" class="comments">49 comments</a>
+                    <span class="score">43 pts</span>
+                    <span class="by">by agnishom</span>
+                    <a href="https://news.ycombinator.com/item?id=48317043" target="_blank" class="comments">21 comments</a>
                 </div>
-                <p class="desc">A social commentary game about the 'Permanent Upper Class' philosophical virus spreading through San Francisco tech.</p>
+                <p class="desc">I couldn’t find anything from <garnix.io> so quoting an email I received from contact@garnix.io:   garnix is shutting down Hi everyone,  We wanted to let you know that garnix is joining forces with Shopify.  We are sad to announce that, as part of this transition, the hosted garnix service will shut down on July 15th 2026. But we are open sourcing the garnix codebase, available here; we hope this will help you smoothly move to using your own instance or a shared one. If you are interested in ope...</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">10</span>
+            <span class="num">16</span>
             <div class="content">
                 <a href="https://coalton-lang.github.io/" target="_blank" class="title">Coalton is an efficient, statically typed Lisp with ideas from Haskell and OCaml</a>
                 <div class="meta">
-                    <span class="score">64 pts</span>
+                    <span class="score">131 pts</span>
                     <span class="by">by b-man</span>
-                    <a href="https://news.ycombinator.com/item?id=48280451" target="_blank" class="comments">7 comments</a>
+                    <a href="https://news.ycombinator.com/item?id=48280451" target="_blank" class="comments">21 comments</a>
                 </div>
                 <p class="desc">Coalton is an efficient, statically typed functional programming language that supercharges Common Lisp by taking great ideas from Haskell, Scheme, and OCaml.
 New! Coalton language manual.
@@ -293,123 +370,51 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">11</span>
-            <div class="content">
-                <a href="https://llmgame.scalex.dev" target="_blank" class="title">Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue</a>
-                <div class="meta">
-                    <span class="score">213 pts</span>
-                    <span class="by">by Wirbelwind</span>
-                    <a href="https://news.ycombinator.com/item?id=48308376" target="_blank" class="comments">99 comments</a>
-                </div>
-                <p class="desc">A 30-second game about LLM permission fatigue. How carefully do you really read AI commands?</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">12</span>
-            <div class="content">
-                <a href="https://www.carryology.com/insights/carry-culture/the-tale-of-the-worlds-most-unlikely-school-bag/" target="_blank" class="title">The Most Unlikely School Bag</a>
-                <div class="meta">
-                    <span class="score">62 pts</span>
-                    <span class="by">by surprisetalk</span>
-                    <a href="https://news.ycombinator.com/item?id=48266757" target="_blank" class="comments">19 comments</a>
-                </div>
-                <p class="desc">Nothing signifies generational compromise and a contradiction of tradition and ergonomics quite like the randoseru. Learn more...</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">13</span>
-            <div class="content">
-                <a href="https://bitburner-official.github.io/" target="_blank" class="title">Bitburner, programming-based incremental game</a>
-                <div class="meta">
-                    <span class="score">65 pts</span>
-                    <span class="by">by agmater</span>
-                    <a href="https://news.ycombinator.com/item?id=48312616" target="_blank" class="comments">13 comments</a>
-                </div>
-                
-            </div>
-        </li>
-<li class="item">
-            <span class="num">14</span>
-            <div class="content">
-                <a href="https://www.tomshardware.com/tech-industry/cyber-security/microsofts-github-bans-security-researcher-who-posted-zero-day-windows-exploits-because-company-ruined-their-life-expert-claims-action-is-vindictive-and-promises-further-retaliation" target="_blank" class="title">GitHub bans security researcher who posted zero-day Windows exploits</a>
-                <div class="meta">
-                    <span class="score">45 pts</span>
-                    <span class="by">by possibilistic</span>
-                    <a href="https://news.ycombinator.com/item?id=48315968" target="_blank" class="comments">4 comments</a>
-                </div>
-                <p class="desc">"I will make sure your bones are shattered [on July 14]"</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">15</span>
-            <div class="content">
-                <a href="https://github.com/Kaelio/ktx" target="_blank" class="title">Show HN: Ktx – Open-source executable context layer for data agents</a>
-                <div class="meta">
-                    <span class="score">47 pts</span>
-                    <span class="by">by lucamrtl</span>
-                    <a href="https://news.ycombinator.com/item?id=48309986" target="_blank" class="comments">6 comments</a>
-                </div>
-                <p class="desc">Hi HN, we’re open-sourcing ktx. It’s an executable context layer that makes agents reliable on your data stack.We built it after going through the experience of building production-grade data agents for dozens of companies. If you’ve also tried building them, or simply tried using Claude Code or Codex on your data warehouse, you’ll know that accuracy is the #1 issue. Agents are great at generating valid SQL, but it’s not always correct SQL.To cite a few examples of “agents gone wrong”:- Stale...</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">16</span>
-            <div class="content">
-                <a href="https://www.anthropic.com/news/series-h" target="_blank" class="title">Anthropic raises $65B in Series H funding at $965B post-money valuation</a>
-                <div class="meta">
-                    <span class="score">210 pts</span>
-                    <span class="by">by meetpateltech</span>
-                    <a href="https://news.ycombinator.com/item?id=48313048" target="_blank" class="comments">185 comments</a>
-                </div>
-                
-            </div>
-        </li>
-<li class="item">
             <span class="num">17</span>
             <div class="content">
-                <a href="https://taoofmac.com/space/blog/2026/05/26/1730" target="_blank" class="title">Indoor Wi-Fi Roaming with OpenWRT</a>
+                <a href="https://sfstandard.com/2026/05/28/sf-startup-secretly-testing-robots-airbnbs-trashing-lawsuit-claims/" target="_blank" class="title">SF startup is testing robots in Airbnbs, and trashing them, lawsuit claims</a>
                 <div class="meta">
-                    <span class="score">191 pts</span>
-                    <span class="by">by zdw</span>
-                    <a href="https://news.ycombinator.com/item?id=48282180" target="_blank" class="comments">94 comments</a>
+                    <span class="score">156 pts</span>
+                    <span class="by">by drewda</span>
+                    <a href="https://news.ycombinator.com/item?id=48317093" target="_blank" class="comments">75 comments</a>
                 </div>
-                <p class="desc">A few months after writing up the Cudy AX3000 units and moving the house over to OpenWRT, I ended up revisiting the one bit I had deliberate...</p>
+                <p class="desc">The guests behind the bookings have received negative reviews from a number of Bay Area hosts, alleging they damaged the property and personal belongings.</p>
             </div>
         </li>
 <li class="item">
             <span class="num">18</span>
             <div class="content">
-                <a href="https://github.com/bytecodealliance/endive" target="_blank" class="title">Endive: A JVM native WebAssembly runtime</a>
+                <a href="https://www.tomshardware.com/tech-industry/cyber-security/microsofts-github-bans-security-researcher-who-posted-zero-day-windows-exploits-because-company-ruined-their-life-expert-claims-action-is-vindictive-and-promises-further-retaliation" target="_blank" class="title">GitHub bans security researcher who posted zero-day Windows exploits</a>
                 <div class="meta">
-                    <span class="score">44 pts</span>
-                    <span class="by">by theanonymousone</span>
-                    <a href="https://news.ycombinator.com/item?id=48311490" target="_blank" class="comments">13 comments</a>
+                    <span class="score">271 pts</span>
+                    <span class="by">by possibilistic</span>
+                    <a href="https://news.ycombinator.com/item?id=48315968" target="_blank" class="comments">129 comments</a>
                 </div>
-                
+                <p class="desc">"I will make sure your bones are shattered [on July 14]"</p>
             </div>
         </li>
 <li class="item">
             <span class="num">19</span>
             <div class="content">
-                <a href="https://bookofjoe2.blogspot.com/2026/05/blog-post_27.html" target="_blank" class="title">Separate the Cord from the Device</a>
+                <a href="https://www.dbos.dev/blog/postgres-is-all-you-need-for-durable-execution" target="_blank" class="title">Building durable workflows on Postgres</a>
                 <div class="meta">
-                    <span class="score">30 pts</span>
-                    <span class="by">by bookofjoe</span>
-                    <a href="https://news.ycombinator.com/item?id=48313990" target="_blank" class="comments">25 comments</a>
+                    <span class="score">295 pts</span>
+                    <span class="by">by KraftyOne</span>
+                    <a href="https://news.ycombinator.com/item?id=48313530" target="_blank" class="comments">126 comments</a>
                 </div>
-                
+                <p class="desc">Explaining the concept of a Postgres-backed durable execution system like DBOS and comparing it to external workflow orchestration systems like Temporal.</p>
             </div>
         </li>
 <li class="item">
             <span class="num">20</span>
             <div class="content">
-                <a href="https://github.com/hatchet-dev/durable-execution-the-hard-way" target="_blank" class="title">Durable Execution the Hard Way</a>
+                <a href="https://www.newyorker.com/culture/the-weekend-essay/what-jack-kerouac-left-behind" target="_blank" class="title">What Gets Kept</a>
                 <div class="meta">
-                    <span class="score">6 pts</span>
-                    <span class="by">by abelanger</span>
-                    <a href="https://news.ycombinator.com/item?id=48307802" target="_blank" class="comments">0 comments</a>
+                    <span class="score">56 pts</span>
+                    <span class="by">by lermontov</span>
+                    <a href="https://news.ycombinator.com/item?id=48258848" target="_blank" class="comments">59 comments</a>
                 </div>
-                
+                <p class="desc">A recent exhibition at the Grolier Club featured ashes that fell from a cigarette the novelist was probably smoking on the day he died. Joyce Johnson reflects on her time with Kerouac, and what she’s kept from him.</p>
             </div>
         </li></ul>
 </section>
@@ -418,13 +423,13 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
     <ul class="list hn-list"><li class="item">
             <span class="num">1</span>
             <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48315950" target="_blank" class="title">Do not use Cloudflare DNS regsitrar</a>
+                <a href="https://news.ycombinator.com/item?id=48312377" target="_blank" class="title">Ask HN: What Is an "AI Engineer"?</a>
                 <div class="meta">
-                    <span class="score">4 pts</span>
-                    <span class="by">by talkingtab</span>
-                    <a href="https://news.ycombinator.com/item?id=48315950" target="_blank" class="comments">0 comments</a>
+                    <span class="score">14 pts</span>
+                    <span class="by">by seattle_spring</span>
+                    <a href="https://news.ycombinator.com/item?id=48312377" target="_blank" class="comments">24 comments</a>
                 </div>
-                <p class="desc">The problem:1. You try email routing provided by cloudflare.2. It does not work for you3. Somehow you get your DNS into an odd state. email routing is disabled because it is misconfigured.4. You cannot delete your dkim record without first disabling email routing.5. You cannot disable email routing because it is already disabled because it is misconfigured!!6. Cloudflare only allow "guided" support for free accounts, and guides you to /dev/null for attempting this kind of problem.</p>
+                <p class="desc">I'm seeing an enormous contingency of my LinkedIn connections change their titles to "AI Engineer." I know for a fact that they're not working on any models or even AI workflows, they're just building apps and backends using AI tools like Claude.Is that what "AI Engineer" means nowadays? Is that what companies are looking for when they open recs for "AI Engineer"? Should I be marketing myself as an "AI Engineer" just because I'm very efficient using modern AI tooling to build good non-AI soft...</p>
             </div>
         </li>
 <li class="item">
@@ -432,9 +437,9 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48315680" target="_blank" class="title">Ask HN: Does Claude Code remove the need for so many front-end frameworks?</a>
                 <div class="meta">
-                    <span class="score">4 pts</span>
+                    <span class="score">6 pts</span>
                     <span class="by">by ex-aws-dude</span>
-                    <a href="https://news.ycombinator.com/item?id=48315680" target="_blank" class="comments">2 comments</a>
+                    <a href="https://news.ycombinator.com/item?id=48315680" target="_blank" class="comments">3 comments</a>
                 </div>
                 <p class="desc">Does using claude code make you more/less likely to use front end frameworks?I've been using it for a while to develop internal tools and I've been really impressed at how you can build complex applications with just pure HTML/CSS/JSPreviously I'd use React but now its not as clear to me the reason I would do that since either way I would just be developing through Claude.It feels almost like the framework is just an implementation detail.I find myself using a lot less libraries in general as...</p>
             </div>
@@ -442,45 +447,74 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
 <li class="item">
             <span class="num">3</span>
             <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48312377" target="_blank" class="title">Ask HN: What Is an "AI Engineer"?</a>
+                <a href="https://news.ycombinator.com/item?id=48317054" target="_blank" class="title">A disk-first C++ vector engine</a>
                 <div class="meta">
-                    <span class="score">11 pts</span>
-                    <span class="by">by seattle_spring</span>
-                    <a href="https://news.ycombinator.com/item?id=48312377" target="_blank" class="comments">17 comments</a>
+                    <span class="score">3 pts</span>
+                    <span class="by">by saeedq</span>
+                    <a href="https://news.ycombinator.com/item?id=48317054" target="_blank" class="comments">0 comments</a>
                 </div>
-                <p class="desc">I'm seeing an enormous contingency of my LinkedIn connections change their titles to "AI Engineer." I know for a fact that they're not working on any models or even AI workflows, they're just building apps and backends using AI tools like Claude.Is that what "AI Engineer" means nowadays? Is that what companies are looking for when they open recs for "AI Engineer"? Should I be marketing myself as an "AI Engineer" just because I'm very efficient using modern AI tooling to build good non-AI soft...</p>
+                <p class="desc">Hey all, I built brinicle, an in-process C++ vector engine with a python wrapper that consumes substantially less memory, while staying quite fast.
+On 1.2 million Amazon products, it achieves sub-ms P99 latency.
+It also supports lexical search, and hybrid search.
+In the hybrid search, we did not try to build two indexes and then fuse results, we create ONE HNSW Graph and utilize it for semantic, lexical, and hybrid search.
+benchmark comparisons: https://brinicle.bicardinal.com/benchmark
+hybri...</p>
             </div>
         </li>
 <li class="item">
             <span class="num">4</span>
             <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48312716" target="_blank" class="title">Ask HN: I found out that I'm about to be laid off. How do people find jobs?</a>
+                <a href="https://news.ycombinator.com/item?id=48315950" target="_blank" class="title">Do not use Cloudflare DNS regsitrar</a>
                 <div class="meta">
-                    <span class="score">14 pts</span>
-                    <span class="by">by wwwthrowaway256</span>
-                    <a href="https://news.ycombinator.com/item?id=48312716" target="_blank" class="comments">8 comments</a>
+                    <span class="score">8 pts</span>
+                    <span class="by">by talkingtab</span>
+                    <a href="https://news.ycombinator.com/item?id=48315950" target="_blank" class="comments">0 comments</a>
                 </div>
-                <p class="desc">Using a throwaway account right now for obvious reasons.I have a friend at my company that has access to some insider stuff who (subtley) tipped me off that I'm on the chopping block for upcoming layoffs.Obviously, I'm trying to resume-spam now, but I am pretty sure that cold applying to companies doesn't work anymore, because every job posting is immediately botted to shit (and a lot of job postings are fake anyway).So...what do people actually do to find work now? Is it really just going th...</p>
+                <p class="desc">The problem:1. You try email routing provided by cloudflare.2. It does not work for you3. Somehow you get your DNS into an odd state. email routing is disabled because it is misconfigured.4. You cannot delete your dkim record without first disabling email routing.5. You cannot disable email routing because it is already disabled because it is misconfigured!!6. Cloudflare only allow "guided" support for free accounts, and guides you to /dev/null for attempting this kind of problem.</p>
             </div>
         </li>
 <li class="item">
             <span class="num">5</span>
             <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48307584" target="_blank" class="title">Ask HN: How do you feel about posts about GenAI taking over the HN front page?</a>
+                <a href="https://news.ycombinator.com/item?id=48312716" target="_blank" class="title">Ask HN: I found out that I'm about to be laid off. How do people find jobs?</a>
                 <div class="meta">
-                    <span class="score">8 pts</span>
-                    <span class="by">by blenderob</span>
-                    <a href="https://news.ycombinator.com/item?id=48307584" target="_blank" class="comments">12 comments</a>
+                    <span class="score">17 pts</span>
+                    <span class="by">by wwwthrowaway256</span>
+                    <a href="https://news.ycombinator.com/item?id=48312716" target="_blank" class="comments">13 comments</a>
                 </div>
-                <p class="desc">There seem to be a lot of opinion pieces about GenAI on the front page lately. How do others feel about this?I feel conflicted. I understand that GenAI is one of the biggest topics in tech right now. Yeah it makes sense that it gets a lot of attention. But I would find it a loss if the front page became too heavily skewed towards commentary on a single topic... more so when there are so many other technical areas worth discussing.</p>
+                <p class="desc">Using a throwaway account right now for obvious reasons.I have a friend at my company that has access to some insider stuff who (subtley) tipped me off that I'm on the chopping block for upcoming layoffs.Obviously, I'm trying to resume-spam now, but I am pretty sure that cold applying to companies doesn't work anymore, because every job posting is immediately botted to shit (and a lot of job postings are fake anyway).So...what do people actually do to find work now? Is it really just going th...</p>
             </div>
         </li>
 <li class="item">
             <span class="num">6</span>
             <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48256791" target="_blank" class="title">Ask HN: Are Tech Meetups Dead?</a>
+                <div class="meta">
+                    <span class="score">33 pts</span>
+                    <span class="by">by mlinhares</span>
+                    <a href="https://news.ycombinator.com/item?id=48256791" target="_blank" class="comments">29 comments</a>
+                </div>
+                <p class="desc">I work with a bunch of people that just left college and we were discussing how to avoid deskilling and I said "well, you could go to local meetups". They're in NYC (I'm in Florida right now) and said there isn't much going on and I couldn't believe it. Asked some more experienced friends that have been living there for longer and they said that it all died during COVID and never came back.I ran or helped organize meetups in multiple places, back in Brazil where I'm from, Boston and then Phil...</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">7</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48307584" target="_blank" class="title">Ask HN: How do you feel about posts about GenAI taking over the HN front page?</a>
+                <div class="meta">
+                    <span class="score">9 pts</span>
+                    <span class="by">by blenderob</span>
+                    <a href="https://news.ycombinator.com/item?id=48307584" target="_blank" class="comments">13 comments</a>
+                </div>
+                <p class="desc">There seem to be a lot of opinion pieces about GenAI on the front page lately. How do others feel about this?I feel conflicted. I understand that GenAI is one of the biggest topics in tech right now. Yeah it makes sense that it gets a lot of attention. But I would find it a loss if the front page became too heavily skewed towards commentary on a single topic... more so when there are so many other technical areas worth discussing.</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">8</span>
+            <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48309371" target="_blank" class="title">Garnix, the Nix CI, is shutting down</a>
                 <div class="meta">
-                    <span class="score">10 pts</span>
+                    <span class="score">11 pts</span>
                     <span class="by">by cinericius</span>
                     <a href="https://news.ycombinator.com/item?id=48309371" target="_blank" class="comments">4 comments</a>
                 </div>
@@ -488,35 +522,11 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">7</span>
-            <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48256791" target="_blank" class="title">Ask HN: Are Tech Meetups Dead?</a>
-                <div class="meta">
-                    <span class="score">30 pts</span>
-                    <span class="by">by mlinhares</span>
-                    <a href="https://news.ycombinator.com/item?id=48256791" target="_blank" class="comments">28 comments</a>
-                </div>
-                <p class="desc">I work with a bunch of people that just left college and we were discussing how to avoid deskilling and I said "well, you could go to local meetups". They're in NYC (I'm in Florida right now) and said there isn't much going on and I couldn't believe it. Asked some more experienced friends that have been living there for longer and they said that it all died during COVID and never came back.I ran or helped organize meetups in multiple places, back in Brazil where I'm from, Boston and then Phil...</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">8</span>
-            <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48304668" target="_blank" class="title">Ask HN: Why not have an EU browser?</a>
-                <div class="meta">
-                    <span class="score">5 pts</span>
-                    <span class="by">by osigurdson</span>
-                    <a href="https://news.ycombinator.com/item?id=48304668" target="_blank" class="comments">18 comments</a>
-                </div>
-                <p class="desc">I've been wondering, why don't we have a chrome fork that only accepts sites hosted in the EU? If a site is hosted in the EU then it can be fully regulated by the EU.This would make it easier for citizens to know that their data is is safe (according to EU standards) and avoids the regulatory complexities of trying to enforce rules in other countries.Thoughts?</p>
-            </div>
-        </li>
-<li class="item">
             <span class="num">9</span>
             <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48305896" target="_blank" class="title">Train 1T parameter LLM with 8 GPUs?</a>
                 <div class="meta">
-                    <span class="score">2 pts</span>
+                    <span class="score">3 pts</span>
                     <span class="by">by kendy1992</span>
                     <a href="https://news.ycombinator.com/item?id=48305896" target="_blank" class="comments">0 comments</a>
                 </div>
@@ -526,9 +536,21 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
 <li class="item">
             <span class="num">10</span>
             <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48304668" target="_blank" class="title">Ask HN: Why not have an EU browser?</a>
+                <div class="meta">
+                    <span class="score">6 pts</span>
+                    <span class="by">by osigurdson</span>
+                    <a href="https://news.ycombinator.com/item?id=48304668" target="_blank" class="comments">19 comments</a>
+                </div>
+                <p class="desc">I've been wondering, why don't we have a chrome fork that only accepts sites hosted in the EU? If a site is hosted in the EU then it can be fully regulated by the EU.This would make it easier for citizens to know that their data is is safe (according to EU standards) and avoids the regulatory complexities of trying to enforce rules in other countries.Thoughts?</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">11</span>
+            <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48275508" target="_blank" class="title">Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?</a>
                 <div class="meta">
-                    <span class="score">150 pts</span>
+                    <span class="score">151 pts</span>
                     <span class="by">by widenrun</span>
                     <a href="https://news.ycombinator.com/item?id=48275508" target="_blank" class="comments">106 comments</a>
                 </div>
@@ -536,7 +558,7 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">11</span>
+            <span class="num">12</span>
             <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48309708" target="_blank" class="title">Ask HN: How to introduce cloud computing to high schoolers?</a>
                 <div class="meta">
@@ -548,7 +570,7 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">12</span>
+            <span class="num">13</span>
             <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48285139" target="_blank" class="title">Ask HN: How do you model temporarily invalid data structures</a>
                 <div class="meta">
@@ -560,7 +582,7 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">13</span>
+            <span class="num">14</span>
             <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48271934" target="_blank" class="title">Sqlit – A lazygit-style TUI for SQL databases</a>
                 <div class="meta">
@@ -572,23 +594,11 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">14</span>
-            <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48312013" target="_blank" class="title">Ask HN: What Do You Struggle With?</a>
-                <div class="meta">
-                    <span class="score">2 pts</span>
-                    <span class="by">by chistev</span>
-                    <a href="https://news.ycombinator.com/item?id=48312013" target="_blank" class="comments">4 comments</a>
-                </div>
-                
-            </div>
-        </li>
-<li class="item">
             <span class="num">15</span>
             <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48270275" target="_blank" class="title">Did the Linux memory management maintainer "just quit"?</a>
                 <div class="meta">
-                    <span class="score">15 pts</span>
+                    <span class="score">17 pts</span>
                     <span class="by">by hliyan</span>
                     <a href="https://news.ycombinator.com/item?id=48270275" target="_blank" class="comments">3 comments</a>
                 </div>
@@ -598,29 +608,41 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
 <li class="item">
             <span class="num">16</span>
             <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48275038" target="_blank" class="title">Ask HN: When and why did you start believing in God?</a>
+                <a href="https://news.ycombinator.com/item?id=48303252" target="_blank" class="title">Do they know we can tell it's AI slop?</a>
                 <div class="meta">
-                    <span class="score">20 pts</span>
-                    <span class="by">by dvrp</span>
-                    <a href="https://news.ycombinator.com/item?id=48275038" target="_blank" class="comments">81 comments</a>
+                    <span class="score">10 pts</span>
+                    <span class="by">by jwsteigerwalt</span>
+                    <a href="https://news.ycombinator.com/item?id=48303252" target="_blank" class="comments">12 comments</a>
                 </div>
-                <p class="desc">I presume many here are not believers. So, for those who believe—and in the spirit of open and genuine curiosity—I’d love to know what made them change their minds.</p>
+                <p class="desc">What do I do when the entrepreneurs I work for send out AI slop in their communications?I work for a great group of entrepreneurs as CTO/fCFO. They are all sales guys. In my childhood and professional career, I have seen so many toxic partnerships. I don’t waste any time on those anymore and I genuinely respect the guys I work for.So, to the main question, what do I do when it’s blatant that they are just copying AI slop from Grok or chatGPT? I notice it all the time. But I genuinely respect ...</p>
             </div>
         </li>
 <li class="item">
             <span class="num">17</span>
             <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48289674" target="_blank" class="title">Tell HN: Android Chrome deletes your browsing history silently</a>
+                <a href="https://news.ycombinator.com/item?id=48275038" target="_blank" class="title">Ask HN: When and why did you start believing in God?</a>
                 <div class="meta">
-                    <span class="score">4 pts</span>
-                    <span class="by">by grehbies</span>
-                    <a href="https://news.ycombinator.com/item?id=48289674" target="_blank" class="comments">0 comments</a>
+                    <span class="score">22 pts</span>
+                    <span class="by">by dvrp</span>
+                    <a href="https://news.ycombinator.com/item?id=48275038" target="_blank" class="comments">83 comments</a>
                 </div>
-                <p class="desc">Under specific, but still indefensible circumstances, which I just learned is somehow the intended behavior.I don't think I quite understand what computing has become at this point. I keep encountering situations where the SWEs, who write and maintain software that I assumed to be trustworthy, decide that superficial considerations are more important than data integrity or user control of critical decisions. It keeps happening, so it's not a mistake or an oversight. Some of you genuinely thin...</p>
+                <p class="desc">I presume many here are not believers. So, for those who believe—and in the spirit of open and genuine curiosity—I’d love to know what made them change their minds.</p>
             </div>
         </li>
 <li class="item">
             <span class="num">18</span>
+            <div class="content">
+                <a href="https://news.ycombinator.com/item?id=48260307" target="_blank" class="title">Ask HN: Why didn't the C64 come with Simons' BASIC in the box from 1983 onward?</a>
+                <div class="meta">
+                    <span class="score">15 pts</span>
+                    <span class="by">by amichail</span>
+                    <a href="https://news.ycombinator.com/item?id=48260307" target="_blank" class="comments">14 comments</a>
+                </div>
+                <p class="desc">And maybe they could have even given the cartridge for free to people who have already bought a C64 without it.</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">19</span>
             <div class="content">
                 <a href="https://news.ycombinator.com/item?id=48278179" target="_blank" class="title">Amdahl's Law for LLM generated code</a>
                 <div class="meta">
@@ -632,27 +654,15 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">19</span>
-            <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48303252" target="_blank" class="title">Do they know we can tell it's AI slop?</a>
-                <div class="meta">
-                    <span class="score">9 pts</span>
-                    <span class="by">by jwsteigerwalt</span>
-                    <a href="https://news.ycombinator.com/item?id=48303252" target="_blank" class="comments">11 comments</a>
-                </div>
-                <p class="desc">What do I do when the entrepreneurs I work for send out AI slop in their communications?I work for a great group of entrepreneurs as CTO/fCFO. They are all sales guys. In my childhood and professional career, I have seen so many toxic partnerships. I don’t waste any time on those anymore and I genuinely respect the guys I work for.So, to the main question, what do I do when it’s blatant that they are just copying AI slop from Grok or chatGPT? I notice it all the time. But I genuinely respect ...</p>
-            </div>
-        </li>
-<li class="item">
             <span class="num">20</span>
             <div class="content">
-                <a href="https://news.ycombinator.com/item?id=48260307" target="_blank" class="title">Ask HN: Why didn't the C64 come with Simons' BASIC in the box from 1983 onward?</a>
+                <a href="https://news.ycombinator.com/item?id=48289674" target="_blank" class="title">Tell HN: Android Chrome deletes your browsing history silently</a>
                 <div class="meta">
-                    <span class="score">15 pts</span>
-                    <span class="by">by amichail</span>
-                    <a href="https://news.ycombinator.com/item?id=48260307" target="_blank" class="comments">14 comments</a>
+                    <span class="score">4 pts</span>
+                    <span class="by">by grehbies</span>
+                    <a href="https://news.ycombinator.com/item?id=48289674" target="_blank" class="comments">0 comments</a>
                 </div>
-                <p class="desc">And maybe they could have even given the cartridge for free to people who have already bought a C64 without it.</p>
+                <p class="desc">Under specific, but still indefensible circumstances, which I just learned is somehow the intended behavior.I don't think I quite understand what computing has become at this point. I keep encountering situations where the SWEs, who write and maintain software that I assumed to be trustworthy, decide that superficial considerations are more important than data integrity or user control of critical decisions. It keeps happening, so it's not a mistake or an oversight. Some of you genuinely thin...</p>
             </div>
         </li></ul>
 </section>
@@ -663,9 +673,9 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             <div class="content">
                 <a href="https://llmgame.scalex.dev" target="_blank" class="title">Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue</a>
                 <div class="meta">
-                    <span class="score">213 pts</span>
+                    <span class="score">280 pts</span>
                     <span class="by">by Wirbelwind</span>
-                    <a href="https://news.ycombinator.com/item?id=48308376" target="_blank" class="comments">99 comments</a>
+                    <a href="https://news.ycombinator.com/item?id=48308376" target="_blank" class="comments">117 comments</a>
                 </div>
                 <p class="desc">A 30-second game about LLM permission fatigue. How carefully do you really read AI commands?</p>
             </div>
@@ -675,9 +685,9 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             <div class="content">
                 <a href="https://github.com/Kaelio/ktx" target="_blank" class="title">Show HN: Ktx – Open-source executable context layer for data agents</a>
                 <div class="meta">
-                    <span class="score">47 pts</span>
+                    <span class="score">61 pts</span>
                     <span class="by">by lucamrtl</span>
-                    <a href="https://news.ycombinator.com/item?id=48309986" target="_blank" class="comments">6 comments</a>
+                    <a href="https://news.ycombinator.com/item?id=48309986" target="_blank" class="comments">14 comments</a>
                 </div>
                 <p class="desc">Hi HN, we’re open-sourcing ktx. It’s an executable context layer that makes agents reliable on your data stack.We built it after going through the experience of building production-grade data agents for dozens of companies. If you’ve also tried building them, or simply tried using Claude Code or Codex on your data warehouse, you’ll know that accuracy is the #1 issue. Agents are great at generating valid SQL, but it’s not always correct SQL.To cite a few examples of “agents gone wrong”:- Stale...</p>
             </div>
@@ -685,13 +695,13 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
 <li class="item">
             <span class="num">3</span>
             <div class="content">
-                <a href="https://trypieces.com/p/as9wuvhp1qwb4NvpMGG2FU" target="_blank" class="title">Show HN: Imagine Kickstarter, but doubters get paid if the project flops</a>
+                <a href="https://github.com/GiorgosXou/MLPico" target="_blank" class="title">Show HN: Static-allocation MLP inference in ANSI C using a 2-slot ring buffer</a>
                 <div class="meta">
-                    <span class="score">3 pts</span>
-                    <span class="by">by johndebord</span>
-                    <a href="https://news.ycombinator.com/item?id=48315903" target="_blank" class="comments">2 comments</a>
+                    <span class="score">2 pts</span>
+                    <span class="by">by xou</span>
+                    <a href="https://news.ycombinator.com/item?id=48318304" target="_blank" class="comments">0 comments</a>
                 </div>
-                
+                <p class="desc">I've been experimenting since 2019 with ways to minimize RAM usage for tiny MLP inference on microcontrollers. [0]This project is the result of that exploration: a fully static-allocation approach to MLP inference in ANSI C, using a simple 2-slot ring buffer to keep memory usage predictable and extremely low, while at the same time fast.I believe this is close to the practical lower bound for RAM usage in general-purpose CPU MLP inference without sacrificing speed or introducing runtime compl...</p>
             </div>
         </li>
 <li class="item">
@@ -699,9 +709,9 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             <div class="content">
                 <a href="https://www.elodin.systems/post/elodin-ai-grand-prix-race-sim-harness" target="_blank" class="title">Show HN: Open-Source AI Racing Harness</a>
                 <div class="meta">
-                    <span class="score">65 pts</span>
+                    <span class="score">68 pts</span>
                     <span class="by">by danAtElodin</span>
-                    <a href="https://news.ycombinator.com/item?id=48300280" target="_blank" class="comments">9 comments</a>
+                    <a href="https://news.ycombinator.com/item?id=48300280" target="_blank" class="comments">17 comments</a>
                 </div>
                 <p class="desc">Hi I'm Dan from Elodin, making an open source real-time capable flight software simulation.For AI Grand Prix contestants, the wait for the Round 1 virtual qualifier simulation has been grueling.If you’re competing, check out our simulation harness to tide you over, built to match the published competition constraints and message format. It runs against real Betaflight, which we learned requires at least 1000 sensor samples per second to run real-time correctly.The competition warranted introd...</p>
             </div>
@@ -709,29 +719,65 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
 <li class="item">
             <span class="num">5</span>
             <div class="content">
-                <a href="https://hallucinate.site" target="_blank" class="title">Show HN: Hallucinate – Massively Multiplayer Online Rave</a>
+                <a href="https://github.com/yeet-src/airtop" target="_blank" class="title">Show HN: htop for the airwaves — a live 802.11 RF dashboard in your terminal</a>
                 <div class="meta">
-                    <span class="score">402 pts</span>
-                    <span class="by">by stagas</span>
-                    <a href="https://news.ycombinator.com/item?id=48304260" target="_blank" class="comments">177 comments</a>
+                    <span class="score">4 pts</span>
+                    <span class="by">by r3tr0</span>
+                    <a href="https://news.ycombinator.com/item?id=48317997" target="_blank" class="comments">0 comments</a>
                 </div>
-                <p class="desc">https://github.com/stagas/hallucinate</p>
+                
             </div>
         </li>
 <li class="item">
             <span class="num">6</span>
             <div class="content">
+                <a href="https://hallucinate.site" target="_blank" class="title">Show HN: Hallucinate – Massively Multiplayer Online Rave</a>
+                <div class="meta">
+                    <span class="score">414 pts</span>
+                    <span class="by">by stagas</span>
+                    <a href="https://news.ycombinator.com/item?id=48304260" target="_blank" class="comments">183 comments</a>
+                </div>
+                <p class="desc">https://github.com/stagas/hallucinate</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">7</span>
+            <div class="content">
                 <a href="https://memalign.github.io/m/taptoypia/index.html" target="_blank" class="title">Show HN: TapToyPia</a>
                 <div class="meta">
-                    <span class="score">17 pts</span>
+                    <span class="score">18 pts</span>
                     <span class="by">by memalign</span>
-                    <a href="https://news.ycombinator.com/item?id=48255525" target="_blank" class="comments">5 comments</a>
+                    <a href="https://news.ycombinator.com/item?id=48255525" target="_blank" class="comments">6 comments</a>
                 </div>
                 <p class="desc">My wife started playing Pokopia and told me it's the best game she's ever played. I watched her play for 10 minutes and thought that a simple demake inspired by Pokopia could be satisfying to play. TapToyPia is the result, playable in your web browser.In TapToyPia, you are an explorer sent on a one-way mission to a new planet. Your mission: build a settlement that can serve as a new home for humanity. While you explore, you discover flora and fauna to help you.The game mechanic is inspired by...</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">7</span>
+            <span class="num">8</span>
+            <div class="content">
+                <a href="https://github.com/Heidar-An/Mira" target="_blank" class="title">Show HN: Mira – Search for files semantically – no exact filenames required</a>
+                <div class="meta">
+                    <span class="score">2 pts</span>
+                    <span class="by">by Heidaradar</span>
+                    <a href="https://news.ycombinator.com/item?id=48317047" target="_blank" class="comments">0 comments</a>
+                </div>
+                <p class="desc">Would appreciate a star (and happy for ideas on improving indexing speed/embedding quality)!</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">9</span>
+            <div class="content">
+                <a href="https://tinycld.org/" target="_blank" class="title">Show HN: Open-source Workspace (mail,docs,spreadsheet,drive) web/iOS</a>
+                <div class="meta">
+                    <span class="score">103 pts</span>
+                    <span class="by">by nathanstitt</span>
+                    <a href="https://news.ycombinator.com/item?id=48295071" target="_blank" class="comments">38 comments</a>
+                </div>
+                <p class="desc">Free, open-source cloud productivity suite. Mail, Calendar, Contacts, and Drive - faster and leaner than Google Apps. Self-host or use our cloud.</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">10</span>
             <div class="content">
                 <a href="https://github.com/awebai/aweb-team-coord-worktrees" target="_blank" class="title">Show HN: Bootstrap a team of coding agents from a template, OSS</a>
                 <div class="meta">
@@ -743,20 +789,19 @@ May 2025: Robert Smith's talk at ELS 2025.</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">8</span>
+            <span class="num">11</span>
             <div class="content">
-                <a href="https://scrolodex.app/" target="_blank" class="title">Show HN: Scrolodex – A super simple window switcher for macOS</a>
+                <a href="https://trypieces.com/p/as9wuvhp1qwb4NvpMGG2FU" target="_blank" class="title">Show HN: Imagine Kickstarter, but doubters get paid if the project flops</a>
                 <div class="meta">
-                    <span class="score">4 pts</span>
-                    <span class="by">by Jaydenaus</span>
-                    <a href="https://news.ycombinator.com/item?id=48314608" target="_blank" class="comments">0 comments</a>
+                    <span class="score">3 pts</span>
+                    <span class="by">by johndebord</span>
+                    <a href="https://news.ycombinator.com/item?id=48315903" target="_blank" class="comments">5 comments</a>
                 </div>
-                <p class="desc">I built scrolodex to scratch my own itch of having a quick and simple way to switch between the currently open windows under my cursor.Simply hold ⌥ + scroll to cycle through windows under your cursor. Release to focus.Also includes triggers for scrolling through all windows, dock app's windows, or switching between desktop spaces. Configurable hotkeys, themes and overlays.Completely free and OSS.brew install --cask jaydenfyi/tap/scrolodexWebsite/demo: https://scrolodex.app/
-GitHub: https://g...</p>
+                
             </div>
         </li>
 <li class="item">
-            <span class="num">9</span>
+            <span class="num">12</span>
             <div class="content">
                 <a href="https://github.com/enumura1/py-sql-cleaner" target="_blank" class="title">Show HN: Py-SQL-cleaner – format SQL embedded in Python strings</a>
                 <div class="meta">
@@ -770,7 +815,56 @@ The main things it can do are: find the SQ...</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">10</span>
+            <span class="num">13</span>
+            <div class="content">
+                <a href="https://help.delduca.org" target="_blank" class="title">Show HN: I made an emergency page for my family</a>
+                <div class="meta">
+                    <span class="score">80 pts</span>
+                    <span class="by">by delduca</span>
+                    <a href="https://news.ycombinator.com/item?id=48294791" target="_blank" class="comments">102 comments</a>
+                </div>
+                <p class="desc">I have a bad memory and can't memorize some important numbers, so I created this project.I've always been concerned about being without my phone (getting robbed - which is common in Brazil - running out of battery, having it break, etc.), so I decided to create a page that sends SMS messages (LLM-summarized) and emails with more detailed information such as geolocation, IP address, and the full message.It’s a simple page that allows sending one or more messages, with recipients being myself a...</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">14</span>
+            <div class="content">
+                <a href="https://scrolodex.app/" target="_blank" class="title">Show HN: Scrolodex – A super simple window switcher for macOS</a>
+                <div class="meta">
+                    <span class="score">4 pts</span>
+                    <span class="by">by Jaydenaus</span>
+                    <a href="https://news.ycombinator.com/item?id=48314608" target="_blank" class="comments">0 comments</a>
+                </div>
+                <p class="desc">I built scrolodex to scratch my own itch of having a quick and simple way to switch between the currently open windows under my cursor.Simply hold ⌥ + scroll to cycle through windows under your cursor. Release to focus.Also includes triggers for scrolling through all windows, dock app's windows, or switching between desktop spaces. Configurable hotkeys, themes and overlays.Completely free and OSS.brew install --cask jaydenfyi/tap/scrolodexWebsite/demo: https://scrolodex.app/
+GitHub: https://g...</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">15</span>
+            <div class="content">
+                <a href="https://tunnel.to" target="_blank" class="title">Show HN: Tunnel.to – dead simple localhost reverse tunnels</a>
+                <div class="meta">
+                    <span class="score">5 pts</span>
+                    <span class="by">by StuntPope</span>
+                    <a href="https://news.ycombinator.com/item?id=48309288" target="_blank" class="comments">1 comments</a>
+                </div>
+                <p class="desc">Public URLs for local AI agents and developer services.</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">16</span>
+            <div class="content">
+                <a href="https://github.com/Bajusz15/beacon" target="_blank" class="title">Show HN: Beacon CLI for self-hosted monitoring, remote access and deployments</a>
+                <div class="meta">
+                    <span class="score">7 pts</span>
+                    <span class="by">by matebajusz</span>
+                    <a href="https://news.ycombinator.com/item?id=48309229" target="_blank" class="comments">1 comments</a>
+                </div>
+                <p class="desc">I've been building a cli for my homelab/self-hosted setup. The original motivation was getting tired of stitching together deployments, monitoring, remote SSH access and random scripts. It’s a open source CLI, all-in-one tool for monitoring, secure remote accces (tunnel and terminal), log forwarding, automated deployments. No exposed ports, or endpoint, everything is configurable how the user wants it. One use case that multiple friends are interested in is replacing HomeAssistant’s Nabu Casa...</p>
+            </div>
+        </li>
+<li class="item">
+            <span class="num">17</span>
             <div class="content">
                 <a href="https://gitlab.com/tivat/workout-to-work" target="_blank" class="title">Show HN: Workout to Work – A desktop app that annoys you into exercising</a>
                 <div class="meta">
@@ -782,7 +876,7 @@ The main things it can do are: find the SQ...</p>
             </div>
         </li>
 <li class="item">
-            <span class="num">11</span>
+            <span class="num">18</span>
             <div class="content">
                 <a href="https://github.com/pantoniou/libfyaml/releases/tag/v1.0.0-alpha7" target="_blank" class="title">Show HN: Libfyaml adds a YAML/JSON parse cache; 427 MB reloads in 36 ms</a>
                 <div class="meta">
@@ -797,79 +891,7 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             </div>
         </li>
 <li class="item">
-            <span class="num">12</span>
-            <div class="content">
-                <a href="https://tinycld.org/" target="_blank" class="title">Show HN: Open-source Workspace (mail,docs,spreadsheet,drive) web/iOS</a>
-                <div class="meta">
-                    <span class="score">102 pts</span>
-                    <span class="by">by nathanstitt</span>
-                    <a href="https://news.ycombinator.com/item?id=48295071" target="_blank" class="comments">38 comments</a>
-                </div>
-                <p class="desc">Free, open-source cloud productivity suite. Mail, Calendar, Contacts, and Drive - faster and leaner than Google Apps. Self-host or use our cloud.</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">13</span>
-            <div class="content">
-                <a href="https://github.com/Bajusz15/beacon" target="_blank" class="title">Show HN: Beacon CLI for self-hosted monitoring, remote access and deployments</a>
-                <div class="meta">
-                    <span class="score">7 pts</span>
-                    <span class="by">by matebajusz</span>
-                    <a href="https://news.ycombinator.com/item?id=48309229" target="_blank" class="comments">1 comments</a>
-                </div>
-                <p class="desc">I've been building a cli for my homelab/self-hosted setup. The original motivation was getting tired of stitching together deployments, monitoring, remote SSH access and random scripts. It’s a open source CLI, all-in-one tool for monitoring, secure remote accces (tunnel and terminal), log forwarding, automated deployments. No exposed ports, or endpoint, everything is configurable how the user wants it. One use case that multiple friends are interested in is replacing HomeAssistant’s Nabu Casa...</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">14</span>
-            <div class="content">
-                <a href="https://help.delduca.org" target="_blank" class="title">Show HN: I made an emergency page for my family</a>
-                <div class="meta">
-                    <span class="score">80 pts</span>
-                    <span class="by">by delduca</span>
-                    <a href="https://news.ycombinator.com/item?id=48294791" target="_blank" class="comments">102 comments</a>
-                </div>
-                <p class="desc">I have a bad memory and can't memorize some important numbers, so I created this project.I've always been concerned about being without my phone (getting robbed - which is common in Brazil - running out of battery, having it break, etc.), so I decided to create a page that sends SMS messages (LLM-summarized) and emails with more detailed information such as geolocation, IP address, and the full message.It’s a simple page that allows sending one or more messages, with recipients being myself a...</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">15</span>
-            <div class="content">
-                <a href="https://github.com/villagesql/villagesql-skills" target="_blank" class="title">Show HN: AI Skill to port PostgreSQL extensions to MySQL</a>
-                <div class="meta">
-                    <span class="score">3 pts</span>
-                    <span class="by">by deesix</span>
-                    <a href="https://news.ycombinator.com/item?id=48310211" target="_blank" class="comments">0 comments</a>
-                </div>
-                <p class="desc">Agent skills for working with VillageSQL. Skills run in Claude Code, Gemini CLI, agy, Codex, Cursor, Amp, and Kiro.</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">16</span>
-            <div class="content">
-                <a href="https://tunnel.to" target="_blank" class="title">Show HN: Tunnel.to – dead simple localhost reverse tunnels</a>
-                <div class="meta">
-                    <span class="score">4 pts</span>
-                    <span class="by">by StuntPope</span>
-                    <a href="https://news.ycombinator.com/item?id=48309288" target="_blank" class="comments">0 comments</a>
-                </div>
-                <p class="desc">Public URLs for local AI agents and developer services.</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">17</span>
-            <div class="content">
-                <a href="https://www.multiplayer.app/" target="_blank" class="title">Show HN: Multiplayer, a debugging agent to run locally next to your coding agent</a>
-                <div class="meta">
-                    <span class="score">6 pts</span>
-                    <span class="by">by tomjohnson3</span>
-                    <a href="https://news.ycombinator.com/item?id=48309273" target="_blank" class="comments">1 comments</a>
-                </div>
-                <p class="desc">We built Multiplayer because we kept running into the same problem: coding agents connected to existing observability stacks inherit all the limitations those stacks were built with. Sampled traces, aggregated metrics, context that stops at service boundaries, missing request/response content from deep within the system. The PRs they produce look plausible and fail in production (i.e. “PR slop”).Multiplayer runs locally alongside Claude Code (Codex, Copilot, and Cursor coming soon) and captur...</p>
-            </div>
-        </li>
-<li class="item">
-            <span class="num">18</span>
+            <span class="num">19</span>
             <div class="content">
                 <a href="https://github.com/craigmccaskill/posthorn" target="_blank" class="title">Show HN: Posthorn, self-hosted mail gateway</a>
                 <div class="meta">
@@ -881,23 +903,11 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             </div>
         </li>
 <li class="item">
-            <span class="num">19</span>
-            <div class="content">
-                <a href="https://github.com/run-llama/liteparse/" target="_blank" class="title">Show HN: LiteParse v2, now in Rust 100x faster</a>
-                <div class="meta">
-                    <span class="score">10 pts</span>
-                    <span class="by">by pierre</span>
-                    <a href="https://news.ycombinator.com/item?id=48307849" target="_blank" class="comments">0 comments</a>
-                </div>
-                
-            </div>
-        </li>
-<li class="item">
             <span class="num">20</span>
             <div class="content">
                 <a href="https://congress.kadoa.com/" target="_blank" class="title">Show HN: A website that tracks every stock trade Congress makes</a>
                 <div class="meta">
-                    <span class="score">59 pts</span>
+                    <span class="score">60 pts</span>
                     <span class="by">by hubraumhugo</span>
                     <a href="https://news.ycombinator.com/item?id=48281983" target="_blank" class="comments">22 comments</a>
                 </div>
@@ -912,8 +922,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" class="title">harry0703/MoneyPrinterTurbo</a>
                 <div class="meta">
-                    <span class="score">66,126</span>
-                    <span class="today">+4,685 today</span>
+                    <span class="score">67,116</span>
+                    <span class="today">+4,698 today</span>
                     <span class="lang">Python</span>
                 </div>
                 <p class="desc">利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.</p>
@@ -924,8 +934,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/affaan-m/ECC" target="_blank" class="title">affaan-m/ECC</a>
                 <div class="meta">
-                    <span class="score">197,201</span>
-                    <span class="today">+1,388 today</span>
+                    <span class="score">197,535</span>
+                    <span class="today">+1,385 today</span>
                     <span class="lang">JavaScript</span>
                 </div>
                 <p class="desc">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</p>
@@ -936,8 +946,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/Leonxlnx/taste-skill" target="_blank" class="title">Leonxlnx/taste-skill</a>
                 <div class="meta">
-                    <span class="score">26,292</span>
-                    <span class="today">+2,235 today</span>
+                    <span class="score">26,851</span>
+                    <span class="today">+2,234 today</span>
                     <span class="lang">Shell</span>
                 </div>
                 <p class="desc">Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop</p>
@@ -948,8 +958,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/hardikpandya/stop-slop" target="_blank" class="title">hardikpandya/stop-slop</a>
                 <div class="meta">
-                    <span class="score">6,376</span>
-                    <span class="today">+755 today</span>
+                    <span class="score">6,539</span>
+                    <span class="today">+761 today</span>
                     <span class="lang"></span>
                 </div>
                 <p class="desc">A skill file for removing AI tells from prose</p>
@@ -960,8 +970,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/twentyhq/twenty" target="_blank" class="title">twentyhq/twenty</a>
                 <div class="meta">
-                    <span class="score">47,809</span>
-                    <span class="today">+495 today</span>
+                    <span class="score">47,977</span>
+                    <span class="today">+493 today</span>
                     <span class="lang">TypeScript</span>
                 </div>
                 <p class="desc">The open alternative to Salesforce, designed for AI.</p>
@@ -972,8 +982,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/DigitalPlatDev/FreeDomain" target="_blank" class="title">DigitalPlatDev/FreeDomain</a>
                 <div class="meta">
-                    <span class="score">170,648</span>
-                    <span class="today">+1,769 today</span>
+                    <span class="score">170,945</span>
+                    <span class="today">+1,761 today</span>
                     <span class="lang">HTML</span>
                 </div>
                 <p class="desc">DigitalPlat FreeDomain: Free Domain For Everyone</p>
@@ -984,8 +994,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/byoungd/English-level-up-tips" target="_blank" class="title">byoungd/English-level-up-tips</a>
                 <div class="meta">
-                    <span class="score">48,395</span>
-                    <span class="today">+2,015 today</span>
+                    <span class="score">48,848</span>
+                    <span class="today">+2,019 today</span>
                     <span class="lang"></span>
                 </div>
                 <p class="desc">An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语</p>
@@ -996,8 +1006,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/microsoft/markitdown" target="_blank" class="title">microsoft/markitdown</a>
                 <div class="meta">
-                    <span class="score">127,653</span>
-                    <span class="today">+1,263 today</span>
+                    <span class="score">128,045</span>
+                    <span class="today">+1,410 today</span>
                     <span class="lang">Python</span>
                 </div>
                 <p class="desc">Python tool for converting files and office documents to Markdown.</p>
@@ -1008,8 +1018,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/obra/superpowers" target="_blank" class="title">obra/superpowers</a>
                 <div class="meta">
-                    <span class="score">211,012</span>
-                    <span class="today">+1,726 today</span>
+                    <span class="score">211,383</span>
+                    <span class="today">+1,730 today</span>
                     <span class="lang">Shell</span>
                 </div>
                 <p class="desc">An agentic skills framework & software development methodology that works.</p>
@@ -1020,8 +1030,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/revfactory/harness" target="_blank" class="title">revfactory/harness</a>
                 <div class="meta">
-                    <span class="score">3,859</span>
-                    <span class="today">+190 today</span>
+                    <span class="score">3,979</span>
+                    <span class="today">+65 today</span>
                     <span class="lang">HTML</span>
                 </div>
                 <p class="desc">A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.</p>
@@ -1032,8 +1042,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" class="title">codecrafters-io/build-your-own-x</a>
                 <div class="meta">
-                    <span class="score">506,507</span>
-                    <span class="today">+866 today</span>
+                    <span class="score">506,718</span>
+                    <span class="today">+1,066 today</span>
                     <span class="lang">Markdown</span>
                 </div>
                 <p class="desc">Master programming by recreating your favorite technologies from scratch.</p>
@@ -1044,8 +1054,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/Lum1104/Understand-Anything" target="_blank" class="title">Lum1104/Understand-Anything</a>
                 <div class="meta">
-                    <span class="score">42,655</span>
-                    <span class="today">+3,766 today</span>
+                    <span class="score">43,230</span>
+                    <span class="today">+3,776 today</span>
                     <span class="lang">TypeScript</span>
                 </div>
                 <p class="desc">Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.</p>
@@ -1056,8 +1066,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/unclecode/crawl4ai" target="_blank" class="title">unclecode/crawl4ai</a>
                 <div class="meta">
-                    <span class="score">66,910</span>
-                    <span class="today">+253 today</span>
+                    <span class="score">67,078</span>
+                    <span class="today">+154 today</span>
                     <span class="lang">Python</span>
                 </div>
                 <p class="desc">🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN</p>
@@ -1068,8 +1078,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/OpenMOSS/MOSS-TTS" target="_blank" class="title">OpenMOSS/MOSS-TTS</a>
                 <div class="meta">
-                    <span class="score">2,207</span>
-                    <span class="today">+53 today</span>
+                    <span class="score">2,333</span>
+                    <span class="today">+71 today</span>
                     <span class="lang">Python</span>
                 </div>
                 <p class="desc">MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS.</p>
@@ -1080,8 +1090,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/EveryInc/compound-engineering-plugin" target="_blank" class="title">EveryInc/compound-engineering-plugin</a>
                 <div class="meta">
-                    <span class="score">17,755</span>
-                    <span class="today">+180 today</span>
+                    <span class="score">17,849</span>
+                    <span class="today">+184 today</span>
                     <span class="lang">TypeScript</span>
                 </div>
                 <p class="desc">Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more</p>
@@ -1092,8 +1102,8 @@ avoids relocation and in 64bit systems with ASLR.Benchmark run using the python 
             <div class="content">
                 <a href="https://github.com/anthropics/skills" target="_blank" class="title">anthropics/skills</a>
                 <div class="meta">
-                    <span class="score">142,772</span>
-                    <span class="today">+791 today</span>
+                    <span class="score">143,069</span>
+                    <span class="today">+718 today</span>
                     <span class="lang">Python</span>
                 </div>
                 <p class="desc">Public repository for Agent Skills</p>
