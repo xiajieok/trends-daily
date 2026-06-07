@@ -12,12 +12,17 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from bs4 import BeautifulSoup
 from html import unescape
+import urllib.request
 
 # Config
 HN_BASE = "https://hacker-news.firebaseio.com/v0"
 GITHUB_TRENDING_URL = "https://github.com/trending"
 REPO_DIR = Path(__file__).parent
 ARCHIVE_DIR = REPO_DIR / "archive"
+
+# Proxy bypass for HN API
+NO_PROXY_SESSION = requests.Session()
+NO_PROXY_SESSION.trust_env = False
 
 # Timezone: CST = UTC+8
 CST = timezone(timedelta(hours=8))
@@ -26,11 +31,11 @@ today_str = datetime.now(CST).strftime("%Y-%m-%d")
 
 def fetch_hn_top(n=20):
     """Fetch HN Top stories"""
-    ids = requests.get(f"{HN_BASE}/topstories.json", timeout=10).json()[:n]
+    ids = NO_PROXY_SESSION.get(f"{HN_BASE}/topstories.json", timeout=10).json()[:n]
     items = []
     for i in ids:
         try:
-            item = requests.get(f"{HN_BASE}/item/{i}.json", timeout=10).json()
+            item = NO_PROXY_SESSION.get(f"{HN_BASE}/item/{i}.json", timeout=10).json()
             if item:
                 items.append({
                     "title": item.get("title", ""),
@@ -48,11 +53,11 @@ def fetch_hn_top(n=20):
 
 def fetch_hn_ask(n=5):
     """Fetch HN Ask HN"""
-    ids = requests.get(f"{HN_BASE}/askstories.json", timeout=10).json()[:n]
+    ids = NO_PROXY_SESSION.get(f"{HN_BASE}/askstories.json", timeout=10).json()[:n]
     items = []
     for i in ids:
         try:
-            item = requests.get(f"{HN_BASE}/item/{i}.json", timeout=10).json()
+            item = NO_PROXY_SESSION.get(f"{HN_BASE}/item/{i}.json", timeout=10).json()
             if item:
                 items.append({
                     "title": item.get("title", ""),
@@ -70,11 +75,11 @@ def fetch_hn_ask(n=5):
 
 def fetch_hn_show(n=5):
     """Fetch HN Show HN"""
-    ids = requests.get(f"{HN_BASE}/showstories.json", timeout=10).json()[:n]
+    ids = NO_PROXY_SESSION.get(f"{HN_BASE}/showstories.json", timeout=10).json()[:n]
     items = []
     for i in ids:
         try:
-            item = requests.get(f"{HN_BASE}/item/{i}.json", timeout=10).json()
+            item = NO_PROXY_SESSION.get(f"{HN_BASE}/item/{i}.json", timeout=10).json()
             if item:
                 items.append({
                     "title": item.get("title", ""),
@@ -94,7 +99,7 @@ def fetch_url_description(url, timeout=5):
     """抓取目标 URL 的 og:description 或 meta description，取前 150 字"""
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}
     try:
-        resp = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+        resp = NO_PROXY_SESSION.get(url, headers=headers, timeout=timeout, allow_redirects=True)
         resp.raise_for_status()
         text = resp.text[:10240]
         soup = BeautifulSoup(text, 'html.parser')
@@ -128,7 +133,7 @@ def fetch_github_trending():
     """Fetch GitHub Trending using BeautifulSoup"""
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}
     try:
-        resp = requests.get(GITHUB_TRENDING_URL, headers=headers, timeout=15)
+        resp = NO_PROXY_SESSION.get(GITHUB_TRENDING_URL, headers=headers, timeout=15)
         resp.raise_for_status()
     except Exception as e:
         print(f"GitHub Trending fetch failed: {e}")
