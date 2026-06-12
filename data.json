@@ -1,0 +1,715 @@
+{
+  "date": "2026-06-13",
+  "hn_top": [
+    {
+      "title": "CRISPR tech selectively shreds cancer cells, including \"undruggable\" cancers",
+      "url": "https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells/",
+      "score": 619,
+      "by": "gmays",
+      "comments": 164,
+      "hn_url": "https://news.ycombinator.com/item?id=48505231",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Swift at Apple: Migrating the TrueType hinting interpreter",
+      "url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift/",
+      "score": 87,
+      "by": "DASD",
+      "comments": 35,
+      "hn_url": "https://news.ycombinator.com/item?id=48508726",
+      "text": "",
+      "description": "TrueType is a widely used vector font standard for rendering text in web pages, PDFs, operating systems, and applications. Familiar fonts like Helvetica, Garamond, and Monaco are all built on TrueType outlines. The format specifies a hinting interpreter intended to help outlines rasterize faithfully on low-resolution displays. Modern high-resolution displays enable beautiful typography from outlines alone, but TrueType fonts that need hinting to render legibly remain in use and we continue to support them.\n\nFont parsers process data from untrusted sources, making the TrueType hinting interpreter a security-critical attack surface. To make the format more resilient on Apple platforms, we rewrote its hinting interpreter from C to memory-safe Swift for the Fall 2025 releases. In addition to memory safety, we also improved performance: on average, our Swift interpreter runs 13% faster than the C interpreter it replaced.\n\nTo accompany this post, we’ve also published the source code of the Swift TrueType hinting interpreter. We hope sharing our experience helps others doing similar work in Swift."
+    },
+    {
+      "title": "Renault: Electric motors with no rare earths",
+      "url": "https://www.renaultgroup.com/en/magazine/energy-and-powertrains/all-about-electric-motors-with-no-rare-earths/",
+      "score": 11,
+      "by": "bestouff",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48510010",
+      "text": "",
+      "description": "As a pioneer of electric motors using no rare earths, Renault Group is unique on the automotive market, a position reasserted for strategic reasons."
+    },
+    {
+      "title": "How to setup a local coding agent on macOS",
+      "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "score": 199,
+      "by": "kkm",
+      "comments": 64,
+      "hn_url": "https://news.ycombinator.com/item?id=48507020",
+      "text": "",
+      "description": "Running Gemma 4 26B-A4B and Qwen3.6 35B-A3B locally with llama.cpp, MTP speculative decoding, multimodal support, and PI as a coding agent."
+    },
+    {
+      "title": "Malware developers added nuclear and biological weapons text to to their spyware",
+      "url": "https://twitter.com/jsrailton/status/2064661778978533571",
+      "score": 250,
+      "by": "marc__1",
+      "comments": 171,
+      "hn_url": "https://news.ycombinator.com/item?id=48495928",
+      "text": "<a href=\"https:&#x2F;&#x2F;socket.dev&#x2F;blog&#x2F;mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious\" rel=\"nofollow\">https:&#x2F;&#x2F;socket.dev&#x2F;blog&#x2F;mini-shai-hulud-miasma-and-hades-wor...</a>",
+      "description": "https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-wor..."
+    },
+    {
+      "title": "Pirates, a naval warfare game inspired by Sid Meier's Pirates",
+      "url": "https://piwodlaiwo.github.io/pirates/",
+      "score": 162,
+      "by": "iweczek",
+      "comments": 69,
+      "hn_url": "https://news.ycombinator.com/item?id=48506659",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Congress Just Rushed Through a Disastrous Copyright Office Overhaul",
+      "url": "https://www.eff.org/deeplinks/2026/06/congress-just-rushed-through-disastrous-copyright-office-overhaul",
+      "score": 63,
+      "by": "Cider9986",
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=48484496",
+      "text": "",
+      "description": "In a voice vote earlier this week, the House of Representatives passed H.R. 6028, the “Legislative Branch Agencies Clarification Act.” The legislation is presented as a technical reorganization of some government agencies, but it’s much more than that. H.R. 6028 would fundamentally change the U.S...."
+    },
+    {
+      "title": "Palantir loses legal challenge against Swiss investigative magazine",
+      "url": "https://www.ft.com/content/7ffcace7-9dc0-4e7e-9912-895ac073f979",
+      "score": 112,
+      "by": "sschueller",
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=48509182",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Twenty One Zero-Days in FFmpeg",
+      "url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
+      "score": 10,
+      "by": "redbell",
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=48510046",
+      "text": "",
+      "description": "depthfirst's production autonomous security agent discovered 21 zero-day vulnerabilities in FFmpeg, after intensive security analysis by Google and Anthropic. Moving beyond theoretical analysis, our agent produces concrete, reproducible PoC inputs to confirm its findings at a fraction of the costs ($1k vs. $10k). Several of the findings had been sitting latent for 15 to 20 years. We explored the exploitability of the issues and developed a PoC demonstrating a RCE exploit primitive."
+    },
+    {
+      "title": "Launch HN: BitBoard (YC P25) – Analytics Workspace for Agents",
+      "url": "https://bitboard.work/",
+      "score": 30,
+      "by": "arcb",
+      "comments": 17,
+      "hn_url": "https://news.ycombinator.com/item?id=48506545",
+      "text": "We’re Connor and Ambar from BitBoard (<a href=\"https:&#x2F;&#x2F;bitboard.work\">https:&#x2F;&#x2F;bitboard.work</a>). BitBoard is an agentic analytics workspace. We give you the infrastructure and visualization layer to analyze data with AI.<p>Today, we’re launching dashboards that you and your agents can work on together. You can connect your coding agent or AI chat to BitBoard and build live reporting. Here’s a demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HPl0K565a7c\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HPl0K565a7c</a>.<p>AI tools treat data analysis as ephemeral, making it hard to report or collaborate. Legacy BI tools weren’t intended for AI users, so they bolt on chatbots and can’t offer meaningful control to your agents. Software can now make far more of a business legible than BI ever could, but neither legacy BI nor chat bots are built to handle it.<p>Our original product was AI agents for administrative tasks in healthcare (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=44237769\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=44237769</a>), but customers kept pulling us toward their data analysis problems: queries scattered across disparate sources, spreadsheets floating everywhere. We kept building tooling for addressing that, and at a certain point those tools were becoming our product.<p>We ran into several problems. Agents made bad inferences because they had no context on the business. They couldn&#x27;t be trusted to make decisions because nothing checked their work. And anything one agent or one person figured out was invisible to everyone else. In BitBoard, humans and agents interact with the same data primitives but get tools designed for their own work.<p>We’re building dashboards to make the human reading experience better. These dashboards progressively use intelligence - starting from code or SQL queries and leading to full embedded apps. Humans and agents will need to agree on methods to interpret data, so we’re letting both contribute to canonical sources, entities, and measures (using your favorite semantic model or ours). Every answer comes with provenance, and the same call with the same parameters returns the same number.<p>Looking ahead, these shared primitives let long-running agents operate inside a business, and we&#x27;re building those agents too. An agent needs a measurable goal and a way to verify its work. BitBoard gives it both. The agent takes a problem like a metric drifting or a funnel leaking and figures out what to do next. Its work becomes datasets, dashboards, and traces that the team can observe and sign off on.<p>Technically, we’re building a collaboration engine with isomorphic updates for humans and AI, columnar analysis (we use DuckDB and Apache Arrow), grounding and verification infrastructure, and enabling long running tasks with agent containers and traces. For agentic work we’re big fans of applying LLM judgement to discover problems, and then generating deterministic software to automate them.<p>Try it out at <a href=\"https:&#x2F;&#x2F;app.bitboard.work\">https:&#x2F;&#x2F;app.bitboard.work</a>. (We require an email so we can set up your account).<p>We’re excited about how data analysis and science can change in the age of LLMs, and welcome all your thoughts!",
+      "description": "We’re Connor and Ambar from BitBoard (https://bitboard.work). BitBoard is an agentic analytics workspace. We give you the infrastructure and visualization layer to analyze data with AI.Today, we’re launching dashboards that you and your agents can work on together. You can connect your coding agent or AI chat to BitBoard and build live reporting. Here’s a demo: https://www.youtube.com/watch?v=HPl0K565a7c.AI tools treat data analysis as ephemeral, making it hard to report or collaborate. Legac..."
+    },
+    {
+      "title": "Can I Buy Your KV Cache?",
+      "url": "https://arxiv.org/abs/2606.13361",
+      "score": 25,
+      "by": "MediaSquirrel",
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=48508949",
+      "text": "",
+      "description": "Right now, across the world, AI agents are repeating the same absurd act: to read one document, they each recompute it from scratch. Every agent re-runs prefill, the most compute-intensive step a large model takes, over identical text, only to rebuild a key-value (KV) cache identical to the one the agent before it just built. The same answer, computed a million times. We make a proposal that is almost offensively simple: compute it once. Let a publisher precompute a document's KV cache, and let every other agent buy the right to load it and skip prefill. It works, and it is token-exact: loading a precomputed KV and continuing matches prefilling from scratch (24/24 greedy tokens, and at the logits level), with no accuracy cost. On Qwen3-4B, reuse is 9-50x cheaper in compute than prefill, and the gap widens with length (prefill's attention scales with L^2), so a single reuse already pays it back. Then the part that matters: where the KV lives. Shipping it fails, because KV is nearly incompressible, so per-load egress costs more than the prefill it saves. Hosting it provider-side, exactly as production prompt-caching works, removes egress entirely. The size of the prize is set by our measured compute saving: serving one hot 3774-token document to 80M agents costs ~$1.5M to re-prefill but only ~$0.03M of reuse compute (49.7x less). The 0.1x cache-read tariff APIs charge passes a 10x discount to users while sitting inside this measured envelope, so the 10x is a floor that the measured ~50x compute saving clears, and the gap to the physical ~50x is provider margin: millions of dollars per popular document. We frame the resulting agent-native prefill CDN and leave lossless KV compression and a cross-party payment layer as the open problems."
+    },
+    {
+      "title": "Slightly reducing the sloppiness of AI generated front end",
+      "url": "https://envs.net/~volpe/blog/posts/reduce-slop.html",
+      "score": 154,
+      "by": "FergusArgyll",
+      "comments": 107,
+      "hn_url": "https://news.ycombinator.com/item?id=48504912",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "\"Don't You Just Upload It to ChatGPT?\"",
+      "url": "https://correresmidestino.com/dont-you-just-upload-it-to-chatgpt/",
+      "score": 244,
+      "by": "speckx",
+      "comments": 210,
+      "hn_url": "https://news.ycombinator.com/item?id=48507278",
+      "text": "",
+      "description": "Can ChatGPT replace translators? A freelance translator shares a funny Ottawa story about AI translation, professional judgment and why human expertise still matters."
+    },
+    {
+      "title": "Mmorpg World of ClaudeCraft, vibe coded with Fable 5",
+      "url": "https://worldofclaudecraft.com/",
+      "score": 69,
+      "by": "beatthatflight",
+      "comments": 61,
+      "hn_url": "https://news.ycombinator.com/item?id=48509143",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Introduction to UEFI HTTP(s) Boot with QEMU/OVMF",
+      "url": "https://blog.yadutaf.fr/2026/06/12/introduction-to-uefi-https-boot-qemu-ovmf/",
+      "score": 66,
+      "by": "jtlebigot",
+      "comments": 24,
+      "hn_url": "https://news.ycombinator.com/item?id=48504929",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "EV demand up 50% in France and Germany since Iran war",
+      "url": "https://www.reuters.com/business/renault-electric-vehicle-orders-have-surged-since-start-iran-war-says-ceo-2026-06-10/",
+      "score": 94,
+      "by": "a_paddy",
+      "comments": 41,
+      "hn_url": "https://news.ycombinator.com/item?id=48507986",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "A PDF that changes based on how its read",
+      "url": "https://sgaud.com/texts/pdf",
+      "score": 111,
+      "by": "SarthakGaud",
+      "comments": 57,
+      "hn_url": "https://news.ycombinator.com/item?id=48506209",
+      "text": "",
+      "description": "An idea for PDFs that render normally for humans while exposing clean markdown structure to extractors and LLMs in the same file."
+    },
+    {
+      "title": "Where Did Earth Get Its Oceans? Maybe It Made Them Itself",
+      "url": "https://www.quantamagazine.org/where-did-earth-get-its-oceans-maybe-it-made-them-itself-20260612/",
+      "score": 93,
+      "by": "ibobev",
+      "comments": 56,
+      "hn_url": "https://news.ycombinator.com/item?id=48505452",
+      "text": "",
+      "description": "At first, scientists thought Earth’s water came from comets. Then, asteroids. Now, they wonder if Earth’s water is homegrown."
+    },
+    {
+      "title": "Cosmodial Sky Atlas",
+      "url": "https://killedbyapixel.github.io/Cosmodial/",
+      "score": 23,
+      "by": "memalign",
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=48507571",
+      "text": "",
+      "description": "A free, offline-first stargazing web app — the live sky from where you stand, from naked-eye views down to a telescope eyepiece."
+    },
+    {
+      "title": "Show HN: Turn your name into a tree in an infinite procedural shanshui landscape",
+      "url": "https://landscape.bairui.dev/",
+      "score": 5,
+      "by": "subairui",
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=48477001",
+      "text": "Hi HN! I made this after collecting hundreds of &quot;name → tree&quot; submissions at ITP.<p>Live: <a href=\"https:&#x2F;&#x2F;landscape.bairui.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;landscape.bairui.dev&#x2F;</a>\nSource: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;pearmini&#x2F;infinite-landscape\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;pearmini&#x2F;infinite-landscape</a>\nPlant a tree: <a href=\"https:&#x2F;&#x2F;tree.bairui.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;tree.bairui.dev&#x2F;</a><p>Pan and zoom an infinite procedural landscape. Each name is converted to ASCII codes, which grow into a unique tree (breadth-first branching; repeated digits become mathematical roses). Mountains use midpoint displacement + Perlin noise, with SVG radial gradients in the blue&#x2F;green&#x2F;gold palette from Wang Ximeng&#x27;s &quot;A Thousand Li of Rivers and Mountains.&quot;<p>Inspired by Lingdong Huang&#x27;s {Shan, Shui}* (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;LingDong-&#x2F;shan-shui-inf\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;LingDong-&#x2F;shan-shui-inf</a>). Every tree is someone&#x27;s name, signed with an APack stamp (<a href=\"https:&#x2F;&#x2F;apack.bairui.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;apack.bairui.dev&#x2F;</a>).<p>Try planting your name, then pan along the ridgeline to find it. &quot;My trees&quot; lets you jump back to ones you planted.<p>Happy to answer questions about the terrain algo, name→tree encoding, or the Riso print we tiled at ITP Winter Show!",
+      "description": "Hi HN! I made this after collecting hundreds of \"name → tree\" submissions at ITP.Live: https://landscape.bairui.dev/\nSource: https://github.com/pearmini/infinite-landscape\nPlant a tree: https://tree.bairui.dev/Pan and zoom an infinite procedural landscape. Each name is converted to ASCII codes, which grow into a unique tree (breadth-first branching; repeated digits become mathematical roses). Mountains use midpoint displacement + Perlin noise, with SVG radial gradients in the blue/green/gold ..."
+    }
+  ],
+  "hn_ask": [
+    {
+      "title": "Ask HN: Phishing from 646-257-4500",
+      "url": "https://news.ycombinator.com/item?id=48510035",
+      "score": 3,
+      "by": "latchkey",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48510035",
+      "text": "Yesterday, I got a call from 646-257-4500.<p>American western male voice. Very polite. They actually called me 3 times. The first two, I just hung up.<p>They were claiming they received a request from the google support portal for a change of phone number on my account and wanted me to verify my account.<p>They sent me an email which looks very much like it came from Google… even in the headers! I don&#x27;t see anything intrinsically wrong in it.<p>Subject: Re: You are now on the phone with a verified Google Agent, your Case ID is: XXXXX. Please ask your Agent to confirm this over the phone.<p><pre><code>  ARC-Authentication-Results: i=1; mx.google.com;\n       dkim=pass header.i=@google.com header.s=20251104 header.b=XXXX;\n       spf=pass (google.com: domain of XXXX.XXXX.XXX@cases-outbound-prod.bounces.google.com designates 209.85.220.75 as permitted sender) smtp.mailfrom=XXX.XXX.XXX@cases-outbound-prod.bounces.google.com;\n       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com;\n       dara=pass header.i=@gmail.com\n  Received: from mail-sor-f75.google.com (mail-sor-f75.google.com. [209.85.220.75])\n        by mx.google.com with SMTPS id XXXX-XXXX.10.2026.06.11.14.42.06\n        for &lt;XXXX@gmail.com&gt;\n        (Google Transport Security);\n        Thu, 11 Jun 2026 14:42:06 -0700 (PDT)\n</code></pre>\nThey hung up immediately when they realized that I wasn’t going to read them that code.<p>Searches for the number confirm I&#x27;m not the only one.<p>I guess my question is how they could send that email!?<p>Why isn&#x27;t google filtering this out through their system?",
+      "description": "Yesterday, I got a call from 646-257-4500.American western male voice. Very polite. They actually called me 3 times. The first two, I just hung up.They were claiming they received a request from the google support portal for a change of phone number on my account and wanted me to verify my account.They sent me an email which looks very much like it came from Google… even in the headers! I don't see anything intrinsically wrong in it.Subject: Re: You are now on the phone with a verified Google..."
+    },
+    {
+      "title": "Ask HN: Are you using Spec Driven Development?",
+      "url": "https://news.ycombinator.com/item?id=48510002",
+      "score": 2,
+      "by": "xpn",
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=48510002",
+      "text": "Developers working with LLMs in a professional environment, is Spec Driven Development really the way forward with LLM coding agents?<p>Over the past few months I&#x27;ve really tried to lean into SDD, after trying SpecKit and GSD, I finally settled on OpenSpec as my preferred spec generator.<p>However I&#x27;m not quite ready to give up on understanding the actual code that the LLM is producing.<p>To help with maintaining my comprehension of the generated code, I&#x27;ve tried a few different methods, such as generating smaller specs for more granular features, and pausing after each major task block to review the code. Approaching this via &quot;&#x2F;ospx-apply Run until task 3.5 is complete and then pause for review&quot; gives me the ability to vet the code being produced and make corrections if needed. But honestly, the major issue that I have is that coding style and good code hygiene is often lacking, even with appropriate AGENTS.md and Skills loaded (the usual issues of multiple helper methods, inconsistent naming).<p>I can&#x27;t help but wonder what developers are doing in their workplaces. Is SDD actually used as part of the developer toolkit? Am I trying to keep too much control over the code and should I just let the LLM be free within the bounds of a spec to guide it? Or should I abandon SDD and look at another path to ensure that code being produced can at least be maintained long term?",
+      "description": "Developers working with LLMs in a professional environment, is Spec Driven Development really the way forward with LLM coding agents?Over the past few months I've really tried to lean into SDD, after trying SpecKit and GSD, I finally settled on OpenSpec as my preferred spec generator.However I'm not quite ready to give up on understanding the actual code that the LLM is producing.To help with maintaining my comprehension of the generated code, I've tried a few different methods, such as gener..."
+    },
+    {
+      "title": "Ask HN: How are thinking efforts implemented?",
+      "url": "https://news.ycombinator.com/item?id=48434240",
+      "score": 79,
+      "by": "simianwords",
+      "comments": 29,
+      "hn_url": "https://news.ycombinator.com/item?id=48434240",
+      "text": "Claude and ChatGPT have thinking efforts where you can tune the amount of thinking allowed.<p>Like low, medium, high, xhigh and so on.<p>But are they different models underneath? Or same model with different parameter?<p>The reason I ask is because, if I change the effort param mid conversation in Claude code, I get a warning suggesting I’m breaking the cache.<p>I don’t think this happens in Codex because when I change the effort, the responses are still quick.",
+      "description": "Claude and ChatGPT have thinking efforts where you can tune the amount of thinking allowed.Like low, medium, high, xhigh and so on.But are they different models underneath? Or same model with different parameter?The reason I ask is because, if I change the effort param mid conversation in Claude code, I get a warning suggesting I’m breaking the cache.I don’t think this happens in Codex because when I change the effort, the responses are still quick."
+    },
+    {
+      "title": "DigitalOcean Ending Student Credit Promotion",
+      "url": "https://news.ycombinator.com/item?id=48509700",
+      "score": 2,
+      "by": "thepotatodude",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48509700",
+      "text": "Students need compute, please consider helping the next generation.",
+      "description": "Students need compute, please consider helping the next generation."
+    },
+    {
+      "title": "Ask HN: Show your AI coded games [June 2026]",
+      "url": "https://news.ycombinator.com/item?id=48509243",
+      "score": 5,
+      "by": "franze",
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=48509243",
+      "text": "They get lost in SHOWN HN too often. This thread is for them. Unfinished is ok. Just show them.",
+      "description": "They get lost in SHOWN HN too often. This thread is for them. Unfinished is ok. Just show them."
+    },
+    {
+      "title": "Ask HN: Favorite text heavy blogs that are a joy to read?",
+      "url": "https://news.ycombinator.com/item?id=48466488",
+      "score": 103,
+      "by": "joshmarinacci",
+      "comments": 28,
+      "hn_url": "https://news.ycombinator.com/item?id=48466488",
+      "text": "After ten years I’m working on a redesign of my personal tech blog. I want to look at some other blogs with good modern design. Of course searching for ‘well designed blogs’ or ‘webdesign 2026’ brings up endless marketing listicles. Even after wading through the crap, the advice is focused on advertising and product centric sites, not prose heavy sites with good typography.<p>So my question to you is: <i>What are some of your favorite text heavy blogs that are a joy to read?</i><p>I don’t mean the content (though that helps too), but rather sites where the actual experience of reading is pleasant. Think: good fonts, sticky headers (or not), well formatted code snippets, and responsive images.  Slide in navbars vs inline table of contents.<p>Thanks,\n - j",
+      "description": "After ten years I’m working on a redesign of my personal tech blog. I want to look at some other blogs with good modern design. Of course searching for ‘well designed blogs’ or ‘webdesign 2026’ brings up endless marketing listicles. Even after wading through the crap, the advice is focused on advertising and product centric sites, not prose heavy sites with good typography.So my question to you is: What are some of your favorite text heavy blogs that are a joy to read?I don’t mean the content..."
+    },
+    {
+      "title": "Ask HN: Want to build something open source on nights and weekends together?",
+      "url": "https://news.ycombinator.com/item?id=48486932",
+      "score": 36,
+      "by": "vira28",
+      "comments": 14,
+      "hn_url": "https://news.ycombinator.com/item?id=48486932",
+      "text": "Not a hiring post. I have a 9-5 but also a lot of ideas I want to build. The core is just to show up and make small progress — but I find I&#x27;m missing accountability and partnership, so I thought it&#x27;d be nice to partner with someone. Mostly backend&#x2F;infra stuff. If you&#x27;re interested, email in my profile.",
+      "description": "Not a hiring post. I have a 9-5 but also a lot of ideas I want to build. The core is just to show up and make small progress — but I find I'm missing accountability and partnership, so I thought it'd be nice to partner with someone. Mostly backend/infra stuff. If you're interested, email in my profile."
+    },
+    {
+      "title": "Ask HN: Influence of Legend of Zelda in Backrooms Movie?",
+      "url": "https://news.ycombinator.com/item?id=48507157",
+      "score": 4,
+      "by": "dieselgate",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48507157",
+      "text": "I watched the movie Backrooms last weekend and found it enjoyable. The biggest thing that jumped out to me was how similar it resembled Legend of Zelda: Ocarina of Time temple&#x2F;dungeon layouts. Did anyone else have similar thoughts?<p>There was an early scene where the Backrooms character had to kneel down and crawl into a small knee-high opening leading into another room.<p>There were multiple scenes where a &quot;grinning sun&quot; wall figure is shown. There were some scenes where the rooms expand &quot;into the wall&quot; in a rotated way. And the perfect cubic cutouts of the floor and ceiling that occasionally lead to another room.<p>These were all the major things from what I can recall and almost feel like direct &quot;ripoffs&quot; from Ocarina of Time. I felt they were well done and have no intent of trashing the movie. While watching it just felt the director was probably a big Zelda fan.<p>Curious if anyone has thoughts here or if these are just coincidental stylistic choices.",
+      "description": "I watched the movie Backrooms last weekend and found it enjoyable. The biggest thing that jumped out to me was how similar it resembled Legend of Zelda: Ocarina of Time temple/dungeon layouts. Did anyone else have similar thoughts?There was an early scene where the Backrooms character had to kneel down and crawl into a small knee-high opening leading into another room.There were multiple scenes where a \"grinning sun\" wall figure is shown. There were some scenes where the rooms expand \"into th..."
+    },
+    {
+      "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
+      "url": "https://news.ycombinator.com/item?id=48477135",
+      "score": 785,
+      "by": "eries",
+      "comments": 566,
+      "hn_url": "https://news.ycombinator.com/item?id=48477135",
+      "text": "Hey gang, you may remember me from such books as _The Lean Startup_ and _The Startup Way_.<p>It&#x27;s been fifteen years since I wrote The Lean Startup, and in that time I&#x27;ve seen some things. In both big companies and tiny startups, NGOs and governments, in almost every industry you can name.<p>I&#x27;ve helped a lot of people create a lot of amazing companies, but I&#x27;ve also seen so many ways this can go wrong. There&#x27;s a darkness in our industry that we often don&#x27;t talk about.<p>I kept watching good companies drift away from the missions they were founded on. Not because anyone woke up one day and decided to be evil, but because the structure they were built on slowly pulled them there. I call that pull &quot;financial gravity.&quot;<p>We&#x27;ve all experienced watching a company we love or admire be warped and broken beyond recognition; until it&#x27;s a husk of its former self, or worse. I wanted to understand why. And I wanted to know what all of us can do to stop that from happening.<p>My new book _Incorruptible_ is my attempt to explain the invisible forces that shape organizations, and how a handful of companies (like Costco, Patagonia, and Novo Nordisk) have successfully been structured to resist gravity and thrive for decades -- or even centuries.<p>Along the way, I founded the Long-Term Stock Exchange, co-founded an AI R&amp;D lab called Answer.AI with Jeremy Howard, and helped a number of notable companies with their governance (yes, including Anthropic).<p>I won&#x27;t pretend I have this all figured out, but I&#x27;ve probably spent more time than is healthy on the &quot;why do good companies go bad&quot; question. Ask me anything!",
+      "description": "Hey gang, you may remember me from such books as _The Lean Startup_ and _The Startup Way_.It's been fifteen years since I wrote The Lean Startup, and in that time I've seen some things. In both big companies and tiny startups, NGOs and governments, in almost every industry you can name.I've helped a lot of people create a lot of amazing companies, but I've also seen so many ways this can go wrong. There's a darkness in our industry that we often don't talk about.I kept watching good companies..."
+    },
+    {
+      "title": "Ask HN: I Need Help for a Product",
+      "url": "https://news.ycombinator.com/item?id=48505805",
+      "score": 7,
+      "by": "memoryleakgame",
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=48505805",
+      "text": "I have a very high-quality SaaS product that&#x27;s ready to launch. Everything is complete: the product, testing, LLC, bank account, Stripe, tech stack, etc. But I built it as a programmer trying to create the coolest thing possible for a product I&#x27;ve always wanted to make.\nMy issue is that using Claude as a lawyer is scaring me. What I consider moral and what seems to be legal are two different things.\nFor context, the product uses an AI pipeline to adapt user-provided content into dramatized formats. Think of it as ebook-to-graphic-audio adaptation (though there are other pipelines). The quality is insanely good, but having users bring copyrighted content they own to be adapted is legally unclear. ElevenLabs doesn&#x27;t add sound effects, so they&#x27;re fine, but this involves transcription plus additional steps. Claude&#x27;s legal responses are also scaring me. Even with aggressive content moderation to reject CSAM-related materials, report to authorities, block users, and include it in the ToS, there&#x27;s a risk that some things could slip through and I&#x27;d get sued for massive damages.\nI also need clarification on whether I&#x27;m allowed to cache and reuse generated assets. For example, if a sentence like &quot;Pizza is good&quot; is generated once, can I reuse it a second time at a lower cost instead of regenerating it?\nI&#x27;m just a single programmer without infinite capital to license content. Public domain and CC work won&#x27;t drive the user interest I need.\nI need real legal advice, but I can&#x27;t justify spending $5k on a lawyer just to hear this is a bad idea. What can I do?",
+      "description": "I have a very high-quality SaaS product that's ready to launch. Everything is complete: the product, testing, LLC, bank account, Stripe, tech stack, etc. But I built it as a programmer trying to create the coolest thing possible for a product I've always wanted to make.\nMy issue is that using Claude as a lawyer is scaring me. What I consider moral and what seems to be legal are two different things.\nFor context, the product uses an AI pipeline to adapt user-provided content into dramatized fo..."
+    },
+    {
+      "title": "Ask HN: Would it be useful to have a slop button in addition to flag?",
+      "url": "https://news.ycombinator.com/item?id=48481947",
+      "score": 31,
+      "by": "BugsJustFindMe",
+      "comments": 23,
+      "hn_url": "https://news.ycombinator.com/item?id=48481947",
+      "text": "In these modern harrowing times, more and more posts are proving to be AI slop, and many people are averse to that. Do you think it would it be useful to have a way to indicate that you believe a post is slop separate from the existing flag button? Maybe it&#x27;s just me but I feel like having a dedicated [AI slop] flag on a post would be useful because I feel differently about posts that have been flagged for other reasons than that. (or something friendlier if value is seen in the general idea but not in that language)",
+      "description": "In these modern harrowing times, more and more posts are proving to be AI slop, and many people are averse to that. Do you think it would it be useful to have a way to indicate that you believe a post is slop separate from the existing flag button? Maybe it's just me but I feel like having a dedicated [AI slop] flag on a post would be useful because I feel differently about posts that have been flagged for other reasons than that. (or something friendlier if value is seen in the general idea ..."
+    },
+    {
+      "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
+      "url": "https://news.ycombinator.com/item?id=48473166",
+      "score": 419,
+      "by": "TomAnthony",
+      "comments": 252,
+      "hn_url": "https://news.ycombinator.com/item?id=48473166",
+      "text": "&gt; For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary.<p>From the announcement here: <a href=\"https:&#x2F;&#x2F;aws.amazon.com&#x2F;blogs&#x2F;aws&#x2F;anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;aws.amazon.com&#x2F;blogs&#x2F;aws&#x2F;anthropic-claude-fable-5-on...</a><p>&gt; After 30 days, the data is deleted automatically, except in the rare cases where it&#x27;s part of a safety investigation or we&#x27;re legally required to keep it.<p>From: <a href=\"https:&#x2F;&#x2F;support.claude.com&#x2F;en&#x2F;articles&#x2F;15425996-data-retention-practices-for-mythos-class-models\" rel=\"nofollow\">https:&#x2F;&#x2F;support.claude.com&#x2F;en&#x2F;articles&#x2F;15425996-data-retenti...</a>",
+      "description": "> For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary.From the announcement here: https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on...> After 30 days..."
+    },
+    {
+      "title": "Notes on DeepSeek",
+      "url": "https://news.ycombinator.com/item?id=48476474",
+      "score": 203,
+      "by": "vinhnx",
+      "comments": 139,
+      "hn_url": "https://news.ycombinator.com/item?id=48476474",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Ad on the HN front page? Gauntlet AI?",
+      "url": "https://news.ycombinator.com/item?id=48507014",
+      "score": 5,
+      "by": "tizio13",
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=48507014",
+      "text": "The post with the title:<p>Gauntlet AI will fly you to Austin, train you in AI, give $200k+ job (gauntletai.com)<p>The post doesn’t have any author attributed or comments. Is this something new?",
+      "description": "The post with the title:Gauntlet AI will fly you to Austin, train you in AI, give $200k+ job (gauntletai.com)The post doesn’t have any author attributed or comments. Is this something new?"
+    },
+    {
+      "title": "Ask HN: Why hasn't there been a real competitor to Ticketmaster yet?",
+      "url": "https://news.ycombinator.com/item?id=48448313",
+      "score": 261,
+      "by": "mdni007",
+      "comments": 237,
+      "hn_url": "https://news.ycombinator.com/item?id=48448313",
+      "text": "It feels like every event&#x2F;venue is selling tickets exclusively through Ticketmaster.  Every other ticketing platform seems to only hold resale tickets in their inventory which just transfers the tickets to your Ticketmaster account when bought. With all the hate Ticketmaster has gotten and all the other ticketing platforms out there, I&#x27;m surprised Ticketmaster still has a hold of pretty much the entire market. How are they doing this? Why haven&#x27;t the other platforms been able to compete?",
+      "description": "It feels like every event/venue is selling tickets exclusively through Ticketmaster.  Every other ticketing platform seems to only hold resale tickets in their inventory which just transfers the tickets to your Ticketmaster account when bought. With all the hate Ticketmaster has gotten and all the other ticketing platforms out there, I'm surprised Ticketmaster still has a hold of pretty much the entire market. How are they doing this? Why haven't the other platforms been able to compete?"
+    },
+    {
+      "title": "Ask HN: How do you get into a flow state when using AI to code?",
+      "url": "https://news.ycombinator.com/item?id=48492118",
+      "score": 89,
+      "by": "kilroy123",
+      "comments": 110,
+      "hn_url": "https://news.ycombinator.com/item?id=48492118",
+      "text": "Before agentic coding, I always prided myself on how long I could work in a flow state. I was really good at working deeply.<p>Now, with slow agents like Claude, I find myself no longer working deeply.<p>What are you all doing to stay focused?",
+      "description": "Before agentic coding, I always prided myself on how long I could work in a flow state. I was really good at working deeply.Now, with slow agents like Claude, I find myself no longer working deeply.What are you all doing to stay focused?"
+    },
+    {
+      "title": "Tell HN: Meta is down",
+      "url": "https://news.ycombinator.com/item?id=48504034",
+      "score": 122,
+      "by": "reportinglurker",
+      "comments": 94,
+      "hn_url": "https://news.ycombinator.com/item?id=48504034",
+      "text": "Meta is currently down, facebook, insta. The outage is not registered on <a href=\"https:&#x2F;&#x2F;metastatus.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;metastatus.com&#x2F;</a> , possibly implying a greater outage.",
+      "description": "Meta is currently down, facebook, insta. The outage is not registered on https://metastatus.com/ , possibly implying a greater outage."
+    },
+    {
+      "title": "I procrastinate by building tools to stop me from procrastinating: A sad story",
+      "url": "https://news.ycombinator.com/item?id=48489109",
+      "score": 19,
+      "by": "thisislorenzov",
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=48489109",
+      "text": "Hello, fellow overstimulated kids<p>I don&#x27;t know if it&#x27;s something of my generation, my worsening ADHD or just laziness, but whenever I sit down and start studying something, magically, I find myself researching the most random shit ever.<p>Need to do at least 1 hour of Game Theory? Best I can do is 3.5 hours of WWII fun facts.<p>Anyways, as the lazy person I am, instead of finding the willpower to focus and get shit done, I made a customizable forward proxy. You can define your custom rules in nodes, arrange them visually in policy flows and bundle them into modes. You can find it here: https:&#x2F;&#x2F;github.com&#x2F;Vaccarini-Lorenzo&#x2F;ProductivityProxy<p>It&#x27;s a project I built for personal use but, with work and shit, I don&#x27;t have as much free time as I used to, so I hope someone smarter and with more time than me might just take it and make it good. Or maybe it&#x27;s just useful to someone as it is.<p>A few notes:<p>- It&#x27;s a project thought for &quot;power-users&quot;, you might need to write some (python) code in the nodes to describe their behaviour, but hey, just let a LLM do it for you: The project is well documented and I plan on bundling an AGENTS.md and expose agent-friendly APIs so that you can define your local flows in plain natural language and let your favourite LLM write the policies.<p>- It is built on top of mitmproxy, you will need it as dependency (as well as their certificates)<p>P.S.\nIt&#x27;s a Tauri app. Right now the automatic proxy setup is macOS-only (I&#x27;ve tested on Apple Silicon). On other platforms you&#x27;d have to point your browser at the proxy manually, and cross-platform support is still a TODO.",
+      "description": "Hello, fellow overstimulated kidsI don't know if it's something of my generation, my worsening ADHD or just laziness, but whenever I sit down and start studying something, magically, I find myself researching the most random shit ever.Need to do at least 1 hour of Game Theory? Best I can do is 3.5 hours of WWII fun facts.Anyways, as the lazy person I am, instead of finding the willpower to focus and get shit done, I made a customizable forward proxy. You can define your custom rules in nodes,..."
+    },
+    {
+      "title": "Ask HN: Are most corporate SWE jobs performative?",
+      "url": "https://news.ycombinator.com/item?id=48475871",
+      "score": 244,
+      "by": "hnthrow10282910",
+      "comments": 280,
+      "hn_url": "https://news.ycombinator.com/item?id=48475871",
+      "text": "The large companies I’ve worked at (including FAANG) seemed to thrive on kudos via performative actions. Like the majority of the team is doing useless stuff that management thinks is impressive while the couple all stars get the team closer to the goal.<p>Meanwhile, a lot of managers calendars are purely just 1:1s with devs on the team which clearly has very little value add to the team.<p>Anyone else notice this? Not sure if there’s a word for it, but it’s somewhat demoralising working with a bunch of corporate office workers cosplaying as engineers",
+      "description": "The large companies I’ve worked at (including FAANG) seemed to thrive on kudos via performative actions. Like the majority of the team is doing useless stuff that management thinks is impressive while the couple all stars get the team closer to the goal.Meanwhile, a lot of managers calendars are purely just 1:1s with devs on the team which clearly has very little value add to the team.Anyone else notice this? Not sure if there’s a word for it, but it’s somewhat demoralising working with a bun..."
+    },
+    {
+      "title": "Ask HN: Is anyone shorting the overspend in AI yet?",
+      "url": "https://news.ycombinator.com/item?id=48486763",
+      "score": 16,
+      "by": "ggm",
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=48486763",
+      "text": "I and a small cohort of friends truly believe that the &quot;$1T&quot; floats are going to burn capital. We think this is a disaster of landgrab spend, and that the cost of a token cannot be recovered by future commercial use.<p>If this theory is correct, then following on from the housing debt crisis, this is a hollow shell and so somebody in finance should be shorting the floats, and betting on a crash to clean up.<p>Polymarket betting aside, is anyone able to confirm that there are funds looking at a short play in the AI space, or is everyone on-board with things and nobody is taking the other side of the bet?<p>I am not in fintech or investing, I am not seeking alpha to do this, I don&#x27;t invest directly. I am however interested in validating my theory that somebody smart out there sees a huge upside in the explosion when this attempt to buy market share in Unicorn juice explodes.<p>NVDA as an example has under 2% of its trade in shorts. I can&#x27;t tell if thats big or small TBH. Feels small.",
+      "description": "I and a small cohort of friends truly believe that the \"$1T\" floats are going to burn capital. We think this is a disaster of landgrab spend, and that the cost of a token cannot be recovered by future commercial use.If this theory is correct, then following on from the housing debt crisis, this is a hollow shell and so somebody in finance should be shorting the floats, and betting on a crash to clean up.Polymarket betting aside, is anyone able to confirm that there are funds looking at a shor..."
+    }
+  ],
+  "hn_show": [
+    {
+      "title": "Show HN: Putt.day a daily mini golf game",
+      "url": "https://putt.day/",
+      "score": 2,
+      "by": "ellg",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48510341",
+      "text": "",
+      "description": "One hole of mini golf a day. Same hole for everyone."
+    },
+    {
+      "title": "Show HN: Turn your name into a tree in an infinite procedural shanshui landscape",
+      "url": "https://landscape.bairui.dev/",
+      "score": 5,
+      "by": "subairui",
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=48477001",
+      "text": "Hi HN! I made this after collecting hundreds of &quot;name → tree&quot; submissions at ITP.<p>Live: <a href=\"https:&#x2F;&#x2F;landscape.bairui.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;landscape.bairui.dev&#x2F;</a>\nSource: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;pearmini&#x2F;infinite-landscape\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;pearmini&#x2F;infinite-landscape</a>\nPlant a tree: <a href=\"https:&#x2F;&#x2F;tree.bairui.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;tree.bairui.dev&#x2F;</a><p>Pan and zoom an infinite procedural landscape. Each name is converted to ASCII codes, which grow into a unique tree (breadth-first branching; repeated digits become mathematical roses). Mountains use midpoint displacement + Perlin noise, with SVG radial gradients in the blue&#x2F;green&#x2F;gold palette from Wang Ximeng&#x27;s &quot;A Thousand Li of Rivers and Mountains.&quot;<p>Inspired by Lingdong Huang&#x27;s {Shan, Shui}* (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;LingDong-&#x2F;shan-shui-inf\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;LingDong-&#x2F;shan-shui-inf</a>). Every tree is someone&#x27;s name, signed with an APack stamp (<a href=\"https:&#x2F;&#x2F;apack.bairui.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;apack.bairui.dev&#x2F;</a>).<p>Try planting your name, then pan along the ridgeline to find it. &quot;My trees&quot; lets you jump back to ones you planted.<p>Happy to answer questions about the terrain algo, name→tree encoding, or the Riso print we tiled at ITP Winter Show!",
+      "description": "Hi HN! I made this after collecting hundreds of \"name → tree\" submissions at ITP.Live: https://landscape.bairui.dev/\nSource: https://github.com/pearmini/infinite-landscape\nPlant a tree: https://tree.bairui.dev/Pan and zoom an infinite procedural landscape. Each name is converted to ASCII codes, which grow into a unique tree (breadth-first branching; repeated digits become mathematical roses). Mountains use midpoint displacement + Perlin noise, with SVG radial gradients in the blue/green/gold ..."
+    },
+    {
+      "title": "Show HN: StackScope – I crawled over 40k indie launches to see what they ship",
+      "url": "https://stackscope.dev/",
+      "score": 39,
+      "by": "datafreak_",
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=48505364",
+      "text": "Hey all, I built StackScope, a crawler&#x2F;catalogue that looks at new product launches and shows what they were built with.<p>It watches launches from Product Hunt, Show HN, and PeerPush, then crawls the public site behind each one. The goal is to show what people actually launched with: hosting, frameworks, analytics, DNS, security headers, legal pages, AI-builder signals, and other public clues.<p>I started building it because most stack-detection sites look at the web as a whole. I was more interested in the current indie launch scene: what people are choosing right now, at the point they first put something in public.<p>A few implementation details: it runs on .NET, uses Playwright for rendered pages, and has a first-party fingerprint catalogue rather than one copied from Wappalyzer&#x2F;etc. robots.txt is honoured, and the bot identifies itself.<p>Frustratingly, I am still waiting for verified bot status from Cloudflare and currently that knocks out about 10% of all sites.<p>There is also a private readiness check: paste a URL, get the same style of report, fix things, and recrawl. No account or email needed.<p>I&#x27;d be interested in feedback on the usefulness of this, the methodology, and any obvious false positives.<p>Jonathan.",
+      "description": "Hey all, I built StackScope, a crawler/catalogue that looks at new product launches and shows what they were built with.It watches launches from Product Hunt, Show HN, and PeerPush, then crawls the public site behind each one. The goal is to show what people actually launched with: hosting, frameworks, analytics, DNS, security headers, legal pages, AI-builder signals, and other public clues.I started building it because most stack-detection sites look at the web as a whole. I was more interes..."
+    },
+    {
+      "title": "Show HN: Script to bulk delete Claude chats from the web UI",
+      "url": "https://github.com/MatteoLeonesi/bulk-delete-claude-chat",
+      "score": 50,
+      "by": "ML0037",
+      "comments": 18,
+      "hn_url": "https://news.ycombinator.com/item?id=48505161",
+      "text": "I haven&#x27;t found a way to delete all chats in bulk like you can on Chatgpt. With Claude, you have to scroll to the bottom, select everything, and delete. The problem is, if you have a lot of chats, it becomes impossible. I created this script. It does it alone. I hope it helps someone.<p>(conversations disappear from the UI slowly, over several minutes, and remember to keep the tab open until the console shows &quot;Finished&quot;, refreshing away from the page can stop the deletion process.)",
+      "description": "I haven't found a way to delete all chats in bulk like you can on Chatgpt. With Claude, you have to scroll to the bottom, select everything, and delete. The problem is, if you have a lot of chats, it becomes impossible. I created this script. It does it alone. I hope it helps someone.(conversations disappear from the UI slowly, over several minutes, and remember to keep the tab open until the console shows \"Finished\", refreshing away from the page can stop the deletion process.)"
+    },
+    {
+      "title": "Show HN: Homebrew 6.0.0",
+      "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
+      "score": 1401,
+      "by": "mikemcquaid",
+      "comments": 336,
+      "hn_url": "https://news.ycombinator.com/item?id=48490024",
+      "text": "Today, I’m proud to announce Homebrew 6.0.0. The most significant changes since 5.1.0 are a new tap trust security mechanism, the new faster, smaller, default internal Homebrew JSON API, sandboxing on Linux, better defaults informed by our user survey, many brew bundle improvements, improved performance and initial support for macOS 27 (Golden Gate).<p>Happy to discuss any questions here!",
+      "description": "Today, I’m proud to announce Homebrew 6.0.0. The most significant changes since 5.1.0 are a new tap trust security mechanism, the new faster, smaller, default internal Homebrew JSON API, sandboxing on Linux, better defaults informed by our user survey, many brew bundle improvements, improved performance and initial support for macOS 27 (Golden Gate).Happy to discuss any questions here!"
+    },
+    {
+      "title": "Show HN: FablePool – pool money behind a prompt, and Fable builds it in public",
+      "url": "https://fablepool.com",
+      "score": 498,
+      "by": "matthewbarras",
+      "comments": 266,
+      "hn_url": "https://news.ycombinator.com/item?id=48496539",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Show HN: Boo – Screen-style terminal multiplexer built on libghostty",
+      "url": "https://github.com/coder/boo",
+      "score": 88,
+      "by": "kylecarbs",
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=48496250",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Show HN: Geiger – A blast radius triage tool for any credential",
+      "url": "https://github.com/puck-security/geiger",
+      "score": 3,
+      "by": "thesubtlety",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48508036",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Show HN: Vilvona AI – Self-Hosted AI Assistant with Tamil and Hindi UI",
+      "url": "https://github.com/vignesh2027/Vilvona-AI",
+      "score": 3,
+      "by": "deepscalelabs",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48507644",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Show HN: Claw Patrol, a security firewall for agents",
+      "url": "https://github.com/denoland/clawpatrol",
+      "score": 101,
+      "by": "rough-sea",
+      "comments": 28,
+      "hn_url": "https://news.ycombinator.com/item?id=48462928",
+      "text": "At Deno we&#x27;ve been using OpenClaw and other agents increasingly for addressing production problems in Deno Deploy - when a PagerDuty alert fires, the agent starts researching the cause and making fixes.<p>In order to do this, the agent needs access to real production systems - postgres, kubernetes, gcp, clickhouse, github, etc. But this is dangerous to say the least - we want destructive actions to be reviewed by other LLMs, approved by humans, and logged appropriately.<p>Claw Patrol terminates TCP connections over WireGuard or Tailscale, then parses application protocols (eg http, postgres, ssh) to apply rules that allow you to deny&#x2F;allow requests.<p>There are a few projects that sit as a proxy in front of agents to do secret injection or apply various guardrails, but none met our needs (LLM gateways, MCP proxies, sandboxes), particularly the need to handle low-level protocols, or handle complex real world situations like tunneling postgres through k8s.<p>Written in Go, configured in HCL, MIT licensed. Happy to answer any questions.<p><a href=\"https:&#x2F;&#x2F;clawpatrol.dev&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;clawpatrol.dev&#x2F;</a>",
+      "description": "At Deno we've been using OpenClaw and other agents increasingly for addressing production problems in Deno Deploy - when a PagerDuty alert fires, the agent starts researching the cause and making fixes.In order to do this, the agent needs access to real production systems - postgres, kubernetes, gcp, clickhouse, github, etc. But this is dangerous to say the least - we want destructive actions to be reviewed by other LLMs, approved by humans, and logged appropriately.Claw Patrol terminates TCP..."
+    },
+    {
+      "title": "Show HN: Nenya – A lightweight, highly secure AI API Gateway/Proxy written in Go",
+      "url": "https://github.com/gumieri/nenya",
+      "score": 2,
+      "by": "garou",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48506994",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Show HN: Extend UI – open-source UI kit for modern document apps",
+      "url": "https://www.extend.ai/ui",
+      "score": 246,
+      "by": "kbyatnal",
+      "comments": 80,
+      "hn_url": "https://news.ycombinator.com/item?id=48478469",
+      "text": "We&#x27;re open-sourcing 14 components &amp; examples today for PDF, DOCX, and XLSX viewers, plus bounding box citations, file upload, e-signature, and more. It&#x27;s MIT licensed and fully customizable.<p>Demo video here: <a href=\"https:&#x2F;&#x2F;share.extend.ai&#x2F;kRmSGKRF\">https:&#x2F;&#x2F;share.extend.ai&#x2F;kRmSGKRF</a><p>When we started, we tried every file viewer and document component library we could find. Unfortunately, none of them had all the functionality (and polish) that we wanted, so we ended up building our own for <a href=\"https:&#x2F;&#x2F;extend.ai&#x2F;\">https:&#x2F;&#x2F;extend.ai&#x2F;</a>. It was only ever meant to be internal, but enough customers kept asking for it that we decided to open source it.<p>It&#x27;s useful for building document processing agents, real-time user facing document intake flows, or all kinds of internal tooling.<p>We naively thought this would be a solved problem. Turns out, making PDF&#x2F;XLSX&#x2F;DOCX viewers that work at scale is not trivial...we use and maintain it for Extend ourselves, so we&#x27;ve fixed a lot of edge cases that came up while running millions of pages &#x2F; day through our own system. Our hope is that with our resources + community support, it&#x27;ll keep getting better over time.",
+      "description": "We're open-sourcing 14 components & examples today for PDF, DOCX, and XLSX viewers, plus bounding box citations, file upload, e-signature, and more. It's MIT licensed and fully customizable.Demo video here: https://share.extend.ai/kRmSGKRFWhen we started, we tried every file viewer and document component library we could find. Unfortunately, none of them had all the functionality (and polish) that we wanted, so we ended up building our own for https://extend.ai/. It was only ever meant to be ..."
+    },
+    {
+      "title": "Show HN: Squishy & Friends – Claude Fabel 5 coded a game and it is good",
+      "url": "https://squishy.franzai.com/",
+      "score": 4,
+      "by": "franze",
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=48506364",
+      "text": "",
+      "description": "A tiny cute swipe puzzle - merge your squishies onto the heart. Can you solve it?"
+    },
+    {
+      "title": "Show HN: Crowfly.golf – Zero-backend GPS round tracking (localStorage)",
+      "url": "https://crowfly.golf",
+      "score": 2,
+      "by": "whycombinetor",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48506102",
+      "text": "crowfly is a single-html-file golf round GPS tracker.<p>Hit your shot, tap &quot;log shot&quot;, walk to your ball, repeat. Shots and rounds are stored in localStorage. Distance markers. CSV export. Zero account, zero backend.<p>Short-term roadmap:<p>- Mandatory login<p>- AI club recommendation<p>- Paywall everything<p>- ERC-20 issuance<p>- MCP servers<p>- Even darker mode<p>Long-term roadmap:<p>- Humanoid agent plays the round for you<p>- Configurable celestial body (Moon, Mars, Titan etc)<p>- Round summary as a podcast<p>- Rewrite in Rust",
+      "description": "crowfly is a single-html-file golf round GPS tracker.Hit your shot, tap \"log shot\", walk to your ball, repeat. Shots and rounds are stored in localStorage. Distance markers. CSV export. Zero account, zero backend.Short-term roadmap:- Mandatory login- AI club recommendation- Paywall everything- ERC-20 issuance- MCP servers- Even darker modeLong-term roadmap:- Humanoid agent plays the round for you- Configurable celestial body (Moon, Mars, Titan etc)- Round summary as a podcast- Rewrite in Rust"
+    },
+    {
+      "title": "Show HN: SharkClean MCP",
+      "url": "https://github.com/a-funk/sharkclean-mcp",
+      "score": 3,
+      "by": "afunk",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48505910",
+      "text": "This is nothing special but it has been very very nice to kick off cleaning jobs remotely via MCP.  Working towards a genuinely smart home and this was a useful step in the right direction.",
+      "description": "This is nothing special but it has been very very nice to kick off cleaning jobs remotely via MCP.  Working towards a genuinely smart home and this was a useful step in the right direction."
+    },
+    {
+      "title": "Show HN: HelixDB – A graph database built on object storage",
+      "url": "https://github.com/HelixDB/helix-db/tree/main",
+      "score": 152,
+      "by": "GeorgeCurtis",
+      "comments": 42,
+      "hn_url": "https://news.ycombinator.com/item?id=48478148",
+      "text": "Hey HN, it’s been just over a year since we launched HelixDB (<a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43975423\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=43975423</a>), a project a friend and I started in college. It’s an OLTP graph database built on object-storage, with native vector search and full-text search (FTS).<p>Why graph, vector and FTS? Graph databases provide a natural cognitive model for data, vectors allow for a semantic understanding of the entities and relationships in the graph, and FTS provides more specific filtering. Many AI-driven applications attempt to combine all of these functionalities by stitching together multiple disconnected systems, but even then there’s no native way to perform joins or queries that span all systems. You still need to handle this logic at the application level.<p>Helix started as a graph DB, but we moved to a hybrid graph&#x2F;vector approach after attempting to build an AI memory system, which led us down the GraphRAG and HybridRAG rabbit hole, where we would need separate graph and vector databases.<p>We knew scalability would be a challenge at each stage of our product&#x27;s development, however our initial focus this past year was to prove out the product through local deployments and was only meant to be run on a single node. Scaling graph DBs remained a difficult and expensive problem we’d have to solve later.\nSome common ways other graph DBs solve scaling is by duplicating entire datasets across distributed machines (extremely expensive per node), or by sharding the data.<p>Sharding databases is effective and affordable, however, graph data doesn’t have explicit partitions like relational databases do. For example, sharding a relational DB involves splitting up tables. When it comes to graph DBs, the edges can span across any of the partitions, and hopping across multiple machines when traversing nodes is ineffective and computationally expensive.<p>Replicating graph DBs for high availability and better throughput drastically increases the operational cost of the db and still has a limit of how big you can vertically scale. The workload that we’re used for requires storing a huge amount of data for agents, where only a subset of that data is ever needed at any one time. So rather than having the whole thing in memory, we can store it all in object-storage and get the bits we need when they’re needed.<p>Agents benefit from better context, which is achieved from more and better data (more relationships etc). By using S3 as the persistence&#x2F;data layer there is <i>no limit</i> to how big the graph can be or how many relationships you can have, and we can scale to serve throughput and requests by horizontally spinning up nodes and caching relevant subsets of the graph on each node. This way, you get extremely low latency for “hot” data and a p99 of ~100ms for writes and ~50ms for reads from cold storage (S3). Plus you get the benefit of dirt cheap storage.<p>Workloads that HelixDB is currently supporting:\n- Huge amounts of data (TBs) from which the agents need to search and traverse over\n- Offering affordable graph storage for companies where cost of graph data is a bottleneck\n- Consolidating multiple databases, enabling AI agents to have autonomy over companies, helping them become more autonomous.\n- AI memory\n- Company brains<p>We’re currently working on our own generalised AI memory layer which will use HelixDB under the hood and be completely open-source. Also, we’re finishing up on pre-filtering for vector search which will allow you to pre-filter based on relationships in the graph, metadata, and sub-graphs. And lastly, GA cloud will be available in the coming weeks.<p>If you want to run Helix locally (either on-disk or in-memory), you can find more info on our github (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;HelixDB&#x2F;helix-db\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;HelixDB&#x2F;helix-db</a>) or via our docs (<a href=\"https:&#x2F;&#x2F;docs.helix-db.com&#x2F;database&#x2F;local-development\">https:&#x2F;&#x2F;docs.helix-db.com&#x2F;database&#x2F;local-development</a>). If you’re interested in getting started with our distributed cloud, please email us founders@helix-db.com.<p>Many thanks! Comments and feedback welcome!",
+      "description": "Hey HN, it’s been just over a year since we launched HelixDB (https://news.ycombinator.com/item?id=43975423), a project a friend and I started in college. It’s an OLTP graph database built on object-storage, with native vector search and full-text search (FTS).Why graph, vector and FTS? Graph databases provide a natural cognitive model for data, vectors allow for a semantic understanding of the entities and relationships in the graph, and FTS provides more specific filtering. Many AI-driven a..."
+    },
+    {
+      "title": "Show HN: I had Fable clone a game, it turned it into an arena combat AI trainer",
+      "url": "https://soldat.bobbby.online/",
+      "score": 5,
+      "by": "rhgraysonii",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48504995",
+      "text": "I started off with a simple goal: port the game Soldat to Typescript. I ended up not only with the game, but with a full system to train AI bots to play my own game, building a neural net to train new bot AIs from tens of thousands of simulated matches with different strategies. It also runs live all the time on my website and has a news dashboard and you can replay any game exactly. It all was a very fun way to dig into Fable&#x27;s capabilities.<p>The bill if I had done this with API billing? Nearly $2000.",
+      "description": "I started off with a simple goal: port the game Soldat to Typescript. I ended up not only with the game, but with a full system to train AI bots to play my own game, building a neural net to train new bot AIs from tens of thousands of simulated matches with different strategies. It also runs live all the time on my website and has a news dashboard and you can replay any game exactly. It all was a very fun way to dig into Fable's capabilities.The bill if I had done this with API billing? Nearl..."
+    },
+    {
+      "title": "Show HN: Gravity – Interactive solar-system simulator, from Newton to Einstein",
+      "url": "https://qunabu.github.io/Gravity/",
+      "score": 212,
+      "by": "qunabu",
+      "comments": 50,
+      "hn_url": "https://news.ycombinator.com/item?id=48459837",
+      "text": "Just for fun and self education, I&#x27;ve built this over a weekend to teach myself why orbits exist, not just show planets going around. Something that was never clearly explain to me in school. \nIt opens with a guided tour that builds the idea up step by step: two bodies and the equal&#x2F;opposite force, inertia (the Sun is removed and Earth just drifts straight), then &quot;an orbit is falling and continuously missing,&quot; cosmic velocities with a little rocket, Voyager 1 &amp; 2&#x27;s real gravity assists (the clock runs the actual 1977–1989 dates so the planets orbit into their grand-tour alignment and the slingshots line up), and it ends on Einstein — gravity as curved spacetime, the classic rubber-sheet well.\nWhat&#x27;s real: every body uses its real radius&#x2F;mass and J2000 orbital elements; positions come from solving Kepler&#x27;s equation each  frame. You can toggle to an N-body mode (symplectic leapfrog) that shows live energy drift (~1e-6%) so you can see the integrator is honest. The only thing faked is scale — at true scale you can&#x27;t see anything — so there&#x27;s a toggle between true scale and a log-remapped &quot;visual&quot; scale, with physics always running in real AU.\nTech: TypeScript + Three.js + Vite, fully client-side, no backend, works offline (surface textures are generated procedurally from value-noise; only Earth uses a real image). Source: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;qunabu&#x2F;Gravity\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;qunabu&#x2F;Gravity</a><p>Happy to answer questions — and feedback on the physics or the explanations is very welcome. This project might be totally inaccurate in terms of real physics, this is how i do understand this on my own - i&#x27;m happy to confront this with reality",
+      "description": "Just for fun and self education, I've built this over a weekend to teach myself why orbits exist, not just show planets going around. Something that was never clearly explain to me in school. \nIt opens with a guided tour that builds the idea up step by step: two bodies and the equal/opposite force, inertia (the Sun is removed and Earth just drifts straight), then \"an orbit is falling and continuously missing,\" cosmic velocities with a little rocket, Voyager 1 & 2's real gravity assists (the c..."
+    },
+    {
+      "title": "Show HN: 800x faster Linter and TypeScript-Go toolchain for plugins like typia",
+      "url": "https://github.com/samchon/ttsc",
+      "score": 3,
+      "by": "autobe",
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=48503461",
+      "text": "As a developer of typia, have to alive in the new typescript-go era, I made a new toolchain for tsgo.<p>Making the ttsc, I understood that the new plugin toolchain system can dramatically reduce lint rule checking time by integrating into the typescript-go. So made `@ttsc&#x2F;lint`, and its time is 600x to 1600x faster than eslint.<p>From now on, when you compile TypeScript, lint violations would be caught in the same time. No more need to run both `tsgo` and `eslint` independently.<p>&gt; This repository is not v1 yet because the typescript-go has not been released yet, but if you wanna experience superfast lint, or keep using typia in typia era, you can do it right now.",
+      "description": "As a developer of typia, have to alive in the new typescript-go era, I made a new toolchain for tsgo.Making the ttsc, I understood that the new plugin toolchain system can dramatically reduce lint rule checking time by integrating into the typescript-go. So made `@ttsc/lint`, and its time is 600x to 1600x faster than eslint.From now on, when you compile TypeScript, lint violations would be caught in the same time. No more need to run both `tsgo` and `eslint` independently.> This repository is..."
+    },
+    {
+      "title": "Show HN: GentleOS – A pair of hobby OSes for vintage 32-bit and 16-bit PCs",
+      "url": "https://github.com/luke8086/gentleos32",
+      "score": 128,
+      "by": "luke8086",
+      "comments": 104,
+      "hn_url": "https://news.ycombinator.com/item?id=48435943",
+      "text": "Hello HN,<p>I&#x27;ve been working on a simple OS for tinkering and running bare metal apps on vintage PCs.<p>Since I couldn&#x27;t quite decide whether to target pure 16-bit, or slightly more capable 32-bit machines, I ended up with two separate versions:<p>- GentleOS&#x2F;32 (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;luke8086&#x2F;gentleos32\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;luke8086&#x2F;gentleos32</a>) works on i386+, requires 4MB of RAM and VGA display supporting 640x480x16 mode or any 256-color VESA mode.<p>- GentleOS&#x2F;16 (<a href=\"https:&#x2F;&#x2F;github.com&#x2F;luke8086&#x2F;gentleos\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;luke8086&#x2F;gentleos</a>) works on 80186+, requires less than 192KB of RAM and a CGA display supporting 320x200x4 mode.<p>You can find more details in the repos.",
+      "description": "Hello HN,I've been working on a simple OS for tinkering and running bare metal apps on vintage PCs.Since I couldn't quite decide whether to target pure 16-bit, or slightly more capable 32-bit machines, I ended up with two separate versions:- GentleOS/32 (https://github.com/luke8086/gentleos32) works on i386+, requires 4MB of RAM and VGA display supporting 640x480x16 mode or any 256-color VESA mode.- GentleOS/16 (https://github.com/luke8086/gentleos) works on 80186+, requires less than 192KB o..."
+    }
+  ],
+  "gh_trending": [
+    {
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "Shell",
+      "stars": "56,716",
+      "today_stars": "2,660"
+    },
+    {
+      "name": "music-assistant/server",
+      "url": "https://github.com/music-assistant/server",
+      "description": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
+      "language": "Python",
+      "stars": "1,763",
+      "today_stars": "6"
+    },
+    {
+      "name": "mattermost/mattermost",
+      "url": "https://github.com/mattermost/mattermost",
+      "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
+      "language": "TypeScript",
+      "stars": "37,614",
+      "today_stars": "391"
+    },
+    {
+      "name": "apple/container",
+      "url": "https://github.com/apple/container",
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "language": "Swift",
+      "stars": "35,009",
+      "today_stars": "3,513"
+    },
+    {
+      "name": "iptv-org/iptv",
+      "url": "https://github.com/iptv-org/iptv",
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "language": "TypeScript",
+      "stars": "118,005",
+      "today_stars": "142"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": "225,959",
+      "today_stars": "1,276"
+    },
+    {
+      "name": "refactoringhq/tolaria",
+      "url": "https://github.com/refactoringhq/tolaria",
+      "description": "Desktop app to manage markdown knowledge bases",
+      "language": "TypeScript",
+      "stars": "15,735",
+      "today_stars": "369"
+    },
+    {
+      "name": "maziyarpanahi/openmed",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "description": "open-source healthcare ai",
+      "language": "Python",
+      "stars": "3,179",
+      "today_stars": "517"
+    },
+    {
+      "name": "LMCache/LMCache",
+      "url": "https://github.com/LMCache/LMCache",
+      "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
+      "language": "Python",
+      "stars": "8,624",
+      "today_stars": "17"
+    },
+    {
+      "name": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "language": "",
+      "stars": "16,941",
+      "today_stars": "823"
+    },
+    {
+      "name": "masterking32/MasterDnsVPN",
+      "url": "https://github.com/masterking32/MasterDnsVPN",
+      "description": "Advanced DNS tunneling VPN for censorship bypass, optimized beyond DNSTT and SlipStream with low-overhead ARQ, resolver load balancing, high packet-loss stability and speed.",
+      "language": "Go",
+      "stars": "5,989",
+      "today_stars": "401"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars": "112,355",
+      "today_stars": "1,040"
+    },
+    {
+      "name": "microsoft/PowerToys",
+      "url": "https://github.com/microsoft/PowerToys",
+      "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
+      "language": "C",
+      "stars": "134,317",
+      "today_stars": "104"
+    }
+  ]
+}

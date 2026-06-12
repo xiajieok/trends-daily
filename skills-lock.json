@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "content-pipeline": {
+      "source": "orangeviolin/content-pipeline",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "3720b1f11ded4b376ff8feaf1f7c070d5d5f17bfc5ecbae7720703253dc7bea6"
+    }
+  }
+}

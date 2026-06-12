@@ -1,0 +1,425 @@
+{
+  "date": "2026-06-12",
+  "slug": "trends-daily-2026-06-12",
+  "hn_signals": {
+    "top": [
+      {
+        "title": "Show HN: FablePool – pool money behind a prompt, and Fable builds it in public",
+        "url": "https://fablepool.com",
+        "score": 105,
+        "comments": 44,
+        "by": "matthewbarras",
+        "hn_url": "https://news.ycombinator.com/item?id=48496539",
+        "reason": "tool:show hn",
+        "description": ""
+      },
+      {
+        "title": "Show HN: Homebrew 6.0.0",
+        "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
+        "score": 868,
+        "comments": 205,
+        "by": "mikemcquaid",
+        "hn_url": "https://news.ycombinator.com/item?id=48490024",
+        "reason": "ai_keyword:rust",
+        "description": "Today, I’m proud to announce Homebrew 6.0.0. The most significant changes since 5.1.0 are a new tap trust security mechanism, the new faster, smaller, default internal Homebrew JSON API, sandboxing on Linux, better defaults informed by our user survey, many brew bundle improvements, improved performance and initial support for macOS 27 (Golden Gate).Happy to discuss any questions here!"
+      },
+      {
+        "title": "Shall we play a game? – LLMs use tactical nukes in 95% of simulations",
+        "url": "https://www.kennethpayne.uk/p/shall-we-play-a-game",
+        "score": 142,
+        "comments": 131,
+        "by": "nick238",
+        "hn_url": "https://news.ycombinator.com/item?id=48495575",
+        "reason": "ai_keyword:ai",
+        "description": "My AI nuclear simulation is out now, and it's a WOPR."
+      },
+      {
+        "title": "The RCE that AMD wouldn't fix",
+        "url": "https://mrbruh.com/amd2/",
+        "score": 195,
+        "comments": 82,
+        "by": "MrBruh",
+        "hn_url": "https://news.ycombinator.com/item?id=48492215",
+        "reason": "signal:new",
+        "description": "See also https://www.youtube.com/watch?v=4HjWHNLRMB0Related: The RCE that AMD won't fix - https://news.ycombinator.com/item?id=46906947 - Feb 2026 (173 comments)"
+      },
+      {
+        "title": "Emacs appearances in pop culture",
+        "url": "https://ianyepan.github.io/posts/emacs-in-pop-culture/",
+        "score": 215,
+        "comments": 48,
+        "by": "ggcr",
+        "hn_url": "https://news.ycombinator.com/item?id=48474274",
+        "reason": "tool:app",
+        "description": "As an Emacs user, few things are as delightful as catching my favorite text editor out in the wild. It doesn’t happen often though – Emacs is niche, and pop culture rarely gives it a nod. This post tracks down every one I know of (as of June 2026), and I’ll keep adding to it as I stumble across more."
+      },
+      {
+        "title": "Ear Training Practice Exercises",
+        "url": "https://tonedear.com/",
+        "score": 112,
+        "comments": 65,
+        "by": "mattbit",
+        "hn_url": "https://news.ycombinator.com/item?id=48447598",
+        "reason": "ai_keyword:ai",
+        "description": ""
+      },
+      {
+        "title": "Software Is Made Between Commits",
+        "url": "https://zed.dev/blog/introducing-deltadb",
+        "score": 179,
+        "comments": 115,
+        "by": "jeremy_k",
+        "hn_url": "https://news.ycombinator.com/item?id=48492533",
+        "reason": "ai_keyword:agent",
+        "description": "From the Zed Blog: Agents turned the conversation into the real source of our software. DeltaDB is the version control built for it."
+      },
+      {
+        "title": "Apple didn't revolutionize power supplies; new transistors did (2012)",
+        "url": "https://www.righto.com/2012/02/apple-didnt-revolutionize-power.html",
+        "score": 58,
+        "comments": 6,
+        "by": "geerlingguy",
+        "hn_url": "https://news.ycombinator.com/item?id=48493564",
+        "reason": "ai_keyword:ai",
+        "description": "The new biography Steve Jobs  contains a remarkable claim about the power supply of the Apple II and its designer Rod Holt: [1]   Instead o..."
+      },
+      {
+        "title": "Lines of code got a better publicist",
+        "url": "https://curlewis.co.nz/posts/lines-of-code-got-a-better-publicist/",
+        "score": 338,
+        "comments": 238,
+        "by": "RyeCombinator",
+        "hn_url": "https://news.ycombinator.com/item?id=48489402",
+        "reason": "ai_keyword:ai",
+        "description": "A case against measuring AI-assisted engineering by code volume and other vanity metrics instead of outcomes."
+      },
+      {
+        "title": "Claude Fable 5: mid-tier results on coding tasks",
+        "url": "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype",
+        "score": 169,
+        "comments": 69,
+        "by": "bugvader",
+        "hn_url": "https://news.ycombinator.com/item?id=48492210",
+        "reason": "ai_keyword:claude",
+        "description": "We benchmarked Claude Fable 5 on 200 real-world coding tasks for the Agent Security League."
+      }
+    ],
+    "ask": [
+      {
+        "title": "Ask HN: How are thinking efforts implemented?",
+        "url": "https://news.ycombinator.com/item?id=48434240",
+        "score": 61,
+        "comments": 18,
+        "by": "simianwords",
+        "hn_url": "https://news.ycombinator.com/item?id=48434240",
+        "reason": "ai_keyword:gpt",
+        "description": "Claude and ChatGPT have thinking efforts where you can tune the amount of thinking allowed.Like low, medium, high, xhigh and so on.But are they different models underneath? Or same model with different parameter?The reason I ask is because, if I change the effort param mid conversation in Claude code, I get a warning suggesting I’m breaking the cache.I don’t think this happens in Codex because when I change the effort, the responses are still quick."
+      },
+      {
+        "title": "Ask HN: How do you get into a flow state when using AI to code?",
+        "url": "https://news.ycombinator.com/item?id=48492118",
+        "score": 75,
+        "comments": 92,
+        "by": "kilroy123",
+        "hn_url": "https://news.ycombinator.com/item?id=48492118",
+        "reason": "ai_keyword:ai",
+        "description": "Before agentic coding, I always prided myself on how long I could work in a flow state. I was really good at working deeply.Now, with slow agents like Claude, I find myself no longer working deeply.What are you all doing to stay focused?"
+      },
+      {
+        "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
+        "url": "https://news.ycombinator.com/item?id=48477135",
+        "score": 770,
+        "comments": 546,
+        "by": "eries",
+        "hn_url": "https://news.ycombinator.com/item?id=48477135",
+        "reason": "signal:new",
+        "description": "Hey gang, you may remember me from such books as _The Lean Startup_ and _The Startup Way_.It's been fifteen years since I wrote The Lean Startup, and in that time I've seen some things. In both big companies and tiny startups, NGOs and governments, in almost every industry you can name.I've helped a lot of people create a lot of amazing companies, but I've also seen so many ways this can go wrong. There's a darkness in our industry that we often don't talk about.I kept watching good companies..."
+      },
+      {
+        "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
+        "url": "https://news.ycombinator.com/item?id=48473166",
+        "score": 414,
+        "comments": 250,
+        "by": "TomAnthony",
+        "hn_url": "https://news.ycombinator.com/item?id=48473166",
+        "reason": "ai_keyword:ai",
+        "description": "> For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary.From the announcement here: https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on...> After 30 days..."
+      },
+      {
+        "title": "Ask HN: Why hasn't there been a real competitor to Ticketmaster yet?",
+        "url": "https://news.ycombinator.com/item?id=48448313",
+        "score": 259,
+        "comments": 233,
+        "by": "mdni007",
+        "hn_url": "https://news.ycombinator.com/item?id=48448313",
+        "reason": "tool:platform",
+        "description": "It feels like every event/venue is selling tickets exclusively through Ticketmaster.  Every other ticketing platform seems to only hold resale tickets in their inventory which just transfers the tickets to your Ticketmaster account when bought. With all the hate Ticketmaster has gotten and all the other ticketing platforms out there, I'm surprised Ticketmaster still has a hold of pretty much the entire market. How are they doing this? Why haven't the other platforms been able to compete?"
+      },
+      {
+        "title": "Ask HN: What are tools you have made for yourself since the advent of AI?",
+        "url": "https://news.ycombinator.com/item?id=48449187",
+        "score": 433,
+        "comments": 757,
+        "by": "aryamaan",
+        "hn_url": "https://news.ycombinator.com/item?id=48449187",
+        "reason": "ai_keyword:ai",
+        "description": ""
+      },
+      {
+        "title": "Ask HN: Are you still using a Vision Pro?",
+        "url": "https://news.ycombinator.com/item?id=48465702",
+        "score": 166,
+        "comments": 211,
+        "by": "y1n0",
+        "hn_url": "https://news.ycombinator.com/item?id=48465702",
+        "reason": "signal:new",
+        "description": "Almost two years ago there was a thread on this (https://news.ycombinator.com/item?id=40872102).  I'm curious now that more time has passed what people think?"
+      }
+    ],
+    "show": [
+      {
+        "title": "Show HN: FablePool – pool money behind a prompt, and Fable builds it in public",
+        "url": "https://fablepool.com",
+        "score": 107,
+        "comments": 44,
+        "by": "matthewbarras",
+        "hn_url": "https://news.ycombinator.com/item?id=48496539",
+        "reason": "tool:show hn",
+        "description": ""
+      },
+      {
+        "title": "Show HN: Homebrew 6.0.0",
+        "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
+        "score": 868,
+        "comments": 205,
+        "by": "mikemcquaid",
+        "hn_url": "https://news.ycombinator.com/item?id=48490024",
+        "reason": "ai_keyword:rust",
+        "description": "Today, I’m proud to announce Homebrew 6.0.0. The most significant changes since 5.1.0 are a new tap trust security mechanism, the new faster, smaller, default internal Homebrew JSON API, sandboxing on Linux, better defaults informed by our user survey, many brew bundle improvements, improved performance and initial support for macOS 27 (Golden Gate).Happy to discuss any questions here!"
+      },
+      {
+        "title": "Show HN: Claw Patrol, a security firewall for agents",
+        "url": "https://github.com/denoland/clawpatrol",
+        "score": 77,
+        "comments": 26,
+        "by": "rough-sea",
+        "hn_url": "https://news.ycombinator.com/item?id=48462928",
+        "reason": "ai_keyword:llm",
+        "description": "At Deno we've been using OpenClaw and other agents increasingly for addressing production problems in Deno Deploy - when a PagerDuty alert fires, the agent starts researching the cause and making fixes.In order to do this, the agent needs access to real production systems - postgres, kubernetes, gcp, clickhouse, github, etc. But this is dangerous to say the least - we want destructive actions to be reviewed by other LLMs, approved by humans, and logged appropriately.Claw Patrol terminates TCP..."
+      },
+      {
+        "title": "Show HN: Extend UI – open-source UI kit for modern document apps",
+        "url": "https://www.extend.ai/ui",
+        "score": 240,
+        "comments": 79,
+        "by": "kbyatnal",
+        "hn_url": "https://news.ycombinator.com/item?id=48478469",
+        "reason": "ai_keyword:ai",
+        "description": "We're open-sourcing 14 components & examples today for PDF, DOCX, and XLSX viewers, plus bounding box citations, file upload, e-signature, and more. It's MIT licensed and fully customizable.Demo video here: https://share.extend.ai/kRmSGKRFWhen we started, we tried every file viewer and document component library we could find. Unfortunately, none of them had all the functionality (and polish) that we wanted, so we ended up building our own for https://extend.ai/. It was only ever meant to be ..."
+      },
+      {
+        "title": "Show HN: HelixDB – A graph database built on object storage",
+        "url": "https://github.com/HelixDB/helix-db/tree/main",
+        "score": 143,
+        "comments": 42,
+        "by": "GeorgeCurtis",
+        "hn_url": "https://news.ycombinator.com/item?id=48478148",
+        "reason": "ai_keyword:ai",
+        "description": "Hey HN, it’s been just over a year since we launched HelixDB (https://news.ycombinator.com/item?id=43975423), a project a friend and I started in college. It’s an OLTP graph database built on object-storage, with native vector search and full-text search (FTS).Why graph, vector and FTS? Graph databases provide a natural cognitive model for data, vectors allow for a semantic understanding of the entities and relationships in the graph, and FTS provides more specific filtering. Many AI-driven a..."
+      },
+      {
+        "title": "Show HN: Gravity – Interactive solar-system simulator, from Newton to Einstein",
+        "url": "https://qunabu.github.io/Gravity/",
+        "score": 207,
+        "comments": 49,
+        "by": "qunabu",
+        "hn_url": "https://news.ycombinator.com/item?id=48459837",
+        "reason": "ai_keyword:ai",
+        "description": "Just for fun and self education, I've built this over a weekend to teach myself why orbits exist, not just show planets going around. Something that was never clearly explain to me in school. \nIt opens with a guided tour that builds the idea up step by step: two bodies and the equal/opposite force, inertia (the Sun is removed and Earth just drifts straight), then \"an orbit is falling and continuously missing,\" cosmic velocities with a little rocket, Voyager 1 & 2's real gravity assists (the c..."
+      },
+      {
+        "title": "Show HN: GentleOS – A pair of hobby OSes for vintage 32-bit and 16-bit PCs",
+        "url": "https://github.com/luke8086/gentleos32",
+        "score": 128,
+        "comments": 104,
+        "by": "luke8086",
+        "hn_url": "https://news.ycombinator.com/item?id=48435943",
+        "reason": "ai_keyword:ai",
+        "description": "Hello HN,I've been working on a simple OS for tinkering and running bare metal apps on vintage PCs.Since I couldn't quite decide whether to target pure 16-bit, or slightly more capable 32-bit machines, I ended up with two separate versions:- GentleOS/32 (https://github.com/luke8086/gentleos32) works on i386+, requires 4MB of RAM and VGA display supporting 640x480x16 mode or any 256-color VESA mode.- GentleOS/16 (https://github.com/luke8086/gentleos) works on 80186+, requires less than 192KB o..."
+      }
+    ]
+  },
+  "gh_signals": [
+    {
+      "name": "apple/container",
+      "url": "https://github.com/apple/container",
+      "stars": "32,257",
+      "today_stars": "2,419",
+      "language": "Swift",
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "stars": "54,608",
+      "today_stars": "3,275",
+      "language": "Shell",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "maziyarpanahi/openmed",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "stars": "2,726",
+      "today_stars": "427",
+      "language": "Python",
+      "description": "open-source healthcare ai",
+      "reason": "high_stars"
+    },
+    {
+      "name": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "stars": "16,166",
+      "today_stars": "1,944",
+      "language": "",
+      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "NVIDIA/SkillSpector",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "stars": "2,598",
+      "today_stars": "308",
+      "language": "Python",
+      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "soxoj/maigret",
+      "url": "https://github.com/soxoj/maigret",
+      "stars": "32,578",
+      "today_stars": "665",
+      "language": "Python",
+      "description": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+      "reason": "high_stars"
+    },
+    {
+      "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "stars": "139,851",
+      "today_stars": "369",
+      "language": "",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "reason": "high_stars"
+    },
+    {
+      "name": "refactoringhq/tolaria",
+      "url": "https://github.com/refactoringhq/tolaria",
+      "stars": "15,366",
+      "today_stars": "604",
+      "language": "TypeScript",
+      "description": "Desktop app to manage markdown knowledge bases",
+      "reason": "high_stars"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": "224,762",
+      "today_stars": "1,323",
+      "language": "Shell",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "restic/restic",
+      "url": "https://github.com/restic/restic",
+      "stars": "34,136",
+      "today_stars": "33",
+      "language": "Go",
+      "description": "Fast, secure, efficient backup program",
+      "reason": "high_stars"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "stars": "111,490",
+      "today_stars": "1,235",
+      "language": "Shell",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "masterking32/MasterDnsVPN",
+      "url": "https://github.com/masterking32/MasterDnsVPN",
+      "stars": "5,663",
+      "today_stars": "510",
+      "language": "Go",
+      "description": "Advanced DNS tunneling VPN for censorship bypass, optimized beyond DNSTT and SlipStream with low-overhead ARQ, resolver load balancing, high packet-loss stability and speed.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "chatwoot/chatwoot",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "stars": "30,333",
+      "today_stars": "191",
+      "language": "Ruby",
+      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "reason": "high_stars"
+    },
+    {
+      "name": "kenn-io/agentsview",
+      "url": "https://github.com/kenn-io/agentsview",
+      "stars": "1,607",
+      "today_stars": "98",
+      "language": "Go",
+      "description": "Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!",
+      "reason": "high_stars"
+    },
+    {
+      "name": "alchaincyf/zhangxuefeng-skill",
+      "url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "stars": "7,926",
+      "today_stars": "131",
+      "language": "",
+      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+      "reason": "high_stars"
+    },
+    {
+      "name": "TapXWorld/ChinaTextbook",
+      "url": "https://github.com/TapXWorld/ChinaTextbook",
+      "stars": "73,914",
+      "today_stars": "345",
+      "language": "Roff",
+      "description": "所有小初高、大学PDF教材。",
+      "reason": "high_stars"
+    },
+    {
+      "name": "hexo-ai/sia",
+      "url": "https://github.com/hexo-ai/sia",
+      "stars": "1,251",
+      "today_stars": "177",
+      "language": "Python",
+      "description": "SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "mattermost/mattermost",
+      "url": "https://github.com/mattermost/mattermost",
+      "stars": "37,286",
+      "today_stars": "26",
+      "language": "TypeScript",
+      "description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..",
+      "reason": "high_stars"
+    },
+    {
+      "name": "bannedbook/fanqiang",
+      "url": "https://github.com/bannedbook/fanqiang",
+      "stars": "46,730",
+      "today_stars": "243",
+      "language": "Kotlin",
+      "description": "翻墙-科学上网",
+      "reason": "high_stars"
+    }
+  ]
+}
