@@ -4,9 +4,9 @@
     {
       "title": "A backdoor in a LinkedIn job offer",
       "url": "https://roman.pt/posts/linkedin-backdoor/",
-      "score": 439,
+      "score": 444,
       "by": "lwhsiao",
-      "comments": 87,
+      "comments": 88,
       "hn_url": "https://news.ycombinator.com/item?id=48546294",
       "text": "",
       "description": "A fake recruiter, a crypto repo, and a remote code execution payload hidden in a test file."
@@ -16,7 +16,7 @@
       "url": "https://fred.stlouisfed.org/series/IPG33591S",
       "score": 101,
       "by": "epistasis",
-      "comments": 74,
+      "comments": 73,
       "hn_url": "https://news.ycombinator.com/item?id=48546616",
       "text": "",
       "description": "Graph and download economic data for Industrial Production: Manufacturing: Durable Goods: Battery (NAICS = 33591) (IPG33591S) from Jan 1972 to May 2026 about durable goods, IP, production, goods, industry, indexes, and USA."
@@ -34,7 +34,7 @@
     {
       "title": "I Love the Computer",
       "url": "https://michaelenger.com/blog/i-love-the-computer/",
-      "score": 86,
+      "score": 87,
       "by": "speckx",
       "comments": 53,
       "hn_url": "https://news.ycombinator.com/item?id=48546441",
@@ -54,7 +54,7 @@
     {
       "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
       "url": "https://news.ycombinator.com/item?id=48542100",
-      "score": 557,
+      "score": 559,
       "by": "cloudking",
       "comments": 284,
       "hn_url": "https://news.ycombinator.com/item?id=48542100",
@@ -64,9 +64,9 @@
     {
       "title": "Why I Email Complete Strangers",
       "url": "https://www.goodinternetmagazine.com/why-i-email-complete-strangers/",
-      "score": 20,
+      "score": 21,
       "by": "karakoram",
-      "comments": 5,
+      "comments": 6,
       "hn_url": "https://news.ycombinator.com/item?id=48547566",
       "text": "",
       "description": ""
@@ -74,9 +74,9 @@
     {
       "title": "Swedish parliament abolishes permanent residence visas for migrants",
       "url": "https://www.riksdagen.se/en/news/articles/2026/jun/9/permanent-residence-permits-to-be-abolished_cmsc5d86c7b-fecc-4799-9e89-e63592d6c6bfen/",
-      "score": 23,
+      "score": 24,
       "by": "CGMthrowaway",
-      "comments": 22,
+      "comments": 26,
       "hn_url": "https://news.ycombinator.com/item?id=48547834",
       "text": "",
       "description": "The Riksdag voted in favour of the Government’s proposal which includes the abolition of permanent residence permits for people in need of protection and people who have been long-term residents in Sweden, as well as their relatives."
@@ -90,6 +90,16 @@
       "hn_url": "https://news.ycombinator.com/item?id=48547062",
       "text": "",
       "description": ""
+    },
+    {
+      "title": "Banned Book Library in a Wi-Fi Smart Light Bulb",
+      "url": "https://www.richardosgood.com/posts/banned-book-library/",
+      "score": 11,
+      "by": "sohkamyung",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48547985",
+      "text": "",
+      "description": "OverviewA long while back I had an idea to hack a WiFi smart light bulb to do something more useful to me. Actually, I had a few different ideas of things to do with them. One of these ideas was to moâ¦"
     },
     {
       "title": "My Homelab AI Dev Platform",
@@ -116,25 +126,15 @@
       "url": "https://forgottenbytes.net/commander_keen.html",
       "score": 123,
       "by": "mfiguiere",
-      "comments": 40,
+      "comments": 41,
       "hn_url": "https://news.ycombinator.com/item?id=48544781",
       "text": "",
       "description": ""
     },
     {
-      "title": "Banned Book Library in a Wi-Fi Smart Light Bulb",
-      "url": "https://www.richardosgood.com/posts/banned-book-library/",
-      "score": 10,
-      "by": "sohkamyung",
-      "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48547985",
-      "text": "",
-      "description": "OverviewA long while back I had an idea to hack a WiFi smart light bulb to do something more useful to me. Actually, I had a few different ideas of things to do with them. One of these ideas was to moâ¦"
-    },
-    {
       "title": "Hetzner Price Adjustment",
       "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/#cloud-servers",
-      "score": 286,
+      "score": 287,
       "by": "tuhtah",
       "comments": 418,
       "hn_url": "https://news.ycombinator.com/item?id=48540844",
@@ -144,7 +144,7 @@
     {
       "title": "How TimescaleDB compresses time-series data",
       "url": "https://roszigit.com/en/blog/timescaledb-compression-hypercore",
-      "score": 100,
+      "score": 101,
       "by": "lkanwoqwp",
       "comments": 14,
       "hn_url": "https://news.ycombinator.com/item?id=48544451",
@@ -156,7 +156,7 @@
       "url": "https://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/",
       "score": 29,
       "by": "sph",
-      "comments": 13,
+      "comments": 14,
       "hn_url": "https://news.ycombinator.com/item?id=48521925",
       "text": "",
       "description": "Personal blog of John Novak"
@@ -238,7 +238,7 @@
       "url": "https://news.ycombinator.com/item?id=48528779",
       "score": 300,
       "by": "david927",
-      "comments": 1063,
+      "comments": 1064,
       "hn_url": "https://news.ycombinator.com/item?id=48528779",
       "text": "What are you working on? Any new ideas that you&#x27;re thinking about?",
       "description": "What are you working on? Any new ideas that you're thinking about?"
@@ -458,7 +458,7 @@
     {
       "title": "Show HN: I wrote a C++ ray tracer from scratch without AI",
       "url": "https://github.com/themartiano/luz",
-      "score": 139,
+      "score": 140,
       "by": "martiano",
       "comments": 60,
       "hn_url": "https://news.ycombinator.com/item?id=48538833",

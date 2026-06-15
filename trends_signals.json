@@ -1,134 +1,104 @@
 {
-  "date": "2026-06-15",
-  "slug": "trends-daily-2026-06-15",
+  "date": "2026-06-16",
+  "slug": "trends-daily-2026-06-16",
   "hn_signals": {
     "top": [
       {
-        "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
-        "url": "https://github.com/tamnd/kage",
-        "score": 329,
-        "comments": 70,
-        "by": "tamnd",
-        "hn_url": "https://news.ycombinator.com/item?id=48529990",
-        "reason": "tool:show hn",
-        "description": ""
+        "title": "US battery manufacturing output continues to break records",
+        "url": "https://fred.stlouisfed.org/series/IPG33591S",
+        "score": 101,
+        "comments": 74,
+        "by": "epistasis",
+        "hn_url": "https://news.ycombinator.com/item?id=48546616",
+        "reason": "ai_keyword:ai",
+        "description": "Graph and download economic data for Industrial Production: Manufacturing: Durable Goods: Battery (NAICS = 33591) (IPG33591S) from Jan 1972 to May 2026 about durable goods, IP, production, goods, industry, indexes, and USA."
       },
       {
-        "title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
-        "url": "https://github.com/nex-agi/Nex-N2/issues/4",
-        "score": 249,
-        "comments": 130,
-        "by": "unrvl22",
-        "hn_url": "https://news.ycombinator.com/item?id=48528371",
-        "reason": "ai_keyword:llm",
-        "description": ""
+        "title": "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
+        "url": "https://tinywind.io",
+        "score": 526,
+        "comments": 108,
+        "by": "tinywind",
+        "hn_url": "https://news.ycombinator.com/item?id=48543475",
+        "reason": "ai_keyword:ai",
+        "description": "Outsail the Royal Navy in your browser. Real sailing physics, 5-minute voyages, 30 historical treasures to recover. Free to play."
       },
       {
-        "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
-        "url": "https://traceapp.info",
-        "score": 67,
-        "comments": 20,
-        "by": "AG342",
-        "hn_url": "https://news.ycombinator.com/item?id=48521236",
-        "reason": "tool:app",
-        "description": "I'm the developer of Trace, a non-intrusive, shortcut-driven Mac app that records and transcribes your meetings on-device. I know, another meeting transcription app. Please bear with me though, I'm confident that this is at least a little novel.I primarily built Trace for myself. I'd been using MacWhisper, but there was enough fiddling before each call that I'd forget to start it and walk out of an hour-long meeting with nothing written down. So the things I cared about most were that it's qu..."
+        "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+        "url": "https://news.ycombinator.com/item?id=48542100",
+        "score": 557,
+        "comments": 284,
+        "by": "cloudking",
+        "hn_url": "https://news.ycombinator.com/item?id=48542100",
+        "reason": "ai_keyword:ai",
+        "description": "Has anyone here fully swapped Claude/GPT for a local model as their main coding tool, not just for side experiments? If so, please share your setup and performance (e.g tok/s)"
       },
       {
-        "title": "Ask HN: What are you working on? (June 2026)",
-        "url": "https://news.ycombinator.com/item?id=48528779",
-        "score": 134,
-        "comments": 482,
-        "by": "david927",
-        "hn_url": "https://news.ycombinator.com/item?id=48528779",
+        "title": "My Homelab AI Dev Platform",
+        "url": "https://rsgm.dev/post/ai-dev-platform/",
+        "score": 201,
+        "comments": 41,
+        "by": "rsgm",
+        "hn_url": "https://news.ycombinator.com/item?id=48542433",
+        "reason": "ai_keyword:ai",
+        "description": "Self-hosting OpenCode Web for GitOps style homelab changes."
+      },
+      {
+        "title": "How TimescaleDB compresses time-series data",
+        "url": "https://roszigit.com/en/blog/timescaledb-compression-hypercore",
+        "score": 100,
+        "comments": 14,
+        "by": "lkanwoqwp",
+        "hn_url": "https://news.ycombinator.com/item?id=48544451",
+        "reason": "ai_keyword:rag",
+        "description": "TimescaleDB compression with hypercore - columnar storage with up to 98% ratio in PostgreSQL. segmentby/orderby configuration and a benchmark for IoT and time-series."
+      },
+      {
+        "title": "Factoring \"short-sleeve\" RSA keys with polynomials",
+        "url": "https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/",
+        "score": 62,
+        "comments": 1,
+        "by": "ledoge",
+        "hn_url": "https://news.ycombinator.com/item?id=48503509",
         "reason": "signal:new",
-        "description": "What are you working on? Any new ideas that you're thinking about?"
-      },
-      {
-        "title": "Segmented type appreciation corner (2018)",
-        "url": "https://aresluna.org/segmented-type/",
-        "score": 53,
-        "comments": 12,
-        "by": "unexpectedVCR",
-        "hn_url": "https://news.ycombinator.com/item?id=48489636",
-        "reason": "tool:app",
-        "description": ""
-      },
-      {
-        "title": "Why Is Claude Turning into an a**Hole?",
-        "url": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole",
-        "score": 77,
-        "comments": 92,
-        "by": "drob518",
-        "hn_url": "https://news.ycombinator.com/item?id=48533308",
-        "reason": "ai_keyword:claude",
-        "description": "Let's hope this trend reverses"
-      },
-      {
-        "title": "Yserver: A modern X11 server written in Rust",
-        "url": "https://github.com/joske/yserver",
-        "score": 83,
-        "comments": 68,
-        "by": "Venn1",
-        "hn_url": "https://news.ycombinator.com/item?id=48531394",
-        "reason": "ai_keyword:rust",
-        "description": ""
-      },
-      {
-        "title": "The only scalable delete in Postgres is DROP TABLE",
-        "url": "https://planetscale.com/blog/the-only-scalable-delete",
-        "score": 112,
-        "comments": 45,
-        "by": "hollylawly",
-        "hn_url": "https://news.ycombinator.com/item?id=48492822",
-        "reason": "ai_keyword:ai",
-        "description": "Large DELETEs add work instead of reclaiming it. Structure your database so deletion becomes DROP TABLE or TRUNCATE."
-      },
-      {
-        "title": "FarOutCompany",
-        "url": "https://faroutcompany.com/",
-        "score": 93,
-        "comments": 16,
-        "by": "bookofjoe",
-        "hn_url": "https://news.ycombinator.com/item?id=48527360",
-        "reason": "tool:app",
-        "description": "Explore the work of under-appreciated artists of the 1960s and ‘70s counterculture."
-      },
-      {
-        "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
-        "url": "https://news.ycombinator.com/item?id=48528029",
-        "score": 237,
-        "comments": 52,
-        "by": "iliashad",
-        "hn_url": "https://news.ycombinator.com/item?id=48528029",
-        "reason": "ai_keyword:ai",
-        "description": "TLDR: I had 2,207 GoPro videos, and I need to rewatch them to find interesting moments from my cycling journey. I built a project to index them locally on my M1 Max using open-source ML models, search for those moments, and send the best clips straight to my DaVinci Resolve timeline.  I indexed 628 videos (668.68 GB, 15h 13m 18s of footage duration), more details in the metrics table in the last section of this article.Full article: https://iliashaddad.com/blog/i-indexed-669-gb-of-my-gopro-vi..."
+        "description": "We found hundreds of weak RSA and DSA keys with biased bits that we could quickly factor using a new polynomial-based cryptanalytic technique."
       }
     ],
     "ask": [
       {
-        "title": "Ask HN: What are you working on? (June 2026)",
-        "url": "https://news.ycombinator.com/item?id=48528779",
-        "score": 134,
-        "comments": 482,
-        "by": "david927",
-        "hn_url": "https://news.ycombinator.com/item?id=48528779",
-        "reason": "signal:new",
-        "description": "What are you working on? Any new ideas that you're thinking about?"
+        "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+        "url": "https://news.ycombinator.com/item?id=48542100",
+        "score": 559,
+        "comments": 284,
+        "by": "cloudking",
+        "hn_url": "https://news.ycombinator.com/item?id=48542100",
+        "reason": "ai_keyword:ai",
+        "description": "Has anyone here fully swapped Claude/GPT for a local model as their main coding tool, not just for side experiments? If so, please share your setup and performance (e.g tok/s)"
       },
       {
         "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
         "url": "https://news.ycombinator.com/item?id=48528029",
-        "score": 237,
-        "comments": 52,
+        "score": 413,
+        "comments": 111,
         "by": "iliashad",
         "hn_url": "https://news.ycombinator.com/item?id=48528029",
         "reason": "ai_keyword:ai",
         "description": "TLDR: I had 2,207 GoPro videos, and I need to rewatch them to find interesting moments from my cycling journey. I built a project to index them locally on my M1 Max using open-source ML models, search for those moments, and send the best clips straight to my DaVinci Resolve timeline.  I indexed 628 videos (668.68 GB, 15h 13m 18s of footage duration), more details in the metrics table in the last section of this article.Full article: https://iliashaddad.com/blog/i-indexed-669-gb-of-my-gopro-vi..."
       },
       {
+        "title": "Ask HN: What are you working on? (June 2026)",
+        "url": "https://news.ycombinator.com/item?id=48528779",
+        "score": 300,
+        "comments": 1063,
+        "by": "david927",
+        "hn_url": "https://news.ycombinator.com/item?id=48528779",
+        "reason": "signal:new",
+        "description": "What are you working on? Any new ideas that you're thinking about?"
+      },
+      {
         "title": "Ask HN: How are thinking efforts implemented?",
         "url": "https://news.ycombinator.com/item?id=48434240",
-        "score": 96,
+        "score": 100,
         "comments": 30,
         "by": "simianwords",
         "hn_url": "https://news.ycombinator.com/item?id=48434240",
@@ -138,8 +108,8 @@
       {
         "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
         "url": "https://news.ycombinator.com/item?id=48477135",
-        "score": 796,
-        "comments": 573,
+        "score": 799,
+        "comments": 576,
         "by": "eries",
         "hn_url": "https://news.ycombinator.com/item?id=48477135",
         "reason": "signal:new",
@@ -158,8 +128,8 @@
       {
         "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
         "url": "https://news.ycombinator.com/item?id=48473166",
-        "score": 423,
-        "comments": 253,
+        "score": 424,
+        "comments": 254,
         "by": "TomAnthony",
         "hn_url": "https://news.ycombinator.com/item?id=48473166",
         "reason": "ai_keyword:ai",
@@ -168,40 +138,50 @@
       {
         "title": "Ask HN: What are tools you have made for yourself since the advent of AI?",
         "url": "https://news.ycombinator.com/item?id=48449187",
-        "score": 441,
-        "comments": 770,
+        "score": 442,
+        "comments": 779,
         "by": "aryamaan",
         "hn_url": "https://news.ycombinator.com/item?id=48449187",
         "reason": "ai_keyword:ai",
         "description": ""
-      },
-      {
-        "title": "Ask HN: How do you get into a flow state when using AI to code?",
-        "url": "https://news.ycombinator.com/item?id=48492118",
-        "score": 90,
-        "comments": 118,
-        "by": "kilroy123",
-        "hn_url": "https://news.ycombinator.com/item?id=48492118",
-        "reason": "ai_keyword:ai",
-        "description": "Before agentic coding, I always prided myself on how long I could work in a flow state. I was really good at working deeply.Now, with slow agents like Claude, I find myself no longer working deeply.What are you all doing to stay focused?"
-      },
-      {
-        "title": "Ask HN: Are you still using a Vision Pro?",
-        "url": "https://news.ycombinator.com/item?id=48465702",
-        "score": 171,
-        "comments": 214,
-        "by": "y1n0",
-        "hn_url": "https://news.ycombinator.com/item?id=48465702",
-        "reason": "signal:new",
-        "description": "Almost two years ago there was a thread on this (https://news.ycombinator.com/item?id=40872102).  I'm curious now that more time has passed what people think?"
       }
     ],
     "show": [
       {
+        "title": "Show HN: Fata – Spaced repetition to fight skill rot from AI coding",
+        "url": "https://fata.dev",
+        "score": 67,
+        "comments": 41,
+        "by": "djoume",
+        "hn_url": "https://news.ycombinator.com/item?id=48489163",
+        "reason": "ai_keyword:ai",
+        "description": "Hi HN, I'm Djoumé. I've been a developer for over 20 years, and like a lot of you I've been coding almost exclusively through an agent in the past few months.It's been amazing to vibe code prototypes in any stack, but when it comes to building something reliable/scalable, I couldn't effectively guide the agent unless I knew the technology. And the scariest part is that I'm seeing a lot of my technical skills decreasing due to AI coding.Reflecting on my journey, I also worry about how the new ..."
+      },
+      {
+        "title": "Show HN: machine0 – Persistent NixOS VMs You Control from the CLI",
+        "url": "https://machine0.io",
+        "score": 66,
+        "comments": 29,
+        "by": "bwm",
+        "hn_url": "https://news.ycombinator.com/item?id=48543245",
+        "reason": "tool:cli",
+        "description": "Hi HN! Excited to launch machine0, a CLI that makes it easy to create, provision and snapshot persistent NixOS (& Ubuntu) VMs.You can think of machine0 as a modern VPS provider. VMs stay on unless switched-off (with 99.99% uptime), they have static IPs and HTTPS endpoints, 1-60 vCPU, up to 240GB RAM and optionally GPUs. The CLI provides commands to manage lifecycle, snapshots and also provision the VMs using Nix flakes or Ansible playbooks. VMs are priced by the minute of usage.What makes mac..."
+      },
+      {
+        "title": "Show HN: I wrote a C++ ray tracer from scratch without AI",
+        "url": "https://github.com/themartiano/luz",
+        "score": 139,
+        "comments": 60,
+        "by": "martiano",
+        "hn_url": "https://news.ycombinator.com/item?id=48538833",
+        "reason": "ai_keyword:ai",
+        "description": ""
+      },
+      {
         "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
         "url": "https://github.com/tamnd/kage",
-        "score": 329,
-        "comments": 70,
+        "score": 681,
+        "comments": 135,
         "by": "tamnd",
         "hn_url": "https://news.ycombinator.com/item?id=48529990",
         "reason": "tool:show hn",
@@ -210,230 +190,34 @@
       {
         "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
         "url": "https://traceapp.info",
-        "score": 67,
-        "comments": 20,
+        "score": 198,
+        "comments": 81,
         "by": "AG342",
         "hn_url": "https://news.ycombinator.com/item?id=48521236",
         "reason": "tool:app",
         "description": "I'm the developer of Trace, a non-intrusive, shortcut-driven Mac app that records and transcribes your meetings on-device. I know, another meeting transcription app. Please bear with me though, I'm confident that this is at least a little novel.I primarily built Trace for myself. I'd been using MacWhisper, but there was enough fiddling before each call that I'd forget to start it and walk out of an hour-long meeting with nothing written down. So the things I cared about most were that it's qu..."
       },
       {
+        "title": "Show HN: Discover Wikipedia articles popular on Hacker News",
+        "url": "https://www.orangecrumbs.com/",
+        "score": 132,
+        "comments": 31,
+        "by": "octopus143",
+        "hn_url": "https://news.ycombinator.com/item?id=48530382",
+        "reason": "tool:show hn",
+        "description": "The best Wikipedia rabbit holes and evergreen YouTube videos from Hacker News - 2,196 articles and 2,076 videos."
+      },
+      {
         "title": "Show HN: 3D print Z reinforcement via injected loops",
         "url": "https://mgunlogson.github.io/magma/",
-        "score": 51,
-        "comments": 20,
+        "score": 65,
+        "comments": 42,
         "by": "mgunlogson",
         "hn_url": "https://news.ycombinator.com/item?id=48460762",
         "reason": "ai_keyword:ai",
         "description": "Commodity FDM print strength is limited by poor Z-axis layer bonding. Parts crack along Z under stress. MAGMA tries to fix this in software that works on any FDM 3D printer.It's a fork of OrcaSlicer with a new infill type that creates paired U-shaped vertical channels inside the print, plus G-code that injects molten plastic into those channels to bridge Z layer interfaces with continuous plastic.Big caveat: I have a junky Ender 3 and haven't gotten a clean physical print yet. Don't expect th..."
-      },
-      {
-        "title": "Show HN: Dual YOLOv8n UAV Detection on RK3588S at 42 FPS Using NPU",
-        "url": "https://github.com/alebal123bal/khadas_yolov8n_multithread",
-        "score": 62,
-        "comments": 8,
-        "by": "alebal123bal",
-        "hn_url": "https://news.ycombinator.com/item?id=48527623",
-        "reason": "tool:show hn",
-        "description": ""
-      },
-      {
-        "title": "Show HN: I am building a map of people who lived in the Roman Empire",
-        "url": "https://new.roman-names.com/",
-        "score": 198,
-        "comments": 45,
-        "by": "metiscus",
-        "hn_url": "https://news.ycombinator.com/item?id=48481400",
-        "reason": "ai_keyword:database",
-        "description": "Driving home from work one day, I wanted to know how many people we knew the names of who lived during the Roman era. Searching around, I found lists of Consuls and officials, but nothing that covered ordinary people or even most people like freedmen and slaves. So I ended up building a pipeline to process the more than 500k Latin inscriptions in the Epigraphic Database Clauss-Slaby https://edcs.hist.uzh.ch/en/ and extract the names of people (and attempt to cluster them, but this is a work i..."
-      },
-      {
-        "title": "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
-        "url": "https://github.com/Paca-AI/paca",
-        "score": 161,
-        "comments": 57,
-        "by": "pikann22",
-        "hn_url": "https://news.ycombinator.com/item?id=48515385",
-        "reason": "ai_keyword:ai",
-        "description": "I built Paca out of pure passion—a free and lightweight Jira alternative written in Go where humans and AI agents work together as equal teammates to plan sprints and assign tasks to each other. It is fully customizable with custom views, fields, and a WASM-based plugin architecture. My team uses it daily for our own development, so it will be continuously maintained and completely free forever"
-      },
-      {
-        "title": "Show HN: Homebrew 6.0.0",
-        "url": "https://brew.sh/2026/06/11/homebrew-6.0.0/",
-        "score": 1455,
-        "comments": 355,
-        "by": "mikemcquaid",
-        "hn_url": "https://news.ycombinator.com/item?id=48490024",
-        "reason": "ai_keyword:rust",
-        "description": "Today, I’m proud to announce Homebrew 6.0.0. The most significant changes since 5.1.0 are a new tap trust security mechanism, the new faster, smaller, default internal Homebrew JSON API, sandboxing on Linux, better defaults informed by our user survey, many brew bundle improvements, improved performance and initial support for macOS 27 (Golden Gate).Happy to discuss any questions here!"
-      },
-      {
-        "title": "Show HN: Putt.day a daily mini golf game",
-        "url": "https://putt.day/",
-        "score": 311,
-        "comments": 110,
-        "by": "ellg",
-        "hn_url": "https://news.ycombinator.com/item?id=48510341",
-        "reason": "ai_keyword:ai",
-        "description": "One hole of mini golf a day. Same hole for everyone."
-      },
-      {
-        "title": "Show HN: Lightweight Task queue on Erlang/OTP, SQLite-backed, no overengineering",
-        "url": "https://github.com/entGriff/ezra",
-        "score": 73,
-        "comments": 11,
-        "by": "ent1c3d",
-        "hn_url": "https://news.ycombinator.com/item?id=48476202",
-        "reason": "ai_keyword:sqlite",
-        "description": "Setting up Kafka or such enterprise oriented software with their clusters or dedicated servers is heavy and bothering enough that most small \nteams or indie hackers skip it entirely and making compromise to use in-memory queues.I wanted something in between: a persistent queue that is simple to run (one binary, which makes one sqlite db), gets real fault isolation and crash recovery due to Elixir, easy to inspect (open ezra.db in any SQLite browser and see every \ntask), and requires no new cl..."
-      },
-      {
-        "title": "Show HN: 2 Weeks of Hallucinate – The Photo Gallery",
-        "url": "https://hallucinate.site/gallery",
-        "score": 71,
-        "comments": 24,
-        "by": "stagas",
-        "hn_url": "https://news.ycombinator.com/item?id=48516510",
-        "reason": "tool:show hn",
-        "description": ""
       }
     ]
   },
-  "gh_signals": [
-    {
-      "name": "iptv-org/iptv",
-      "url": "https://github.com/iptv-org/iptv",
-      "stars": "120,786",
-      "today_stars": "1,531",
-      "language": "TypeScript",
-      "description": "Collection of publicly available IPTV channels from all over the world",
-      "reason": "high_stars"
-    },
-    {
-      "name": "freeCodeCamp/freeCodeCamp",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "stars": "447,149",
-      "today_stars": "253",
-      "language": "TypeScript",
-      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "pytest-dev/pytest",
-      "url": "https://github.com/pytest-dev/pytest",
-      "stars": "14,017",
-      "today_stars": "8",
-      "language": "Python",
-      "description": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing",
-      "reason": "high_stars"
-    },
-    {
-      "name": "swc-project/swc",
-      "url": "https://github.com/swc-project/swc",
-      "stars": "33,766",
-      "today_stars": "163",
-      "language": "Rust",
-      "description": "Rust-based platform for the Web",
-      "reason": "high_stars"
-    },
-    {
-      "name": "chatwoot/chatwoot",
-      "url": "https://github.com/chatwoot/chatwoot",
-      "stars": "31,188",
-      "today_stars": "399",
-      "language": "Ruby",
-      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
-      "reason": "high_stars"
-    },
-    {
-      "name": "NVIDIA/SkillSpector",
-      "url": "https://github.com/NVIDIA/SkillSpector",
-      "stars": "5,223",
-      "today_stars": "962",
-      "language": "Python",
-      "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "meshery/meshery",
-      "url": "https://github.com/meshery/meshery",
-      "stars": "10,386",
-      "today_stars": "45",
-      "language": "TypeScript",
-      "description": "Meshery, the cloud native manager",
-      "reason": "high_stars"
-    },
-    {
-      "name": "cypress-io/cypress",
-      "url": "https://github.com/cypress-io/cypress",
-      "stars": "49,916",
-      "today_stars": "121",
-      "language": "TypeScript",
-      "description": "Fast, easy and reliable testing for anything that runs in a browser.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "GorvGoyl/Clone-Wars",
-      "url": "https://github.com/GorvGoyl/Clone-Wars",
-      "stars": "35,409",
-      "today_stars": "337",
-      "language": "",
-      "description": "100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, Tiktok, Spotify, Whatsapp, Youtube etc. See source code, demo links, tech stack, github stars.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "url": "https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-Robots",
-      "stars": "2,687",
-      "today_stars": "276",
-      "language": "TeX",
-      "description": "Introduction to Autonomous Robots",
-      "reason": "high_stars"
-    },
-    {
-      "name": "shiyu-coder/Kronos",
-      "url": "https://github.com/shiyu-coder/Kronos",
-      "stars": "29,888",
-      "today_stars": "238",
-      "language": "Python",
-      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-      "reason": "high_stars"
-    },
-    {
-      "name": "music-assistant/server",
-      "url": "https://github.com/music-assistant/server",
-      "stars": "2,167",
-      "today_stars": "196",
-      "language": "Python",
-      "description": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "Free-TV/IPTV",
-      "url": "https://github.com/Free-TV/IPTV",
-      "stars": "16,907",
-      "today_stars": "52",
-      "language": "Python",
-      "description": "M3U Playlist for free TV channels",
-      "reason": "high_stars"
-    },
-    {
-      "name": "puppeteer/puppeteer",
-      "url": "https://github.com/puppeteer/puppeteer",
-      "stars": "94,632",
-      "today_stars": "59",
-      "language": "TypeScript",
-      "description": "JavaScript API for Chrome and Firefox",
-      "reason": "high_stars"
-    },
-    {
-      "name": "andrewyng/aisuite",
-      "url": "https://github.com/andrewyng/aisuite",
-      "stars": "14,372",
-      "today_stars": "290",
-      "language": "Python",
-      "description": "Simple, unified interface to multiple Generative AI providers",
-      "reason": "high_stars"
-    }
-  ]
+  "gh_signals": []
 }
