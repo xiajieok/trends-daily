@@ -4,9 +4,9 @@
     {
       "title": "GrapheneOS has been ported to Android 17 and official releases are coming soon",
       "url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
-      "score": 183,
+      "score": 186,
       "by": "Cider9986",
-      "comments": 77,
+      "comments": 79,
       "hn_url": "https://news.ycombinator.com/item?id=48561654",
       "text": "",
       "description": "GrapheneOS discussion forum"
@@ -14,7 +14,7 @@
     {
       "title": "Running local models is good now",
       "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
-      "score": 913,
+      "score": 914,
       "by": "jfb",
       "comments": 391,
       "hn_url": "https://news.ycombinator.com/item?id=48555993",
@@ -24,10 +24,20 @@
     {
       "title": "SpaceX to buy Cursor for $60B",
       "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
-      "score": 785,
+      "score": 786,
       "by": "itsmarcelg",
-      "comments": 1214,
+      "comments": 1215,
       "hn_url": "https://news.ycombinator.com/item?id=48553224",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Calvin and Hobbes and the price of integrity",
+      "url": "https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of",
+      "score": 210,
+      "by": "pseudolus",
+      "comments": 81,
+      "hn_url": "https://news.ycombinator.com/item?id=48557079",
       "text": "",
       "description": ""
     },
@@ -36,25 +46,15 @@
       "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
       "score": 116,
       "by": "root-parent",
-      "comments": 107,
+      "comments": 110,
       "hn_url": "https://news.ycombinator.com/item?id=48559188",
       "text": "",
       "description": "With GPT‑NL, TNO - together with SURF and the Netherlands Forensic Institute (NFI) is building an independent Dutch language model and ecosystem. This strengthens the digital autonomy of the Netherlands and Europe, and provides a solid foundation for responsible AI applications."
     },
     {
-      "title": "Calvin and Hobbes and the price of integrity",
-      "url": "https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of",
-      "score": 209,
-      "by": "pseudolus",
-      "comments": 80,
-      "hn_url": "https://news.ycombinator.com/item?id=48557079",
-      "text": "",
-      "description": ""
-    },
-    {
       "title": "TIL: You can make HTTP requests without curl using Bash /dev/TCP",
       "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
-      "score": 204,
+      "score": 205,
       "by": "mrshu",
       "comments": 112,
       "hn_url": "https://news.ycombinator.com/item?id=48558018",
@@ -64,7 +64,7 @@
     {
       "title": "Mechanical Watch (2022)",
       "url": "https://ciechanow.ski/mechanical-watch/",
-      "score": 599,
+      "score": 600,
       "by": "razin",
       "comments": 113,
       "hn_url": "https://news.ycombinator.com/item?id=48553550",
@@ -82,9 +82,19 @@
       "description": ""
     },
     {
+      "title": "Has AI already killed self-help nonfiction books?",
+      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
+      "score": 99,
+      "by": "imakwana",
+      "comments": 109,
+      "hn_url": "https://news.ycombinator.com/item?id=48558489",
+      "text": "",
+      "description": "My head has been spinning after getting a spreadsheet roughly a week ago.Before we dive into my dirty laundry, let’s state the obvious: millions of people have a vague sense that AI is changing things. And LLMs sure are convenient for getting answers quickly."
+    },
+    {
       "title": "But yak shaving is fun (2019)",
       "url": "https://parksb.github.io/en/article/32.html",
-      "score": 184,
+      "score": 185,
       "by": "parksb",
       "comments": 48,
       "hn_url": "https://news.ycombinator.com/item?id=48555838",
@@ -92,21 +102,11 @@
       "description": "KO | EN This blog doesn’t use a static site generator or framework like Jekyll, Hugo, or Gatsby. I tried a few of them at first, but they gave me too little freedom to customize, so I decided to build the blog myself. Early on I just wrote posts in HTML, but that was so inconvenient that I built a s..."
     },
     {
-      "title": "Has AI already killed self-help nonfiction books?",
-      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
-      "score": 98,
-      "by": "imakwana",
-      "comments": 108,
-      "hn_url": "https://news.ycombinator.com/item?id=48558489",
-      "text": "",
-      "description": "My head has been spinning after getting a spreadsheet roughly a week ago.Before we dive into my dirty laundry, let’s state the obvious: millions of people have a vague sense that AI is changing things. And LLMs sure are convenient for getting answers quickly."
-    },
-    {
       "title": "Apple is about to make Hide My Email useless",
       "url": "https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/",
-      "score": 323,
+      "score": 325,
       "by": "SXX",
-      "comments": 193,
+      "comments": 194,
       "hn_url": "https://news.ycombinator.com/item?id=48559935",
       "text": "",
       "description": "Yesterday, June 15, 2026, a small and unimportant announcement appeared in Apple developer news: New domain for Sign in with Apple and iCloud+ Hide My Email.\nLong story short: now both Sign in with Apple and Hide My Email aliases are going to be issued on the @private.icloud.com subdomain. This makes it much easier to ban all aliases without affecting non-relay mailboxes on iCloud mail.\nThis is certainly a big hit for iCloud privacy, since some plausible deniability together with Apple’s backing made banning iCloud aliases costly."
@@ -134,7 +134,7 @@
     {
       "title": "Apple's weird anti-nausea dots cured my car sickness",
       "url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
-      "score": 484,
+      "score": 485,
       "by": "neilfrndes",
       "comments": 158,
       "hn_url": "https://news.ycombinator.com/item?id=48557530",
@@ -184,9 +184,9 @@
     {
       "title": "Is Meta destroying its engineering organization?",
       "url": "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
-      "score": 327,
+      "score": 329,
       "by": "throwarayes",
-      "comments": 292,
+      "comments": 293,
       "hn_url": "https://news.ycombinator.com/item?id=48558045",
       "text": "",
       "description": "Leadership at the social media giant has been on an AI-fueled rampage through its engineering org. We report what’s happened"
@@ -428,7 +428,7 @@
     {
       "title": "Show HN: VoiceDraw – Talk system design out loud, the diagrams draw themselves",
       "url": "https://voicedraw.com/",
-      "score": 21,
+      "score": 22,
       "by": "ajaypanthagani",
       "comments": 8,
       "hn_url": "https://news.ycombinator.com/item?id=48560454",
@@ -628,7 +628,7 @@
       "url": "https://github.com/teslamate-org/teslamate",
       "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer=@JakobLichterfeld]",
       "language": "Elixir",
-      "stars": "8,394",
+      "stars": "8,395",
       "today_stars": "214"
     },
     {
@@ -636,7 +636,7 @@
       "url": "https://github.com/iptv-org/iptv",
       "description": "Collection of publicly available IPTV channels from all over the world",
       "language": "TypeScript",
-      "stars": "123,986",
+      "stars": "123,987",
       "today_stars": "1,196"
     },
     {
@@ -660,7 +660,7 @@
       "url": "https://github.com/cypress-io/cypress",
       "description": "Fast, easy and reliable testing for anything that runs in a browser.",
       "language": "TypeScript",
-      "stars": "50,187",
+      "stars": "50,188",
       "today_stars": "11"
     },
     {
@@ -668,7 +668,7 @@
       "url": "https://github.com/music-assistant/server",
       "description": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
       "language": "Python",
-      "stars": "2,549",
+      "stars": "2,550",
       "today_stars": "157"
     },
     {
@@ -684,7 +684,7 @@
       "url": "https://github.com/OpenBMB/VoxCPM",
       "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
       "language": "Python",
-      "stars": "30,105",
+      "stars": "30,106",
       "today_stars": "413"
     },
     {
@@ -700,7 +700,7 @@
       "url": "https://github.com/rmyndharis/OpenWA",
       "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
       "language": "TypeScript",
-      "stars": "9,057",
+      "stars": "9,059",
       "today_stars": "185"
     },
     {
