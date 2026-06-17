@@ -1,155 +1,115 @@
 {
-  "date": "2026-06-17",
-  "slug": "trends-daily-2026-06-17",
+  "date": "2026-06-18",
+  "slug": "trends-daily-2026-06-18",
   "hn_signals": {
     "top": [
       {
-        "title": "GrapheneOS has been ported to Android 17 and official releases are coming soon",
-        "url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
-        "score": 183,
-        "comments": 77,
-        "by": "Cider9986",
-        "hn_url": "https://news.ycombinator.com/item?id=48561654",
-        "reason": "signal:releases",
-        "description": "GrapheneOS discussion forum"
+        "title": "Lore – Open source version control system designed for scalability",
+        "url": "https://lore.org/",
+        "score": 877,
+        "comments": 485,
+        "by": "regnerba",
+        "hn_url": "https://news.ycombinator.com/item?id=48571081",
+        "reason": "ai_keyword:ai",
+        "description": "Maintained by Epic Games, Lore is designed for unprecedented scalability of both data and teams. It’s optimized for projects that combine code with large binary assets."
       },
       {
-        "title": "Running local models is good now",
-        "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
-        "score": 913,
-        "comments": 391,
-        "by": "jfb",
-        "hn_url": "https://news.ycombinator.com/item?id=48555993",
-        "reason": "ai_keyword:agent",
-        "description": "Local agentic coding has gotten great over the past few months"
+        "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
+        "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
+        "score": 122,
+        "comments": 95,
+        "by": "Usu",
+        "hn_url": "https://news.ycombinator.com/item?id=48576824",
+        "reason": "ai_keyword:llm",
+        "description": "A 30-game battle royale across eleven LLMs, $482 of inference, and one finding that should change how you read model benchmarks."
       },
       {
-        "title": "SpaceX to buy Cursor for $60B",
-        "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
-        "score": 785,
-        "comments": 1214,
-        "by": "itsmarcelg",
-        "hn_url": "https://news.ycombinator.com/item?id=48553224",
-        "reason": "ai_keyword:cursor",
+        "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
+        "url": "https://browser-use.com/posts/firecracker-browser-infra",
+        "score": 167,
+        "comments": 110,
+        "by": "gregpr07",
+        "hn_url": "https://news.ycombinator.com/item?id=48556561",
+        "reason": "signal:fast",
+        "description": "We cut browser sessions from $0.06 to $0.02 per hour while making browsers start and scale faster."
+      },
+      {
+        "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+        "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+        "score": 734,
+        "comments": 369,
+        "by": "himata4113",
+        "hn_url": "https://news.ycombinator.com/item?id=48567759",
+        "reason": "ai_keyword:model",
+        "description": "Benchmarks and Analysis of GLM-5.2"
+      },
+      {
+        "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+        "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
+        "score": 108,
+        "comments": 58,
+        "by": "greenchair",
+        "hn_url": "https://news.ycombinator.com/item?id=48577208",
+        "reason": "ai_keyword:ai",
+        "description": "Audited accounting shows growing revenues being dwarfed by R&D, other expenses."
+      },
+      {
+        "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+        "url": "https://github.com/Adam-CAD/CADAM",
+        "score": 134,
+        "comments": 68,
+        "by": "zachdive",
+        "hn_url": "https://news.ycombinator.com/item?id=48572553",
+        "reason": "ai_keyword:ai",
+        "description": "Hey HN! I'm Zach from Adam (https://adam.new/). We're building AI agents for mechanical CAD software. We’ve built the company on two fundamental beliefs:- AI will be the primary medium for creating mechanical designs just like it is in software today.- The best paradigm for CAD generation is to generate CAD as code (text -> code -> CAD).We’re building CADAM, an open source Text to CAD platform. It's a React app (TanStack Start) with a Supabase backend for auth, database, and file storage. Thi..."
+      },
+      {
+        "title": "Show HN: An 8-bit live gamecast for baseball",
+        "url": "https://ribbie.tv/watch",
+        "score": 178,
+        "comments": 106,
+        "by": "brownrout",
+        "hn_url": "https://news.ycombinator.com/item?id=48573012",
+        "reason": "ai_keyword:ai",
+        "description": "Hey HN, I built a website to watch live baseball games in an 8-bit broadcast. It takes live MLB data streams and converts them into near real-time pixel art gamecasts.Been waiting to share this for when there’s actually a good slate of games happening since the site is pretty bare otherwise.Here is today's schedule:Mets @ Reds - 9:40am PDT\nhttps://ribbie.tv/watch/game/824503Royals @ Nationals - 10:05am PDT\nhttps://ribbie.tv/watch/game/822721Marlins @ Phillies - 10:05am PDT\nhttps://ribbie.tv/w..."
+      },
+      {
+        "title": "Tesco moving 40k server workloads off VMware amid Broadcom's abusive conduct",
+        "url": "https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/",
+        "score": 78,
+        "comments": 27,
+        "by": "Bender",
+        "hn_url": "https://news.ycombinator.com/item?id=48576838",
+        "reason": "ai_keyword:ai",
+        "description": "Tesco claimed Broadcom hiked its VMware prices by about 175 percent in UK court filings."
+      },
+      {
+        "title": "RFC 10008: The new HTTP Query Method",
+        "url": "https://www.rfc-editor.org/info/rfc10008/",
+        "score": 300,
+        "comments": 136,
+        "by": "schappim",
+        "hn_url": "https://news.ycombinator.com/item?id=48568502",
+        "reason": "signal:new",
         "description": ""
       },
       {
-        "title": "GPT‑NL: a sovereign language model for the Netherlands",
-        "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
-        "score": 116,
-        "comments": 107,
-        "by": "root-parent",
-        "hn_url": "https://news.ycombinator.com/item?id=48559188",
+        "title": "The Competitive Moat That AI Can't Replicate",
+        "url": "https://ghostinthedata.info/posts/2026/2026-06-13-human-connection-moat/",
+        "score": 94,
+        "comments": 78,
+        "by": "speckx",
+        "hn_url": "https://news.ycombinator.com/item?id=48573435",
         "reason": "ai_keyword:ai",
-        "description": "With GPT‑NL, TNO - together with SURF and the Netherlands Forensic Institute (NFI) is building an independent Dutch language model and ecosystem. This strengthens the digital autonomy of the Netherlands and Europe, and provides a solid foundation for responsible AI applications."
-      },
-      {
-        "title": "TIL: You can make HTTP requests without curl using Bash /dev/TCP",
-        "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
-        "score": 204,
-        "comments": 112,
-        "by": "mrshu",
-        "hn_url": "https://news.ycombinator.com/item?id=48558018",
-        "reason": "ai_keyword:ai",
-        "description": "Minimal container images often ship without curl, wget, or any HTTP client at all. Bash can open a TCP socket through /dev/tcp, which is enough to write a tiny HTTP/1.1 request by hand for quick checks."
-      },
-      {
-        "title": "Mechanical Watch (2022)",
-        "url": "https://ciechanow.ski/mechanical-watch/",
-        "score": 599,
-        "comments": 113,
-        "by": "razin",
-        "hn_url": "https://news.ycombinator.com/item?id=48553550",
-        "reason": "ai_keyword:ai",
-        "description": "Interactive article explaining how a mechanical watch works."
-      },
-      {
-        "title": "But yak shaving is fun (2019)",
-        "url": "https://parksb.github.io/en/article/32.html",
-        "score": 184,
-        "comments": 48,
-        "by": "parksb",
-        "hn_url": "https://news.ycombinator.com/item?id=48555838",
-        "reason": "tool:framework",
-        "description": "KO | EN This blog doesn’t use a static site generator or framework like Jekyll, Hugo, or Gatsby. I tried a few of them at first, but they gave me too little freedom to customize, so I decided to build the blog myself. Early on I just wrote posts in HTML, but that was so inconvenient that I built a s..."
-      },
-      {
-        "title": "Has AI already killed self-help nonfiction books?",
-        "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
-        "score": 98,
-        "comments": 108,
-        "by": "imakwana",
-        "hn_url": "https://news.ycombinator.com/item?id=48558489",
-        "reason": "ai_keyword:ai",
-        "description": "My head has been spinning after getting a spreadsheet roughly a week ago.Before we dive into my dirty laundry, let’s state the obvious: millions of people have a vague sense that AI is changing things. And LLMs sure are convenient for getting answers quickly."
-      },
-      {
-        "title": "Apple is about to make Hide My Email useless",
-        "url": "https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/",
-        "score": 323,
-        "comments": 193,
-        "by": "SXX",
-        "hn_url": "https://news.ycombinator.com/item?id=48559935",
-        "reason": "ai_keyword:ai",
-        "description": "Yesterday, June 15, 2026, a small and unimportant announcement appeared in Apple developer news: New domain for Sign in with Apple and iCloud+ Hide My Email.\nLong story short: now both Sign in with Apple and Hide My Email aliases are going to be issued on the @private.icloud.com subdomain. This makes it much easier to ban all aliases without affecting non-relay mailboxes on iCloud mail.\nThis is certainly a big hit for iCloud privacy, since some plausible deniability together with Apple’s backing made banning iCloud aliases costly."
-      },
-      {
-        "title": "10Gb/s Ethernet: switching to a Broadcom SFP+ module",
-        "url": "https://www.gilesthomas.com/2026/06/10g-ethernet-switching-to-broadcom-sfp-plus",
-        "score": 76,
-        "comments": 60,
-        "by": "gpjt",
-        "hn_url": "https://news.ycombinator.com/item?id=48559083",
-        "reason": "ai_keyword:ai",
-        "description": "As predicted by several people, one of my Marvell-based SFP+ modules had overheating problems.  I've switched it over to a Broadcom-based one, and it looks better, though I can't be certain."
-      },
-      {
-        "title": "Apple's weird anti-nausea dots cured my car sickness",
-        "url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
-        "score": 484,
-        "comments": 158,
-        "by": "neilfrndes",
-        "hn_url": "https://news.ycombinator.com/item?id=48557530",
-        "reason": "tool:app",
-        "description": "It’s not magic if it’s science."
-      },
-      {
-        "title": "Correlated randomness in Slay the Spire 2",
-        "url": "https://tck.mn/blog/correlated-randomness-sts2/",
-        "score": 267,
-        "comments": 83,
-        "by": "rdmuser",
-        "hn_url": "https://news.ycombinator.com/item?id=48552844",
-        "reason": "signal:first",
-        "description": "Here are three true statements about the game of Slay the Spire 2 (in single player):   If you pick Neow's Bones in the Underdocks, the random curse is ~54% likely to be Debt.*   It is impossible to receive Rebound from the Trash Heap event.   Your first fight is 76% likely to drop a potion in Underdocks, and 4% likely to drop a potion in Overgrowth.**"
-      },
-      {
-        "title": "Is Meta destroying its engineering organization?",
-        "url": "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
-        "score": 327,
-        "comments": 292,
-        "by": "throwarayes",
-        "hn_url": "https://news.ycombinator.com/item?id=48558045",
-        "reason": "ai_keyword:ai",
-        "description": "Leadership at the social media giant has been on an AI-fueled rampage through its engineering org. We report what’s happened"
-      },
-      {
-        "title": "Making ast.walk 220x Faster",
-        "url": "https://reflex.dev/blog/why-ast-walk-when-you-can-ast-sprint/",
-        "score": 76,
-        "comments": 14,
-        "by": "palashawas",
-        "hn_url": "https://news.ycombinator.com/item?id=48557768",
-        "reason": "signal:fast",
-        "description": "Why ast.walk when you can ast.sprint?"
+        "description": "Portfolio and personal blog of Chris Hillman."
       }
     ],
     "ask": [
       {
         "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
         "url": "https://news.ycombinator.com/item?id=48542100",
-        "score": 1235,
-        "comments": 524,
+        "score": 1282,
+        "comments": 547,
         "by": "cloudking",
         "hn_url": "https://news.ycombinator.com/item?id=48542100",
         "reason": "ai_keyword:ai",
@@ -158,27 +118,17 @@
       {
         "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
         "url": "https://news.ycombinator.com/item?id=48528029",
-        "score": 433,
-        "comments": 113,
+        "score": 434,
+        "comments": 114,
         "by": "iliashad",
         "hn_url": "https://news.ycombinator.com/item?id=48528029",
         "reason": "ai_keyword:ai",
         "description": "TLDR: I had 2,207 GoPro videos, and I need to rewatch them to find interesting moments from my cycling journey. I built a project to index them locally on my M1 Max using open-source ML models, search for those moments, and send the best clips straight to my DaVinci Resolve timeline.  I indexed 628 videos (668.68 GB, 15h 13m 18s of footage duration), more details in the metrics table in the last section of this article.Full article: https://iliashaddad.com/blog/i-indexed-669-gb-of-my-gopro-vi..."
       },
       {
-        "title": "Ask HN: What are you working on? (June 2026)",
-        "url": "https://news.ycombinator.com/item?id=48528779",
-        "score": 303,
-        "comments": 1094,
-        "by": "david927",
-        "hn_url": "https://news.ycombinator.com/item?id=48528779",
-        "reason": "signal:new",
-        "description": "What are you working on? Any new ideas that you're thinking about?"
-      },
-      {
         "title": "Ask HN: How are thinking efforts implemented?",
         "url": "https://news.ycombinator.com/item?id=48434240",
-        "score": 101,
+        "score": 102,
         "comments": 30,
         "by": "simianwords",
         "hn_url": "https://news.ycombinator.com/item?id=48434240",
@@ -186,9 +136,19 @@
         "description": "Claude and ChatGPT have thinking efforts where you can tune the amount of thinking allowed.Like low, medium, high, xhigh and so on.But are they different models underneath? Or same model with different parameter?The reason I ask is because, if I change the effort param mid conversation in Claude code, I get a warning suggesting I’m breaking the cache.I don’t think this happens in Codex because when I change the effort, the responses are still quick."
       },
       {
+        "title": "Ask HN: What are you working on? (June 2026)",
+        "url": "https://news.ycombinator.com/item?id=48528779",
+        "score": 308,
+        "comments": 1122,
+        "by": "david927",
+        "hn_url": "https://news.ycombinator.com/item?id=48528779",
+        "reason": "signal:new",
+        "description": "What are you working on? Any new ideas that you're thinking about?"
+      },
+      {
         "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
         "url": "https://news.ycombinator.com/item?id=48477135",
-        "score": 804,
+        "score": 806,
         "comments": 577,
         "by": "eries",
         "hn_url": "https://news.ycombinator.com/item?id=48477135",
@@ -208,204 +168,76 @@
       {
         "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
         "url": "https://news.ycombinator.com/item?id=48473166",
-        "score": 426,
+        "score": 427,
         "comments": 254,
         "by": "TomAnthony",
         "hn_url": "https://news.ycombinator.com/item?id=48473166",
         "reason": "ai_keyword:ai",
         "description": "> For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary.From the announcement here: https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on...> After 30 days..."
-      },
-      {
-        "title": "Ask HN: What are tools you have made for yourself since the advent of AI?",
-        "url": "https://news.ycombinator.com/item?id=48449187",
-        "score": 443,
-        "comments": 780,
-        "by": "aryamaan",
-        "hn_url": "https://news.ycombinator.com/item?id=48449187",
-        "reason": "ai_keyword:ai",
-        "description": ""
       }
     ],
     "show": [
       {
-        "title": "Show HN: Garden of Flowers – an archive of pictorial typography before ASCII art",
-        "url": "https://garden-of-flowers.heikkilotvonen.com/",
-        "score": 145,
-        "comments": 25,
-        "by": "california-og",
-        "hn_url": "https://news.ycombinator.com/item?id=48550569",
-        "reason": "ai_keyword:cursor",
-        "description": "Hey all, I made this. The archive started with my 2015 BA thesis on Amiga ASCII art when I was curious about the history of ASCII art but found very little on text art that came before it. The historical precursors are often attributed to typewriter art and shaped/visual poetry, but I think letterpress is overlooked. So, I got slightly obsessed and started a personal database of pictures built entirely from metal type, ornaments, and rule, some going back to the 1600s. After eight years, I've..."
-      },
-      {
-        "title": "Show HN: Fata – Spaced repetition to fight skill rot from AI coding",
-        "url": "https://fata.dev",
-        "score": 110,
-        "comments": 51,
-        "by": "djoume",
-        "hn_url": "https://news.ycombinator.com/item?id=48489163",
+        "title": "Show HN: An 8-bit live gamecast for baseball",
+        "url": "https://ribbie.tv/watch",
+        "score": 178,
+        "comments": 106,
+        "by": "brownrout",
+        "hn_url": "https://news.ycombinator.com/item?id=48573012",
         "reason": "ai_keyword:ai",
-        "description": "Hi HN, I'm Djoumé. I've been a developer for over 20 years, and like a lot of you I've been coding almost exclusively through an agent in the past few months.It's been amazing to vibe code prototypes in any stack, but when it comes to building something reliable/scalable, I couldn't effectively guide the agent unless I knew the technology. And the scariest part is that I'm seeing a lot of my technical skills decreasing due to AI coding.Reflecting on my journey, I also worry about how the new ..."
+        "description": "Hey HN, I built a website to watch live baseball games in an 8-bit broadcast. It takes live MLB data streams and converts them into near real-time pixel art gamecasts.Been waiting to share this for when there’s actually a good slate of games happening since the site is pretty bare otherwise.Here is today's schedule:Mets @ Reds - 9:40am PDT\nhttps://ribbie.tv/watch/game/824503Royals @ Nationals - 10:05am PDT\nhttps://ribbie.tv/watch/game/822721Marlins @ Phillies - 10:05am PDT\nhttps://ribbie.tv/w..."
       },
       {
-        "title": "Show HN: Veterinarian turned founder, AI lawn diagnosis",
-        "url": "https://grassdx.com/",
-        "score": 73,
-        "comments": 59,
-        "by": "andrewbr",
-        "hn_url": "https://news.ycombinator.com/item?id=48544823",
+        "title": "Show HN: Inkwash, a watercolor sketching app and explanation",
+        "url": "https://johnowhitaker.github.io/inkwash/about",
+        "score": 147,
+        "comments": 20,
+        "by": "Yenrabbit",
+        "hn_url": "https://news.ycombinator.com/item?id=48523534",
+        "reason": "tool:app",
+        "description": "I've made a drawing app based on my physical sketching practice, using fluid sim and some shader tricks to mimic watercolor-style ink washes. Best used on iPad or with a drawing tablet. The linked article shows how the core engine works, with plenty of little interactive demos. It was fun to make, sharing in hopes others find it fun too :)"
+      },
+      {
+        "title": "Show HN: High-Res Neural Cellular Automata",
+        "url": "https://cells2pixels.github.io/",
+        "score": 180,
+        "comments": 49,
+        "by": "esychology",
+        "hn_url": "https://news.ycombinator.com/item?id=48567877",
+        "reason": "ai_keyword:model",
+        "description": "Neural CAs model self-organizing pattern formation.Now they can generate patterns at HD resolution in real-time, enabled by turning each CA cell into a Neural Field.Try 3 demos: grow a pattern from a seed (and damage it, it heals), synthesize PBR textures that can regenerate, or create 3D textures like clouds."
+      },
+      {
+        "title": "Show HN: Capacitor Alarm Clock",
+        "url": "https://github.com/ArcaEge/capacitor-alarm-clock",
+        "score": 131,
+        "comments": 38,
+        "by": "arcaege",
+        "hn_url": "https://news.ycombinator.com/item?id=48526174",
         "reason": "ai_keyword:ai",
-        "description": "I know, it's kind of weird. What is a veterinarian doing creating an analysis tool for lawn problems?Frankly, the idea was born of my own lawn care struggles. Endless lawn care company fees without any actual improvement. Googling problems and finding generic solutions without regional considerations. One time I overseeded my grass not realizing I had to actually put soil down too.One day, I decided to run lawn pictures through AI and found some pretty helpful information. So I decided with m..."
+        "description": "I made an alarm clock that blows up capacitors to wake you up.There are more details on the Github repo but it's made from an esp32-c3 as the microcontroller, with 3 capacitor slots. There are relays on each capacitor slot to put 15v reverse voltage on the capacitor, with 5.1 ohm resistors on each slot for current limiting in case the capacitor shorts out. I also chucked in an SSD1315 OLED to show the time and a menu to configure it, although there's a web UI as well. The esp32 also means you..."
       },
       {
-        "title": "Show HN: machine0 – Persistent NixOS VMs You Control from the CLI",
-        "url": "https://machine0.io",
-        "score": 90,
-        "comments": 35,
-        "by": "bwm",
-        "hn_url": "https://news.ycombinator.com/item?id=48543245",
-        "reason": "tool:cli",
-        "description": "Hi HN! Excited to launch machine0, a CLI that makes it easy to create, provision and snapshot persistent NixOS (& Ubuntu) VMs.You can think of machine0 as a modern VPS provider. VMs stay on unless switched-off (with 99.99% uptime), they have static IPs and HTTPS endpoints, 1-60 vCPU, up to 240GB RAM and optionally GPUs. The CLI provides commands to manage lifecycle, snapshots and also provision the VMs using Nix flakes or Ansible playbooks. VMs are priced by the minute of usage.What makes mac..."
-      },
-      {
-        "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
-        "url": "https://github.com/tamnd/kage",
-        "score": 689,
-        "comments": 139,
-        "by": "tamnd",
-        "hn_url": "https://news.ycombinator.com/item?id=48529990",
-        "reason": "tool:show hn",
+        "title": "Show HN: cuTile Rust: Safe, data-race-free GPU kernels in Rust",
+        "url": "https://github.com/nvlabs/cutile-rs",
+        "score": 99,
+        "comments": 16,
+        "by": "melihelibol",
+        "hn_url": "https://news.ycombinator.com/item?id=48561410",
+        "reason": "ai_keyword:rust",
         "description": ""
       },
       {
-        "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
-        "url": "https://traceapp.info",
-        "score": 202,
-        "comments": 83,
-        "by": "AG342",
-        "hn_url": "https://news.ycombinator.com/item?id=48521236",
-        "reason": "tool:app",
-        "description": "I'm the developer of Trace, a non-intrusive, shortcut-driven Mac app that records and transcribes your meetings on-device. I know, another meeting transcription app. Please bear with me though, I'm confident that this is at least a little novel.I primarily built Trace for myself. I'd been using MacWhisper, but there was enough fiddling before each call that I'd forget to start it and walk out of an hour-long meeting with nothing written down. So the things I cared about most were that it's qu..."
+        "title": "Show HN: I built 184 free browser tools – PDF, image, dev, AI tasks, no upload",
+        "url": "https://brevio.pro",
+        "score": 83,
+        "comments": 28,
+        "by": "ruimbarreira",
+        "hn_url": "https://news.ycombinator.com/item?id=48568023",
+        "reason": "ai_keyword:ai",
+        "description": "brevio offers 166+ free tools for PDFs, images, text, finance, development, and health — all processing runs locally in your browser. No file upload, no server, no account required. Privacy by design."
       }
     ]
   },
-  "gh_signals": [
-    {
-      "name": "freeCodeCamp/freeCodeCamp",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "stars": "448,514",
-      "today_stars": "640",
-      "language": "TypeScript",
-      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "swc-project/swc",
-      "url": "https://github.com/swc-project/swc",
-      "stars": "33,960",
-      "today_stars": "21",
-      "language": "Rust",
-      "description": "Rust-based platform for the Web",
-      "reason": "high_stars"
-    },
-    {
-      "name": "teslamate-org/teslamate",
-      "url": "https://github.com/teslamate-org/teslamate",
-      "stars": "8,394",
-      "today_stars": "214",
-      "language": "Elixir",
-      "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer=@JakobLichterfeld]",
-      "reason": "high_stars"
-    },
-    {
-      "name": "iptv-org/iptv",
-      "url": "https://github.com/iptv-org/iptv",
-      "stars": "123,986",
-      "today_stars": "1,196",
-      "language": "TypeScript",
-      "description": "Collection of publicly available IPTV channels from all over the world",
-      "reason": "high_stars"
-    },
-    {
-      "name": "puppeteer/puppeteer",
-      "url": "https://github.com/puppeteer/puppeteer",
-      "stars": "94,870",
-      "today_stars": "80",
-      "language": "TypeScript",
-      "description": "JavaScript API for Chrome and Firefox",
-      "reason": "high_stars"
-    },
-    {
-      "name": "meshery/meshery",
-      "url": "https://github.com/meshery/meshery",
-      "stars": "10,833",
-      "today_stars": "229",
-      "language": "TypeScript",
-      "description": "Meshery, the cloud native manager",
-      "reason": "high_stars"
-    },
-    {
-      "name": "cypress-io/cypress",
-      "url": "https://github.com/cypress-io/cypress",
-      "stars": "50,187",
-      "today_stars": "11",
-      "language": "TypeScript",
-      "description": "Fast, easy and reliable testing for anything that runs in a browser.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "music-assistant/server",
-      "url": "https://github.com/music-assistant/server",
-      "stars": "2,549",
-      "today_stars": "157",
-      "language": "Python",
-      "description": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
-      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation",
-      "stars": "7,270",
-      "today_stars": "146",
-      "language": "Rust",
-      "description": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "OpenBMB/VoxCPM",
-      "url": "https://github.com/OpenBMB/VoxCPM",
-      "stars": "30,105",
-      "today_stars": "413",
-      "language": "Python",
-      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
-      "reason": "high_stars"
-    },
-    {
-      "name": "alibaba/zvec",
-      "url": "https://github.com/alibaba/zvec",
-      "stars": "10,423",
-      "today_stars": "188",
-      "language": "C++",
-      "description": "A lightweight, lightning-fast, in-process vector database",
-      "reason": "high_stars"
-    },
-    {
-      "name": "rmyndharis/OpenWA",
-      "url": "https://github.com/rmyndharis/OpenWA",
-      "stars": "9,057",
-      "today_stars": "185",
-      "language": "TypeScript",
-      "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
-      "reason": "high_stars"
-    },
-    {
-      "name": "n0-computer/iroh",
-      "url": "https://github.com/n0-computer/iroh",
-      "stars": "9,257",
-      "today_stars": "326",
-      "language": "Rust",
-      "description": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
-      "reason": "high_stars"
-    }
-  ]
+  "gh_signals": []
 }
