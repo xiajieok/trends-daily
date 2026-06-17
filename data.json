@@ -1,272 +1,262 @@
 {
-  "date": "2026-06-17",
+  "date": "2026-06-18",
   "hn_top": [
     {
-      "title": "GrapheneOS has been ported to Android 17 and official releases are coming soon",
-      "url": "https://discuss.grapheneos.org/d/36469-grapheneos-has-been-ported-to-android-17-and-official-releases-are-coming-soon",
-      "score": 186,
-      "by": "Cider9986",
-      "comments": 79,
-      "hn_url": "https://news.ycombinator.com/item?id=48561654",
+      "title": "Lore – Open source version control system designed for scalability",
+      "url": "https://lore.org/",
+      "score": 877,
+      "by": "regnerba",
+      "comments": 485,
+      "hn_url": "https://news.ycombinator.com/item?id=48571081",
+      "text": "",
+      "description": "Maintained by Epic Games, Lore is designed for unprecedented scalability of both data and teams. It’s optimized for projects that combine code with large binary assets."
+    },
+    {
+      "title": "US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",
+      "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+      "score": 268,
+      "by": "giuliomagnifico",
+      "comments": 293,
+      "hn_url": "https://news.ycombinator.com/item?id=48565498",
+      "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;MlU1U\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;MlU1U</a>",
+      "description": "https://archive.ph/MlU1U"
+    },
+    {
+      "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
+      "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
+      "score": 122,
+      "by": "Usu",
+      "comments": 95,
+      "hn_url": "https://news.ycombinator.com/item?id=48576824",
+      "text": "",
+      "description": "A 30-game battle royale across eleven LLMs, $482 of inference, and one finding that should change how you read model benchmarks."
+    },
+    {
+      "title": "Storied Colors – a catalogue of named colors",
+      "url": "https://storiedcolors.com/",
+      "score": 27,
+      "by": "susiecambria",
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=48577374",
+      "text": "",
+      "description": "Storied Colors: named colors with documented histories."
+    },
+    {
+      "title": "How we run Firecracker VMs inside EC2 and start browsers in less than 1s",
+      "url": "https://browser-use.com/posts/firecracker-browser-infra",
+      "score": 167,
+      "by": "gregpr07",
+      "comments": 110,
+      "hn_url": "https://news.ycombinator.com/item?id=48556561",
+      "text": "",
+      "description": "We cut browser sessions from $0.06 to $0.02 per hour while making browsers start and scale faster."
+    },
+    {
+      "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+      "score": 734,
+      "by": "himata4113",
+      "comments": 369,
+      "hn_url": "https://news.ycombinator.com/item?id=48567759",
+      "text": "",
+      "description": "Benchmarks and Analysis of GLM-5.2"
+    },
+    {
+      "title": "Leaked financial docs show OpenAI is losing billions of dollars a year",
+      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
+      "score": 108,
+      "by": "greenchair",
+      "comments": 58,
+      "hn_url": "https://news.ycombinator.com/item?id=48577208",
+      "text": "",
+      "description": "Audited accounting shows growing revenues being dwarfed by R&D, other expenses."
+    },
+    {
+      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+      "url": "https://github.com/Adam-CAD/CADAM",
+      "score": 134,
+      "by": "zachdive",
+      "comments": 68,
+      "hn_url": "https://news.ycombinator.com/item?id=48572553",
+      "text": "Hey HN! I&#x27;m Zach from Adam (<a href=\"https:&#x2F;&#x2F;adam.new&#x2F;\">https:&#x2F;&#x2F;adam.new&#x2F;</a>). We&#x27;re building AI agents for mechanical CAD software. We’ve built the company on two fundamental beliefs:<p>- AI will be the primary medium for creating mechanical designs just like it is in software today.<p>- The best paradigm for CAD generation is to generate CAD as code (text -&gt; code -&gt; CAD).<p>We’re building CADAM, an open source Text to CAD platform. It&#x27;s a React app (TanStack Start) with a Supabase backend for auth, database, and file storage. Think of it like AI TinkerCAD.<p>Demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=iESOr7EGWqk\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=iESOr7EGWqk</a>\nTry it: <a href=\"https:&#x2F;&#x2F;adam.new&#x2F;cadam&#x2F;\">https:&#x2F;&#x2F;adam.new&#x2F;cadam&#x2F;</a><p>What it does:<p>- Generates parametric 3D models from natural language, with support for both text prompts and image references.<p>- Outputs OpenSCAD code with automatically extracted parameters that surface as interactive sliders for instant dimension tweaking<p>- Exports as .STL or .SCAD (plus OBJ, GLB&#x2F;GLTF, FBX, and DXF)<p>Under the hood:<p>- One agentic endpoint with two modes that swap system prompts and tools: a parametric mode that writes&#x2F;edits OpenSCAD via a build_parametric_model tool, and a mesh mode that generates 3D textured meshes.<p>- Simple parameter tweaks bypass the model entirely; adjusting a slider does a deterministic regex update on the SCAD source, requiring no LLM call.<p>- Model-agnostic via the Vercel AI SDK: Anthropic (Claude), Google (Gemini), and OpenAI&#x2F;others through OpenRouter, with adaptive thinking auto-enabled on newer models. Surprisingly, in our evals Gemini 3.1 Pro is the top model.<p>- Runs fully in-browser by compiling OpenSCAD to WebAssembly (in a Web Worker, so the UI never blocks) and rendering with Three.js via React Three Fiber<p>- Supports BOSL, BOSL2, and MCAD libraries, plus custom font support (Geist) for text in models<p>Future improvements:<p>- Support both build123d and CadQuery. This will allow us to move beyond CSG primitives to constraint-driven modeling and provide direct comparisons to other code-as-CAD primitives.<p>- Better spatial context: UI for face&#x2F;edge selection and viewport image integration to give LLMs spatial understanding<p>You can clone the repo and run it locally! Contributions are very welcome.",
+      "description": "Hey HN! I'm Zach from Adam (https://adam.new/). We're building AI agents for mechanical CAD software. We’ve built the company on two fundamental beliefs:- AI will be the primary medium for creating mechanical designs just like it is in software today.- The best paradigm for CAD generation is to generate CAD as code (text -> code -> CAD).We’re building CADAM, an open source Text to CAD platform. It's a React app (TanStack Start) with a Supabase backend for auth, database, and file storage. Thi..."
+    },
+    {
+      "title": "Loreline – Tools for writing interactive fiction",
+      "url": "https://loreline.app/en/",
+      "score": 27,
+      "by": "smartmic",
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=48576395",
+      "text": "",
+      "description": "Tools for writing interactive fiction, video game dialogues and branching narratives"
+    },
+    {
+      "title": "Show HN: An 8-bit live gamecast for baseball",
+      "url": "https://ribbie.tv/watch",
+      "score": 178,
+      "by": "brownrout",
+      "comments": 106,
+      "hn_url": "https://news.ycombinator.com/item?id=48573012",
+      "text": "Hey HN, I built a website to watch live baseball games in an 8-bit broadcast. It takes live MLB data streams and converts them into near real-time pixel art gamecasts.<p>Been waiting to share this for when there’s actually a good slate of games happening since the site is pretty bare otherwise.<p>Here is today&#x27;s schedule:<p>Mets @ Reds - 9:40am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824503\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824503</a><p>Royals @ Nationals - 10:05am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;822721\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;822721</a><p>Marlins @ Phillies - 10:05am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823450\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823450</a><p>Tigers @ Astros - 11:10am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824178\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824178</a><p>Padres @ Cardinals - 11:15am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823044\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823044</a><p>..and another 14 games throughout the later day.<p>I&#x27;m still early on in this project, but I&#x27;ve tried to add little details with actual stadiums, day and night modes, between inning graphics and interstitials, live scoreboards, etc.<p>Would love any feedback and ideas. Thanks for checking it out!",
+      "description": "Hey HN, I built a website to watch live baseball games in an 8-bit broadcast. It takes live MLB data streams and converts them into near real-time pixel art gamecasts.Been waiting to share this for when there’s actually a good slate of games happening since the site is pretty bare otherwise.Here is today's schedule:Mets @ Reds - 9:40am PDT\nhttps://ribbie.tv/watch/game/824503Royals @ Nationals - 10:05am PDT\nhttps://ribbie.tv/watch/game/822721Marlins @ Phillies - 10:05am PDT\nhttps://ribbie.tv/w..."
+    },
+    {
+      "title": "U.S. science is in chaos",
+      "url": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
+      "score": 574,
+      "by": "presspot",
+      "comments": 646,
+      "hn_url": "https://news.ycombinator.com/item?id=48568058",
+      "text": "",
+      "description": "How did we get here?"
+    },
+    {
+      "title": "Tesco moving 40k server workloads off VMware amid Broadcom's abusive conduct",
+      "url": "https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/",
+      "score": 78,
+      "by": "Bender",
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=48576838",
+      "text": "",
+      "description": "Tesco claimed Broadcom hiked its VMware prices by about 175 percent in UK court filings."
+    },
+    {
+      "title": "RFC 10008: The new HTTP Query Method",
+      "url": "https://www.rfc-editor.org/info/rfc10008/",
+      "score": 300,
+      "by": "schappim",
+      "comments": 136,
+      "hn_url": "https://news.ycombinator.com/item?id=48568502",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "The Return of Rigorous Full-System Timing Simulation",
+      "url": "https://www.sigarch.org/the-return-of-rigorous-full-system-timing-simulation/",
+      "score": 20,
+      "by": "matt_d",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48551069",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Volkswagen started blocking GrapheneOS users",
+      "url": "https://discuss.grapheneos.org/d/35949-volkswagen-app?page=3",
+      "score": 433,
+      "by": "microtonal",
+      "comments": 296,
+      "hn_url": "https://news.ycombinator.com/item?id=48571526",
       "text": "",
       "description": "GrapheneOS discussion forum"
     },
     {
-      "title": "Running local models is good now",
-      "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
-      "score": 914,
-      "by": "jfb",
-      "comments": 391,
-      "hn_url": "https://news.ycombinator.com/item?id=48555993",
+      "title": "The Competitive Moat That AI Can't Replicate",
+      "url": "https://ghostinthedata.info/posts/2026/2026-06-13-human-connection-moat/",
+      "score": 94,
+      "by": "speckx",
+      "comments": 78,
+      "hn_url": "https://news.ycombinator.com/item?id=48573435",
       "text": "",
-      "description": "Local agentic coding has gotten great over the past few months"
+      "description": "Portfolio and personal blog of Chris Hillman."
     },
     {
-      "title": "SpaceX to buy Cursor for $60B",
-      "url": "https://www.reuters.com/legal/transactional/spacex-buy-anysphere-60-billion-2026-06-16/",
-      "score": 786,
-      "by": "itsmarcelg",
-      "comments": 1215,
-      "hn_url": "https://news.ycombinator.com/item?id=48553224",
-      "text": "",
-      "description": ""
-    },
-    {
-      "title": "Calvin and Hobbes and the price of integrity",
-      "url": "https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of",
-      "score": 210,
-      "by": "pseudolus",
-      "comments": 81,
-      "hn_url": "https://news.ycombinator.com/item?id=48557079",
-      "text": "",
-      "description": ""
-    },
-    {
-      "title": "GPT‑NL: a sovereign language model for the Netherlands",
-      "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
-      "score": 116,
-      "by": "root-parent",
-      "comments": 110,
-      "hn_url": "https://news.ycombinator.com/item?id=48559188",
-      "text": "",
-      "description": "With GPT‑NL, TNO - together with SURF and the Netherlands Forensic Institute (NFI) is building an independent Dutch language model and ecosystem. This strengthens the digital autonomy of the Netherlands and Europe, and provides a solid foundation for responsible AI applications."
-    },
-    {
-      "title": "TIL: You can make HTTP requests without curl using Bash /dev/TCP",
-      "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
-      "score": 205,
-      "by": "mrshu",
-      "comments": 112,
-      "hn_url": "https://news.ycombinator.com/item?id=48558018",
-      "text": "",
-      "description": "Minimal container images often ship without curl, wget, or any HTTP client at all. Bash can open a TCP socket through /dev/tcp, which is enough to write a tiny HTTP/1.1 request by hand for quick checks."
-    },
-    {
-      "title": "Mechanical Watch (2022)",
-      "url": "https://ciechanow.ski/mechanical-watch/",
-      "score": 600,
-      "by": "razin",
-      "comments": 113,
-      "hn_url": "https://news.ycombinator.com/item?id=48553550",
-      "text": "",
-      "description": "Interactive article explaining how a mechanical watch works."
-    },
-    {
-      "title": "Stop Using JWTs",
-      "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
-      "score": 182,
-      "by": "dzonga",
-      "comments": 119,
-      "hn_url": "https://news.ycombinator.com/item?id=48558147",
-      "text": "",
-      "description": ""
-    },
-    {
-      "title": "Has AI already killed self-help nonfiction books?",
-      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
-      "score": 99,
-      "by": "imakwana",
-      "comments": 109,
-      "hn_url": "https://news.ycombinator.com/item?id=48558489",
-      "text": "",
-      "description": "My head has been spinning after getting a spreadsheet roughly a week ago.Before we dive into my dirty laundry, let’s state the obvious: millions of people have a vague sense that AI is changing things. And LLMs sure are convenient for getting answers quickly."
-    },
-    {
-      "title": "But yak shaving is fun (2019)",
-      "url": "https://parksb.github.io/en/article/32.html",
-      "score": 185,
-      "by": "parksb",
-      "comments": 48,
-      "hn_url": "https://news.ycombinator.com/item?id=48555838",
-      "text": "",
-      "description": "KO | EN This blog doesn’t use a static site generator or framework like Jekyll, Hugo, or Gatsby. I tried a few of them at first, but they gave me too little freedom to customize, so I decided to build the blog myself. Early on I just wrote posts in HTML, but that was so inconvenient that I built a s..."
-    },
-    {
-      "title": "Apple is about to make Hide My Email useless",
-      "url": "https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/",
-      "score": 325,
-      "by": "SXX",
-      "comments": 194,
-      "hn_url": "https://news.ycombinator.com/item?id=48559935",
-      "text": "",
-      "description": "Yesterday, June 15, 2026, a small and unimportant announcement appeared in Apple developer news: New domain for Sign in with Apple and iCloud+ Hide My Email.\nLong story short: now both Sign in with Apple and Hide My Email aliases are going to be issued on the @private.icloud.com subdomain. This makes it much easier to ban all aliases without affecting non-relay mailboxes on iCloud mail.\nThis is certainly a big hit for iCloud privacy, since some plausible deniability together with Apple’s backing made banning iCloud aliases costly."
-    },
-    {
-      "title": "10Gb/s Ethernet: switching to a Broadcom SFP+ module",
-      "url": "https://www.gilesthomas.com/2026/06/10g-ethernet-switching-to-broadcom-sfp-plus",
-      "score": 76,
-      "by": "gpjt",
-      "comments": 60,
-      "hn_url": "https://news.ycombinator.com/item?id=48559083",
-      "text": "",
-      "description": "As predicted by several people, one of my Marvell-based SFP+ modules had overheating problems.  I've switched it over to a Broadcom-based one, and it looks better, though I can't be certain."
-    },
-    {
-      "title": "Frood, an Alpine Initramfs NAS (2024)",
-      "url": "https://words.filippo.io/frood/",
-      "score": 22,
-      "by": "ethanpil",
-      "comments": 8,
-      "hn_url": "https://news.ycombinator.com/item?id=48561402",
-      "text": "",
-      "description": "My NAS is just one big initramfs containing a whole Alpine Linux system. It’s delightful. Here's why and how."
-    },
-    {
-      "title": "Apple's weird anti-nausea dots cured my car sickness",
-      "url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
-      "score": 485,
-      "by": "neilfrndes",
-      "comments": 158,
-      "hn_url": "https://news.ycombinator.com/item?id=48557530",
-      "text": "",
-      "description": "It’s not magic if it’s science."
-    },
-    {
-      "title": "The UK's Teen Social Media Ban Is Political Theater, Not Child Safety Policy",
-      "url": "https://www.techdirt.com/2026/06/16/the-uks-teen-social-media-ban-is-political-theater-not-child-safety-policy/",
-      "score": 27,
-      "by": "hn_acker",
+      "title": "Made a free macOS menu bar app that fixes typing in the wrong keyboard layout",
+      "url": "https://flickey.site",
+      "score": 26,
+      "by": "tal_alfi",
       "comments": 11,
-      "hn_url": "https://news.ycombinator.com/item?id=48562957",
+      "hn_url": "https://news.ycombinator.com/item?id=48575878",
+      "text": "",
+      "description": "A tiny macOS menu-bar utility that fixes wrong-keyboard typing and remembers your input language per app, per website, per chat."
+    },
+    {
+      "title": "Trellis AI (YC W24)  hiring a product lead to build agents for healthcare access",
+      "url": "https://www.ycombinator.com/companies/trellis-ai/jobs/Cg94htp-product-lead",
+      "score": 1,
+      "by": "macklinkachorn",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48573221",
+      "text": "",
+      "description": "About Trellis\n\nTrellis builds and deploys AI agents that help patients access life-saving therapies.\n\nOur platform automates the complex administrative workflows that stand between patients and treatment, including\ndocument intake, prior authorizations, appeals, reimbursement research, and coverage determination. Today, our\nself-improving AI agents process billions of dollars in therapies annually and support patients across all 50 states.\n\nFounded out of the Stanford AI Lab, Trellis combines cutting-edge AI with deep healthcare expertise to solve one of the\nlargest operational challenges in healthcare: getting patients the care they need, faster. We work with leading\nhealthcare organizations to streamline operations, reduce administrative burden, and accelerate access to treatment at\nscale.\n\nWe’re backed by leading investors including General Catalyst, YC, Telesoft Partners, and executives from Google and\nSalesforce. Over the past year, we’ve experienced exceptional growth, scaling revenue rapidly while expanding our\nfootprint across specialty healthcare markets.\n\nJoining Trellis means working at the intersection of AI, healthcare, and company-building. You’ll partner directly with\nthe founders, help shape the next phase of growth, and see the real-world impact of your work in the number of patients\nwho receive critical treatment because of the systems we build.\n\nWhat You'll Do\n\nOwn Product Strategy and Execution\n\nAs Product Lead, you'll drive product development from concept through launch and iteration. You'll work directly with\ncustomers, engineers, and leadership to identify opportunities, validate solutions, and bring new products to market.\n\nYou'll own major product initiatives end-to-end, leading 0→1 product development while ensuring existing products\ncontinue to evolve alongside customer needs and advances in AI capabilities.\n\nYou'll work closely with the CEO and leadership team to shape company strategy, product direction, and go-to-market\npriorities.\n\nWork Directly With Customers and C-Suite\n\nYou will spend significant time with customers across healthcare organizations, including executives, operations teams,\nand technical stakeholders.\n\nYou'll:\n\n  - Understand customer workflows, requirements, and operational challenges\n  - Identify bottlenecks and opportunities for automation\n  - Run discovery sessions and gather product feedback\n  - Design and present product demos\n  - Partner with customers during implementation and rollout\n  - Act as a trusted advisor on AI adoption and workflow transformation\n  - Build deep relationships that influence both product direction and company strategy\n\nWhat You Bring\n\n  - 5+ years building and shipping technical products\n  - Previous experience as a Product Manager, Product Lead, Founder, FDE or equivalent role\n  - Strong product intuition with a track record of turning ambiguous problems into successful products\n  - Excellent communication skills across technical and non-technical audiences\n  - Ability to influence executive stakeholders and build alignment across teams\n  - Experience working directly with customers and translating customer needs into product strategy\n  - Comfort operating in fast-moving, highly ambiguous startup environments\n  - Strong understanding of AI technologies and their practical applications\n  - Bachelor's degree in a technical, business, or related field (or equivalent practical experience)\n\nBonus Points\n\n  - Experience building AI agents, workflow automation systems, or LLM-powered products\n  - Healthcare, health-tech, or other complex regulated-industries experience\n  - Ability to prototype products using modern AI coding tools\n  - Experience writing or reviewing code, particularly Python or Typescript\n  - Consulting, solutions engineering, or other customer-facing experience\n  - Startup experience in high growth early-stage environments"
+    },
+    {
+      "title": "Why thinking out loud with someone beats thinking alone",
+      "url": "https://www.thesignalist.io/s/the-dialogue-dividend/",
+      "score": 138,
+      "by": "kodesko",
+      "comments": 65,
+      "hn_url": "https://news.ycombinator.com/item?id=48569894",
+      "text": "",
+      "description": "Why does a five-minute hallway conversation sometimes solve what a week of solo thinking couldn't?"
+    },
+    {
+      "title": "Gliderboy Reinvents Humble Weather Balloon with Flight Home",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-06-15/-gliderboy-reinvents-weather-balloon-with-return-flight-home",
+      "score": 5,
+      "by": "kejaed",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48542200",
       "text": "",
       "description": ""
-    },
-    {
-      "title": "Correlated randomness in Slay the Spire 2",
-      "url": "https://tck.mn/blog/correlated-randomness-sts2/",
-      "score": 267,
-      "by": "rdmuser",
-      "comments": 83,
-      "hn_url": "https://news.ycombinator.com/item?id=48552844",
-      "text": "",
-      "description": "Here are three true statements about the game of Slay the Spire 2 (in single player):   If you pick Neow's Bones in the Underdocks, the random curse is ~54% likely to be Debt.*   It is impossible to receive Rebound from the Trash Heap event.   Your first fight is 76% likely to drop a potion in Underdocks, and 4% likely to drop a potion in Overgrowth.**"
-    },
-    {
-      "title": "Formal Methods and the Future of Programming",
-      "url": "https://blog.janestreet.com/formal-methods-at-jane-street-index/",
-      "score": 66,
-      "by": "nextos",
-      "comments": 1,
-      "hn_url": "https://news.ycombinator.com/item?id=48497067",
-      "text": "",
-      "description": "I’ve been telling people for the last 25 years that Jane Street as an organization was just not interested in formal methods."
-    },
-    {
-      "title": "W.H. Auden and James Schuyler in life and literature",
-      "url": "https://hedgehogreview.com/web-features/thr/posts/companions-on-parnassus",
-      "score": 8,
-      "by": "Caiero",
-      "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48522037",
-      "text": "",
-      "description": "Making ends meet—and writing timeless poetry—in Greenwich Village and Ischia."
-    },
-    {
-      "title": "Is Meta destroying its engineering organization?",
-      "url": "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
-      "score": 329,
-      "by": "throwarayes",
-      "comments": 293,
-      "hn_url": "https://news.ycombinator.com/item?id=48558045",
-      "text": "",
-      "description": "Leadership at the social media giant has been on an AI-fueled rampage through its engineering org. We report what’s happened"
-    },
-    {
-      "title": "Making ast.walk 220x Faster",
-      "url": "https://reflex.dev/blog/why-ast-walk-when-you-can-ast-sprint/",
-      "score": 76,
-      "by": "palashawas",
-      "comments": 14,
-      "hn_url": "https://news.ycombinator.com/item?id=48557768",
-      "text": "",
-      "description": "Why ast.walk when you can ast.sprint?"
     }
   ],
   "hn_ask": [
     {
       "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
       "url": "https://news.ycombinator.com/item?id=48542100",
-      "score": 1235,
+      "score": 1282,
       "by": "cloudking",
-      "comments": 524,
+      "comments": 547,
       "hn_url": "https://news.ycombinator.com/item?id=48542100",
       "text": "Has anyone here fully swapped Claude&#x2F;GPT for a local model as their main coding tool, not just for side experiments? If so, please share your setup and performance (e.g tok&#x2F;s)",
       "description": "Has anyone here fully swapped Claude/GPT for a local model as their main coding tool, not just for side experiments? If so, please share your setup and performance (e.g tok/s)"
     },
     {
-      "title": "AskHN:How do you handle skill atrophy from using coding agents?",
-      "url": "https://news.ycombinator.com/item?id=48554309",
-      "score": 29,
-      "by": "javhu",
-      "comments": 39,
-      "hn_url": "https://news.ycombinator.com/item?id=48554309",
-      "text": "It&#x27;s impossible to retain a skill if you dont use it. I&#x27;ve reached a point where I use AI exclusively for all tasks, because it&#x27;s far faster and efficient to do so. \nWhat kind of activities do you do to retain cognitive skills?",
-      "description": "It's impossible to retain a skill if you dont use it. I've reached a point where I use AI exclusively for all tasks, because it's far faster and efficient to do so. \nWhat kind of activities do you do to retain cognitive skills?"
+      "title": "Ask HN: Are other people seeing a spike in IT problems with businesses?",
+      "url": "https://news.ycombinator.com/item?id=48571124",
+      "score": 14,
+      "by": "PaulHoule",
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=48571124",
+      "text": "In the last month it seems like I&#x27;ve experienced a surge in businesses having IT screwups.  For instance my wife paid my homeowner&#x27;s insurance bill but they referred my bill to a lawyer for collections and canceled my policy.  (To her credit when my agent was notified she got my policy reinstated)  Now I have a UPS package that seems to have been stuck in Montana for a week but what I am seeing on the tracker doesn&#x27;t make complete sense.<p>Have I just had bad luck or are other people seeing this?  Can we blame vibe coding?  Are we living in Gas Town now?",
+      "description": "In the last month it seems like I've experienced a surge in businesses having IT screwups.  For instance my wife paid my homeowner's insurance bill but they referred my bill to a lawyer for collections and canceled my policy.  (To her credit when my agent was notified she got my policy reinstated)  Now I have a UPS package that seems to have been stuck in Montana for a week but what I am seeing on the tracker doesn't make complete sense.Have I just had bad luck or are other people seeing this..."
+    },
+    {
+      "title": "Ask HN: Successful entrepreneurs and indie hackers, enlighten me",
+      "url": "https://news.ycombinator.com/item?id=48573190",
+      "score": 3,
+      "by": "markosn",
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=48573190",
+      "text": "Successful entrepreneurs and indie hackers, I&#x27;m curious about where your best idea(s) came and what your own path looks like.<p>- I just turned 18 and finished school and I&#x27;m about to get into a university for engineering in Greece. - I have some pressure for inside to build wealth despite not needing it to survive.\n- I have many interests including programming, spearfishing, financial markets, computing, building in general (software and&#x2F;or hardware). I have a large list of pain points, ideas, things missing from the world (~500 items) with probably at least 10 items that could be monetized and that I would genuinely love to build.\n- Update: I&#x27;m already working on a few things, most of them with a prospect of making money at some point, though that is not the main reason for building them &#x2F; working on them.<p>The questions I have are the following:\n1. What did&#x2F;does your path look like? I&#x27;d appreciate having something for reference. Did you work a job? Are you self-taught?<p>2. Do you have any advice?<p>3. Was working together with someone the key to your success? Did you do it solo?<p>4. What would you do if you had to start over?<p>5. Do you feel like you&#x27;d be better off studying something else at university, if applicable?<p>Update: What I&#x27;d like is to hear some of your experience. If you&#x27;re solo, did you have a network, how did you build it? How did you raise funds? How did you find a co-founder (if you did)?\nDid you work a job&#x2F;freelance&#x2F;seasonal work first and then bootstrap some project&#x2F;startup&#x2F;side-hustle?\nDid your specific idea come from your experience in a job, university project, everyday life, or something else?\nDid you make any money throughout your venture? Did you have an alternative income source while working on your own business&#x2F;side-hustle&#x2F;project&#x2F;startup?<p>Thanks!",
+      "description": "Successful entrepreneurs and indie hackers, I'm curious about where your best idea(s) came and what your own path looks like.- I just turned 18 and finished school and I'm about to get into a university for engineering in Greece. - I have some pressure for inside to build wealth despite not needing it to survive.\n- I have many interests including programming, spearfishing, financial markets, computing, building in general (software and/or hardware). I have a large list of pain points, ideas, ..."
+    },
+    {
+      "title": "Ask HN: What Are the Trade-Offs of Working Fully Remotely?",
+      "url": "https://news.ycombinator.com/item?id=48573153",
+      "score": 4,
+      "by": "karakoram",
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=48573153",
+      "text": "What Are The Opportunity Costs Of Being Fully Remote?<p>Many people recognize the benefits of fully remote work, and those advantages have been widely discussed on HN. What are some of the less obvious downsides?<p>What are some overlooked or unexpected disadvantages?",
+      "description": "What Are The Opportunity Costs Of Being Fully Remote?Many people recognize the benefits of fully remote work, and those advantages have been widely discussed on HN. What are some of the less obvious downsides?What are some overlooked or unexpected disadvantages?"
     },
     {
       "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
       "url": "https://news.ycombinator.com/item?id=48528029",
-      "score": 433,
+      "score": 434,
       "by": "iliashad",
-      "comments": 113,
+      "comments": 114,
       "hn_url": "https://news.ycombinator.com/item?id=48528029",
       "text": "TLDR: I had 2,207 GoPro videos, and I need to rewatch them to find interesting moments from my cycling journey. I built a project to index them locally on my M1 Max using open-source ML models, search for those moments, and send the best clips straight to my DaVinci Resolve timeline.  I indexed 628 videos (668.68 GB, 15h 13m 18s of footage duration), more details in the metrics table in the last section of this article.<p>Full article: https:&#x2F;&#x2F;iliashaddad.com&#x2F;blog&#x2F;i-indexed-669-gb-of-my-gopro-videos-using-my-m1-max-computer",
       "description": "TLDR: I had 2,207 GoPro videos, and I need to rewatch them to find interesting moments from my cycling journey. I built a project to index them locally on my M1 Max using open-source ML models, search for those moments, and send the best clips straight to my DaVinci Resolve timeline.  I indexed 628 videos (668.68 GB, 15h 13m 18s of footage duration), more details in the metrics table in the last section of this article.Full article: https://iliashaddad.com/blog/i-indexed-669-gb-of-my-gopro-vi..."
     },
     {
-      "title": "Ask HN: How do you stay at the bleeding edge of AI tooling?",
-      "url": "https://news.ycombinator.com/item?id=48559049",
-      "score": 2,
-      "by": "otekengineering",
-      "comments": 7,
-      "hn_url": "https://news.ycombinator.com/item?id=48559049",
-      "text": "HN is great, especially compared to reddit (unless i&#x27;m missing the best subreddits?), but even here there&#x27;s comments from people who don&#x27;t know how to ride a bike pontificating about how useless&#x2F;dangerous&#x2F;etc bikes are and telling me how important it is not to forget how to run.  where&#x27;s the forum for bicycle enthusiasts?<p>there&#x27;s undoubtedly a lot of good harnesses and tooling squirreled away on self-hosted git repos, and that&#x27;s the crowd i want to chew the fat with<p>examples of the type of perspective i&#x27;m looking for in a social network to parasocially stalk,<p>https:&#x2F;&#x2F;www.thoughtfultechnologist.com<p>https:&#x2F;&#x2F;simonwillison.net",
-      "description": "HN is great, especially compared to reddit (unless i'm missing the best subreddits?), but even here there's comments from people who don't know how to ride a bike pontificating about how useless/dangerous/etc bikes are and telling me how important it is not to forget how to run.  where's the forum for bicycle enthusiasts?there's undoubtedly a lot of good harnesses and tooling squirreled away on self-hosted git repos, and that's the crowd i want to chew the fat withexamples of the type of pers..."
-    },
-    {
-      "title": "Nanogram – Private social media from your Raspberry Pi",
-      "url": "https://news.ycombinator.com/item?id=48558511",
-      "score": 5,
-      "by": "smalltorch",
-      "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48558511",
-      "text": "Hello, I have made nanogram as a privacy centered social media platform designed for users to maintain complete control of their data.<p>Using purely open source alternatives, nanogram provides a robust and small way to emulate the old days of Instagram where friends could share moments with each other without all the fluff.<p>Also included is the ability to play Scrabble, connect 4, and chess with your friends.<p>The platform is invite only meaning the server operator must generate a invite token to allow new users.<p>Because of the global power of Tor, hosting is completely free and E2EE encrypted as it operates as a onion service.<p>Find it here https:&#x2F;&#x2F;gitlab.com&#x2F;here_gorawhile&#x2F;nanogram-pi",
-      "description": "Hello, I have made nanogram as a privacy centered social media platform designed for users to maintain complete control of their data.Using purely open source alternatives, nanogram provides a robust and small way to emulate the old days of Instagram where friends could share moments with each other without all the fluff.Also included is the ability to play Scrabble, connect 4, and chess with your friends.The platform is invite only meaning the server operator must generate a invite token to ..."
-    },
-    {
-      "title": "Ask HN: What are you working on? (June 2026)",
-      "url": "https://news.ycombinator.com/item?id=48528779",
-      "score": 303,
-      "by": "david927",
-      "comments": 1094,
-      "hn_url": "https://news.ycombinator.com/item?id=48528779",
-      "text": "What are you working on? Any new ideas that you&#x27;re thinking about?",
-      "description": "What are you working on? Any new ideas that you're thinking about?"
-    },
-    {
       "title": "Ask HN: How are thinking efforts implemented?",
       "url": "https://news.ycombinator.com/item?id=48434240",
-      "score": 101,
+      "score": 102,
       "by": "simianwords",
       "comments": 30,
       "hn_url": "https://news.ycombinator.com/item?id=48434240",
@@ -274,29 +264,39 @@
       "description": "Claude and ChatGPT have thinking efforts where you can tune the amount of thinking allowed.Like low, medium, high, xhigh and so on.But are they different models underneath? Or same model with different parameter?The reason I ask is because, if I change the effort param mid conversation in Claude code, I get a warning suggesting I’m breaking the cache.I don’t think this happens in Codex because when I change the effort, the responses are still quick."
     },
     {
-      "title": "Anthropic pauses credit change for Claude Code",
-      "url": "https://news.ycombinator.com/item?id=48546618",
-      "score": 31,
-      "by": "fabianlindfors",
-      "comments": 8,
-      "hn_url": "https://news.ycombinator.com/item?id=48546618",
-      "text": "Quoting from an email they sent:<p>Hi Fabian,\nIn May, we sent you an email announcing that starting today, the Claude Agent SDK, claude -p, and third-party apps built on the Agent SDK would stop drawing from subscription rate limits and move to a dedicated monthly credit. We&#x27;re writing to let you know that we’re not making this change today. We’re working to update the plan to better support how users build with Claude subscriptions.\nWhat this means for you\nNothing changes for now. Agent SDK, claude -p, and third-party app usage continues to work with your subscription exactly as it did before today, and there&#x27;s no credit to claim. Your subscription limits are unchanged. When we have an update, we&#x27;ll share it with advance notice before it takes effect.",
-      "description": "Quoting from an email they sent:Hi Fabian,\nIn May, we sent you an email announcing that starting today, the Claude Agent SDK, claude -p, and third-party apps built on the Agent SDK would stop drawing from subscription rate limits and move to a dedicated monthly credit. We're writing to let you know that we’re not making this change today. We’re working to update the plan to better support how users build with Claude subscriptions.\nWhat this means for you\nNothing changes for now. Agent SDK, cl..."
+      "title": "Ask HN: What are you working on? (June 2026)",
+      "url": "https://news.ycombinator.com/item?id=48528779",
+      "score": 308,
+      "by": "david927",
+      "comments": 1122,
+      "hn_url": "https://news.ycombinator.com/item?id=48528779",
+      "text": "What are you working on? Any new ideas that you&#x27;re thinking about?",
+      "description": "What are you working on? Any new ideas that you're thinking about?"
     },
     {
-      "title": "Ask HN: What do people think of Apple's Siri?",
-      "url": "https://news.ycombinator.com/item?id=48554072",
-      "score": 5,
-      "by": "hireshbrem",
-      "comments": 7,
-      "hn_url": "https://news.ycombinator.com/item?id=48554072",
-      "text": "I&#x27;m curious of what people really think of Siri.<p>Most of the things I&#x27;ve heard are pretty negative but is it just that Apple can&#x27;t build a good enough assistant or is that people just don&#x27;t interacting with one (in this specific way)?<p>Would love to hear any thoughts!",
-      "description": "I'm curious of what people really think of Siri.Most of the things I've heard are pretty negative but is it just that Apple can't build a good enough assistant or is that people just don't interacting with one (in this specific way)?Would love to hear any thoughts!"
+      "title": "Ask HN: What are your best Claude hacks?",
+      "url": "https://news.ycombinator.com/item?id=48565600",
+      "score": 15,
+      "by": "akashwadhwani35",
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=48565600",
+      "text": "One workflow I like: collecting high-quality research papers on a topic, uploading them to Claude, and turning it into a temporary expert on that domain.",
+      "description": "One workflow I like: collecting high-quality research papers on a topic, uploading them to Claude, and turning it into a temporary expert on that domain."
+    },
+    {
+      "title": "UK government built an AI tool to digitise historic planning records",
+      "url": "https://news.ycombinator.com/item?id=48574862",
+      "score": 2,
+      "by": "brokebroadbeat",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48574862",
+      "text": "A few useful links:\n- https:&#x2F;&#x2F;mhclgdigital.blog.gov.uk&#x2F;2025&#x2F;06&#x2F;12&#x2F;extract-using-ai-to-unlock-historic-planning-data&#x2F;\n- https:&#x2F;&#x2F;github.com&#x2F;digital-land&#x2F;digital-land&#x2F;issues&#x2F;360\n- https:&#x2F;&#x2F;ai.gov.uk&#x2F;evaluations&#x2F;extract-evaluation&#x2F;",
+      "description": "A few useful links:\n- https://mhclgdigital.blog.gov.uk/2025/06/12/extract-using-ai-to-unlock-historic-planning-data/\n- https://github.com/digital-land/digital-land/issues/360\n- https://ai.gov.uk/evaluations/extract-evaluation/"
     },
     {
       "title": "I'm Eric Ries, author of \"The Lean Startup\" and new book \"Incorruptible\" – AMA",
       "url": "https://news.ycombinator.com/item?id=48477135",
-      "score": 804,
+      "score": 806,
       "by": "eries",
       "comments": 577,
       "hn_url": "https://news.ycombinator.com/item?id=48477135",
@@ -314,9 +314,29 @@
       "description": "It feels like every event/venue is selling tickets exclusively through Ticketmaster.  Every other ticketing platform seems to only hold resale tickets in their inventory which just transfers the tickets to your Ticketmaster account when bought. With all the hate Ticketmaster has gotten and all the other ticketing platforms out there, I'm surprised Ticketmaster still has a hold of pretty much the entire market. How are they doing this? Why haven't the other platforms been able to compete?"
     },
     {
+      "title": "Ask HN: What is the meaning of life? Why are we here?",
+      "url": "https://news.ycombinator.com/item?id=48577083",
+      "score": 4,
+      "by": "chistev",
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=48577083",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Anthropic pauses credit change for Claude Code",
+      "url": "https://news.ycombinator.com/item?id=48546618",
+      "score": 34,
+      "by": "fabianlindfors",
+      "comments": 11,
+      "hn_url": "https://news.ycombinator.com/item?id=48546618",
+      "text": "Quoting from an email they sent:<p>Hi Fabian,\nIn May, we sent you an email announcing that starting today, the Claude Agent SDK, claude -p, and third-party apps built on the Agent SDK would stop drawing from subscription rate limits and move to a dedicated monthly credit. We&#x27;re writing to let you know that we’re not making this change today. We’re working to update the plan to better support how users build with Claude subscriptions.\nWhat this means for you\nNothing changes for now. Agent SDK, claude -p, and third-party app usage continues to work with your subscription exactly as it did before today, and there&#x27;s no credit to claim. Your subscription limits are unchanged. When we have an update, we&#x27;ll share it with advance notice before it takes effect.",
+      "description": "Quoting from an email they sent:Hi Fabian,\nIn May, we sent you an email announcing that starting today, the Claude Agent SDK, claude -p, and third-party apps built on the Agent SDK would stop drawing from subscription rate limits and move to a dedicated monthly credit. We're writing to let you know that we’re not making this change today. We’re working to update the plan to better support how users build with Claude subscriptions.\nWhat this means for you\nNothing changes for now. Agent SDK, cl..."
+    },
+    {
       "title": "Ask HN: Favorite text heavy blogs that are a joy to read?",
       "url": "https://news.ycombinator.com/item?id=48466488",
-      "score": 117,
+      "score": 119,
       "by": "joshmarinacci",
       "comments": 30,
       "hn_url": "https://news.ycombinator.com/item?id=48466488",
@@ -324,34 +344,14 @@
       "description": "After ten years I’m working on a redesign of my personal tech blog. I want to look at some other blogs with good modern design. Of course searching for ‘well designed blogs’ or ‘webdesign 2026’ brings up endless marketing listicles. Even after wading through the crap, the advice is focused on advertising and product centric sites, not prose heavy sites with good typography.So my question to you is: What are some of your favorite text heavy blogs that are a joy to read?I don’t mean the content..."
     },
     {
-      "title": "Newer macOS runs slower on Intel (undeniably) – on purpose or \"accident\"?",
-      "url": "https://news.ycombinator.com/item?id=48545230",
-      "score": 15,
-      "by": "srevenant",
-      "comments": 16,
-      "hn_url": "https://news.ycombinator.com/item?id=48545230",
-      "text": "FIRST: if you feel the urge to say &quot;get a PC&quot; or &quot;try linux&quot; please don&#x27;t. This is about apple&#x2F;mac&#x2F;macos hardware. suggestions to linux or other things isn&#x27;t helpful.<p>I have a macbook pro, 32G ram, lightning fast nvme drive. There is NO REASON to upgrade the hardware.<p>I&#x27;ve followed the upgrade path to their latest (Tahoe) and they announced this is the last.<p>But it has become UNBEARABLY slow and painful for some operations. Most notably screen sharing drives it into the ground.<p>I&#x27;ve tried all sorts of things from os settings to whatever--short of redoing the heat paste on the CPU itself. I even installed Fedora on a generation before mine without the security chip (the first gen touch bar). Fedora was &#x2F;lightning&#x2F; fast. (I even re-installed fresh from Tahoe, no difference).<p>It is undeniable: Apple has made the newer MacOS run slower on Intel.<p>I downgraded two steps to Sonoma. And it&#x27;s back to running in a bearable manner.<p>I&#x27;m absolutely confident Apple will have all sorts of plausible deniability around &quot;we didn&#x27;t nerf it on purpose&quot; but whether it was with intent or &quot;oooops did that little thing happen?&quot; doesn&#x27;t matter.<p>Just for context: prior to upgrading my mac would average around 74°c. If I started zoom it would spike up to 100°c and then start throttling, making everything unusable. But it wasn&#x27;t just zoom. Some other apps (especially those in the node world) also would be come dog slow over time.<p>Now that I&#x27;m on Sonoma, and what&#x27;s so frustrating about this situation, is how blatant it is. I started a screenshare in zoom, there was a small spike to the temperature, then it trended DOWN even lower than when I started. Why? No idea. This is entirely circumstantial, but the real key here is that it didn&#x27;t go UP.<p>What do I want? Maybe Apple just needs to stop trying to push people to an OS that is nerfed so they&#x27;ll feel like buying new hardware.<p>And I&#x27;m curious what others think about the whole situation, or your own experiences.<p>Steps off soapbox.<p>(Context: MacBook Pro16, 2019, 32G ram, AMD gpu). And again: i&#x27;ve tried all sorts of setting changes from enabling gpu&#x2F;disabling&#x2F;etc. The heart of it is the windowing system runs everything dog slow.<p>TL;DR: if on intel stop at Sonoma, do not go past that.",
-      "description": "FIRST: if you feel the urge to say \"get a PC\" or \"try linux\" please don't. This is about apple/mac/macos hardware. suggestions to linux or other things isn't helpful.I have a macbook pro, 32G ram, lightning fast nvme drive. There is NO REASON to upgrade the hardware.I've followed the upgrade path to their latest (Tahoe) and they announced this is the last.But it has become UNBEARABLY slow and painful for some operations. Most notably screen sharing drives it into the ground.I've tried all sor..."
-    },
-    {
       "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
       "url": "https://news.ycombinator.com/item?id=48473166",
-      "score": 426,
+      "score": 427,
       "by": "TomAnthony",
       "comments": 254,
       "hn_url": "https://news.ycombinator.com/item?id=48473166",
       "text": "&gt; For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary.<p>From the announcement here: <a href=\"https:&#x2F;&#x2F;aws.amazon.com&#x2F;blogs&#x2F;aws&#x2F;anthropic-claude-fable-5-on-aws-mythos-class-capabilities-with-built-in-safeguards-now-available&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;aws.amazon.com&#x2F;blogs&#x2F;aws&#x2F;anthropic-claude-fable-5-on...</a><p>&gt; After 30 days, the data is deleted automatically, except in the rare cases where it&#x27;s part of a safety investigation or we&#x27;re legally required to keep it.<p>From: <a href=\"https:&#x2F;&#x2F;support.claude.com&#x2F;en&#x2F;articles&#x2F;15425996-data-retention-practices-for-mythos-class-models\" rel=\"nofollow\">https:&#x2F;&#x2F;support.claude.com&#x2F;en&#x2F;articles&#x2F;15425996-data-retenti...</a>",
       "description": "> For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary.From the announcement here: https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on...> After 30 days..."
-    },
-    {
-      "title": "Ask HN: What do you think about blockchain's current trajectory",
-      "url": "https://news.ycombinator.com/item?id=48557840",
-      "score": 5,
-      "by": "mobear",
-      "comments": 5,
-      "hn_url": "https://news.ycombinator.com/item?id=48557840",
-      "text": "",
-      "description": ""
     },
     {
       "title": "Ask HN: Want to build something open source on nights and weekends together?",
@@ -364,352 +364,247 @@
       "description": "Not a hiring post. I have a 9-5 but also a lot of ideas I want to build. The core is just to show up and make small progress — but I find I'm missing accountability and partnership, so I thought it'd be nice to partner with someone. Mostly backend/infra stuff. If you're interested, email in my profile."
     },
     {
+      "title": "Ask HN: How do you stay at the bleeding edge of AI tooling?",
+      "url": "https://news.ycombinator.com/item?id=48559049",
+      "score": 7,
+      "by": "otekengineering",
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=48559049",
+      "text": "HN is great, especially compared to reddit (unless i&#x27;m missing the best subreddits?), but even here there&#x27;s comments from people who don&#x27;t know how to ride a bike pontificating about how useless&#x2F;dangerous&#x2F;etc bikes are and telling me how important it is not to forget how to run.  where&#x27;s the forum for bicycle enthusiasts?<p>there&#x27;s undoubtedly a lot of good harnesses and tooling squirreled away on self-hosted git repos, and that&#x27;s the crowd i want to chew the fat with<p>examples of the type of perspective i&#x27;m looking for in a social network to parasocially stalk,<p>https:&#x2F;&#x2F;www.thoughtfultechnologist.com<p>https:&#x2F;&#x2F;simonwillison.net",
+      "description": "HN is great, especially compared to reddit (unless i'm missing the best subreddits?), but even here there's comments from people who don't know how to ride a bike pontificating about how useless/dangerous/etc bikes are and telling me how important it is not to forget how to run.  where's the forum for bicycle enthusiasts?there's undoubtedly a lot of good harnesses and tooling squirreled away on self-hosted git repos, and that's the crowd i want to chew the fat withexamples of the type of pers..."
+    },
+    {
+      "title": "Nanogram – Private social media from your Raspberry Pi",
+      "url": "https://news.ycombinator.com/item?id=48558511",
+      "score": 9,
+      "by": "smalltorch",
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=48558511",
+      "text": "Hello, I have made nanogram as a privacy centered social media platform designed for users to maintain complete control of their data.<p>Using purely open source alternatives, nanogram provides a robust and small way to emulate the old days of Instagram where friends could share moments with each other without all the fluff.<p>Also included is the ability to play Scrabble, connect 4, and chess with your friends.<p>The platform is invite only meaning the server operator must generate a invite token to allow new users.<p>Because of the global power of Tor, hosting is completely free and E2EE encrypted as it operates as a onion service.<p>Find it here https:&#x2F;&#x2F;gitlab.com&#x2F;here_gorawhile&#x2F;nanogram-pi",
+      "description": "Hello, I have made nanogram as a privacy centered social media platform designed for users to maintain complete control of their data.Using purely open source alternatives, nanogram provides a robust and small way to emulate the old days of Instagram where friends could share moments with each other without all the fluff.Also included is the ability to play Scrabble, connect 4, and chess with your friends.The platform is invite only meaning the server operator must generate a invite token to ..."
+    },
+    {
       "title": "Notes on DeepSeek",
       "url": "https://news.ycombinator.com/item?id=48476474",
-      "score": 209,
+      "score": 210,
       "by": "vinhnx",
-      "comments": 140,
+      "comments": 141,
       "hn_url": "https://news.ycombinator.com/item?id=48476474",
       "text": "",
       "description": ""
     },
     {
-      "title": "Ask HN: Would it be useful to have a slop button in addition to flag?",
-      "url": "https://news.ycombinator.com/item?id=48481947",
-      "score": 38,
-      "by": "BugsJustFindMe",
-      "comments": 23,
-      "hn_url": "https://news.ycombinator.com/item?id=48481947",
-      "text": "In these modern harrowing times, more and more posts are proving to be AI slop, and many people are averse to that. Do you think it would it be useful to have a way to indicate that you believe a post is slop separate from the existing flag button? Maybe it&#x27;s just me but I feel like having a dedicated [AI slop] flag on a post would be useful because I feel differently about posts that have been flagged for other reasons than that. (or something friendlier if value is seen in the general idea but not in that language)",
-      "description": "In these modern harrowing times, more and more posts are proving to be AI slop, and many people are averse to that. Do you think it would it be useful to have a way to indicate that you believe a post is slop separate from the existing flag button? Maybe it's just me but I feel like having a dedicated [AI slop] flag on a post would be useful because I feel differently about posts that have been flagged for other reasons than that. (or something friendlier if value is seen in the general idea ..."
-    },
-    {
-      "title": "Ask HN: Are most corporate SWE jobs performative?",
-      "url": "https://news.ycombinator.com/item?id=48475871",
-      "score": 248,
-      "by": "hnthrow10282910",
-      "comments": 283,
-      "hn_url": "https://news.ycombinator.com/item?id=48475871",
-      "text": "The large companies I’ve worked at (including FAANG) seemed to thrive on kudos via performative actions. Like the majority of the team is doing useless stuff that management thinks is impressive while the couple all stars get the team closer to the goal.<p>Meanwhile, a lot of managers calendars are purely just 1:1s with devs on the team which clearly has very little value add to the team.<p>Anyone else notice this? Not sure if there’s a word for it, but it’s somewhat demoralising working with a bunch of corporate office workers cosplaying as engineers",
-      "description": "The large companies I’ve worked at (including FAANG) seemed to thrive on kudos via performative actions. Like the majority of the team is doing useless stuff that management thinks is impressive while the couple all stars get the team closer to the goal.Meanwhile, a lot of managers calendars are purely just 1:1s with devs on the team which clearly has very little value add to the team.Anyone else notice this? Not sure if there’s a word for it, but it’s somewhat demoralising working with a bun..."
-    },
-    {
-      "title": "Ask HN: What are tools you have made for yourself since the advent of AI?",
-      "url": "https://news.ycombinator.com/item?id=48449187",
-      "score": 443,
-      "by": "aryamaan",
-      "comments": 780,
-      "hn_url": "https://news.ycombinator.com/item?id=48449187",
-      "text": "",
-      "description": ""
+      "title": "Ask HN: Would you want to know when and how you die?",
+      "url": "https://news.ycombinator.com/item?id=48564191",
+      "score": 8,
+      "by": "JohnDSDev",
+      "comments": 24,
+      "hn_url": "https://news.ycombinator.com/item?id=48564191",
+      "text": "If you had a time machine, and the only thing you could use it for was to go see yourself in the future die would you use it or not? Why or why not?",
+      "description": "If you had a time machine, and the only thing you could use it for was to go see yourself in the future die would you use it or not? Why or why not?"
     }
   ],
   "hn_show": [
     {
+      "title": "Show HN: An 8-bit live gamecast for baseball",
+      "url": "https://ribbie.tv/watch",
+      "score": 178,
+      "by": "brownrout",
+      "comments": 106,
+      "hn_url": "https://news.ycombinator.com/item?id=48573012",
+      "text": "Hey HN, I built a website to watch live baseball games in an 8-bit broadcast. It takes live MLB data streams and converts them into near real-time pixel art gamecasts.<p>Been waiting to share this for when there’s actually a good slate of games happening since the site is pretty bare otherwise.<p>Here is today&#x27;s schedule:<p>Mets @ Reds - 9:40am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824503\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824503</a><p>Royals @ Nationals - 10:05am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;822721\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;822721</a><p>Marlins @ Phillies - 10:05am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823450\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823450</a><p>Tigers @ Astros - 11:10am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824178\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;824178</a><p>Padres @ Cardinals - 11:15am PDT\n<a href=\"https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823044\" rel=\"nofollow\">https:&#x2F;&#x2F;ribbie.tv&#x2F;watch&#x2F;game&#x2F;823044</a><p>..and another 14 games throughout the later day.<p>I&#x27;m still early on in this project, but I&#x27;ve tried to add little details with actual stadiums, day and night modes, between inning graphics and interstitials, live scoreboards, etc.<p>Would love any feedback and ideas. Thanks for checking it out!",
+      "description": "Hey HN, I built a website to watch live baseball games in an 8-bit broadcast. It takes live MLB data streams and converts them into near real-time pixel art gamecasts.Been waiting to share this for when there’s actually a good slate of games happening since the site is pretty bare otherwise.Here is today's schedule:Mets @ Reds - 9:40am PDT\nhttps://ribbie.tv/watch/game/824503Royals @ Nationals - 10:05am PDT\nhttps://ribbie.tv/watch/game/822721Marlins @ Phillies - 10:05am PDT\nhttps://ribbie.tv/w..."
+    },
+    {
+      "title": "Show HN: Inkwash, a watercolor sketching app and explanation",
+      "url": "https://johnowhitaker.github.io/inkwash/about",
+      "score": 147,
+      "by": "Yenrabbit",
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=48523534",
+      "text": "I&#x27;ve made a drawing app based on my physical sketching practice, using fluid sim and some shader tricks to mimic watercolor-style ink washes. Best used on iPad or with a drawing tablet. The linked article shows how the core engine works, with plenty of little interactive demos. It was fun to make, sharing in hopes others find it fun too :)",
+      "description": "I've made a drawing app based on my physical sketching practice, using fluid sim and some shader tricks to mimic watercolor-style ink washes. Best used on iPad or with a drawing tablet. The linked article shows how the core engine works, with plenty of little interactive demos. It was fun to make, sharing in hopes others find it fun too :)"
+    },
+    {
+      "title": "Show HN: Reyn – local-first AI that journals and recalls your work",
+      "url": "https://www.usereyn.com/",
+      "score": 3,
+      "by": "toluwajibodu",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48577880",
+      "text": "Hey HN, I built Reyn - which I like to describe as &quot;granola but for everything&quot;. You&#x27;re probably thinking another screen capture AI tool (which is true). Same as always, the biggest question that comes up is privacy, so I&#x27;ll talk about that first<p>1. raw screen data is never stored in the cloud\n2. user controlled filters are granular to the point that you&#x27;re able to configure specific apps, windows, websites, or even keywords to be discarded immediately (once again never leaving your mac) and never captured down the pipeline<p>I personally built it because I find it useful and always had the problem of organizing my day (not note taking or task management), as well as sharing context on things that just happened to go undocumented throughout my day. As I was building it I decided to go even further and see if I could collect useful insights and find room for improvements in my day to day workflow.<p>This led to the current version of Reyn and its differentiating factor being the fact that it has a proactive layer. Most tools in this space are reactive - you ask, they retrieve. Reyn surfaces insights on its own and sends a daily recap of what you worked on, what&#x27;s still open, and what deserves attention. The journal feature also lets you search across basically anything you&#x27;ve done on your Mac.<p>The proactive insights work by first having you configure what your ideal workday looks like — whether that&#x27;s hours worked or the type of work being done. We have a few broad categories that tasks fall under, with more customization coming.<p>Current integrations:<p>Obsidian (available now, improvements in progress)\nGmail, calendar, web search via a floating window with some agentic functionality\nNotion (coming soon)\nBYOK for LLM API requests (on the roadmap)\n... and more<p>It&#x27;s still early, but the journal and insights features are the strongest parts right now. \nWould love some feedback especially on the privacy model. My personal take - I think with enough safeguards in place, the data aggregated about your work is fully in your control. A lot of these data sources already store your data. If you&#x27;re using Notion, Claude, or just browsing a website, that data is already being stored somewhere. Reyn is just aggregating it and putting it to work for you.<p>Happy to answer any questions about how it works<p>usereyn.com (public beta)",
+      "description": "Hey HN, I built Reyn - which I like to describe as \"granola but for everything\". You're probably thinking another screen capture AI tool (which is true). Same as always, the biggest question that comes up is privacy, so I'll talk about that first1. raw screen data is never stored in the cloud\n2. user controlled filters are granular to the point that you're able to configure specific apps, windows, websites, or even keywords to be discarded immediately (once again never leaving your mac) and n..."
+    },
+    {
+      "title": "Show HN: StarScope – Free astronomy dashboard for observers outside the US/UK",
+      "url": "https://starscope.live/feed",
+      "score": 14,
+      "by": "xenophin",
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=48545818",
+      "text": "",
+      "description": "Live astronomy feeds, hemisphere-aware alerts, and a worldwide community for serious amateur astronomers. Built for observers everywhere — not just the UK and USA."
+    },
+    {
+      "title": "Show HN: High-Res Neural Cellular Automata",
+      "url": "https://cells2pixels.github.io/",
+      "score": 180,
+      "by": "esychology",
+      "comments": 49,
+      "hn_url": "https://news.ycombinator.com/item?id=48567877",
+      "text": "Neural CAs model self-organizing pattern formation.<p>Now they can generate patterns at HD resolution in real-time, enabled by turning each CA cell into a Neural Field.<p>Try 3 demos: grow a pattern from a seed (and damage it, it heals), synthesize PBR textures that can regenerate, or create 3D textures like clouds.",
+      "description": "Neural CAs model self-organizing pattern formation.Now they can generate patterns at HD resolution in real-time, enabled by turning each CA cell into a Neural Field.Try 3 demos: grow a pattern from a seed (and damage it, it heals), synthesize PBR textures that can regenerate, or create 3D textures like clouds."
+    },
+    {
+      "title": "Show HN: Chatty Lingo – A language practicing app",
+      "url": "https://www.chattylingo.com",
+      "score": 2,
+      "by": "farstill",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48577535",
+      "text": "Hey all, I&#x27;ve built a web app for practicing spoken conversations in a language you&#x27;re learning. It was driven by my own needs when I learn Korean. The main functionality includes two modes:\n1. Chat with AI — you pick a situation (ordering at a café, taking a taxi, checking into a hotel) and the AI plays the other role entirely in your target language. It stays in character, adapts to what you say, and you can fail as many times as you want with nobody watching.<p>2. Chat with Human — for real, in-person conversations with native speakers (think traveling abroad and talking to a local). It translates the conversation in real time so both sides can actually communicate, and saves the full transcript so you can review it afterward and learn from what was said.<p>I&#x27;m a solo dev. The web app is live today and mobile is still being built. The app is still at early stage, I&#x27;m adding more features to it. I&#x27;d love some feedbacks, especially on what features you think are missing and what you would expect from a language learning app.<p>Here is a demo page where you can play with it without signing up: <a href=\"https:&#x2F;&#x2F;www.chattylingo.com&#x2F;demo\" rel=\"nofollow\">https:&#x2F;&#x2F;www.chattylingo.com&#x2F;demo</a>",
+      "description": "Hey all, I've built a web app for practicing spoken conversations in a language you're learning. It was driven by my own needs when I learn Korean. The main functionality includes two modes:\n1. Chat with AI — you pick a situation (ordering at a café, taking a taxi, checking into a hotel) and the AI plays the other role entirely in your target language. It stays in character, adapts to what you say, and you can fail as many times as you want with nobody watching.2. Chat with Human — for real, ..."
+    },
+    {
+      "title": "Show HN: Capacitor Alarm Clock",
+      "url": "https://github.com/ArcaEge/capacitor-alarm-clock",
+      "score": 131,
+      "by": "arcaege",
+      "comments": 38,
+      "hn_url": "https://news.ycombinator.com/item?id=48526174",
+      "text": "I made an alarm clock that blows up capacitors to wake you up.<p>There are more details on the Github repo but it&#x27;s made from an esp32-c3 as the microcontroller, with 3 capacitor slots. There are relays on each capacitor slot to put 15v reverse voltage on the capacitor, with 5.1 ohm resistors on each slot for current limiting in case the capacitor shorts out. I also chucked in an SSD1315 OLED to show the time and a menu to configure it, although there&#x27;s a web UI as well. The esp32 also means you can fetch the time from NTP.<p>It also functions as a small heater since I used LDOs to step down 15v to 3.3v for the esp32, I was lazy and didn&#x27;t use a buck converter circuit :)",
+      "description": "I made an alarm clock that blows up capacitors to wake you up.There are more details on the Github repo but it's made from an esp32-c3 as the microcontroller, with 3 capacitor slots. There are relays on each capacitor slot to put 15v reverse voltage on the capacitor, with 5.1 ohm resistors on each slot for current limiting in case the capacitor shorts out. I also chucked in an SSD1315 OLED to show the time and a menu to configure it, although there's a web UI as well. The esp32 also means you..."
+    },
+    {
+      "title": "Show HN: Deconvolution – a Rust image deconvolution and restoration crate",
+      "url": "https://github.com/pbkx/deconvolution",
+      "score": 26,
+      "by": "rmi0",
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=48540396",
+      "text": "I&#x27;ve been working on deconvolution, a comprehensive Rust image deconvolution and restoration library. Deconvolution implements 28 different image deconvolution&#x2F;restoration methods which range from practical blur removal techniques to research-grade scientific imaging algorithms.<p>Features:<p>- Top-level functions use image::DynamicImage and return images<p>- Inverse filters, Wiener, Richardson-Lucy, constrained, proximal, Krylov, MLE restoration<p>- Blind Richardson-Lucy, blind maximum likelihood, parametric PSF estimation<p>- Kernel2D, Kernel3D, Transfer2D, Transfer3D, Blur2D&#x2F;Blur3D<p>- Gaussian, motion, defocus, microscopy models, support utilities, PSF&#x2F;OTF conversion<p>- Edge tapering, apodization, range normalization, NSR estimation<p>- Deterministic blur, noise, synthetic fixture generation<p>- ndarray support for 2D image arrays and 3D volume<p>this project is a WIP, of course:)",
+      "description": "I've been working on deconvolution, a comprehensive Rust image deconvolution and restoration library. Deconvolution implements 28 different image deconvolution/restoration methods which range from practical blur removal techniques to research-grade scientific imaging algorithms.Features:- Top-level functions use image::DynamicImage and return images- Inverse filters, Wiener, Richardson-Lucy, constrained, proximal, Krylov, MLE restoration- Blind Richardson-Lucy, blind maximum likelihood, param..."
+    },
+    {
+      "title": "Show HN: I built a spelling app for kids with my 7-year-old",
+      "url": "https://spellabee.com/",
+      "score": 2,
+      "by": "narenst",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48577259",
+      "text": "Hello HN! I made an iPad app with my seven-year-old daughter to make learning spelling fun.<p><a href=\"https:&#x2F;&#x2F;spellabee.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;spellabee.com&#x2F;</a><p>We play Spelling Bee type games in our car rides, and she wanted to learn more words that way. So we built a simple app that teaches 10 words at a time, and lets the kids practice and master these 10 words.<p>The full word list in the app is static, and it gets progressively harder as the kid goes through the levels. There are no AI features in the app. I do not collect emails inside the app or have third party trackers. Based on feedback (reviews) and aggregate usage data I plan on updating the app with new word sets.<p>Although the app does not have any AI features I used AI to build the app itself. I used Claude to code the app using Flutter, do etymology research, and understand what alternative apps that are in the App Store. While the LLMs were good at providing a lot of information, I had to synthesize it and play a strong Product Manager role to drive the vision and keep the app simple. My daughter provided a lot of feedback and helped simplify the app and refine the UX. The &quot;Bee Stage&quot; design was inspired by her drawing.<p>Without AI tools, it would have been almost impossible for me to build and launch this app. But it still required a lot of decision-making and prioritization to get the product out of the door. I strongly believe that while AI is a powerful tool, human taste is the differentiator in well made products.<p>If you have a kid in K-5 who is interested in spelling bee type games, give it a try and I would love to hear any feedback you may have as a parent.<p>App store: <a href=\"https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;apple-store&#x2F;id6768881287?pt=128671964&amp;ct=hn&amp;mt=8\">https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;apple-store&#x2F;id6768881287?pt=12867...</a>",
+      "description": "Hello HN! I made an iPad app with my seven-year-old daughter to make learning spelling fun.https://spellabee.com/We play Spelling Bee type games in our car rides, and she wanted to learn more words that way. So we built a simple app that teaches 10 words at a time, and lets the kids practice and master these 10 words.The full word list in the app is static, and it gets progressively harder as the kid goes through the levels. There are no AI features in the app. I do not collect emails inside ..."
+    },
+    {
+      "title": "Show HN: Relaymux, a tmux-based meta-harness for local coding agents",
+      "url": "https://github.com/mupt-ai/relaymux",
+      "score": 7,
+      "by": "byhong03",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48573655",
+      "text": "Hey HN,<p>There’s been a lot of interest recently in meta-harnesses, loops, and multi-agent orchestration. Obviously, there are already a lot of good tools: Conductor, cmux, the native Codex &#x2F; Claude Code apps, etc.<p>For my own use cases, I’ve felt that the orchestration layer tends to feel overengineered. I mostly wanted a simple local harness (i.e Pi) for running and tracking CLI agents with the ability to hop in (via tmux). Relaymux is my opinionated attempt at that.<p>A few design principles:<p>- The frontend is just Telegram &#x2F; iMessage &#x2F; CLI. If I want more visibility, I hop into tmux.<p>- Subagents are normal interactive CLI agents running in tmux windows, usually with their own worktrees.<p>- The harness owns the tmux session, so each longer task becomes a named tab&#x2F;window. Subagents report back to the orchestrator via CLI when they’re blocked or done. Then the orchestrator just messages me on Telegram &#x2F; iMessage<p>- It works with any CLI agent that has an interactive terminal mode, so I don’t need special print-mode&#x2F;non-interactive support. This means I don’t need to stress about the Agent SDK &#x2F; claude -p billing limitations.",
+      "description": "Hey HN,There’s been a lot of interest recently in meta-harnesses, loops, and multi-agent orchestration. Obviously, there are already a lot of good tools: Conductor, cmux, the native Codex / Claude Code apps, etc.For my own use cases, I’ve felt that the orchestration layer tends to feel overengineered. I mostly wanted a simple local harness (i.e Pi) for running and tracking CLI agents with the ability to hop in (via tmux). Relaymux is my opinionated attempt at that.A few design principles:- Th..."
+    },
+    {
       "title": "Show HN: cuTile Rust: Safe, data-race-free GPU kernels in Rust",
       "url": "https://github.com/nvlabs/cutile-rs",
-      "score": 12,
+      "score": 99,
       "by": "melihelibol",
-      "comments": 4,
+      "comments": 16,
       "hn_url": "https://news.ycombinator.com/item?id=48561410",
       "text": "",
       "description": ""
     },
     {
-      "title": "Show HN: Sabela – A Reactive Notebook for Haskell",
-      "url": "https://sabela.datahaskell.com/",
-      "score": 24,
-      "by": "mchav",
-      "comments": 1,
-      "hn_url": "https://news.ycombinator.com/item?id=48525340",
-      "text": "Sabela is a reactive notebook for Haskell. The name is the Ndebele word for &quot;to respond.&quot; Cells respond to each other on change. Initially it was meant as a tool for working with data but it has turned out to have a lot of pedagogical value outside of data analysis work.<p>There is a gallery to read through on the website and a number of examples in the repo showcasing things like:<p>* Python interop\n* Widgets and animation\n* Exploratory data analysis<p>If you find any of this interesting please try it out. Any feedback is welcome.",
-      "description": "Sabela is a reactive notebook for Haskell. The name is the Ndebele word for \"to respond.\" Cells respond to each other on change. Initially it was meant as a tool for working with data but it has turned out to have a lot of pedagogical value outside of data analysis work.There is a gallery to read through on the website and a number of examples in the repo showcasing things like:* Python interop\n* Widgets and animation\n* Exploratory data analysisIf you find any of this interesting please try i..."
+      "title": "Show HN: I built 184 free browser tools – PDF, image, dev, AI tasks, no upload",
+      "url": "https://brevio.pro",
+      "score": 83,
+      "by": "ruimbarreira",
+      "comments": 28,
+      "hn_url": "https://news.ycombinator.com/item?id=48568023",
+      "text": "",
+      "description": "brevio offers 166+ free tools for PDFs, images, text, finance, development, and health — all processing runs locally in your browser. No file upload, no server, no account required. Privacy by design."
+    },
+    {
+      "title": "Show HN: Vpod – Tiny Linux sandbox running in WASM",
+      "url": "https://github.com/capsulerun/vpod",
+      "score": 5,
+      "by": "mavdol04",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48572970",
+      "text": "Hi HN,<p>I spent the last few months reading the RISC‑V specification to build the lightest possible sandboxes. The idea behind a vpod is to quickly spin up a Linux sandbox from snapshots (Alpine by default) without any setup or subsystem required.<p>The trade-off for portability and security is raw CPU speed. So we don&#x27;t expect it to match native workloads with Python or pip, for example.<p>More info is in the README\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;capsulerun&#x2F;vpod\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;capsulerun&#x2F;vpod</a><p>Happy to answer any questions!",
+      "description": "Hi HN,I spent the last few months reading the RISC‑V specification to build the lightest possible sandboxes. The idea behind a vpod is to quickly spin up a Linux sandbox from snapshots (Alpine by default) without any setup or subsystem required.The trade-off for portability and security is raw CPU speed. So we don't expect it to match native workloads with Python or pip, for example.More info is in the README\nhttps://github.com/capsulerun/vpodHappy to answer any questions!"
+    },
+    {
+      "title": "Show HN: In-browser Python/Pandas/Git practice with animated Git simulator",
+      "url": "https://practice.lernerpython.com/classroom/540d7ab1a1/",
+      "score": 4,
+      "by": "reuven",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48572112",
+      "text": "I&#x27;ve created an in-browser Python&#x2F;Pandas&#x2F;Git practice environment for my online learning platform and also for my corporate training classes. I&#x27;d be happy to discuss how I went about designing this, how I&#x27;m using it in my classes, and the architectural decisions I&#x27;ve made.<p>Most interesting, to me, is how much is running in the browser. Thanks to Svelte, Pyodide, isomorphic-git, LightningFS, and CodeMirror I&#x27;m able to provide a full environment for Python, Pandas, and Git.<p>I built much of this with Claude Code, and I&#x27;m happy to discuss how that went — what worked well and where I had to step in and make the calls myself.<p>I&#x27;m especially excited about the Git simulator: it shows the commit tree change as you run commands, plus an animated view of how files move between the working tree, the staging area, and HEAD.<p>The AI tutor, which uses Claude Haiku, was given my newsletters, classes, and exercises as inputs, along with a description of my pedagogical approach: instructors should give hints and feedback, but not reveal the answer.",
+      "description": "I've created an in-browser Python/Pandas/Git practice environment for my online learning platform and also for my corporate training classes. I'd be happy to discuss how I went about designing this, how I'm using it in my classes, and the architectural decisions I've made.Most interesting, to me, is how much is running in the browser. Thanks to Svelte, Pyodide, isomorphic-git, LightningFS, and CodeMirror I'm able to provide a full environment for Python, Pandas, and Git.I built much of this w..."
+    },
+    {
+      "title": "Show HN: Mantyx – Batteries included managed agent runtime",
+      "url": "https://mantyx.io/",
+      "score": 4,
+      "by": "mantyx",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48573242",
+      "text": "",
+      "description": "Pass a prompt and tools inline, or call a workspace agent you already set up. MANTYX runs the model loop—you stream the reply and wire local tools from your process. Free workspace. No credit card."
+    },
+    {
+      "title": "Show HN: The full Minecraft game as an embeddable Framer component",
+      "url": "https://www.framer.com/community/contests/agents-hackathon/submissions/Y1tmsVEc6HdhnNPsympLxP/",
+      "score": 3,
+      "by": "xmorse",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48572996",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "Show HN: Mira – Open-source and self-hosted AI code reviewer",
+      "url": "https://github.com/miracodeai/mira",
+      "score": 11,
+      "by": "upmostly",
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=48570197",
+      "text": "Hey HN,<p>I&#x27;m Jay, co-creator of Mira. An open-source, self-hosted AI code reviewer where you BYOK (bring your own key).<p>Local models are getting really good.<p>Hosted frontier models are getting really expensive.<p>So, we built Mira. Mira has some snazzy features too:<p>- It&#x27;s really fast at reviewing. Average is 77s compared with Greptile&#x27;s 5 minutes. Your PRs aren&#x27;t going into a queue on a cloud somewhere.<p>- Mira performs a blast radius and see what damage will be done with code change.<p>- Learns your codebase&#x27;s patterns from the repo itself and enforces them without a config file.<p>- It&#x27;s self-hosted, so your code never leaves your infrastructure. Bring your own model - OpenAI, Anthropic, or a local LLM behind your firewall.<p>We&#x27;re really active, and looking for active contributors. Come join us in our discord!<p><a href=\"https:&#x2F;&#x2F;github.com&#x2F;miracodeai&#x2F;mira\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;miracodeai&#x2F;mira</a><p>Thanks,\nJay",
+      "description": "Hey HN,I'm Jay, co-creator of Mira. An open-source, self-hosted AI code reviewer where you BYOK (bring your own key).Local models are getting really good.Hosted frontier models are getting really expensive.So, we built Mira. Mira has some snazzy features too:- It's really fast at reviewing. Average is 77s compared with Greptile's 5 minutes. Your PRs aren't going into a queue on a cloud somewhere.- Mira performs a blast radius and see what damage will be done with code change.- Learns your cod..."
+    },
+    {
+      "title": "Show HN: Agenthatch – Compile any skill into a standalone Python agent",
+      "url": "https://github.com/agenthatch/agenthatch",
+      "score": 6,
+      "by": "EternalRights",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48570054",
+      "text": "",
+      "description": ""
     },
     {
       "title": "Show HN: VoiceDraw – Talk system design out loud, the diagrams draw themselves",
       "url": "https://voicedraw.com/",
-      "score": 22,
+      "score": 47,
       "by": "ajaypanthagani",
-      "comments": 8,
+      "comments": 19,
       "hn_url": "https://news.ycombinator.com/item?id=48560454",
       "text": "I was frustated by having to draw system design diagrams by hand when discussing it with my team mates or in an interview. So I thought &quot;Wouldn&#x27;t it be great if someone draws it for me, while I think out loud?&quot;.<p>That is when I came up with VoiceDraw. You can just think out loud or discuss your system architecture with a friend&#x2F;interviewer, the diagrams are automatically drawn along with your reasoning, open questions and tradeoffs beautifully written on to the side.<p>Demo Video: <a href=\"https:&#x2F;&#x2F;youtu.be&#x2F;36PgHKSuccE\" rel=\"nofollow\">https:&#x2F;&#x2F;youtu.be&#x2F;36PgHKSuccE</a>",
       "description": "I was frustated by having to draw system design diagrams by hand when discussing it with my team mates or in an interview. So I thought \"Wouldn't it be great if someone draws it for me, while I think out loud?\".That is when I came up with VoiceDraw. You can just think out loud or discuss your system architecture with a friend/interviewer, the diagrams are automatically drawn along with your reasoning, open questions and tradeoffs beautifully written on to the side.Demo Video: https://youtu.be..."
     },
     {
-      "title": "Show HN: Garden of Flowers – an archive of pictorial typography before ASCII art",
-      "url": "https://garden-of-flowers.heikkilotvonen.com/",
-      "score": 145,
-      "by": "california-og",
-      "comments": 25,
-      "hn_url": "https://news.ycombinator.com/item?id=48550569",
-      "text": "Hey all, I made this. The archive started with my 2015 BA thesis on Amiga ASCII art when I was curious about the history of ASCII art but found very little on text art that came before it. The historical precursors are often attributed to typewriter art and shaped&#x2F;visual poetry, but I think letterpress is overlooked. So, I got slightly obsessed and started a personal database of pictures built entirely from metal type, ornaments, and rule, some going back to the 1600s. After eight years, I&#x27;ve managed to find ~2500 images. My friend Adel Faure built the website so it&#x27;s now browseable by anyone!<p>I would like to note that most images are from public digital collections (Internet Archive, national libraries, etc.) and displayed without permission (for educational purposes). I&#x27;ve tried to source every image, but check the original source and its license before reusing anything. I&#x27;d be happy to take down or correct anything.<p>It&#x27;s also incomplete and surely has errors and misattributions. Corrections to anything are very welcome.<p>If anyone has leads on works I haven&#x27;t catalogued, I&#x27;d love to hear them! The practice and pictures are scattered across languages and keywords (type picture, typosignet, typotectur, Bildsatz, stigmatypie, stunt typography...), so things hide in odd corners of archives. If you&#x27;ve seen something like this, please point me at it.<p>There&#x27;s also a longer essay on how it began:\n<a href=\"https:&#x2F;&#x2F;garden-of-flowers.heikkilotvonen.com&#x2F;?essay\" rel=\"nofollow\">https:&#x2F;&#x2F;garden-of-flowers.heikkilotvonen.com&#x2F;?essay</a>",
-      "description": "Hey all, I made this. The archive started with my 2015 BA thesis on Amiga ASCII art when I was curious about the history of ASCII art but found very little on text art that came before it. The historical precursors are often attributed to typewriter art and shaped/visual poetry, but I think letterpress is overlooked. So, I got slightly obsessed and started a personal database of pictures built entirely from metal type, ornaments, and rule, some going back to the 1600s. After eight years, I've..."
-    },
-    {
-      "title": "Show HN: Private Markets SEC Filings Index",
-      "url": "https://search.stillhousedata.com",
-      "score": 3,
-      "by": "lemonlym",
-      "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48563001",
-      "text": "",
-      "description": ""
-    },
-    {
-      "title": "Show HN: Pen and paper resource development game with an emergent world",
-      "url": "https://www.jameshylands.co.uk/2026/06/sortis-paper-empire-game.html",
-      "score": 14,
-      "by": "jhylands",
-      "comments": 1,
-      "hn_url": "https://news.ycombinator.com/item?id=48559108",
-      "text": "I&#x27;ve been working for a while on trying to curate a game that has the emergence of procedurally generated computer games but that can be played with only pen and paper. Here I present the best version I&#x27;ve been able to come up with that is simple and emergent. I&#x27;ve really enjoyed being able to engage with this sort of game while not feeling like my brain in rotting. I recon my numeracy improves while playing it.",
-      "description": "I've been working for a while on trying to curate a game that has the emergence of procedurally generated computer games but that can be played with only pen and paper. Here I present the best version I've been able to come up with that is simple and emergent. I've really enjoyed being able to engage with this sort of game while not feeling like my brain in rotting. I recon my numeracy improves while playing it."
-    },
-    {
-      "title": "Show HN: Azure DevOps TUI Management Style",
-      "url": "https://github.com/elpulgo/azdo",
+      "title": "Show HN: Zkit – Go libraries for building agents, not a framework",
+      "url": "https://zarldev.github.io/zarlmono/",
       "score": 6,
-      "by": "elpulgo",
+      "by": "zarldev",
       "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48560026",
-      "text": "An Azure devops TUI tool, with management metrics, to follow up on stuck items, too much wip per team member and tracking across sprints.",
-      "description": "An Azure devops TUI tool, with management metrics, to follow up on stuck items, too much wip per team member and tracking across sprints."
-    },
-    {
-      "title": "Show HN: Ctx, save tokens by loading only the relevant tools",
-      "url": "https://github.com/stevesolun/ctx",
-      "score": 5,
-      "by": "stevesolun",
-      "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48559559",
-      "text": "Hi HN!<p>Token cost has started to become a high topic of concern to all of us. I tried a few (awesome) tools such as rtk, caveman, and the recent (hillarious but effective) ponytail. What they usually do, is in-line token reduction, e.g. try to compress requests &#x2F; responses as much as possible.<p>But then it hit me (and I’m sure others had similar ideas) - just like we have routers that pick the right model, why not have something that will also narrow down the amount of available tools, skills and mcps based on repo&#x2F;context?<p>People usually accumulate skills, agents, MCP servers, harnesses, prompts, repo instructions, and local scripts. I’m not saying we are all hoarders, but we sort of are. When did you remove a skill recently? After a while, the model has way too many options to choose from.<p>ctx tries to fix that by selecting context before the session gets bloated.So no, it doesn’t cleanup your messy garage, but it gives you magic glasses that let you focus only on the tools you need.<p>It does it by watching the repo and task, walks a graph of available tooling, and recommends a small top-scored bundle of skills, agents, MCP servers, and harnesses.<p>How does it know? \nTo make sure results are not hallucinated, and repeatable, I curated a list of  91k+ skills,  467 agents, 10.7k MCP servers,  207 harnesses, and built a graph to help ctx make decisions on what to recommend. While I used AI to generate it of course, I curated it and revised it to make sure the data is up to date.<p>So how this is different from rtk, caveman, ponytail, and similar token-saving tools?<p>As mentioned above those tools mostly reduce tokens after something is already being used.<p>rtk compresses command output.<p>caveman-style tools make the assistant respond with fewer words.<p>ponytail, is, well, awesome, but again it focuses more on reducing code (YAGNI)<p>ctx is upstream. It tries to avoid loading irrelevant skills, agents, MCPs, and harnesses into context at all.<p>So it is not really a replacement. It should work side by side with them!<p>Use ctx to choose the right tools.\nUse rtk to reduce terminal-output noise.\nUse terse-output tools if you want shorter responses.<p>The goal is simple: save tokens without forcing the user to manually test and compare thousands of possible skills, agents, MCP servers, and harnesses.<p>Repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;stevesolun&#x2F;ctx\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;stevesolun&#x2F;ctx</a>",
-      "description": "Hi HN!Token cost has started to become a high topic of concern to all of us. I tried a few (awesome) tools such as rtk, caveman, and the recent (hillarious but effective) ponytail. What they usually do, is in-line token reduction, e.g. try to compress requests / responses as much as possible.But then it hit me (and I’m sure others had similar ideas) - just like we have routers that pick the right model, why not have something that will also narrow down the amount of available tools, skills an..."
-    },
-    {
-      "title": "Show HN: I'm 15, built an AI that watches your screen and acts before you ask",
-      "url": "https://github.com/Helmus101/weave",
-      "score": 5,
-      "by": "anqer",
-      "comments": 1,
-      "hn_url": "https://news.ycombinator.com/item?id=48561017",
-      "text": "Can I have some feedback?",
-      "description": "Can I have some feedback?"
-    },
-    {
-      "title": "Show HN: Fata – Spaced repetition to fight skill rot from AI coding",
-      "url": "https://fata.dev",
-      "score": 110,
-      "by": "djoume",
-      "comments": 51,
-      "hn_url": "https://news.ycombinator.com/item?id=48489163",
-      "text": "Hi HN, I&#x27;m Djoumé. I&#x27;ve been a developer for over 20 years, and like a lot of you I&#x27;ve been coding almost exclusively through an agent in the past few months.<p>It&#x27;s been amazing to vibe code prototypes in any stack, but when it comes to building something reliable&#x2F;scalable, I couldn&#x27;t effectively guide the agent unless I knew the technology. And the scariest part is that I&#x27;m seeing a lot of my technical skills decreasing due to AI coding.<p>Reflecting on my journey, I also worry about how the new &quot;AI native&quot; generation of software developer is going to acquire technical depth.<p>So I built fata.dev: short daily spaced-repetition sessions for programming skills (Rust, CSS, React, Python, TypeScript, Architecture).<p>You can try it in the browser with no signup: <a href=\"https:&#x2F;&#x2F;fata.app&#x2F;courses\" rel=\"nofollow\">https:&#x2F;&#x2F;fata.app&#x2F;courses</a><p>It&#x27;s an offline-first mobile app built with Capacitor, RxDB and Firebase. The first courses were painfully written by hand, but most content is now AI-generated. It takes about 3000 LLM calls to generate a course, and every code samples goes through compilation, linting, unit testing, AI and a final manual review.<p>Would very much appreciate any feedback on the product &amp; website, what works and what could be better. Thanks!",
-      "description": "Hi HN, I'm Djoumé. I've been a developer for over 20 years, and like a lot of you I've been coding almost exclusively through an agent in the past few months.It's been amazing to vibe code prototypes in any stack, but when it comes to building something reliable/scalable, I couldn't effectively guide the agent unless I knew the technology. And the scariest part is that I'm seeing a lot of my technical skills decreasing due to AI coding.Reflecting on my journey, I also worry about how the new ..."
-    },
-    {
-      "title": "Show HN: Veterinarian turned founder, AI lawn diagnosis",
-      "url": "https://grassdx.com/",
-      "score": 73,
-      "by": "andrewbr",
-      "comments": 59,
-      "hn_url": "https://news.ycombinator.com/item?id=48544823",
-      "text": "I know, it&#x27;s kind of weird. What is a veterinarian doing creating an analysis tool for lawn problems?<p>Frankly, the idea was born of my own lawn care struggles. Endless lawn care company fees without any actual improvement. Googling problems and finding generic solutions without regional considerations. One time I overseeded my grass not realizing I had to actually put soil down too.<p>One day, I decided to run lawn pictures through AI and found some pretty helpful information. So I decided with my clinical background (the idea of treating the cause, not just the symptoms), as well as tech savvy, I would create an AI tool where homeowners can upload pictures of their lawn, enter their ZIP code, and get a diagnosis tailored to their location with actionable next steps in just 15 seconds.<p>Completely free. The platform is monetized with affiliate sales (if a user elects to purchase through one of our Amazon or other links) and by selling exclusive rights to individual ZIP codes to lawn care companies seeking warm leads. Users can pursue their own DIY plan, purchase a lawn care subscription service, or contact a local lawn care system.<p>I&#x27;d love if you&#x27;d test it out, toy with it, try to break it, and give me your feedback. Any feature requests would be super helpful.<p>Thanks! Excited to hear your thoughts.<p>Andrew",
-      "description": "I know, it's kind of weird. What is a veterinarian doing creating an analysis tool for lawn problems?Frankly, the idea was born of my own lawn care struggles. Endless lawn care company fees without any actual improvement. Googling problems and finding generic solutions without regional considerations. One time I overseeded my grass not realizing I had to actually put soil down too.One day, I decided to run lawn pictures through AI and found some pretty helpful information. So I decided with m..."
-    },
-    {
-      "title": "Show HN: Dev-friendly native OTel: only OSS stateful, on-the-wire Observability",
-      "url": "https://news.ycombinator.com/item?id=48560279",
-      "score": 5,
-      "by": "jratkevic",
-      "comments": 1,
-      "hn_url": "https://news.ycombinator.com/item?id=48560279",
-      "text": "Hi HN,<p>We’re the team at MyDecisive.ai, and today we’re giving developers a peek at Octant — point-and-click control and visibility for your OpenTelemetry.<p>You&#x27;ve likely felt the pain of the &quot;observability tax,&quot; especially if you manage K8S clusters. The modern standard is to instrument everything with OpenTelemetry, but piping all those rich OTLP logs, metrics, and traces straight to a SaaS vendor (Datadog, Splunk, Honeycomb) gets expensive fast. You end up paying massive ingestion and storage costs for noisy, low-value data just so it&#x27;s searchable when something breaks. With Octant you get up and running on OTel in minutes.<p>We built Octant to flip this model. Instead of blindly shipping all telemetry off-cluster, Octant configures and helps to manage OTEL clusters. It gives you a visual interface for managing K8s objects, but importantly, it acts as an OTLP gateway that filters data at the source before it leaves your VPC.<p>Because it natively speaks OpenTelemetry, you can point your existing OTel SDKs or collectors right at it without touching your application code. Here is what it does under the hood:<p>- OTel-Native Trace &amp; Log Sampling: It makes it easy to ingest OTLP traffic and inspects logs and traces on the wire. By waiting for the full context of a trace before determining what to keep, it delivers on the promise of braiding, retaining 100% of the actionable signals around (like errors and high-latency spans) but droppings the junk before it hits your SaaS bill.<p>- In-Flight Stateful Alerting: Instead of waiting for data to be batched, shipped, and indexed by an external provider to trigger an alert, Octant can process the telemetry streams in-flight. This shrinks the detection gap and reduces the need for SaaS vendors in the first place.\n- On-the-Wire PII Redaction: It can detect and strip sensitive information from your logs and traces in real-time before they are transmitted over the internet, removing &quot;post-ingestion&quot; clean-up costs and compliance risks.<p>- K8s Context Injection: Because it&#x27;s deeply integrated with your cluster, it maps your OTel streams directly to your K8s resources (Deployments, Pods, CRDs) in a unified UI.<p>The API is built in Go ([github.com&#x2F;mydecisive&#x2F;octant] and the whole stack can be deployed directly into your cluster via our Helm charts.<p>We’d love for you to spin it up on a dev cluster and tear it apart. We just recently merged a PR from our very first community contributor, which was a huge milestone for us! We want to keep that momentum going. If you&#x27;re interested in hacking on K8s observability and autonomy, OpenTelemetry pipelines, or Go&#x2F;React, we’ve tagged a few &#x27;good first issues&#x27; and would be thrilled to welcome you to the project.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;MyDecisive&#x2F;octant\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;MyDecisive&#x2F;octant</a><p>Website: <a href=\"https:&#x2F;&#x2F;www.mydecisive.ai&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.mydecisive.ai&#x2F;</a><p>I&#x27;ll be hanging out in the thread today and am happy to answer any questions or dig into the architecture!",
-      "description": "Hi HN,We’re the team at MyDecisive.ai, and today we’re giving developers a peek at Octant — point-and-click control and visibility for your OpenTelemetry.You've likely felt the pain of the \"observability tax,\" especially if you manage K8S clusters. The modern standard is to instrument everything with OpenTelemetry, but piping all those rich OTLP logs, metrics, and traces straight to a SaaS vendor (Datadog, Splunk, Honeycomb) gets expensive fast. You end up paying massive ingestion and storage..."
-    },
-    {
-      "title": "Show HN: machine0 – Persistent NixOS VMs You Control from the CLI",
-      "url": "https://machine0.io",
-      "score": 90,
-      "by": "bwm",
-      "comments": 35,
-      "hn_url": "https://news.ycombinator.com/item?id=48543245",
-      "text": "Hi HN! Excited to launch machine0, a CLI that makes it easy to create, provision and snapshot persistent NixOS (&amp; Ubuntu) VMs.<p>You can think of machine0 as a modern VPS provider. VMs stay on unless switched-off (with 99.99% uptime), they have static IPs and HTTPS endpoints, 1-60 vCPU, up to 240GB RAM and optionally GPUs. The CLI provides commands to manage lifecycle, snapshots and also provision the VMs using Nix flakes or Ansible playbooks. VMs are priced by the minute of usage.<p>What makes machine0 unique is that it has first class support for NixOS! In a nutshell, NixOS lets you define your entire OS as code (think Terraform but for your Linux). A flake declares your system state (packages, services, firewall rules, users...) and pins all dependencies via a lockfile. Given the same flake.nix and flake.lock, `nixos-rebuild switch` always produces the exact same system.<p>The NixOS ecosystem is mature, and flakes are expressive: at the system level you can define packages, what&#x27;s in &#x2F;etc, firewall rules, users &amp; groups etc. At the user level, you can define your shell, aliases, tmux and vim config. Having your entire environment defined as code makes it easy to audit what&#x27;s installed and how things are set up. You can rollback by reverting the last commit. And agents can write the code for you and test it against disposable machine0 VMs.<p>If you&#x27;d like to dive right in, these commands will get you started:<p><pre><code>  npm install -g @machine0&#x2F;cli\n  machine0 new my-vm --image nixos-25-11        # create a new nixos VM\n  machine0 provision my-vm .&#x2F;flake#my-profile   # provision it using a nix flake\n  machine0 ssh my-vm                            # ssh in\n  machine0 stop my-vm                           # stop the VM\n  machine0 images new my-vm my-snapshot         # create a snapshot\n  machine0 new my-clone --image my-snapshot     # create a new VM from the snapshot\n</code></pre>\n- Demo of installation + NixOS provisioning via Claude Code: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=RT8N0_e3Vfg\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=RT8N0_e3Vfg</a><p>- Documentation: <a href=\"https:&#x2F;&#x2F;docs.machine0.io&#x2F;introduction&#x2F;overview\">https:&#x2F;&#x2F;docs.machine0.io&#x2F;introduction&#x2F;overview</a><p>- machine0 NixOS flakes: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;fdmtl&#x2F;machine0-nixos\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;fdmtl&#x2F;machine0-nixos</a><p>If you&#x27;re in the habit of using VMs, or want to know what the NixOS fuss is about, would love for you to give machine0 a try!",
-      "description": "Hi HN! Excited to launch machine0, a CLI that makes it easy to create, provision and snapshot persistent NixOS (& Ubuntu) VMs.You can think of machine0 as a modern VPS provider. VMs stay on unless switched-off (with 99.99% uptime), they have static IPs and HTTPS endpoints, 1-60 vCPU, up to 240GB RAM and optionally GPUs. The CLI provides commands to manage lifecycle, snapshots and also provision the VMs using Nix flakes or Ansible playbooks. VMs are priced by the minute of usage.What makes mac..."
-    },
-    {
-      "title": "Show HN: Microlearning apps with a TikTok-style feed to beat doomscrolling",
-      "url": "https://usescroll.app",
-      "score": 4,
-      "by": "maclinz",
-      "comments": 3,
-      "hn_url": "https://news.ycombinator.com/item?id=48558412",
-      "text": "I wanted to kick my doomscrolling habit, so I built a microlearning app that uses a TikTok-style algorithm, same addictive feed mechanics, but you actually learn something.<p>I started with a general version, Scroll: Daily Microlearning (microlearning.usescroll.app), but quickly realised it works better when focused on a single topic. So I split it into:<p>Scroll: Personal Finance (<a href=\"https:&#x2F;&#x2F;finance.usescroll.app\" rel=\"nofollow\">https:&#x2F;&#x2F;finance.usescroll.app</a>)<p>Scroll: Learn AI (<a href=\"https:&#x2F;&#x2F;ai.usescroll.app\" rel=\"nofollow\">https:&#x2F;&#x2F;ai.usescroll.app</a>)<p>Scroll: Daily Microlearning (<a href=\"https:&#x2F;&#x2F;microlearning.usescroll.app\" rel=\"nofollow\">https:&#x2F;&#x2F;microlearning.usescroll.app</a>)",
-      "description": "I wanted to kick my doomscrolling habit, so I built a microlearning app that uses a TikTok-style algorithm, same addictive feed mechanics, but you actually learn something.I started with a general version, Scroll: Daily Microlearning (microlearning.usescroll.app), but quickly realised it works better when focused on a single topic. So I split it into:Scroll: Personal Finance (https://finance.usescroll.app)Scroll: Learn AI (https://ai.usescroll.app)Scroll: Daily Microlearning (https://microlea..."
-    },
-    {
-      "title": "Show HN: SharkClean MCP",
-      "url": "https://github.com/a-funk/sharkclean-mcp",
-      "score": 16,
-      "by": "afunk",
-      "comments": 4,
-      "hn_url": "https://news.ycombinator.com/item?id=48505910",
-      "text": "This is nothing special but it has been very very nice to kick off cleaning jobs remotely via MCP.  Working towards a genuinely smart home and this was a useful step in the right direction.",
-      "description": "This is nothing special but it has been very very nice to kick off cleaning jobs remotely via MCP.  Working towards a genuinely smart home and this was a useful step in the right direction."
-    },
-    {
-      "title": "Show HN: Kage – Shadow any website to a single binary for offline viewing",
-      "url": "https://github.com/tamnd/kage",
-      "score": 689,
-      "by": "tamnd",
-      "comments": 139,
-      "hn_url": "https://news.ycombinator.com/item?id=48529990",
+      "hn_url": "https://news.ycombinator.com/item?id=48572441",
       "text": "",
-      "description": ""
-    },
-    {
-      "title": "Show HN: Memento – Self-hosted agentic search and LLM wiki over your email",
-      "url": "https://news.ycombinator.com/item?id=48557937",
-      "score": 7,
-      "by": "georgeck",
-      "comments": 6,
-      "hn_url": "https://news.ycombinator.com/item?id=48557937",
-      "text": "Our email inboxes carry multiple decades of messages (100K-500K). This is a good proxy for all the important things that happened in your life, the projects you have done and the people that you have connected with. With the chronological view of messages in the inbox, these details remain hidden. What if we could turn this archive into a personal wiki that you can search and curate? That is Memento.<p>For the information architecture of such a wiki, Memento takes an opinionated view of creating four high level dimensions - People (like a CRM view of your contacts), Projects (life events that are bounded by some start and end dates), Concepts (evergreen topics) and Newsletters.<p>Inboxes group messages by sender address, so the same person shows up many times across work, personal, and alias addresses. In the People dimension, Memento resolves all of that into one canonical person using deterministic algorithms and brings the people who are related to that person through graph algorithms. With just these two, you get an already populated CRM from your life history. No LLMs involved. From here, you can further enrich each person&#x27;s wiki page by adding additional personal notes and create a cohesive narrative using LLM. The same applies to other dimensions as well.<p>How can we query this wiki? This is where Memento uses an agentic search over this curated dataset. Your emails are stored in SQLite DB, indexed using FTS and vector embeddings and kept up-to-date, using another open-source project called Msgvault [1]. Memento extends this DB with its own tables to store the output of various algorithms - canonical people discovery, graph algorithms to find clusters of connections etc. For the agentic search to be effective, Memento exposes the underlying FTS, vector and graph data in a structured way to the agent as tools. The agent can further refine the search with additional tools like get-message-details,  message-cluster etc. What we discovered is that the resulting search is much more powerful that the typical ‘Ask Gmail’ search exposed by Google.<p>Every factual claim exposed by Memento can be traced back to the real email it came from. Any additional notes added to the wiki are incorporated in the next generation. So Memento becomes richer and more personal to you over time.<p>This worked really well for our personal email archive and we were pleasantly surprised by the things that Memento was able to uncover. In order to demonstrate this capability at scale without exposing our private info, we connected Memento to the public Enron dataset that contains hundreds of mailboxes. With the SQLite store, Go backend and Next.js UI, Memento handles this 5 GB dataset with ease. Now you can query this archive and run agentic searches to re-discover the Enron scandal yourself - you can see the demo set here [2].<p>The app is a single binary that serves on localhost and treats your archive as read-only, and you can point it at any OpenAI-API-compatible LLM, whether that&#x27;s a local model or a cloud one. It&#x27;s open source, so you can inspect how your data is handled.<p>You can try it out today without connecting your archive - use the hosted demo [2] or download the GitHub release and run it with a synthetic local archive `.&#x2F;memento app --demo`<p>[1] <a href=\"https:&#x2F;&#x2F;www.msgvault.io\" rel=\"nofollow\">https:&#x2F;&#x2F;www.msgvault.io</a><p>[2] Hosted demo (Enron data): <a href=\"https:&#x2F;&#x2F;memento-demo.latentsignal.org&#x2F;home\" rel=\"nofollow\">https:&#x2F;&#x2F;memento-demo.latentsignal.org&#x2F;home</a><p>Demo video: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Ms1KeAYCN2A\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Ms1KeAYCN2A</a><p>Project home: <a href=\"https:&#x2F;&#x2F;latentsignal.org&#x2F;projects&#x2F;memento\" rel=\"nofollow\">https:&#x2F;&#x2F;latentsignal.org&#x2F;projects&#x2F;memento</a><p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;latentsignal-org&#x2F;memento\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;latentsignal-org&#x2F;memento</a><p>We are George and Ann, creators of Memento.",
-      "description": "Our email inboxes carry multiple decades of messages (100K-500K). This is a good proxy for all the important things that happened in your life, the projects you have done and the people that you have connected with. With the chronological view of messages in the inbox, these details remain hidden. What if we could turn this archive into a personal wiki that you can search and curate? That is Memento.For the information architecture of such a wiki, Memento takes an opinionated view of creating..."
-    },
-    {
-      "title": "Show HN: Claireon – MCP Server for Unreal Editor",
-      "url": "https://github.com/believer-oss/claireon",
-      "score": 9,
-      "by": "karl_gluck",
-      "comments": 1,
-      "hn_url": "https://news.ycombinator.com/item?id=48557270",
-      "text": "",
-      "description": ""
-    },
-    {
-      "title": "Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call",
-      "url": "https://traceapp.info",
-      "score": 202,
-      "by": "AG342",
-      "comments": 83,
-      "hn_url": "https://news.ycombinator.com/item?id=48521236",
-      "text": "I&#x27;m the developer of Trace, a non-intrusive, shortcut-driven Mac app that records and transcribes your meetings on-device. I know, another meeting transcription app. Please bear with me though, I&#x27;m confident that this is at least a little novel.<p>I primarily built Trace for myself. I&#x27;d been using MacWhisper, but there was enough fiddling before each call that I&#x27;d forget to start it and walk out of an hour-long meeting with nothing written down. So the things I cared about most were that it&#x27;s quick to activate and stays out of the way. You activate Trace by pressing a global shortcut (configurable), which reveals a small bar at the bottom of your screen (there&#x27;s also a keystroke and&#x2F;or option to hide it entirely if you&#x27;d rather not see it at all).<p>As I was building it I wanted to bake in a couple of workflows I&#x27;d wished for in other transcription apps.<p>1. Mid-meeting you can press another global shortcut to mark a &quot;key moment&quot; and type a note. The note shows up in the resulting transcript inline at that timestamp. I wanted to add this because I kept catching myself thinking &quot;wait, that bit matters&quot; in meetings and reaching to jot it down in a separate app like Obsidian, which I then needed to add context to, which took me out of the meeting. I use it all the time. If I paste the transcript into an LLM afterwards (which I find myself doing more and more these days) the important moments are flagged so it doesn&#x27;t gloss over them. This is more noticeable in longer meetings with lots of topics.\n2. With another keyboard shortcut you can summon a rough live recap (subtitles, basically) to quickly recap what&#x27;s just been said.<p>Trace uses standard macOS microphone and system recording APIs to capture both sides of the conversation as two separate tracks and then runs the system side through on-device diarization to identify speakers. Right now we only label them as &quot;Speaker 1&quot;, &quot;Speaker 2&quot;, etc but there are plans for speaker labelling in the future. You can also show a &quot;live recap&quot; as the call is happening to review what someone just said.<p>All transcription models run on your machine. To be clear though, Trace doesn&#x27;t do any of the summarising itself, it just produces a markdown transcript, so if you want summaries then you need to pass the output to an AI.<p>The app is sandboxed and your audio&#x2F;transcripts are never uploaded anywhere - they just exist as audio files and markdown on disk. The only network call Trace is required to make is on the first run to download the speech and speaker models (around 500MB) from Hugging Face, and after that it can be used fully offline. If enabled, a Google Calendar integration can auto-name sessions but that needs a network connection.<p>The app is £9.99 on the macOS App Store. I&#x27;ve been using it every day for months now and I&#x27;m super happy with how it&#x27;s improved my workflow. Feedback very welcome.",
-      "description": "I'm the developer of Trace, a non-intrusive, shortcut-driven Mac app that records and transcribes your meetings on-device. I know, another meeting transcription app. Please bear with me though, I'm confident that this is at least a little novel.I primarily built Trace for myself. I'd been using MacWhisper, but there was enough fiddling before each call that I'd forget to start it and walk out of an hour-long meeting with nothing written down. So the things I cared about most were that it's qu..."
-    },
-    {
-      "title": "Show HN: git-lrc – Free, Micro AI Code Reviews That Run on Git Commit",
-      "url": "https://github.com/HexmosTech/git-lrc",
-      "score": 8,
-      "by": "atomicnature",
-      "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48555511",
-      "text": "Hi HN, I&#x27;m the author of git-lrc, would appreciate some feedback from the community<p>Last year my team started using AI coding tools more heavily, and we found ourselves generating tons of code, but spending less time looking at the stuff that&#x27;s been generated.<p>We felt like we were losing a bit of grip&#x2F;understanding of what we were building. Regressions occasionally slipped through. Sometimes changes made it all the way to production only to be reverted later.<p>We tried several AI code review tools, but most operate at PR time. That felt too late. I wanted review to happen while the implementation was still fresh in the developer&#x27;s mind at a team level (soft enforcement). I also wanted to emphasize responsibility for keeping prod stable with each individual engineer.<p>So I built git-lrc.<p>When you commit, git-lrc opens a review UI with your diff. It summarizes what changed, points out things that deserve a second look, and lets you quickly jump through the important parts of the change.<p>Over time, git-lrc has grown to check for around 100 common risk patterns across 10 categories, including security, reliability, performance, maintainability, etc.<p>Note that this is far from a formal review. It&#x27;s a quick 60 seconds spent looking at your own work before it gets recorded in git.<p>It also generates a short &quot;summary deck&quot; that highlights the main changes, with special emphasis on potential risks. With git-lrc you can quickly sanity-check what you&#x27;re about to ship and obtain greater confidence in what&#x27;s been generated.<p>In my mind it is less of an AI reviewer and more as a habit for AI-assisted development: a small pause to make sure we understand and stand behind the code we&#x27;re shipping.<p>Developers can review the change, vouch for it, or consciously skip the review. Those decisions get recorded in git history, creating a  trail of how code was reviewed before it shipped.<p>It&#x27;d be great if you could take a look, give it a try in your projects or teams and let me know what you think.<p>Happy to take feedback from the HN community and improve it over time!<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;HexmosTech&#x2F;git-lrc\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;HexmosTech&#x2F;git-lrc</a>",
-      "description": "Hi HN, I'm the author of git-lrc, would appreciate some feedback from the communityLast year my team started using AI coding tools more heavily, and we found ourselves generating tons of code, but spending less time looking at the stuff that's been generated.We felt like we were losing a bit of grip/understanding of what we were building. Regressions occasionally slipped through. Sometimes changes made it all the way to production only to be reverted later.We tried several AI code review tool..."
+      "description": "zkit — Go packages for building agents."
     }
   ],
-  "gh_trending": [
-    {
-      "name": "freeCodeCamp/freeCodeCamp",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-      "language": "TypeScript",
-      "stars": "448,514",
-      "today_stars": "640"
-    },
-    {
-      "name": "swc-project/swc",
-      "url": "https://github.com/swc-project/swc",
-      "description": "Rust-based platform for the Web",
-      "language": "Rust",
-      "stars": "33,960",
-      "today_stars": "21"
-    },
-    {
-      "name": "teslamate-org/teslamate",
-      "url": "https://github.com/teslamate-org/teslamate",
-      "description": "A self-hosted data logger for your Tesla 🚘 [main maintainer=@JakobLichterfeld]",
-      "language": "Elixir",
-      "stars": "8,395",
-      "today_stars": "214"
-    },
-    {
-      "name": "iptv-org/iptv",
-      "url": "https://github.com/iptv-org/iptv",
-      "description": "Collection of publicly available IPTV channels from all over the world",
-      "language": "TypeScript",
-      "stars": "123,987",
-      "today_stars": "1,196"
-    },
-    {
-      "name": "puppeteer/puppeteer",
-      "url": "https://github.com/puppeteer/puppeteer",
-      "description": "JavaScript API for Chrome and Firefox",
-      "language": "TypeScript",
-      "stars": "94,870",
-      "today_stars": "80"
-    },
-    {
-      "name": "meshery/meshery",
-      "url": "https://github.com/meshery/meshery",
-      "description": "Meshery, the cloud native manager",
-      "language": "TypeScript",
-      "stars": "10,833",
-      "today_stars": "229"
-    },
-    {
-      "name": "cypress-io/cypress",
-      "url": "https://github.com/cypress-io/cypress",
-      "description": "Fast, easy and reliable testing for anything that runs in a browser.",
-      "language": "TypeScript",
-      "stars": "50,188",
-      "today_stars": "11"
-    },
-    {
-      "name": "music-assistant/server",
-      "url": "https://github.com/music-assistant/server",
-      "description": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike.",
-      "language": "Python",
-      "stars": "2,550",
-      "today_stars": "157"
-    },
-    {
-      "name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
-      "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation",
-      "description": "Cross-platform GUI written in Rust using ADB to debloat non-rooted Android devices. Improve your privacy, the security and battery life of your device.",
-      "language": "Rust",
-      "stars": "7,270",
-      "today_stars": "146"
-    },
-    {
-      "name": "OpenBMB/VoxCPM",
-      "url": "https://github.com/OpenBMB/VoxCPM",
-      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
-      "language": "Python",
-      "stars": "30,106",
-      "today_stars": "413"
-    },
-    {
-      "name": "alibaba/zvec",
-      "url": "https://github.com/alibaba/zvec",
-      "description": "A lightweight, lightning-fast, in-process vector database",
-      "language": "C++",
-      "stars": "10,423",
-      "today_stars": "188"
-    },
-    {
-      "name": "rmyndharis/OpenWA",
-      "url": "https://github.com/rmyndharis/OpenWA",
-      "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
-      "language": "TypeScript",
-      "stars": "9,059",
-      "today_stars": "185"
-    },
-    {
-      "name": "n0-computer/iroh",
-      "url": "https://github.com/n0-computer/iroh",
-      "description": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
-      "language": "Rust",
-      "stars": "9,257",
-      "today_stars": "326"
-    }
-  ]
+  "gh_trending": []
 }
