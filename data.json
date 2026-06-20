@@ -4,9 +4,9 @@
     {
       "title": "Pre-2022 Books",
       "url": "https://notes.lorenzogravina.com/musings/pre-2022-books",
-      "score": 15,
+      "score": 17,
       "by": "trms",
-      "comments": 4,
+      "comments": 7,
       "hn_url": "https://news.ycombinator.com/item?id=48613631",
       "text": "",
       "description": "I noticed that I seem to, subconsciously, gravitate towards books published on or before 2022, and somewhat discount books published after, especially from authors I haven’t heard of."
@@ -44,7 +44,7 @@
     {
       "title": "Alice is impatient",
       "url": "https://brooker.co.za/blog/2026/06/19/waiting.html",
-      "score": 25,
+      "score": 27,
       "by": "birdculture",
       "comments": 5,
       "hn_url": "https://news.ycombinator.com/item?id=48612740",
@@ -74,7 +74,7 @@
     {
       "title": "PostgresBench: A Reproducible Benchmark for Postgres Services",
       "url": "https://clickhouse.com/blog/postgresbench",
-      "score": 58,
+      "score": 59,
       "by": "saisrirampur",
       "comments": 13,
       "hn_url": "https://news.ycombinator.com/item?id=48611942",
@@ -120,16 +120,6 @@
       "hn_url": "https://news.ycombinator.com/item?id=48610224",
       "text": "I&#x27;ve been building StartupWiki, a free startup database designed to make it easier to discover and research companies.<p>The original motivation was frustration with how difficult it can be to find information on early-stage startups. Most databases need accounts, or subscriptions, ro just feel too cluttered. I wanted a website that felt like Wikipedia, no accounts, no subscriptions, no weird metrics, just go in, the info is on the page.<p>The project is still very early, but currently includes:<p>Startup profiles\nSearch and filtering\nCompany categorization\nPublic API (in progress)<p>I&#x27;m especially interested in feedback on:<p>What information you look for when researching startups\nFeatures missing from existing startup databases\nAPI use cases<p>I&#x27;d love to hear feedback.",
       "description": "I've been building StartupWiki, a free startup database designed to make it easier to discover and research companies.The original motivation was frustration with how difficult it can be to find information on early-stage startups. Most databases need accounts, or subscriptions, ro just feel too cluttered. I wanted a website that felt like Wikipedia, no accounts, no subscriptions, no weird metrics, just go in, the info is on the page.The project is still very early, but currently includes:Sta..."
-    },
-    {
-      "title": "Stop calling the Super Productionizer a 'baby blender' – Frank Elavsky",
-      "url": "https://www.frank.computer/blog/2025/06/baby-blender.html",
-      "score": 6,
-      "by": "cratermoon",
-      "comments": 2,
-      "hn_url": "https://news.ycombinator.com/item?id=48613674",
-      "text": "",
-      "description": "Don’t critique Good Corp’s Super Productionizer (SP™) unless you can offer solutions to the problem. Otherwise, get out of my way."
     },
     {
       "title": "Show HN: Make PDFs look scanned (CLI or in the browser via WASM)",
@@ -196,10 +186,20 @@
       "url": "https://abcnews.com/US/tesla-allegedly-autopilot-mode-crashes-texas-house-woman/story?id=134062374",
       "score": 27,
       "by": "malshe",
-      "comments": 14,
+      "comments": 17,
       "hn_url": "https://news.ycombinator.com/item?id=48613481",
       "text": "",
       "description": "A driver in a Tesla vehicle that was allegedly in self-driving mode crashed into a Texas house Friday night, killing a woman who was inside the home, investigators said."
+    },
+    {
+      "title": "Show HN: We post-trained a model that pen tests instead of refusing",
+      "url": "https://www.argusred.com/cli",
+      "score": 60,
+      "by": "dk189",
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=48609231",
+      "text": "Anthropic and OpenAI&#x27;s publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.<p>AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.<p>Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from the foundation model where they will inherit its refusals.<p>For this project we&#x27;ve post-trained a specific model on a decade of capture-the-flag contests. This won&#x27;t be made available to anyone and everyone, but we do believe that responsible SMEs and midmarket companies also need access to these tools in order to identify key vulnerabilities in their systems; not just enterprises.<p>We have developed two modes that run over a CLI:<p>• Security scan: a read-only audit of your local codebase for vulnerabilities. It only reports what it can tie to a specific file and line, so you&#x27;re not wading through vibes-based findings.<p>• Pen test: an active adversarial mode that will try to break a live system in a sandboxed environment. It proves each vulnerability by running the exploit and showing the request it sent and the response your code gave back, not a confidence score. Currently gated.<p>To show what the scan does, we pointed it at Bank of Anthos and it found an integer overflow in the transfer path: amount is an int, and amount + fee can overflow negative, so the balance check passes and you move funds you don&#x27;t have. Plus the usual auth and secrets issues. (Bank of Anthos is Google&#x27;s open-source bank. It&#x27;s a known app and some of it is intentionally weak, which is the point: you can clone it and re-run the scan yourself instead of trusting a screenshot)<p>The base model is a Kimi K2.6 (open weights). We didn&#x27;t pretrain from scratch. We post-trained it ourselves, SFT on CTF writeups, then RL with verifiable rewards against actual exploit checks.<p>How the harness works:<p>Along with the model we built the harness to support this. The harness runs on a multi-agent swarm: an orchestrator splits the job across subagents running in parallel, each owning a slice, then synthesising one report.<p>The CLI is a local binary (brew&#x2F;curl). It reads your code locally, then sends context to our inference API over TLS tcpdump it and you&#x27;ll see exactly what leaves and where. Install is free; and you can run a scan for free up to 2m tokens, then need to pay for tokens beyond this.<p>For full disclosure this is a product part of Cosine (YC W23)<p>Up for debate: tool safety, e.g. domain verification is one method that proves control but not necessarily permission. How would you gate a pen-test tool given that?",
+      "description": "Anthropic and OpenAI's publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from ..."
     }
   ],
   "hn_ask": [
@@ -426,6 +426,16 @@
       "description": ""
     },
     {
+      "title": "Show HN: We post-trained a model that pen tests instead of refusing",
+      "url": "https://www.argusred.com/cli",
+      "score": 60,
+      "by": "dk189",
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=48609231",
+      "text": "Anthropic and OpenAI&#x27;s publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.<p>AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.<p>Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from the foundation model where they will inherit its refusals.<p>For this project we&#x27;ve post-trained a specific model on a decade of capture-the-flag contests. This won&#x27;t be made available to anyone and everyone, but we do believe that responsible SMEs and midmarket companies also need access to these tools in order to identify key vulnerabilities in their systems; not just enterprises.<p>We have developed two modes that run over a CLI:<p>• Security scan: a read-only audit of your local codebase for vulnerabilities. It only reports what it can tie to a specific file and line, so you&#x27;re not wading through vibes-based findings.<p>• Pen test: an active adversarial mode that will try to break a live system in a sandboxed environment. It proves each vulnerability by running the exploit and showing the request it sent and the response your code gave back, not a confidence score. Currently gated.<p>To show what the scan does, we pointed it at Bank of Anthos and it found an integer overflow in the transfer path: amount is an int, and amount + fee can overflow negative, so the balance check passes and you move funds you don&#x27;t have. Plus the usual auth and secrets issues. (Bank of Anthos is Google&#x27;s open-source bank. It&#x27;s a known app and some of it is intentionally weak, which is the point: you can clone it and re-run the scan yourself instead of trusting a screenshot)<p>The base model is a Kimi K2.6 (open weights). We didn&#x27;t pretrain from scratch. We post-trained it ourselves, SFT on CTF writeups, then RL with verifiable rewards against actual exploit checks.<p>How the harness works:<p>Along with the model we built the harness to support this. The harness runs on a multi-agent swarm: an orchestrator splits the job across subagents running in parallel, each owning a slice, then synthesising one report.<p>The CLI is a local binary (brew&#x2F;curl). It reads your code locally, then sends context to our inference API over TLS tcpdump it and you&#x27;ll see exactly what leaves and where. Install is free; and you can run a scan for free up to 2m tokens, then need to pay for tokens beyond this.<p>For full disclosure this is a product part of Cosine (YC W23)<p>Up for debate: tool safety, e.g. domain verification is one method that proves control but not necessarily permission. How would you gate a pen-test tool given that?",
+      "description": "Anthropic and OpenAI's publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from ..."
+    },
+    {
       "title": "Show HN: Tiny – An interpeted dynamic langauge with inline Go native functions",
       "url": "https://github.com/confh/Tiny",
       "score": 22,
@@ -436,19 +446,9 @@
       "description": ""
     },
     {
-      "title": "Show HN: We post-trained a model that pen tests instead of refusing",
-      "url": "https://www.argusred.com/cli",
-      "score": 59,
-      "by": "dk189",
-      "comments": 27,
-      "hn_url": "https://news.ycombinator.com/item?id=48609231",
-      "text": "Anthropic and OpenAI&#x27;s publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.<p>AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.<p>Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from the foundation model where they will inherit its refusals.<p>For this project we&#x27;ve post-trained a specific model on a decade of capture-the-flag contests. This won&#x27;t be made available to anyone and everyone, but we do believe that responsible SMEs and midmarket companies also need access to these tools in order to identify key vulnerabilities in their systems; not just enterprises.<p>We have developed two modes that run over a CLI:<p>• Security scan: a read-only audit of your local codebase for vulnerabilities. It only reports what it can tie to a specific file and line, so you&#x27;re not wading through vibes-based findings.<p>• Pen test: an active adversarial mode that will try to break a live system in a sandboxed environment. It proves each vulnerability by running the exploit and showing the request it sent and the response your code gave back, not a confidence score. Currently gated.<p>To show what the scan does, we pointed it at Bank of Anthos and it found an integer overflow in the transfer path: amount is an int, and amount + fee can overflow negative, so the balance check passes and you move funds you don&#x27;t have. Plus the usual auth and secrets issues. (Bank of Anthos is Google&#x27;s open-source bank. It&#x27;s a known app and some of it is intentionally weak, which is the point: you can clone it and re-run the scan yourself instead of trusting a screenshot)<p>The base model is a Kimi K2.6 (open weights). We didn&#x27;t pretrain from scratch. We post-trained it ourselves, SFT on CTF writeups, then RL with verifiable rewards against actual exploit checks.<p>How the harness works:<p>Along with the model we built the harness to support this. The harness runs on a multi-agent swarm: an orchestrator splits the job across subagents running in parallel, each owning a slice, then synthesising one report.<p>The CLI is a local binary (brew&#x2F;curl). It reads your code locally, then sends context to our inference API over TLS tcpdump it and you&#x27;ll see exactly what leaves and where. Install is free; and you can run a scan for free up to 2m tokens, then need to pay for tokens beyond this.<p>For full disclosure this is a product part of Cosine (YC W23)<p>Up for debate: tool safety, e.g. domain verification is one method that proves control but not necessarily permission. How would you gate a pen-test tool given that?",
-      "description": "Anthropic and OpenAI's publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from ..."
-    },
-    {
       "title": "Show HN: My Windows XP portfolio with working Game Boy and iPod",
       "url": "https://mitchivin.com/",
-      "score": 40,
+      "score": 41,
       "by": "mitchivin",
       "comments": 18,
       "hn_url": "https://news.ycombinator.com/item?id=48612095",
@@ -458,7 +458,7 @@
     {
       "title": "Show HN: TLA+ Process Studio",
       "url": "https://tlaplus-process-studio.com/?example=meeting-lifecycle",
-      "score": 4,
+      "score": 5,
       "by": "uptodatenews",
       "comments": 0,
       "hn_url": "https://news.ycombinator.com/item?id=48613645",
@@ -526,16 +526,6 @@
       "description": "At Cajal (YC W26) we’re excited to share Talos (https://github.com/cajal-technologies/talos), an open source framework for formal verification of WebAssembly modules in Lean.AI is now writing tons of the code that gets pushed to production. As code generation gets cheaper, verification becomes the bottleneck. We believe in a future where every piece of software comes with a mathematical proof that it does what its author intended - in doing so, eliminating many classes of exploits. Talos is p..."
     },
     {
-      "title": "Show HN: An n8n alternative where coding agents build the workflows, not humans",
-      "url": "https://velane.sh/",
-      "score": 3,
-      "by": "abhishekraj272",
-      "comments": 0,
-      "hn_url": "https://news.ycombinator.com/item?id=48611785",
-      "text": "n8n is built for humans dragging nodes on a canvas. That breaks down at B2B scale (embedding in a product, multi-tenant scalability, etc). n8n does have an MCP server so agents can create workflows too, but it outputs raw JSON. That&#x27;s fine for n8n&#x27;s engine, but painful for a coding agent (or a human reviewing its output) to read, write, diff, or debug.<p>I&#x27;m building an alternative where workflows are authored by a coding agent in [a more dev-legible format] instead of JSON blobs, and execute it at scale.",
-      "description": "n8n is built for humans dragging nodes on a canvas. That breaks down at B2B scale (embedding in a product, multi-tenant scalability, etc). n8n does have an MCP server so agents can create workflows too, but it outputs raw JSON. That's fine for n8n's engine, but painful for a coding agent (or a human reviewing its output) to read, write, diff, or debug.I'm building an alternative where workflows are authored by a coding agent in [a more dev-legible format] instead of JSON blobs, and execute it..."
-    },
-    {
       "title": "Show HN: Metiq: a real time 3D globe for 100 public datasets",
       "url": "https://metiq.space",
       "score": 141,
@@ -544,6 +534,16 @@
       "hn_url": "https://news.ycombinator.com/item?id=48556082",
       "text": "The concept for metiq.space came after playing Global Magnates with friends and realizing how fragmented live global data is. ships, aircraft, satellites, ports, weather, hazards, infrastructure, cyber, and public datasets all exist, but they usually live in separate tools and maps.<p>The goal was to build one interactive 3D globe where live public data could be visualized by latitude, longitude, and altitude. Surface data stays on the globe, while aircraft, satellites, and other above surface things can be represented in actual 3D space instead of being flattened onto a map.<p>The outcome is an interactive globe that showcases Earth, air, sea, space, cyber, defense, infrastructure, politics, and the list is continuously growing.<p>Majority of development right now is going into data filtering and deduping.",
       "description": "The concept for metiq.space came after playing Global Magnates with friends and realizing how fragmented live global data is. ships, aircraft, satellites, ports, weather, hazards, infrastructure, cyber, and public datasets all exist, but they usually live in separate tools and maps.The goal was to build one interactive 3D globe where live public data could be visualized by latitude, longitude, and altitude. Surface data stays on the globe, while aircraft, satellites, and other above surface t..."
+    },
+    {
+      "title": "Show HN: An n8n alternative where coding agents build the workflows, not humans",
+      "url": "https://velane.sh/",
+      "score": 3,
+      "by": "abhishekraj272",
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=48611785",
+      "text": "n8n is built for humans dragging nodes on a canvas. That breaks down at B2B scale (embedding in a product, multi-tenant scalability, etc). n8n does have an MCP server so agents can create workflows too, but it outputs raw JSON. That&#x27;s fine for n8n&#x27;s engine, but painful for a coding agent (or a human reviewing its output) to read, write, diff, or debug.<p>I&#x27;m building an alternative where workflows are authored by a coding agent in [a more dev-legible format] instead of JSON blobs, and execute it at scale.",
+      "description": "n8n is built for humans dragging nodes on a canvas. That breaks down at B2B scale (embedding in a product, multi-tenant scalability, etc). n8n does have an MCP server so agents can create workflows too, but it outputs raw JSON. That's fine for n8n's engine, but painful for a coding agent (or a human reviewing its output) to read, write, diff, or debug.I'm building an alternative where workflows are authored by a coding agent in [a more dev-legible format] instead of JSON blobs, and execute it..."
     },
     {
       "title": "Show HN: Cody – Voice control for Neovim using its own commands, LSP",
@@ -612,7 +612,7 @@
       "url": "https://github.com/palmier-io/palmier-pro",
       "description": "macOS video editor built for AI",
       "language": "Swift",
-      "stars": "3,272",
+      "stars": "3,273",
       "today_stars": "904"
     },
     {
@@ -620,7 +620,7 @@
       "url": "https://github.com/penpot/penpot",
       "description": "Penpot: The open-source design tool for design and code collaboration",
       "language": "Clojure",
-      "stars": "51,360",
+      "stars": "51,362",
       "today_stars": "424"
     },
     {
@@ -644,7 +644,7 @@
       "url": "https://github.com/DeusData/codebase-memory-mcp",
       "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
       "language": "C",
-      "stars": "9,284",
+      "stars": "9,285",
       "today_stars": "1,267"
     },
     {
@@ -676,7 +676,7 @@
       "url": "https://github.com/tw93/Pake",
       "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
       "language": "Rust",
-      "stars": "54,617",
+      "stars": "54,619",
       "today_stars": "2,398"
     },
     {
@@ -684,7 +684,7 @@
       "url": "https://github.com/chopratejas/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
       "language": "Python",
-      "stars": "41,743",
+      "stars": "41,747",
       "today_stars": "3,786"
     },
     {
@@ -708,7 +708,7 @@
       "url": "https://github.com/mattpocock/skills",
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
       "language": "Shell",
-      "stars": "138,143",
+      "stars": "138,144",
       "today_stars": "1,360"
     },
     {
