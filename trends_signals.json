@@ -1,95 +1,75 @@
 {
-  "date": "2026-06-19",
-  "slug": "trends-daily-2026-06-19",
+  "date": "2026-06-20",
+  "slug": "trends-daily-2026-06-20",
   "hn_signals": {
     "top": [
       {
-        "title": "Noam Shazeer Joins OpenAI",
-        "url": "https://twitter.com/NoamShazeer/status/2067400851438932297",
-        "score": 239,
-        "comments": 208,
-        "by": "lukasgross",
-        "hn_url": "https://news.ycombinator.com/item?id=48578913",
+        "title": "Norway imposes near ban on AI in elementary school",
+        "url": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/",
+        "score": 220,
+        "comments": 150,
+        "by": "ilreb",
+        "hn_url": "https://news.ycombinator.com/item?id=48600093",
         "reason": "ai_keyword:ai",
-        "description": "https://xcancel.com/NoamShazeer/status/2067400851438932297https://www.reuters.com/technology/googles-gemini-co-lead-no..."
+        "description": ""
       },
       {
-        "title": "The Korean telecom giant at the center of Anthropic's Mythos controversy",
-        "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+        "title": "Hyundai buys Boston Dynamics",
+        "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
+        "score": 565,
+        "comments": 266,
+        "by": "ck2",
+        "hn_url": "https://news.ycombinator.com/item?id=48600312",
+        "reason": "ai_keyword:ai",
+        "description": "Hyundai Motor Group is acquiring SoftBank's remaining 9.65% stake in Boston Dynamics for $325 million, completing its full ownership of the robotics"
+      },
+      {
+        "title": "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
+        "url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
+        "score": 524,
+        "comments": 322,
+        "by": "philonoist",
+        "hn_url": "https://news.ycombinator.com/item?id=48595511",
+        "reason": "ai_keyword:ai",
+        "description": "The new JVM Weekly is here... and Ragnarok seems to come, as we finally have Valhalla in the JDK. However, situation is a bit... nuanced."
+      },
+      {
+        "title": "A new bill takes aim at government pressure to silence lawful online speech",
+        "url": "https://www.eff.org/deeplinks/2026/06/new-bill-takes-aim-government-pressure-silence-lawful-online-speech",
+        "score": 206,
+        "comments": 113,
+        "by": "hn_acker",
+        "hn_url": "https://news.ycombinator.com/item?id=48600950",
+        "reason": "ai_keyword:ai",
+        "description": "The bipartisan legislation creates a federal cause of action against government officials who coerce or attempt to coerce broadcasters, interactive computer services, or AI providers into taking actions against lawful, First-Amendment-protected speech, and establishes a transparency system for government communications with those intermediaries about user expression."
+      },
+      {
+        "title": "Court Records Should Be Free",
+        "url": "https://www.eff.org/deeplinks/2026/06/court-records-should-be-free",
+        "score": 160,
+        "comments": 28,
+        "by": "hn_acker",
+        "hn_url": "https://news.ycombinator.com/item?id=48600946",
+        "reason": "signal:free",
+        "description": "Court records belong to the public. Yet anyone seeking access to federal court filings through PACER, a government software system that stands for Public Access to Court Electronic Records, is usually required to pay hefty fees to search for and view documents. PACER’s fees have long acted as a..."
+      },
+      {
+        "title": "Show HN: Metiq: a real time 3D globe for 100 public datasets",
+        "url": "https://metiq.space",
         "score": 70,
-        "comments": 41,
-        "by": "dstala",
-        "hn_url": "https://news.ycombinator.com/item?id=48584484",
-        "reason": "ai_keyword:anthropic",
-        "description": "https://web.archive.org/web/20260618100028/https://www.wired..."
-      },
-      {
-        "title": "Ubiquiti: Enterprise NAS, Built on ZFS",
-        "url": "https://blog.ui.com/article/introducing-enterprise-nas",
-        "score": 229,
-        "comments": 209,
-        "by": "ksec",
-        "hn_url": "https://news.ycombinator.com/item?id=48585866",
-        "reason": "ai_keyword:rag",
-        "description": "Discover ENAS, the license-free enterprise storage platform featuring native ZFS, secure UniFi management, scalable petabyte-class capacity, multi-site backups, and shared iSCSI storage for modern business infrastructure."
-      },
-      {
-        "title": "Swiss parliament lifts ban on new nuclear power plants",
-        "url": "https://www.bluewin.ch/en/news/switzerland/parliament-lifts-ban-on-new-nuclear-power-plants-3257535.html",
-        "score": 638,
-        "comments": 488,
-        "by": "leonidasrup",
-        "hn_url": "https://news.ycombinator.com/item?id=48585746",
+        "comments": 19,
+        "by": "rakeda",
+        "hn_url": "https://news.ycombinator.com/item?id=48556082",
         "reason": "ai_keyword:ai",
-        "description": "Things will be bustling again at the Federal Palace in Bern through June 19. Numerous important issues will be on the agenda during the summer session of the National Council and Council of States."
-      },
-      {
-        "title": "The Token Compression Illusion: Why I'm Skeptical of RTK",
-        "url": "https://mroczek.dev/articles/the-token-compression-illusion-why-im-skeptical-of-rtk/",
-        "score": 65,
-        "comments": 72,
-        "by": "lackoftactics",
-        "hn_url": "https://news.ycombinator.com/item?id=48588755",
-        "reason": "ai_keyword:agent",
-        "description": "RTK promises dramatic token savings for coding agents, but raw terminal compression is not the same as cheaper, safer, or more accurate software engineering."
-      },
-      {
-        "title": "Migrating from GNU Stow to Chezmoi",
-        "url": "https://rednafi.com/misc/chezmoi/",
-        "score": 85,
-        "comments": 91,
-        "by": "speckx",
-        "hn_url": "https://news.ycombinator.com/item?id=48588413",
-        "reason": "ai_keyword:ai",
-        "description": "Why I swapped GNU stow's symlink farm for chezmoi: one command to bootstrap a Mac with Homebrew packages and macOS settings, a small daily sync loop, and agent skills shared between Claude Code and Codex."
-      },
-      {
-        "title": "Show HN: Are You in the Weights?",
-        "url": "https://www.intheweights.com/",
-        "score": 109,
-        "comments": 83,
-        "by": "turtlesoup",
-        "hn_url": "https://news.ycombinator.com/item?id=48591348",
-        "reason": "ai_keyword:llm",
-        "description": "With more traffic moving off-web and into LLMs, I got curious about what traces we leave \"in the weights\". My design partner and I built a site in the past few weeks that checks recognition across frontier and small models. It queries many of them in parallel, clusters the responses, and tells you how strongly they recognize you. Happy to answer any questions here!"
-      },
-      {
-        "title": "Launch HN: TesterArmy (YC P26) – Agents that test web and mobile apps",
-        "url": "https://tester.army",
-        "score": 90,
-        "comments": 40,
-        "by": "okwasniewski",
-        "hn_url": "https://news.ycombinator.com/item?id=48586299",
-        "reason": "ai_keyword:ai",
-        "description": "Hey HN - we’re Oskar, Szymon, and Piotr, and we’re building TesterArmy (https://tester.army). TesterArmy is an agentic testing platform that runs end-to-end checks before deployment and in production. Instead of wasting hours on manual testing or maintaining static scripts, we let you specify your tests in natural language and handle everything in between. We've built the platform fully around agents. Our agent will reliably execute the tests, but your coding agent can manage everything in ou..."
+        "description": "The concept for metiq.space came after playing Global Magnates with friends and realizing how fragmented live global data is. ships, aircraft, satellites, ports, weather, hazards, infrastructure, cyber, and public datasets all exist, but they usually live in separate tools and maps.The goal was to build one interactive 3D globe where live public data could be visualized by latitude, longitude, and altitude. Surface data stays on the globe, while aircraft, satellites, and other above surface t..."
       }
     ],
     "ask": [
       {
         "title": "Ask HN: Is anyone using the A2A protocol?",
         "url": "https://news.ycombinator.com/item?id=48582679",
-        "score": 58,
-        "comments": 29,
+        "score": 89,
+        "comments": 41,
         "by": "asim",
         "hn_url": "https://news.ycombinator.com/item?id=48582679",
         "reason": "ai_keyword:agent",
@@ -98,8 +78,8 @@
       {
         "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
         "url": "https://news.ycombinator.com/item?id=48542100",
-        "score": 1295,
-        "comments": 550,
+        "score": 1304,
+        "comments": 558,
         "by": "cloudking",
         "hn_url": "https://news.ycombinator.com/item?id=48542100",
         "reason": "ai_keyword:ai",
@@ -108,7 +88,7 @@
       {
         "title": "Ask HN: How are thinking efforts implemented?",
         "url": "https://news.ycombinator.com/item?id=48434240",
-        "score": 103,
+        "score": 104,
         "comments": 31,
         "by": "simianwords",
         "hn_url": "https://news.ycombinator.com/item?id=48434240",
@@ -118,8 +98,8 @@
       {
         "title": "I indexed 669 GB of my GoPro videos using my M1 Max computer and local ML models",
         "url": "https://news.ycombinator.com/item?id=48528029",
-        "score": 435,
-        "comments": 114,
+        "score": 436,
+        "comments": 115,
         "by": "iliashad",
         "hn_url": "https://news.ycombinator.com/item?id=48528029",
         "reason": "ai_keyword:ai",
@@ -129,39 +109,69 @@
         "title": "Ask HN: What are you working on? (June 2026)",
         "url": "https://news.ycombinator.com/item?id=48528779",
         "score": 310,
-        "comments": 1130,
+        "comments": 1137,
         "by": "david927",
         "hn_url": "https://news.ycombinator.com/item?id=48528779",
         "reason": "signal:new",
         "description": "What are you working on? Any new ideas that you're thinking about?"
+      },
+      {
+        "title": "Ask HN: Why hasn't there been a real competitor to Ticketmaster yet?",
+        "url": "https://news.ycombinator.com/item?id=48448313",
+        "score": 265,
+        "comments": 240,
+        "by": "mdni007",
+        "hn_url": "https://news.ycombinator.com/item?id=48448313",
+        "reason": "tool:platform",
+        "description": "It feels like every event/venue is selling tickets exclusively through Ticketmaster.  Every other ticketing platform seems to only hold resale tickets in their inventory which just transfers the tickets to your Ticketmaster account when bought. With all the hate Ticketmaster has gotten and all the other ticketing platforms out there, I'm surprised Ticketmaster still has a hold of pretty much the entire market. How are they doing this? Why haven't the other platforms been able to compete?"
       }
     ],
     "show": [
       {
-        "title": "Show HN: Are You in the Weights?",
-        "url": "https://www.intheweights.com/",
-        "score": 109,
-        "comments": 83,
-        "by": "turtlesoup",
-        "hn_url": "https://news.ycombinator.com/item?id=48591348",
-        "reason": "ai_keyword:llm",
-        "description": "With more traffic moving off-web and into LLMs, I got curious about what traces we leave \"in the weights\". My design partner and I built a site in the past few weeks that checks recognition across frontier and small models. It queries many of them in parallel, clusters the responses, and tells you how strongly they recognize you. Happy to answer any questions here!"
+        "title": "Show HN: Metiq: a real time 3D globe for 100 public datasets",
+        "url": "https://metiq.space",
+        "score": 70,
+        "comments": 19,
+        "by": "rakeda",
+        "hn_url": "https://news.ycombinator.com/item?id=48556082",
+        "reason": "ai_keyword:ai",
+        "description": "The concept for metiq.space came after playing Global Magnates with friends and realizing how fragmented live global data is. ships, aircraft, satellites, ports, weather, hazards, infrastructure, cyber, and public datasets all exist, but they usually live in separate tools and maps.The goal was to build one interactive 3D globe where live public data could be visualized by latitude, longitude, and altitude. Surface data stays on the globe, while aircraft, satellites, and other above surface t..."
+      },
+      {
+        "title": "Show HN: Talos – Open-source WASM interpreter for Lean",
+        "url": "https://github.com/cajal-technologies/talos",
+        "score": 91,
+        "comments": 21,
+        "by": "mfornet",
+        "hn_url": "https://news.ycombinator.com/item?id=48584761",
+        "reason": "ai_keyword:ai",
+        "description": "At Cajal (YC W26) we’re excited to share Talos (https://github.com/cajal-technologies/talos), an open source framework for formal verification of WebAssembly modules in Lean.AI is now writing tons of the code that gets pushed to production. As code generation gets cheaper, verification becomes the bottleneck. We believe in a future where every piece of software comes with a mathematical proof that it does what its author intended - in doing so, eliminating many classes of exploits. Talos is p..."
       },
       {
         "title": "Show HN: Gerrymandle - Daily puzzle game where you redraw electoral districts",
         "url": "https://gerrymandle.cc/",
-        "score": 116,
-        "comments": 56,
+        "score": 201,
+        "comments": 76,
         "by": "realmofthemad",
         "hn_url": "https://news.ycombinator.com/item?id=48585739",
         "reason": "ai_keyword:ai",
         "description": "Draw districts and win the election. A new puzzle every day."
       },
       {
+        "title": "Show HN: Are You in the Weights?",
+        "url": "https://www.intheweights.com/",
+        "score": 433,
+        "comments": 238,
+        "by": "turtlesoup",
+        "hn_url": "https://news.ycombinator.com/item?id=48591348",
+        "reason": "ai_keyword:llm",
+        "description": "With more traffic moving off-web and into LLMs, I got curious about what traces we leave \"in the weights\". My design partner and I built a site in the past few weeks that checks recognition across frontier and small models. It queries many of them in parallel, clusters the responses, and tells you how strongly they recognize you. Happy to answer any questions here!"
+      },
+      {
         "title": "Show HN: An 8-bit live gamecast for baseball",
         "url": "https://ribbie.tv/watch",
-        "score": 240,
-        "comments": 131,
+        "score": 251,
+        "comments": 137,
         "by": "brownrout",
         "hn_url": "https://news.ycombinator.com/item?id=48573012",
         "reason": "ai_keyword:ai",
@@ -170,8 +180,8 @@
       {
         "title": "Show HN: We built an 8-bit CPU as 2nd year EE students",
         "url": "https://github.com/c0rRupT9/STEPLA-1",
-        "score": 99,
-        "comments": 34,
+        "score": 104,
+        "comments": 45,
         "by": "CorRupT9",
         "hn_url": "https://news.ycombinator.com/item?id=48546549",
         "reason": "tool:show hn",
@@ -180,44 +190,150 @@
       {
         "title": "Show HN: High-Res Neural Cellular Automata",
         "url": "https://cells2pixels.github.io/",
-        "score": 198,
-        "comments": 52,
+        "score": 201,
+        "comments": 53,
         "by": "esychology",
         "hn_url": "https://news.ycombinator.com/item?id=48567877",
         "reason": "ai_keyword:model",
         "description": "Neural CAs model self-organizing pattern formation.Now they can generate patterns at HD resolution in real-time, enabled by turning each CA cell into a Neural Field.Try 3 demos: grow a pattern from a seed (and damage it, it heals), synthesize PBR textures that can regenerate, or create 3D textures like clouds."
-      },
-      {
-        "title": "Show HN: Capacitor Alarm Clock",
-        "url": "https://github.com/ArcaEge/capacitor-alarm-clock",
-        "score": 149,
-        "comments": 45,
-        "by": "arcaege",
-        "hn_url": "https://news.ycombinator.com/item?id=48526174",
-        "reason": "ai_keyword:ai",
-        "description": "I made an alarm clock that blows up capacitors to wake you up.There are more details on the Github repo but it's made from an esp32-c3 as the microcontroller, with 3 capacitor slots. There are relays on each capacitor slot to put 15v reverse voltage on the capacitor, with 5.1 ohm resistors on each slot for current limiting in case the capacitor shorts out. I also chucked in an SSD1315 OLED to show the time and a menu to configure it, although there's a web UI as well. The esp32 also means you..."
-      },
-      {
-        "title": "Show HN: Inkwash, a watercolor sketching app and explanation",
-        "url": "https://johnowhitaker.github.io/inkwash/about",
-        "score": 243,
-        "comments": 28,
-        "by": "Yenrabbit",
-        "hn_url": "https://news.ycombinator.com/item?id=48523534",
-        "reason": "tool:app",
-        "description": "I've made a drawing app based on my physical sketching practice, using fluid sim and some shader tricks to mimic watercolor-style ink washes. Best used on iPad or with a drawing tablet. The linked article shows how the core engine works, with plenty of little interactive demos. It was fun to make, sharing in hopes others find it fun too :)"
-      },
-      {
-        "title": "Show HN: cuTile Rust: Safe, data-race-free GPU kernels in Rust",
-        "url": "https://github.com/nvlabs/cutile-rs",
-        "score": 105,
-        "comments": 18,
-        "by": "melihelibol",
-        "hn_url": "https://news.ycombinator.com/item?id=48561410",
-        "reason": "ai_keyword:rust",
-        "description": ""
       }
     ]
   },
-  "gh_signals": []
+  "gh_signals": [
+    {
+      "name": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "stars": "8,166",
+      "today_stars": "1,055",
+      "language": "C",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "google-research/timesfm",
+      "url": "https://github.com/google-research/timesfm",
+      "stars": "24,062",
+      "today_stars": "1,516",
+      "language": "Python",
+      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "palmier-io/palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "stars": "1,833",
+      "today_stars": "749",
+      "language": "Swift",
+      "description": "macOS video editor built for AI",
+      "reason": "high_stars"
+    },
+    {
+      "name": "koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "stars": "57,201",
+      "today_stars": "300",
+      "language": "TypeScript",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "reason": "high_stars"
+    },
+    {
+      "name": "aishwaryanr/awesome-generative-ai-guide",
+      "url": "https://github.com/aishwaryanr/awesome-generative-ai-guide",
+      "stars": "27,596",
+      "today_stars": "155",
+      "language": "HTML",
+      "description": "A one stop repository for generative AI research updates, interview resources, notebooks and much more!",
+      "reason": "high_stars"
+    },
+    {
+      "name": "BuilderIO/agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "stars": "1,013",
+      "today_stars": "210",
+      "language": "TypeScript",
+      "description": "A framework for building agent-native applications.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "chopratejas/headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "stars": "38,530",
+      "today_stars": "3,938",
+      "language": "Python",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": "6,243",
+      "today_stars": "236",
+      "language": "Python",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "zai-org/GLM-5",
+      "url": "https://github.com/zai-org/GLM-5",
+      "stars": "4,554",
+      "today_stars": "478",
+      "language": "",
+      "description": "GLM-5: From Vibe Coding to Agentic Engineering",
+      "reason": "high_stars"
+    },
+    {
+      "name": "withastro/flue",
+      "url": "https://github.com/withastro/flue",
+      "stars": "5,816",
+      "today_stars": "305",
+      "language": "TypeScript",
+      "description": "The sandbox agent framework.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "n0-computer/iroh",
+      "url": "https://github.com/n0-computer/iroh",
+      "stars": "10,242",
+      "today_stars": "307",
+      "language": "Rust",
+      "description": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": "233,305",
+      "today_stars": "1,113",
+      "language": "Shell",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "penpot/penpot",
+      "url": "https://github.com/penpot/penpot",
+      "stars": "50,568",
+      "today_stars": "213",
+      "language": "Clojure",
+      "description": "Penpot: The open-source design tool for design and code collaboration",
+      "reason": "high_stars"
+    },
+    {
+      "name": "Kong/insomnia",
+      "url": "https://github.com/Kong/insomnia",
+      "stars": "38,960",
+      "today_stars": "291",
+      "language": "TypeScript",
+      "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "Lightricks/LTX-2",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "stars": "7,660",
+      "today_stars": "196",
+      "language": "Python",
+      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
+      "reason": "high_stars"
+    }
+  ]
 }
