@@ -1,117 +1,137 @@
 {
-  "date": "2026-06-21",
-  "slug": "trends-daily-2026-06-21",
+  "date": "2026-06-22",
+  "slug": "trends-daily-2026-06-22",
   "hn_signals": {
     "top": [
       {
-        "title": "SMPTE Makes Its Standards Freely Accessible",
-        "url": "https://www.smpte.org/blog/smpte-makes-its-standards-freely-accessible-openingstandards-library-to-the-global-media-technology-community",
-        "score": 200,
-        "comments": 57,
-        "by": "zdw",
-        "hn_url": "https://news.ycombinator.com/item?id=48610827",
+        "title": "Apertus – Open Foundation Model for Sovereign AI",
+        "url": "https://apertvs.ai/",
+        "score": 90,
+        "comments": 22,
+        "by": "T-A",
+        "hn_url": "https://news.ycombinator.com/item?id=48622778",
         "reason": "ai_keyword:ai",
-        "description": "WHITE PLAINS, N.Y. — June 17, 2026 — SMPTE®, the home of media professionals, technologists and engineers, has announced that its entire Standards catalog is now freely available to the global media technology community."
+        "description": "Fully Open Foundation Model for Sovereign AI"
       },
       {
-        "title": "UHF X11: X11 Built for VisionOS and Apple Vision Pro",
-        "url": "https://www.lispm.net/apps/uhf-x11/",
-        "score": 136,
-        "comments": 18,
-        "by": "zdw",
-        "hn_url": "https://news.ycombinator.com/item?id=48610853",
+        "title": "JSON-LD Explained for Personal Websites",
+        "url": "https://hawksley.dev/blog/json-ld-explained-for-personal-websites/",
+        "score": 129,
+        "comments": 34,
+        "by": "ethanhawksley",
+        "hn_url": "https://news.ycombinator.com/item?id=48621517",
+        "reason": "ai_keyword:ai",
+        "description": "A guide to implementing JSON-LD on your personal website for better SEO, covering WebSite, Person, BlogPosting, and more with ready-to-use code snippets."
+      },
+      {
+        "title": "Prefer duplication over the wrong abstraction (2016)",
+        "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+        "score": 398,
+        "comments": 269,
+        "by": "rafaepta",
+        "hn_url": "https://news.ycombinator.com/item?id=48620090",
+        "reason": "ai_keyword:ai",
+        "description": "I've been thinking about the consequences of the \"wrong abstraction.\"  My RailsConf 2014 \"all the little things\" talk included a section where I asserted:  > duplication is far cheaper than the wrong abstraction  And in the summary, I went on to advise:  >"
+      },
+      {
+        "title": "Identity verification on Claude",
+        "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+        "score": 490,
+        "comments": 444,
+        "by": "bathory",
+        "hn_url": "https://news.ycombinator.com/item?id=48618455",
+        "reason": "ai_keyword:ai",
+        "description": "https://old.reddit.com/r/ClaudeAI/comments/1ubm53n/official_..."
+      },
+      {
+        "title": "Beyond All Reason (Free Total Annihilation Inspired RTS)",
+        "url": "https://www.beyondallreason.info",
+        "score": 409,
+        "comments": 242,
+        "by": "mosiuerbarso",
+        "hn_url": "https://news.ycombinator.com/item?id=48617990",
+        "reason": "ai_keyword:ai",
+        "description": "Beyond All Reason is the ultimate epic-scale RTS game for Windows and Linux. Command colossal armies in battles with thousands of units in fully simulated environments. Wage war across land, sea, and air with 2 factions and 400 unique units. Enjoy skirmishes, scenarios, co-op, and multiplayer matches. Play for FREE now!"
+      },
+      {
+        "title": "(How to Write a (Lisp) Interpreter (In Python)) (2010)",
+        "url": "https://norvig.com/lispy.html",
+        "score": 158,
+        "comments": 46,
+        "by": "tosh",
+        "hn_url": "https://news.ycombinator.com/item?id=48619831",
+        "reason": "ai_keyword:python",
+        "description": ""
+      },
+      {
+        "title": "The minimum viable unit of saleable software",
+        "url": "https://brandur.org/minimum-viable-unit",
+        "score": 100,
+        "comments": 46,
+        "by": "brandur",
+        "hn_url": "https://news.ycombinator.com/item?id=48620342",
+        "reason": "ai_keyword:llm",
+        "description": "LLMs made software cheaper to build, but not free. A look at the new buy-vs-build math of the LLM age, and the pricing zone where small software businesses can still survive."
+      },
+      {
+        "title": "An Embedded Linux on a Single Floppy",
+        "url": "https://github.com/w84death/floppinux",
+        "score": 50,
+        "comments": 21,
+        "by": "modinfo",
+        "hn_url": "https://news.ycombinator.com/item?id=48594090",
+        "reason": "ai_keyword:embed",
+        "description": ""
+      },
+      {
+        "title": "Tell HN: Happy Fathers Day",
+        "url": "https://news.ycombinator.com/item?id=48620502",
+        "score": 211,
+        "comments": 28,
+        "by": "consumer451",
+        "hn_url": "https://news.ycombinator.com/item?id=48620502",
         "reason": "tool:app",
-        "description": "UHF X11 is a native X11 server for Apple Vision Pro. Run classic Unix and workstation software in spatial windows on visionOS."
-      },
-      {
-        "title": "PostgresBench: A Reproducible Benchmark for Postgres Services",
-        "url": "https://clickhouse.com/blog/postgresbench",
-        "score": 58,
-        "comments": 13,
-        "by": "saisrirampur",
-        "hn_url": "https://news.ycombinator.com/item?id=48611942",
-        "reason": "ai_keyword:postgres",
-        "description": "Discover how Postgres managed by ClickHouse compares to its peers in a reproducible, open benchmark."
-      },
-      {
-        "title": "The Wholesale Plagiarism of Obscure Sorrows",
-        "url": "https://waxy.org/2026/06/the-wholesale-plagiarism-of-obscure-sorrows/",
-        "score": 291,
-        "comments": 126,
-        "by": "ridesisapis",
-        "hn_url": "https://news.ycombinator.com/item?id=48611411",
-        "reason": "ai_keyword:ai",
-        "description": "Without permission, a marketing agency republished the entirety of John Koenig's Dictionary of Obscure Sorrows book, replacing its art with AI slop and adding new AI words. Their unauthorized site now ranks higher than the real one everywhere."
-      },
-      {
-        "title": "Show HN: StartupWiki – A Free Alternative to Crunchbase",
-        "url": "https://startupwiki.tech/",
-        "score": 132,
-        "comments": 38,
-        "by": "shpran",
-        "hn_url": "https://news.ycombinator.com/item?id=48610224",
-        "reason": "ai_keyword:rust",
-        "description": "I've been building StartupWiki, a free startup database designed to make it easier to discover and research companies.The original motivation was frustration with how difficult it can be to find information on early-stage startups. Most databases need accounts, or subscriptions, ro just feel too cluttered. I wanted a website that felt like Wikipedia, no accounts, no subscriptions, no weird metrics, just go in, the info is on the page.The project is still very early, but currently includes:Sta..."
-      },
-      {
-        "title": "Show HN: Make PDFs look scanned (CLI or in the browser via WASM)",
-        "url": "https://github.com/overflowy/make-look-scanned",
-        "score": 65,
-        "comments": 32,
-        "by": "overflowy",
-        "hn_url": "https://news.ycombinator.com/item?id=48611513",
-        "reason": "tool:cli",
-        "description": ""
-      },
-      {
-        "title": "Bun has an open PR adding shared-memory threads to JavaScriptCore",
-        "url": "https://github.com/oven-sh/WebKit/pull/249",
-        "score": 98,
-        "comments": 158,
-        "by": "gr4vityWall",
-        "hn_url": "https://news.ycombinator.com/item?id=48610841",
-        "reason": "ai_keyword:javascript",
-        "description": ""
-      },
-      {
-        "title": "Temporary Cloudflare accounts for AI agents",
-        "url": "https://blog.cloudflare.com/temporary-accounts/",
-        "score": 141,
-        "comments": 87,
-        "by": "farhadhf",
-        "hn_url": "https://news.ycombinator.com/item?id=48608394",
-        "reason": "ai_keyword:ai",
-        "description": "The moment an agent needs to deploy something, it slams face-first into a wall built for humans. Today we're rolling out Temporary Accounts on Cloudflare Workers. Any agent can now run wrangler deploy â temporary and get a live Worker in seconds."
+        "description": "My shortened story: due to factors in Soviet controlled Poland, my uncle played my dad role.He took me to a quarry to fire Estes-style rocket cars, and all that.. he also managed to steal a Milicja (military police) siren from work, and put it on the back of my banana style bike. As an EE, he made it actually function.Thanks to all the hackers who made us who we are."
       }
     ],
     "ask": [
       {
+        "title": "Tell HN: Happy Fathers Day",
+        "url": "https://news.ycombinator.com/item?id=48620502",
+        "score": 211,
+        "comments": 28,
+        "by": "consumer451",
+        "hn_url": "https://news.ycombinator.com/item?id=48620502",
+        "reason": "tool:app",
+        "description": "My shortened story: due to factors in Soviet controlled Poland, my uncle played my dad role.He took me to a quarry to fire Estes-style rocket cars, and all that.. he also managed to steal a Milicja (military police) siren from work, and put it on the back of my banana style bike. As an EE, he made it actually function.Thanks to all the hackers who made us who we are."
+      },
+      {
         "title": "Ask HN: Is anyone using the A2A protocol?",
         "url": "https://news.ycombinator.com/item?id=48582679",
         "score": 92,
-        "comments": 41,
+        "comments": 42,
         "by": "asim",
         "hn_url": "https://news.ycombinator.com/item?id=48582679",
         "reason": "ai_keyword:agent",
         "description": "The A2A protocol is an agent to agent protocol from Google. I was looking at it 6 months back but it didn't feel like I really understood how to use it at that point. Probably because we were all still trying to figure out agents and then the MCP protocol became quite a big deal. But now I'm starting to think that once an agent has tools and services and data and then contacts. Actually, the point of interaction becomes the agent itself and then if you build other agents you would want them t..."
-      },
-      {
-        "title": "Ask HN: Due to spam on GitHub, what platforms can I move my projects?",
-        "url": "https://news.ycombinator.com/item?id=48611303",
-        "score": 53,
-        "comments": 55,
-        "by": "ciwolex",
-        "hn_url": "https://news.ycombinator.com/item?id=48611303",
-        "reason": "ai_keyword:vibe",
-        "description": "I have a few projects on Github. I am receiving a lot of spam PRs and requests from vibe coders and bots. Most of them to prop up their profiles. The stars are obviously exaggerated too.What other platforms are you using for your projects?"
       }
     ],
     "show": [
       {
+        "title": "Show HN: TownSquare, a tiny presence layer for websites",
+        "url": "https://townsquare.cauenapier.com/",
+        "score": 245,
+        "comments": 143,
+        "by": "cauenapier",
+        "hn_url": "https://news.ycombinator.com/item?id=48608570",
+        "reason": "tool:show hn",
+        "description": "https://cauenapier.com/blog/townsquare_release/https://cauenapier.com/blog/townsquare/"
+      },
+      {
         "title": "Show HN: StartupWiki – A Free Alternative to Crunchbase",
         "url": "https://startupwiki.tech/",
-        "score": 132,
-        "comments": 38,
+        "score": 222,
+        "comments": 67,
         "by": "shpran",
         "hn_url": "https://news.ycombinator.com/item?id=48610224",
         "reason": "ai_keyword:rust",
@@ -120,48 +140,48 @@
       {
         "title": "Show HN: Make PDFs look scanned (CLI or in the browser via WASM)",
         "url": "https://github.com/overflowy/make-look-scanned",
-        "score": 65,
-        "comments": 32,
+        "score": 140,
+        "comments": 62,
         "by": "overflowy",
         "hn_url": "https://news.ycombinator.com/item?id=48611513",
-        "reason": "tool:cli",
-        "description": ""
-      },
-      {
-        "title": "Show HN: We post-trained a model that pen tests instead of refusing",
-        "url": "https://www.argusred.com/cli",
-        "score": 59,
-        "comments": 27,
-        "by": "dk189",
-        "hn_url": "https://news.ycombinator.com/item?id=48609231",
-        "reason": "ai_keyword:ai",
-        "description": "Anthropic and OpenAI's publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from ..."
+        "reason": "tool:tool",
+        "description": "I made this because the online \"make my PDF look scanned\" tools want you to upload your file to their servers, which feels sketchy at best. Also, I wasn't happy with the output they produce, I wanted something that looks realistic."
       },
       {
         "title": "Show HN: Microcrad – Micrograd Reimplemented in C",
         "url": "https://github.com/oraziorillo/microcrad",
-        "score": 60,
-        "comments": 20,
+        "score": 76,
+        "comments": 27,
         "by": "oraziorillo",
         "hn_url": "https://news.ycombinator.com/item?id=48570364",
         "reason": "tool:show hn",
         "description": ""
       },
       {
-        "title": "Show HN: Ember, a native iOS Hacker News reader I built around accessibility",
-        "url": "https://github.com/DatanoiseTV/ember-hackernews",
-        "score": 82,
-        "comments": 17,
-        "by": "sylwester",
-        "hn_url": "https://news.ycombinator.com/item?id=48610816",
+        "title": "Show HN: My Windows XP portfolio with working Game Boy and iPod",
+        "url": "https://mitchivin.com/",
+        "score": 68,
+        "comments": 33,
+        "by": "mitchivin",
+        "hn_url": "https://news.ycombinator.com/item?id=48612095",
+        "reason": "tool:show hn",
+        "description": "I posted my portfolio here about a year ago (https://news.ycombinator.com/item?id=45154609) and while there was a big response, it was very mixed! It'll probably be similar this time, but regardless of your thoughts about the concept, I think I've done a pretty good job creating one of the most nostalgic corners of the internet, especially with the latest additions.It'll always be up for debate whether this is an effective way to get noticed as opposed to a standard, quick and easy portfolio,..."
+      },
+      {
+        "title": "Show HN: We post-trained a model that pen tests instead of refusing",
+        "url": "https://www.argusred.com/cli",
+        "score": 88,
+        "comments": 39,
+        "by": "dk189",
+        "hn_url": "https://news.ycombinator.com/item?id=48609231",
         "reason": "ai_keyword:ai",
-        "description": "I read HN on my phone every day and never really settled on a reader, so I\nwrote my own and finally tidied it up enough to put out\nthere.It's plain SwiftUI with no third-party dependencies. A few things I spent the\nmost time on:Comments are parsed and drawn as native text instead of being dumped into a web\nview. Links, italics, quotes and code blocks behave like the rest of the OS,\ntext selection works, and threads collapse instantly. The whole comment tree\ncomes back from the Algolia API in ..."
+        "description": "Anthropic and OpenAI's publicly available models are explicitly guard-railed so that they refuse offensive tasks. And their cyber-focussed models are gated for enterprises. This leaves SMEs and mid market open to major vulnerabilities.AI can be used as both an adversarial and defensive tool in the world of cyber. A worst case outcome is if only the adversaries have access.Meanwhile, most existing AI cyber tools are just wrappers. The problem is that they still have all the guardrails on from ..."
       },
       {
         "title": "Show HN: Talos – Open-source WASM interpreter for Lean",
         "url": "https://github.com/cajal-technologies/talos",
-        "score": 99,
-        "comments": 27,
+        "score": 105,
+        "comments": 28,
         "by": "mfornet",
         "hn_url": "https://news.ycombinator.com/item?id=48584761",
         "reason": "ai_keyword:ai",
@@ -170,32 +190,12 @@
       {
         "title": "Show HN: Metiq: a real time 3D globe for 100 public datasets",
         "url": "https://metiq.space",
-        "score": 141,
+        "score": 145,
         "comments": 42,
         "by": "rakeda",
         "hn_url": "https://news.ycombinator.com/item?id=48556082",
         "reason": "ai_keyword:ai",
         "description": "The concept for metiq.space came after playing Global Magnates with friends and realizing how fragmented live global data is. ships, aircraft, satellites, ports, weather, hazards, infrastructure, cyber, and public datasets all exist, but they usually live in separate tools and maps.The goal was to build one interactive 3D globe where live public data could be visualized by latitude, longitude, and altitude. Surface data stays on the globe, while aircraft, satellites, and other above surface t..."
-      },
-      {
-        "title": "Show HN: Gerrymandle - Daily puzzle game where you redraw electoral districts",
-        "url": "https://gerrymandle.cc/",
-        "score": 223,
-        "comments": 77,
-        "by": "realmofthemad",
-        "hn_url": "https://news.ycombinator.com/item?id=48585739",
-        "reason": "ai_keyword:ai",
-        "description": "Draw districts and win the election. A new puzzle every day."
-      },
-      {
-        "title": "Show HN: Are You in the Weights?",
-        "url": "https://www.intheweights.com/",
-        "score": 457,
-        "comments": 241,
-        "by": "turtlesoup",
-        "hn_url": "https://news.ycombinator.com/item?id=48591348",
-        "reason": "ai_keyword:llm",
-        "description": "With more traffic moving off-web and into LLMs, I got curious about what traces we leave \"in the weights\". My design partner and I built a site in the past few weeks that checks recognition across frontier and small models. It queries many of them in parallel, clusters the responses, and tells you how strongly they recognize you. Happy to answer any questions here!"
       }
     ]
   },
@@ -203,154 +203,154 @@
     {
       "name": "palmier-io/palmier-pro",
       "url": "https://github.com/palmier-io/palmier-pro",
-      "stars": "3,272",
-      "today_stars": "904",
+      "stars": "4,992",
+      "today_stars": "1,829",
       "language": "Swift",
       "description": "macOS video editor built for AI",
       "reason": "high_stars"
     },
     {
-      "name": "penpot/penpot",
-      "url": "https://github.com/penpot/penpot",
-      "stars": "51,360",
-      "today_stars": "424",
-      "language": "Clojure",
-      "description": "Penpot: The open-source design tool for design and code collaboration",
-      "reason": "high_stars"
-    },
-    {
       "name": "calesthio/OpenMontage",
       "url": "https://github.com/calesthio/OpenMontage",
-      "stars": "7,001",
-      "today_stars": "677",
+      "stars": "8,570",
+      "today_stars": "993",
       "language": "Python",
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
       "reason": "high_stars"
     },
     {
-      "name": "tursodatabase/turso",
-      "url": "https://github.com/tursodatabase/turso",
-      "stars": "20,294",
-      "today_stars": "774",
-      "language": "Rust",
-      "description": "Turso is an in-process SQL database, compatible with SQLite.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "DeusData/codebase-memory-mcp",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "stars": "9,284",
-      "today_stars": "1,267",
-      "language": "C",
-      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "google-research/timesfm",
-      "url": "https://github.com/google-research/timesfm",
-      "stars": "24,504",
-      "today_stars": "432",
-      "language": "Python",
-      "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "twentyhq/twenty",
-      "url": "https://github.com/twentyhq/twenty",
-      "stars": "50,836",
-      "today_stars": "140",
-      "language": "TypeScript",
-      "description": "The open alternative to Salesforce, designed for AI.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "Kong/insomnia",
-      "url": "https://github.com/Kong/insomnia",
-      "stars": "39,303",
-      "today_stars": "327",
-      "language": "TypeScript",
-      "description": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "tw93/Pake",
-      "url": "https://github.com/tw93/Pake",
-      "stars": "54,617",
-      "today_stars": "2,398",
-      "language": "Rust",
-      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
-      "reason": "high_stars"
-    },
-    {
       "name": "chopratejas/headroom",
       "url": "https://github.com/chopratejas/headroom",
-      "stars": "41,743",
-      "today_stars": "3,786",
+      "stars": "44,197",
+      "today_stars": "2,617",
       "language": "Python",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
       "reason": "high_stars"
     },
     {
-      "name": "jamiepine/voicebox",
-      "url": "https://github.com/jamiepine/voicebox",
-      "stars": "30,987",
-      "today_stars": "140",
-      "language": "TypeScript",
-      "description": "The open-source AI voice studio. Clone, dictate, create.",
+      "name": "tursodatabase/turso",
+      "url": "https://github.com/tursodatabase/turso",
+      "stars": "20,769",
+      "today_stars": "543",
+      "language": "Rust",
+      "description": "Turso is an in-process SQL database, compatible with SQLite.",
       "reason": "high_stars"
     },
     {
-      "name": "Kilo-Org/kilocode",
-      "url": "https://github.com/Kilo-Org/kilocode",
-      "stars": "23,323",
-      "today_stars": "470",
+      "name": "penpot/penpot",
+      "url": "https://github.com/penpot/penpot",
+      "stars": "52,180",
+      "today_stars": "1,131",
+      "language": "Clojure",
+      "description": "Penpot: The open-source design tool for design and code collaboration",
+      "reason": "high_stars"
+    },
+    {
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "stars": "44,364",
+      "today_stars": "519",
+      "language": "Python",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "stars": "58,033",
+      "today_stars": "253",
       "language": "TypeScript",
-      "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "reason": "high_stars"
+    },
+    {
+      "name": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "stars": "72,536",
+      "today_stars": "415",
+      "language": "Python",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "stars": "10,206",
+      "today_stars": "1,029",
+      "language": "C",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "stars": "17,623",
+      "today_stars": "445",
+      "language": "Python",
+      "description": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+      "reason": "high_stars"
+    },
+    {
+      "name": "tw93/Pake",
+      "url": "https://github.com/tw93/Pake",
+      "stars": "56,113",
+      "today_stars": "1,850",
+      "language": "Rust",
+      "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "mikumifa/biliTickerBuy",
+      "url": "https://github.com/mikumifa/biliTickerBuy",
+      "stars": "3,704",
+      "today_stars": "56",
+      "language": "Python",
+      "description": "b站会员购购票辅助工具",
+      "reason": "high_stars"
+    },
+    {
+      "name": "smicallef/spiderfoot",
+      "url": "https://github.com/smicallef/spiderfoot",
+      "stars": "18,730",
+      "today_stars": "288",
+      "language": "Python",
+      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "topoteretes/cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "stars": "18,617",
+      "today_stars": "361",
+      "language": "Python",
+      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+      "reason": "high_stars"
+    },
+    {
+      "name": "byoungd/English-level-up-tips",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "stars": "53,987",
+      "today_stars": "121",
+      "language": "",
+      "description": "An advanced guide to learn English which might benefit you a lot 🎉 . 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "reason": "high_stars"
+    },
+    {
+      "name": "asgeirtj/system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "stars": "44,344",
+      "today_stars": "366",
+      "language": "JavaScript",
+      "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
       "reason": "high_stars"
     },
     {
       "name": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "stars": "138,143",
-      "today_stars": "1,360",
+      "stars": "139,661",
+      "today_stars": "1,441",
       "language": "Shell",
       "description": "Skills for Real Engineers. Straight from my .claude directory.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "withastro/flue",
-      "url": "https://github.com/withastro/flue",
-      "stars": "6,078",
-      "today_stars": "313",
-      "language": "TypeScript",
-      "description": "The sandbox agent framework.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "owainlewis/awesome-artificial-intelligence",
-      "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
-      "stars": "14,759",
-      "today_stars": "223",
-      "language": "",
-      "description": "A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.",
-      "reason": "high_stars"
-    },
-    {
-      "name": "pppscn/SmsForwarder",
-      "url": "https://github.com/pppscn/SmsForwarder",
-      "stars": "26,478",
-      "today_stars": "134",
-      "language": "Kotlin",
-      "description": "短信转发器——监控Android手机短信、来电、APP通知，并根据指定规则转发到其他手机：钉钉群自定义机器人、钉钉企业内机器人、企业微信群机器人、飞书机器人、企业微信应用消息、邮箱、bark、webhook、Telegram机器人、Server酱、PushPlus、手机短信等。包括主动控制服务端与客户端，让你轻松远程发短信、查短信、查通话、查话簿、查电量等。（V3.0 新增）PS.这个APK主要是学习与自用，如有BUG请提ISSUE，同时欢迎大家提PR指正",
-      "reason": "high_stars"
-    },
-    {
-      "name": "1jehuang/jcode",
-      "url": "https://github.com/1jehuang/jcode",
-      "stars": "7,385",
-      "today_stars": "108",
-      "language": "Rust",
-      "description": "Coding Agent Harness",
       "reason": "high_stars"
     }
   ]

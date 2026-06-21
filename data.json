@@ -4,7 +4,7 @@
     {
       "title": "Apertus – Open Foundation Model for Sovereign AI",
       "url": "https://apertvs.ai/",
-      "score": 90,
+      "score": 93,
       "by": "T-A",
       "comments": 22,
       "hn_url": "https://news.ycombinator.com/item?id=48622778",
@@ -24,9 +24,9 @@
     {
       "title": "Did my old job only exist because of fraud?",
       "url": "https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/",
-      "score": 60,
+      "score": 61,
       "by": "advisedwang",
-      "comments": 9,
+      "comments": 12,
       "hn_url": "https://news.ycombinator.com/item?id=48622867",
       "text": "",
       "description": ""
@@ -44,7 +44,7 @@
     {
       "title": "PowerFox Browser",
       "url": "https://powerfox.jazzzny.me/",
-      "score": 28,
+      "score": 30,
       "by": "thisislife2",
       "comments": 11,
       "hn_url": "https://news.ycombinator.com/item?id=48622731",
@@ -64,7 +64,7 @@
     {
       "title": "Prefer duplication over the wrong abstraction (2016)",
       "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
-      "score": 398,
+      "score": 399,
       "by": "rafaepta",
       "comments": 269,
       "hn_url": "https://news.ycombinator.com/item?id=48620090",
@@ -76,7 +76,7 @@
       "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
       "score": 490,
       "by": "bathory",
-      "comments": 444,
+      "comments": 446,
       "hn_url": "https://news.ycombinator.com/item?id=48618455",
       "text": "<a href=\"https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;ClaudeAI&#x2F;comments&#x2F;1ubm53n&#x2F;official_anthropic_to_require_identity&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;ClaudeAI&#x2F;comments&#x2F;1ubm53n&#x2F;official_...</a>",
       "description": "https://old.reddit.com/r/ClaudeAI/comments/1ubm53n/official_..."
@@ -102,6 +102,16 @@
       "description": ""
     },
     {
+      "title": "HPV jabs cut risk of dying from cervical cancer before 30 to almost zero",
+      "url": "https://www.theguardian.com/society/2026/jun/17/hpv-jabs-reduce-risk-dying-cervical-cancer-before-30-zero-study-finds",
+      "score": 69,
+      "by": "toomuchtodo",
+      "comments": 18,
+      "hn_url": "https://news.ycombinator.com/item?id=48579013",
+      "text": "",
+      "description": ""
+    },
+    {
       "title": "FDA advisors unanimously vote to approve Moderna's mRNA after agency drama",
       "url": "https://arstechnica.com/health/2026/06/fda-advisors-unanimously-vote-to-approve-modernas-mrna-after-agency-drama/",
       "score": 49,
@@ -122,22 +132,22 @@
       "description": "LLMs made software cheaper to build, but not free. A look at the new buy-vs-build math of the LLM age, and the pricing zone where small software businesses can still survive."
     },
     {
-      "title": "HPV jabs cut risk of dying from cervical cancer before 30 to almost zero",
-      "url": "https://www.theguardian.com/society/2026/jun/17/hpv-jabs-reduce-risk-dying-cervical-cancer-before-30-zero-study-finds",
-      "score": 66,
-      "by": "toomuchtodo",
-      "comments": 17,
-      "hn_url": "https://news.ycombinator.com/item?id=48579013",
-      "text": "",
-      "description": ""
-    },
-    {
       "title": "Ask for no, don't ask for yes (2022)",
       "url": "https://www.mooreds.com/wordpress/archives/3518",
       "score": 77,
       "by": "skogstokig",
       "comments": 35,
       "hn_url": "https://news.ycombinator.com/item?id=48622234",
+      "text": "",
+      "description": ""
+    },
+    {
+      "title": "An Embedded Linux on a Single Floppy",
+      "url": "https://github.com/w84death/floppinux",
+      "score": 50,
+      "by": "modinfo",
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=48594090",
       "text": "",
       "description": ""
     },
@@ -150,16 +160,6 @@
       "hn_url": "https://news.ycombinator.com/item?id=48621645",
       "text": "Howdy all. I&#x27;m Zack :wave:. I&#x27;ve been thinking about the problem of misguided AI pull requests and figured I&#x27;d throw a possible solution out there for feedback. Basically, CleverCrow lets supporters give tokens to a GitHub repo (or set of issues in that repo) for the maintainers to use to build&#x2F;fix stuff. The fun implementation challenges have been around implementing the pooling dynamics and keeping the maintainers in charge while the backers are motivated to support their work.",
       "description": "Howdy all. I'm Zack :wave:. I've been thinking about the problem of misguided AI pull requests and figured I'd throw a possible solution out there for feedback. Basically, CleverCrow lets supporters give tokens to a GitHub repo (or set of issues in that repo) for the maintainers to use to build/fix stuff. The fun implementation challenges have been around implementing the pooling dynamics and keeping the maintainers in charge while the backers are motivated to support their work."
-    },
-    {
-      "title": "An Embedded Linux on a Single Floppy",
-      "url": "https://github.com/w84death/floppinux",
-      "score": 50,
-      "by": "modinfo",
-      "comments": 21,
-      "hn_url": "https://news.ycombinator.com/item?id=48594090",
-      "text": "",
-      "description": ""
     },
     {
       "title": "Wildcard (YC W25) is hiring an applied ML engineer",
@@ -182,6 +182,16 @@
       "description": ""
     },
     {
+      "title": "Tell HN: Happy Fathers Day",
+      "url": "https://news.ycombinator.com/item?id=48620502",
+      "score": 213,
+      "by": "consumer451",
+      "comments": 28,
+      "hn_url": "https://news.ycombinator.com/item?id=48620502",
+      "text": "My shortened story: due to factors in Soviet controlled Poland, my uncle played my dad role.<p>He took me to a quarry to fire Estes-style rocket cars, and all that.. he also managed to steal a Milicja (military police) siren from work, and put it on the back of my banana style bike. As an EE, he made it actually function.<p>Thanks to all the hackers who made us who we are.",
+      "description": "My shortened story: due to factors in Soviet controlled Poland, my uncle played my dad role.He took me to a quarry to fire Estes-style rocket cars, and all that.. he also managed to steal a Milicja (military police) siren from work, and put it on the back of my banana style bike. As an EE, he made it actually function.Thanks to all the hackers who made us who we are."
+    },
+    {
       "title": "Minecraft: Java Edition 26.2, the first version with Vulkan 1.2",
       "url": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-2",
       "score": 20,
@@ -190,23 +200,13 @@
       "hn_url": "https://news.ycombinator.com/item?id=48567028",
       "text": "",
       "description": "Minecraft Java Edition 26.2"
-    },
-    {
-      "title": "Tell HN: Happy Fathers Day",
-      "url": "https://news.ycombinator.com/item?id=48620502",
-      "score": 211,
-      "by": "consumer451",
-      "comments": 28,
-      "hn_url": "https://news.ycombinator.com/item?id=48620502",
-      "text": "My shortened story: due to factors in Soviet controlled Poland, my uncle played my dad role.<p>He took me to a quarry to fire Estes-style rocket cars, and all that.. he also managed to steal a Milicja (military police) siren from work, and put it on the back of my banana style bike. As an EE, he made it actually function.<p>Thanks to all the hackers who made us who we are.",
-      "description": "My shortened story: due to factors in Soviet controlled Poland, my uncle played my dad role.He took me to a quarry to fire Estes-style rocket cars, and all that.. he also managed to steal a Milicja (military police) siren from work, and put it on the back of my banana style bike. As an EE, he made it actually function.Thanks to all the hackers who made us who we are."
     }
   ],
   "hn_ask": [
     {
       "title": "Tell HN: Happy Fathers Day",
       "url": "https://news.ycombinator.com/item?id=48620502",
-      "score": 211,
+      "score": 213,
       "by": "consumer451",
       "comments": 28,
       "hn_url": "https://news.ycombinator.com/item?id=48620502",
@@ -314,16 +314,6 @@
       "description": "My idea of space has been limited to telecommunication & space exploration.I came across Varda Space Industries, which takes advantage of microgravity to manufacture drugs in ways that would otherwise be extremely difficult to make on earth.One of the founders hinted that this idea was from reading NASA research on experiments done in space.Any cool space startup ideas you have based that are not exploration (tourism) or communication?Or resources that can help me come up with ideas?"
     },
     {
-      "title": "Ask HN: Do you give AI coding agents their own GitHub account?",
-      "url": "https://news.ycombinator.com/item?id=48618981",
-      "score": 5,
-      "by": "ahmd",
-      "comments": 4,
-      "hn_url": "https://news.ycombinator.com/item?id=48618981",
-      "text": "",
-      "description": ""
-    },
-    {
       "title": "Ask HN: What technique do you use to make Claude Code deterministic?",
       "url": "https://news.ycombinator.com/item?id=48610280",
       "score": 6,
@@ -332,6 +322,16 @@
       "hn_url": "https://news.ycombinator.com/item?id=48610280",
       "text": "I’m curious to hear from the HN community how you tamed this probabilistic non-deterministic genius generate a deterministic and repeatable result 100% percent of the time.",
       "description": "I’m curious to hear from the HN community how you tamed this probabilistic non-deterministic genius generate a deterministic and repeatable result 100% percent of the time."
+    },
+    {
+      "title": "Ask HN: Do you give AI coding agents their own GitHub account?",
+      "url": "https://news.ycombinator.com/item?id=48618981",
+      "score": 5,
+      "by": "ahmd",
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=48618981",
+      "text": "",
+      "description": ""
     },
     {
       "title": "Ask HN: What do you care about? What is your joy and purpose?",
@@ -612,7 +612,7 @@
       "url": "https://github.com/palmier-io/palmier-pro",
       "description": "macOS video editor built for AI",
       "language": "Swift",
-      "stars": "4,992",
+      "stars": "4,994",
       "today_stars": "1,829"
     },
     {
@@ -620,7 +620,7 @@
       "url": "https://github.com/calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
-      "stars": "8,570",
+      "stars": "8,572",
       "today_stars": "993"
     },
     {
@@ -628,7 +628,7 @@
       "url": "https://github.com/chopratejas/headroom",
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
       "language": "Python",
-      "stars": "44,197",
+      "stars": "44,200",
       "today_stars": "2,617"
     },
     {
@@ -692,7 +692,7 @@
       "url": "https://github.com/tw93/Pake",
       "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
       "language": "Rust",
-      "stars": "56,113",
+      "stars": "56,114",
       "today_stars": "1,850"
     },
     {
@@ -708,7 +708,7 @@
       "url": "https://github.com/smicallef/spiderfoot",
       "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
       "language": "Python",
-      "stars": "18,730",
+      "stars": "18,731",
       "today_stars": "288"
     },
     {
@@ -716,7 +716,7 @@
       "url": "https://github.com/topoteretes/cognee",
       "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
       "language": "Python",
-      "stars": "18,617",
+      "stars": "18,618",
       "today_stars": "361"
     },
     {
